@@ -53,9 +53,42 @@
         "background_image": "",
         "background_container": ""
       }
+    },
+    "swiper_review_slider_Ct6beM": {
+      "type": "swiper-review-slider",
+      "blocks": {
+        "page_3mRWpP": {
+          "type": "page",
+          "settings": {
+            "title": "",
+            "title_desc": "",
+            "stars_quantity": 5,
+            "comment": "",
+            "slide_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_3mRWpP"
+      ],
+      "settings": {
+        "clickable": false,
+        "content_align": "left",
+        "navigation_enabled": true,
+        "pagination_enabled": false,
+        "slide_height": "default",
+        "slides_offset": "small",
+        "slide_card": false,
+        "container_width": true,
+        "slider_align": "align_middle",
+        "slide_width": "310",
+        "slider_columns_desktop": 4,
+        "background_content": ""
+      }
     }
   },
   "order": [
-    "custom_image_banner_twfGEn"
+    "custom_image_banner_twfGEn",
+    "swiper_review_slider_Ct6beM"
   ]
 }
