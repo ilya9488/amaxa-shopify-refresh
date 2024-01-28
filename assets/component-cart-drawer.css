@@ -255,7 +255,7 @@ cart-drawer-items {
 
 .cart-drawer .cart-item .loading__spinner {
   right: 5px;
-  padding-top: 2.5rem;
+  padding-top: 0;
 }
 
 .cart-drawer .cart-item__details {
