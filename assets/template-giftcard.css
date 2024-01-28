@@ -28,7 +28,7 @@ html {
 }
 
 body {
-  background-color: rgb(var(--color-background));
+  /*background-color: rgb(var(--color-background));*/
   color: rgb(var(--color-foreground));
   letter-spacing: 0.07rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
