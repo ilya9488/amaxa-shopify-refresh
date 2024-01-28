@@ -1,0 +1,54 @@
+:root {
+  --review-slider-height-default: 275px;
+}
+
+.swiper-review-slider .swiper-slide--inner {
+  background: var(--color-secendary);
+  border-radius: 4px;
+  height: var(--review-slider-height-default);
+}
+
+.swiper-review-slider .review-content {
+  display: block;
+  padding-block: 10px;
+  overflow-y: auto;
+  height: 180px;
+}
+.swiper-review-slider .review-content p {
+  margin: 0;
+}
+.swiper-review-slider .slider-content--stars {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+.swiper-review-slider .slider-content--stars svg {
+  width: 20px;
+  height: 20px;
+}
+.swiper-review-slider .slider-content--stars svg path {
+  stroke: #CECECE;
+  fill: #CECECE;
+}
+.swiper-review-slider .stars-filled--5 svg:nth-child(-n+5) path {
+  stroke: #FABF3A;
+  fill: #FABF3A;
+}
+.swiper-review-slider .stars-filled--4 svg:nth-child(-n+4) path {
+  stroke: #FABF3A;
+  fill: #FABF3A;
+}
+.swiper-review-slider .stars-filled--3 svg:nth-child(-n+3) path {
+  stroke: #FABF3A;
+  fill: #FABF3A;
+}
+.swiper-review-slider .swiper-slide--content {
+  padding-top: var(--offset-small);
+}
+.swiper-review-slider .slider-content--title-desc {
+  line-height: 1.2;
+  margin-block-end: 4px;
+}
+.swiper-review-slider .slider-content--title {
+  line-height: 1.4;
+}

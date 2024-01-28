@@ -1,0 +1,275 @@
+{% assign slider_columns_desktop_int = section.settings.slider_columns_desktop | times: 1 %}
+{% assign slide_width = section.settings.slide_width | times: 1 %}
+
+{% if section.settings.container_width %}
+    {%- assign containerWidth = 0 | times: 1 -%}
+{% else %}
+  {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
+{% endif %}
+
+<div class="page-width-desktop slider-container swiper-products-slider {% if section.settings.pagination_enabled %} pagination-enabled {% endif %}">
+  <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
+        {% if section.settings.slide_card %} slides-card {% endif %}
+  "
+      {% if containerWidth > 0 %} style="max-width: {{ containerWidth }}px" {% endif %}
+       data-columns="{{ section.settings.slider_columns_desktop }}"
+       data-slide-width="{{ slide_width }}"
+  >
+    <div class="swiper-wrapper">
+      {% for product in collections [section.settings.collections].products %}
+
+      {% assign buttonLabel = 'Buy' %}
+      {% if section.settings.button_label != blank %}
+        {% assign buttonLabel = section.settings.button_label %}
+      {% endif %}
+
+    {% if section.settings.clickable %}
+      <a href="{{ product.url }}" class="swiper-slide">
+        {% else %}
+        <div class="swiper-slide">
+          {% endif %}
+          <div class="swiper-slide--inner">
+            <div
+                class="swiper-slide--image image-height--{{ section.settings.image_container_height }}"
+                style="{% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}"
+            >
+              <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
+            </div>
+            <div 
+              class="swiper-slide--content slider-content content-align--{{ section.settings.content_align }}"
+              style="{% if section.settings.background_content != blank %}background: {{ section.settings.background_content }}{% endif %} 
+                  {% if section.settings.content_offset_top_none %}padding-top: 0{% endif %}
+              "
+              >
+              <p class="slider-content--title title-font-size--{{ section.settings.title_font_size }}">
+                {{ product.title }}
+              </p>
+
+              {% if section.settings.show_description %}
+                <p class="slider-content--description">
+                  {{ product.description }}
+                </p>
+              {% endif %}
+
+              {% if section.settings.show_price %}
+                <p class="slider-content--price">
+                  {% render 'price', show_compare_at_price: true %}
+                </p>
+              {% endif %}
+
+              {% if section.settings.show_button %}
+                <div>
+                  <a href="{{ product.url }}" class="button button--primary">
+                    {{ buttonLabel }}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
+          </div>
+          {% if section.settings.clickable %}
+      </a>
+      {% else %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+
+{% if section.settings.navigation_enabled %}
+  <button class="swiper-arrow swiper-button-next"></button>
+  <button class="swiper-arrow swiper-button-prev"></button>
+{% endif %}
+
+{% if section.settings.pagination_enabled %}
+  <ul class="swiper-pagination"></ul>
+{% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Swiper products slider",
+  "class": "section swiper-products-slider",
+  "settings": [
+    {
+      "type": "collection",
+      "id": "collections",
+      "label": "Select collections"
+    },
+    {
+      "type": "checkbox",
+      "id": "clickable",
+      "default": true,
+      "label": "Slide clickable"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_price",
+      "default": true,
+      "label": "Show price"
+    },
+    {
+      "type": "select",
+      "id": "title_font_size",
+      "label": "Title font size",
+      "options": [
+        {
+          "value": "small",
+          "label": "small"
+        },
+        {
+          "value": "normal",
+          "label": "normal"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "select",
+      "id": "content_align",
+      "label": "Content align in slides",
+      "options": [
+        {
+          "value": "left",
+          "label": "left"
+        },
+        {
+          "value": "center",
+          "label": "center"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_button",
+      "default": false,
+      "label": "Show button"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label (by default 'Buy')"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_description",
+      "default": false,
+      "label": "Show description"
+    },
+    {
+      "type": "checkbox",
+      "id": "content_offset_top_none",
+      "default": false,
+      "label": "Remove top offset from content"
+    },
+    {
+      "type": "checkbox",
+      "id": "navigation_enabled",
+      "default": true,
+      "label": "Navigation enabled"
+    },
+    {
+      "type": "checkbox",
+      "id": "pagination_enabled",
+      "default": false,
+      "label": "Pagination enabled"
+    },
+    {
+      "type": "select",
+      "id": "image_container_height",
+      "label": "Image container height",
+      "options": [
+        {
+          "value": "small",
+          "label": "small"
+        },
+        {
+          "value": "normal",
+          "label": "normal"
+        },
+        {
+          "value": "large",
+          "label": "large"
+        }
+      ],
+      "default": "normal"
+    },
+    {
+      "type": "checkbox",
+      "id": "slide_card",
+      "default": true,
+      "label": "Display as card (with background)"
+    },
+    {
+      "type": "checkbox",
+      "id": "container_width",
+      "default": false,
+      "label": "Slider full container width"
+    },
+    {
+      "type": "select",
+      "id": "slider_align",
+      "label": "Align container",
+      "options": [
+        {
+          "value": "align_left",
+          "label": "left"
+        },
+        {
+          "value": "align_middle",
+          "label": "middle"
+        }
+      ],
+      "default": "align_middle"
+    },
+    {
+      "type": "select",
+      "id": "slide_width",
+      "options": [
+        {
+          "value": "240",
+          "label": "small"
+        },
+        {
+          "value": "310",
+          "label": "normal"
+        },
+        {
+          "value": "400",
+          "label": "large"
+        }
+      ],
+      "default": "310",
+      "label": "Size slide"
+    },
+    {
+      "type": "range",
+      "id": "slider_columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "default": 4,
+      "label": "Number of slides to desktop"
+    },
+    {
+      "type": "color_background",
+      "id": "background_image",
+      "label": "Background image container"
+    },
+    {
+      "type": "color_background",
+      "id": "background_content",
+      "label": "Background content"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Swiper products slider"
+    }
+  ]
+}
+{% endschema %}
