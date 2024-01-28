@@ -1,0 +1,97 @@
+:root {
+  --banner-image-height-small: 300px;
+  --banner-image-height-medium: 400px;
+  --banner-image-height-large: 600px;
+  --banner-image-title-font-size-base: 7rem;
+}
+
+.images-banner {
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  position: relative;
+  align-items: center;
+}
+
+/* Offsets */
+.images-banner.margin-top--default {
+  margin-block-start: var(--section-margin-block-start);
+}
+.images-banner.margin-top--middle {
+  margin-block-start: var(--section-margin-block-start-middle);
+}
+.images-banner.margin-top--big {
+  margin-block-start: var(--section-margin-block-start-big);
+}
+.images-banner.margin-bottom--default {
+  margin-block-end: var(--section-margin-block-end);
+}
+.images-banner.margin-bottom--middle {
+  margin-block-end: var(--section-margin-block-end-middle);
+}
+.images-banner.margin-bottom--big {
+  margin-block-end: var(--section-margin-block-end-big);
+}
+
+.images-banner.offset-small {
+  gap: 3px;
+}
+.images-banner.offset-normal {
+  gap: 6px;
+}
+.images-banner.offset-medium {
+  gap: 9px;
+}
+.images-banner.offset-big {
+  gap: 12px;
+}
+
+.images-banner .images-banner--title {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: rgb(0 0 0 / 83%) 0px 3px 8px;
+  font-size: calc(var(--banner-image-title-font-size-base) + 1vmin);
+  margin: 0;
+}
+.images-banner--title.h2 {
+  --banner-image-title-font-size-base: 6rem;
+}
+.images-banner--title.h3 {
+  --banner-image-title-font-size-base: 5rem;
+}
+.images-banner--title.h4 {
+  --banner-image-title-font-size-base: 4rem;
+}
+.images-banner .images-banner--image {
+  /*height: var(--banner-image-height-small);*/
+  height: calc(30vh + 10vw);
+  max-height: 500px;
+  min-height: 340px;
+  position: relative;
+  background-position-y: 0;
+  background-position-x: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.images-banner .images-banner--buttons {
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.images-banner-height--small .images-banner--image{
+  height: var(--banner-image-height-small);
+}
+.images-banner-height--medium .images-banner--image{
+  height: var(--banner-image-height-medium);
+}
+.images-banner-height--large .images-banner--image{
+  height: var(--banner-image-height-large);
+}
