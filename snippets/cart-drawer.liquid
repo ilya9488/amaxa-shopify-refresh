@@ -84,7 +84,7 @@
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
-                {% render 'cart/table-list', sections: sections, cart: cart%}
+                {% render 'cart-drawer-table-list', sections: sections, cart: cart%}
 
                 {% comment %}<table class="cart-items" role="table">
                   <thead role="rowgroup">
