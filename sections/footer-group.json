@@ -7,7 +7,6 @@
       "blocks": {
         "heading": {
           "type": "heading",
-          "disabled": true,
           "settings": {
             "heading": "Subscribe to our emails",
             "heading_size": "h1"
@@ -16,7 +15,7 @@
         "paragraph": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Join our email list for exclusive offers and the latest news. <\/p>"
           }
         },
         "email-form": {
@@ -32,30 +31,30 @@
       ],
       "disabled": true,
       "settings": {
-        "color_scheme": "inverse",
+        "color_scheme": "background-2",
         "full_width": true,
-        "padding_top": 28,
-        "padding_bottom": 0
+        "padding_top": 44,
+        "padding_bottom": 8
       }
     },
     "footer": {
       "type": "footer",
       "blocks": {
-        "link_list_WLiTJg": {
+        "ec909602-8d51-45c4-ad81-a8035d6e2b12": {
           "type": "link_list",
           "settings": {
             "heading": "Company",
             "menu": "company"
           }
         },
-        "link_list_dQMXek": {
+        "b6f330e6-c829-42d5-b4a3-ec887210f4b3": {
           "type": "link_list",
           "settings": {
             "heading": "Help",
             "menu": "help"
           }
         },
-        "link_list_RPFg6Y": {
+        "425f6e1f-e302-4db4-8c78-cc915651ba3b": {
           "type": "link_list",
           "settings": {
             "heading": "Shop",
@@ -64,12 +63,12 @@
         }
       },
       "block_order": [
-        "link_list_WLiTJg",
-        "link_list_dQMXek",
-        "link_list_RPFg6Y"
+        "ec909602-8d51-45c4-ad81-a8035d6e2b12",
+        "b6f330e6-c829-42d5-b4a3-ec887210f4b3",
+        "425f6e1f-e302-4db4-8c78-cc915651ba3b"
       ],
       "settings": {
-        "color_scheme": "background-1",
+        "color_scheme": "background-2",
         "newsletter_enable": true,
         "newsletter_heading": "<strong>Get up to 50% discounts and exclusive offers via email<\/strong>",
         "enable_follow_on_shop": false,
@@ -80,7 +79,7 @@
         "show_policy": false,
         "margin_top": 60,
         "padding_top": 40,
-        "padding_bottom": 12
+        "padding_bottom": 20
       }
     }
   },
