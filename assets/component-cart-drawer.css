@@ -191,7 +191,7 @@ cart-drawer {
 cart-drawer-items {
   overflow: auto;
   flex: 1;
-  padding-block: var(--offset-normal);
+  padding-inline: var(--offset-normal);
 }
 
 @media screen and (max-height: 650px) {
@@ -212,9 +212,9 @@ cart-drawer-items {
   margin-bottom: 0;
 }
 
-.cart-drawer .cart-item:first-child {
+/*.cart-drawer .cart-item:first-child {
   padding-block-start: var(--offset-normal);
-}
+}*/
 .cart-drawer .cart-item:last-child {
   border-bottom: none;
 }
