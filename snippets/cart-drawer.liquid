@@ -84,7 +84,9 @@
           <div id="CartDrawer-CartItems" class="drawer__contents js-contents">
             {%- if cart != empty -%}
               <div class="drawer__cart-items-wrapper">
-                <table class="cart-items" role="table">
+                {% render './cart/table-list', sections: sections, cart: cart%}
+
+                {% comment %}<table class="cart-items" role="table">
                   <thead role="rowgroup">
                     <tr role="row">
                       <th id="CartDrawer-ColumnProductImage" role="columnheader">
@@ -436,7 +438,7 @@
                       </tr>
                     {%- endfor -%}
                   </tbody>
-                </table>
+                </table>{% endcomment %}
               </div>
             {%- endif -%}
             <p id="CartDrawer-LiveRegionText" class="visually-hidden" role="status"></p>
