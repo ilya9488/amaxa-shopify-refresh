@@ -1,35 +1,61 @@
 {
   "sections": {
-    "featured-collection-0": {
-      "type": "featured-collection",
+    "custom_image_banner_twfGEn": {
+      "type": "custom-image-banner",
+      "blocks": {
+        "page_wcUWXX": {
+          "type": "page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Woman.jpg",
+            "image_position": 78,
+            "button_label": "Women",
+            "button_url": ""
+          }
+        },
+        "page_kU984m": {
+          "type": "page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Men.jpg",
+            "image_position": 50,
+            "button_label": "Men",
+            "button_url": ""
+          }
+        },
+        "page_bYGkTV": {
+          "type": "page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Kids.jpg",
+            "image_position": 50,
+            "button_label": "Kids",
+            "button_url": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_wcUWXX",
+        "page_kU984m",
+        "page_bYGkTV"
+      ],
       "settings": {
-        "title": "Featured products",
-        "heading_size": "h2",
-        "description": "",
-        "show_description": false,
-        "description_style": "body",
-        "collection": "all",
-        "products_to_show": 4,
-        "columns_desktop": 4,
-        "full_width": false,
-        "show_view_all": false,
-        "view_all_style": "solid",
-        "enable_desktop_slider": false,
-        "color_scheme": "background-1",
-        "image_ratio": "portrait",
-        "image_shape": "default",
-        "show_secondary_image": false,
-        "show_vendor": false,
-        "show_rating": false,
-        "enable_quick_add": true,
-        "columns_mobile": "2",
-        "swipe_on_mobile": false,
-        "padding_top": 60,
-        "padding_bottom": 60
+        "image_clickable": false,
+        "heading": "",
+        "heading_size": "h1",
+        "button_type": "button--secondary",
+        "margin_top": "none",
+        "margin_bottom": "none",
+        "container_height": "medium",
+        "box_shadow": true,
+        "full_width": true,
+        "offset_between_images": "normal",
+        "border_between_images": false,
+        "border_radius": 20,
+        "margin_bottom_custom": 0,
+        "background_image": "",
+        "background_container": ""
       }
     }
   },
   "order": [
-    "featured-collection-0"
+    "custom_image_banner_twfGEn"
   ]
 }
