@@ -54,6 +54,60 @@
         "background_container": ""
       }
     },
+    "rich_text_hCEbxw": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_4ccQ6c": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Brands",
+            "heading_size": "h1"
+          }
+        },
+        "text_7GfWfy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every age. Every lifestyle. We help everyone be at their best.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_4ccQ6c",
+        "text_7GfWfy"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 60,
+        "padding_bottom": 32
+      }
+    },
+    "swiper_product_slider_RhcrGB": {
+      "type": "swiper-product-slider",
+      "settings": {
+        "collections": "frontpage",
+        "clickable": true,
+        "show_price": true,
+        "title_font_size": "small",
+        "content_align": "center",
+        "show_button": false,
+        "button_label": "",
+        "show_description": false,
+        "content_offset_top_none": true,
+        "navigation_enabled": true,
+        "pagination_enabled": false,
+        "image_container_height": "normal",
+        "slide_card": true,
+        "container_width": true,
+        "slider_align": "align_middle",
+        "slide_width": "310",
+        "slider_columns_desktop": 4,
+        "background_image": "",
+        "background_content": ""
+      }
+    },
     "swiper_review_slider_Ct6beM": {
       "type": "swiper-review-slider",
       "blocks": {
@@ -151,10 +205,73 @@
         "slider_columns_desktop": 4,
         "background_content": ""
       }
+    },
+    "image_with_text_xLx3Yj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mjwQrA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Supplements You Can Trust",
+            "heading_size": "h1"
+          }
+        },
+        "caption_nggmAx": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/QA_100x_4862c22f-efc1-440b-8784-033e1e921978.webp",
+            "item_title": "Queen’s Award Winning",
+            "item_text": "<p>The only vitamin company to receive the Queen’s Award for Innovation TWICE.<\/p>"
+          }
+        },
+        "caption_hAx8hC": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
+            "item_title": "50 Years of Innovation",
+            "item_text": "<p>We’ve been pushing the boundaries for 50 years to help you and your family be at your best.<br\/>Backed by science<\/p>"
+          }
+        },
+        "caption_f8fCyK": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
+            "item_title": "Backed by Science",
+            "item_text": "<p>No other UK vitamin company has such a diverse range of published research to support its products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mjwQrA",
+        "caption_nggmAx",
+        "caption_hAx8hC",
+        "caption_f8fCyK"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
+        "container_width": false,
+        "color_background": "#fff",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "button_type": "button--secondary",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "custom_image_banner_twfGEn",
-    "swiper_review_slider_Ct6beM"
+    "rich_text_hCEbxw",
+    "swiper_product_slider_RhcrGB",
+    "swiper_review_slider_Ct6beM",
+    "image_with_text_xLx3Yj"
   ]
 }
