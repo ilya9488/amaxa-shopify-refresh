@@ -108,6 +108,216 @@
         "background_content": ""
       }
     },
+    "image_with_text_xLx3Yj": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_mjwQrA": {
+          "type": "heading",
+          "settings": {
+            "heading": "Supplements You Can Trust",
+            "heading_size": "h1"
+          }
+        },
+        "caption_nggmAx": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/QA_100x_4862c22f-efc1-440b-8784-033e1e921978.webp",
+            "item_title": "Queen’s Award Winning",
+            "item_text": "<p>The only vitamin company to receive the Queen’s Award for Innovation TWICE.<\/p>"
+          }
+        },
+        "caption_hAx8hC": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
+            "item_title": "50 Years of Innovation",
+            "item_text": "<p>We’ve been pushing the boundaries for 50 years to help you and your family be at your best.<br\/>Backed by science<\/p>"
+          }
+        },
+        "caption_f8fCyK": {
+          "type": "caption",
+          "settings": {
+            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
+            "item_title": "Backed by Science",
+            "item_text": "<p>No other UK vitamin company has such a diverse range of published research to support its products.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_mjwQrA",
+        "caption_nggmAx",
+        "caption_hAx8hC",
+        "caption_f8fCyK"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
+        "container_width": false,
+        "color_background": "#fff",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "button_type": "button--secondary",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 68,
+        "padding_bottom": 68
+      }
+    },
+    "rich_text_cXmiwn": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_RbQxFm": {
+          "type": "heading",
+          "settings": {
+            "heading": "Shop by Need",
+            "heading_size": "h1"
+          }
+        }
+      },
+      "block_order": [
+        "heading_RbQxFm"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "swiper_page_slider_rXTf9q": {
+      "type": "swiper-page-slider",
+      "blocks": {
+        "page_V8YkXz": {
+          "type": "page",
+          "settings": {
+            "page": "man",
+            "title": "",
+            "description": "Desctiption",
+            "image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
+            "image_position": 0,
+            "button_url": "",
+            "button_label": ""
+          }
+        },
+        "page_LH9G3n": {
+          "type": "page",
+          "settings": {
+            "page": "woman",
+            "title": "",
+            "description": "Desctiption",
+            "image": "shopify:\/\/shop_images\/index-page_1.jpg",
+            "image_position": 0,
+            "button_url": "",
+            "button_label": ""
+          }
+        },
+        "page_jza4KT": {
+          "type": "page",
+          "settings": {
+            "page": "some-page",
+            "title": "",
+            "description": "Desctiption",
+            "image": "shopify:\/\/shop_images\/c71ae2a8d242a6d_370x260_ee9098a6-8d1d-4b34-b04d-109267ac3c45.jpg",
+            "image_position": 0,
+            "button_url": "",
+            "button_label": ""
+          }
+        },
+        "page_H6YbXW": {
+          "type": "page",
+          "settings": {
+            "page": "shipping-countries",
+            "title": "Some page 2",
+            "description": "Description 2",
+            "image": "shopify:\/\/shop_images\/fertility-issues-miofolic.jpg",
+            "image_position": 0,
+            "button_url": "",
+            "button_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_V8YkXz",
+        "page_LH9G3n",
+        "page_jza4KT",
+        "page_H6YbXW"
+      ],
+      "settings": {
+        "clickable": true,
+        "show_title": true,
+        "title_font_size": "middle",
+        "content_align": "left",
+        "show_button": false,
+        "navigation_enabled": true,
+        "pagination_enabled": false,
+        "image_width": "full",
+        "images_height": "normal",
+        "slide_card": true,
+        "container_width": false,
+        "slider_align": "align_middle",
+        "slide_width": "310",
+        "slider_columns_desktop": 4,
+        "background_image": "",
+        "background_content": ""
+      }
+    },
+    "image_with_text_jdJWhJ": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_gqnAbG": {
+          "type": "heading",
+          "settings": {
+            "heading": "Get to Know Amaxa Bionica",
+            "heading_size": "h1"
+          }
+        },
+        "text_B4QHEj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We’re an independent, family-run British business – a name people have trusted for 50 years for safe, balanced and effective support. Our team brings together decades of experience, all with the goal of helping you to be at your best, day-after-day.<\/p>",
+            "text_style": "body"
+          }
+        },
+        "button_THJP6h": {
+          "type": "button",
+          "settings": {
+            "button_label": "Show more",
+            "button_link": "",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_gqnAbG",
+        "text_B4QHEj",
+        "button_THJP6h"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
+        "container_width": false,
+        "color_background": "#fff",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "button_type": "button--secondary",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "swiper_review_slider_Ct6beM": {
       "type": "swiper-review-slider",
       "blocks": {
@@ -205,73 +415,16 @@
         "slider_columns_desktop": 4,
         "background_content": ""
       }
-    },
-    "image_with_text_xLx3Yj": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_mjwQrA": {
-          "type": "heading",
-          "settings": {
-            "heading": "Supplements You Can Trust",
-            "heading_size": "h1"
-          }
-        },
-        "caption_nggmAx": {
-          "type": "caption",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/QA_100x_4862c22f-efc1-440b-8784-033e1e921978.webp",
-            "item_title": "Queen’s Award Winning",
-            "item_text": "<p>The only vitamin company to receive the Queen’s Award for Innovation TWICE.<\/p>"
-          }
-        },
-        "caption_hAx8hC": {
-          "type": "caption",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
-            "item_title": "50 Years of Innovation",
-            "item_text": "<p>We’ve been pushing the boundaries for 50 years to help you and your family be at your best.<br\/>Backed by science<\/p>"
-          }
-        },
-        "caption_f8fCyK": {
-          "type": "caption",
-          "settings": {
-            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
-            "item_title": "Backed by Science",
-            "item_text": "<p>No other UK vitamin company has such a diverse range of published research to support its products.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_mjwQrA",
-        "caption_nggmAx",
-        "caption_hAx8hC",
-        "caption_f8fCyK"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
-        "container_width": false,
-        "color_background": "#fff",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "image_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "button_type": "button--secondary",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 36,
-        "padding_bottom": 36
-      }
     }
   },
   "order": [
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
     "swiper_product_slider_RhcrGB",
-    "swiper_review_slider_Ct6beM",
-    "image_with_text_xLx3Yj"
+    "image_with_text_xLx3Yj",
+    "rich_text_cXmiwn",
+    "swiper_page_slider_rXTf9q",
+    "image_with_text_jdJWhJ",
+    "swiper_review_slider_Ct6beM"
   ]
 }
