@@ -320,14 +320,17 @@ cart-drawer-items {
   margin: 0;
 }
 
-.cart-drawer__footer > * + * {
+/*.cart-drawer__footer > * + * {
   margin-top: 1rem;
-}
+}*/
 
 .cart-drawer .totals {
   justify-content: space-between;
 }
 
+.cart-drawer .totals__total-value {
+  color: rgba(var(--color-foreground), 0.75);
+}
 .cart-drawer .price {
   line-height: 1;
 }
