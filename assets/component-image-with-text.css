@@ -17,6 +17,9 @@
   overflow: visible;
   border-radius: 0!important;
 }
+.image-with-text__media img {
+  border-radius: 0;
+}
 
 .image-with-text__media--small {
   height: 19.4rem;

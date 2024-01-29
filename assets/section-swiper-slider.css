@@ -69,7 +69,8 @@
 }
 
 .swiper .slider-content--title {
-  font-size: calc(var(--font-heading-scale) * 1.6rem);
+  /*font-size: calc(var(--font-heading-scale) * 1.6rem);*/
+  font-size: 16px;
   font-weight: 500;
   color: var(--title-color-primary);
 }
@@ -88,7 +89,7 @@
 }
 
 .swiper-slide--content {
-  padding: 0 var(--offset-normal) var(--offset-normal);
+  padding: var(--offset-small) var(--offset-normal) var(--offset-normal);
 }
 
 .swiper-slide--content.padding-normal {
