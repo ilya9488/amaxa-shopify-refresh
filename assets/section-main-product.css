@@ -83,6 +83,7 @@
   .product__media-wrapper media-gallery {
     max-width: 400px;
     margin-inline: auto;
+    padding-top: 20px;
   }
 }
 /* Dynamic checkout */
