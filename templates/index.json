@@ -252,8 +252,8 @@
       "settings": {
         "clickable": true,
         "show_title": true,
-        "title_font_size": "normal",
-        "content_align": "center",
+        "title_font_size": "middle",
+        "content_align": "left",
         "show_button": false,
         "navigation_enabled": true,
         "pagination_enabled": false,
@@ -263,7 +263,7 @@
         "container_width": false,
         "slider_align": "align_middle",
         "slide_width": "310",
-        "slider_columns_desktop": 3,
+        "slider_columns_desktop": 4,
         "background_image": "",
         "background_content": ""
       }
