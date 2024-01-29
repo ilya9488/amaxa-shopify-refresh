@@ -201,7 +201,7 @@
             "title": "",
             "description": "Desctiption",
             "image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
-            "image_position": 0,
+            "image_position": 90,
             "button_url": "",
             "button_label": ""
           }
@@ -213,7 +213,7 @@
             "title": "",
             "description": "Desctiption",
             "image": "shopify:\/\/shop_images\/index-page_1.jpg",
-            "image_position": 0,
+            "image_position": 42,
             "button_url": "",
             "button_label": ""
           }
@@ -225,7 +225,7 @@
             "title": "",
             "description": "Desctiption",
             "image": "shopify:\/\/shop_images\/c71ae2a8d242a6d_370x260_ee9098a6-8d1d-4b34-b04d-109267ac3c45.jpg",
-            "image_position": 0,
+            "image_position": 38,
             "button_url": "",
             "button_label": ""
           }
@@ -237,7 +237,7 @@
             "title": "Some page 2",
             "description": "Description 2",
             "image": "shopify:\/\/shop_images\/fertility-issues-miofolic.jpg",
-            "image_position": 0,
+            "image_position": 14,
             "button_url": "",
             "button_label": ""
           }
