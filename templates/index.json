@@ -318,6 +318,30 @@
         "padding_bottom": 36
       }
     },
+    "swiper_product_slider_MYUWVp": {
+      "type": "swiper-product-slider",
+      "settings": {
+        "collections": "frontpage",
+        "clickable": true,
+        "show_price": true,
+        "title_font_size": "small",
+        "content_align": "center",
+        "show_button": false,
+        "button_label": "",
+        "show_description": false,
+        "content_offset_top_none": true,
+        "navigation_enabled": true,
+        "pagination_enabled": false,
+        "image_container_height": "normal",
+        "slide_card": true,
+        "container_width": true,
+        "slider_align": "align_middle",
+        "slide_width": "310",
+        "slider_columns_desktop": 4,
+        "background_image": "",
+        "background_content": ""
+      }
+    },
     "swiper_review_slider_Ct6beM": {
       "type": "swiper-review-slider",
       "blocks": {
@@ -415,6 +439,36 @@
         "slider_columns_desktop": 4,
         "background_content": ""
       }
+    },
+    "rich_text_XAdfny": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_c9fEAQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Our Products",
+            "heading_size": "h1"
+          }
+        },
+        "text_AKPyxX": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Every age. Every lifestyle. We help everyone be at their best.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_c9fEAQ",
+        "text_AKPyxX"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -425,6 +479,8 @@
     "rich_text_cXmiwn",
     "swiper_page_slider_rXTf9q",
     "image_with_text_jdJWhJ",
-    "swiper_review_slider_Ct6beM"
+    "swiper_product_slider_MYUWVp",
+    "swiper_review_slider_Ct6beM",
+    "rich_text_XAdfny"
   ]
 }
