@@ -328,8 +328,11 @@ cart-drawer-items {
   justify-content: space-between;
 }
 
+.cart-drawer .totals > h2 {
+  color: rgba(var(--color-foreground), .75);
+}
 .cart-drawer .totals__total-value {
-  color: rgba(var(--color-foreground), 0.75);
+  color: rgba(var(--color-foreground), 1);
 }
 .cart-drawer .price {
   line-height: 1;
