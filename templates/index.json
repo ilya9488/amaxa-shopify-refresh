@@ -354,7 +354,7 @@
         "collections": "frontpage",
         "clickable": true,
         "show_price": true,
-        "title_font_size": "small",
+        "title_font_size": "normal",
         "content_align": "center",
         "show_button": false,
         "button_label": "",
