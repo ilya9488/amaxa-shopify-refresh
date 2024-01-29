@@ -138,9 +138,9 @@
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#f4f8ff",
+          "background": "#ffffff",
           "background_gradient": "",
-          "text": "#0e1b4d",
+          "text": "#2e2a39",
           "button": "#4770db",
           "button_label": "#eff0f5",
           "secondary_button_label": "#0e1b4d",
