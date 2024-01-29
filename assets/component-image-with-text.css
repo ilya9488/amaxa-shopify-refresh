@@ -29,6 +29,52 @@
   height: 43.5rem;
 }
 
+.image-with-text .list-options  {
+  list-style: none;
+}
+
+.image-with-text .list-options {
+  padding-left: 0;
+}
+.image-with-text__content {
+  padding-left: 56px;
+}
+.image-with-text .list-options p {
+  margin: 0;
+}
+.image-with-text .list-options-item {
+  margin-bottom: var(--offset-big);
+  position: relative;
+}
+.image-with-text .list-options-item:last-child {
+  margin-bottom: 0;
+}
+.image-with-text .list-options-item.is-image {
+    padding-left: 56px;
+}
+
+.image-with-text .list-options-item--img {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 5px;
+  left: 0;
+}
+.image-with-text .list-options img {
+  max-width: 100%;
+}
+
+.image-with-text .list-options-item--title {
+  font-weight: 600;
+  margin-bottom: 1px;
+  font-size: calc(var(--font-heading-scale) * 2rem);
+}
+
+.image-with-text .list-options-item--text {
+  font-weight: 500;
+  max-width: 525px;
+}
+
 @media screen and (min-width: 750px) {
   .image-with-text__media--small {
     height: 31.4rem;
@@ -104,21 +150,18 @@
 
 .image-with-text:not(.image-with-text--overlap) .image-with-text__media-item:after {
   border-radius: var(--media-radius);
-  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--media-shadow-opacity));
+  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius) rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
 .image-with-text:not(.image-with-text--overlap) .image-with-text__text-item:after {
   border-radius: var(--text-boxes-radius);
-  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
-    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset) var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
 
 .image-with-text .image-with-text__media-item > * {
   border-radius: var(--media-radius);
   overflow: hidden;
-  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius)
-    rgba(var(--color-shadow), var(--media-shadow-opacity));
+  box-shadow: var(--media-shadow-horizontal-offset) var(--media-shadow-vertical-offset) var(--media-shadow-blur-radius) rgba(var(--color-shadow), var(--media-shadow-opacity));
 }
 
 .image-with-text .global-media-settings {
@@ -128,8 +171,7 @@
 .image-with-text .image-with-text__text-item > * {
   border-radius: var(--text-boxes-radius);
   overflow: hidden;
-  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
-    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset) var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
 }
 
 .image-with-text:not(.image-with-text--overlap) .image-with-text__media-item > *,
@@ -242,68 +284,68 @@
   }
 
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__media-item:after,
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__media-item:after,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__media,
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__media,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__media
-    img,
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__media
+  img,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__media
-    .placeholder-svg,
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__media
+  .placeholder-svg,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__text-item:after,
+  .image-with-text__grid--reverse
+  .image-with-text__text-item:after,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__content,
+  .image-with-text__grid--reverse
+  .image-with-text__content,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__content:after {
+  .image-with-text__grid--reverse
+  .image-with-text__content:after {
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
   }
 
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__text-item:after,
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__text-item:after,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__content,
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__content,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__content:after,
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__content:after,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__media-item:after,
+  .image-with-text__grid--reverse
+  .image-with-text__media-item:after,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__media,
+  .image-with-text__grid--reverse
+  .image-with-text__media,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__media
-    img,
+  .image-with-text__grid--reverse
+  .image-with-text__media
+  img,
   .image-with-text.collapse-corners:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__media
-    .placeholder-svg {
+  .image-with-text__grid--reverse
+  .image-with-text__media
+  .placeholder-svg {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0;
   }
 
   .image-with-text.collapse-borders:not(.image-with-text--overlap)
-    .grid:not(.image-with-text__grid--reverse)
-    .image-with-text__content {
+  .grid:not(.image-with-text__grid--reverse)
+  .image-with-text__content {
     border-left: 0;
   }
 
   .image-with-text.collapse-borders:not(.image-with-text--overlap)
-    .image-with-text__grid--reverse
-    .image-with-text__content {
+  .image-with-text__grid--reverse
+  .image-with-text__content {
     border-right: 0;
   }
 }
@@ -325,8 +367,7 @@
 
 .image-with-text__content {
   border-radius: var(--text-boxes-radius);
-  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset)
-    var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
+  box-shadow: var(--text-boxes-shadow-horizontal-offset) var(--text-boxes-shadow-vertical-offset) var(--text-boxes-shadow-blur-radius) rgba(var(--color-shadow), var(--text-boxes-shadow-opacity));
   word-break: break-word;
 }
 
@@ -381,14 +422,14 @@
 
 @media screen and (min-width: 750px) {
   .collapse-padding
-    .image-with-text__grid:not(.image-with-text__grid--reverse)
-    .image-with-text__content:not(.image-with-text__content--desktop-center) {
+  .image-with-text__grid:not(.image-with-text__grid--reverse)
+  .image-with-text__content:not(.image-with-text__content--desktop-center) {
     padding-right: 0;
   }
 
   .collapse-padding
-    .image-with-text__grid--reverse
-    .image-with-text__content:not(.image-with-text__content--desktop-center) {
+  .image-with-text__grid--reverse
+  .image-with-text__content:not(.image-with-text__content--desktop-center) {
     padding-left: 0;
   }
 }
