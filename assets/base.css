@@ -23,9 +23,11 @@
   --color-secendary: #F6F6F6;
 
   --breckpoint-xl: 1200px;
+  --breckpoint-xls: 1100px;
   --breckpoint-lg: 992px;
   --breckpoint-md: 768px;
   --breckpoint-xs: 576px;
+  --breckpoint-xsm: 460px;
   --breckpoint-sm: 375px;
 }
 

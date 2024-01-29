@@ -76,7 +76,8 @@
 
   .product--medium:not(.product--no-media) .product__info-wrapper,
   .product--small:not(.product--no-media) .product__media-wrapper {
-    max-width: 45%;
+    /*max-width: 45%;*/
+    max-width: 400px;
     width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
   }
 }
@@ -163,11 +164,31 @@
   flex: 0 0 100%;
   padding: 0;
   margin: 0 0 1.2rem 0;
-  max-width: 44rem;
+  max-width: 59rem;
   min-width: fit-content;
   border: none;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+@media screen and (min-width: var(--breckpoint-xls)) {
+  .product-form__input {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: var(--breckpoint-md)) {
+  .product-form__input {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+@media screen and (max-width: var(--breckpoint-xs)) {
+  .product-form__input {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media screen and (max-width: var(--breckpoint-sm)) {
+  .product-form__input {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 variant-radios,
