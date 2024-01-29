@@ -170,7 +170,7 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-@media screen and (min-width: var(--breckpoint-xls)) {
+@media screen and (max-width: var(--breckpoint-xls)) {
   .product-form__input {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
