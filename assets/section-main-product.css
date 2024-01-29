@@ -170,22 +170,22 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
-@media screen and (max-width: var(--breckpoint-xls)) {
+@media screen and (max-width: 1100px) {
   .product-form__input {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media screen and (max-width: var(--breckpoint-md)) {
+@media screen and (max-width: 768px) {
   .product-form__input {
     grid-template-columns: minmax(0, 1fr);
   }
 }
-@media screen and (max-width: var(--breckpoint-xs)) {
+@media screen and (max-width: 576px) {
   .product-form__input {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
-@media screen and (max-width: var(--breckpoint-sm)) {
+@media screen and (max-width: 375px) {
   .product-form__input {
     grid-template-columns: minmax(0, 1fr);
   }
