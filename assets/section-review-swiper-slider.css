@@ -43,7 +43,7 @@
   fill: #FABF3A;
 }
 .swiper-review-slider .swiper-slide--content {
-  padding-top: var(--offset-small);
+  padding-top: var(--offset-normal);
 }
 .swiper-review-slider .slider-content--title-desc {
   line-height: 1.2;
