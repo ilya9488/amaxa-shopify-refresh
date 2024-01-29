@@ -191,7 +191,9 @@ cart-drawer-items {
   flex: 1;
   padding-inline: var(--offset-normal);
 }
-
+.drawer__inner {
+  background-color: #ffffff;
+}
 @media screen and (max-height: 650px) {
   cart-drawer-items {
     overflow: visible;
