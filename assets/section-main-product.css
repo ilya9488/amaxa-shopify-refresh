@@ -161,9 +161,13 @@
   margin-right: 0.7rem;
   margin-top: 0.5rem;
 }
-.main-product {
+.product-main {
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+.quantity-container {
+  display: flex;
+  gap: var(--offset-normal);
 }
 /* Form Elements */
 .product-form__input {
