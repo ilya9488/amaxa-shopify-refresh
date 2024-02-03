@@ -161,7 +161,10 @@
   margin-right: 0.7rem;
   margin-top: 0.5rem;
 }
-
+.main-product {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
 /* Form Elements */
 .product-form__input {
   flex: 0 0 100%;
