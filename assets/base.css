@@ -98,7 +98,11 @@
 }
 
 /* base */
-
+body {
+  font-family: Metropolis, Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 400
+}
 .no-js:not(html) {
   display: none !important;
 }
