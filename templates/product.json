@@ -3,23 +3,9 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text_tkKz8M": {
-          "type": "text",
-          "settings": {
-            "text": "UK's No.1 Pregnancy Brand",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
-          }
-        },
-        "text_nVHXwH": {
-          "type": "text",
-          "settings": {
-            "text": "12 sashe",
-            "text_style": "body"
           }
         },
         "description": {
@@ -57,9 +43,7 @@
         }
       },
       "block_order": [
-        "text_tkKz8M",
         "title",
-        "text_nVHXwH",
         "description",
         "rating",
         "variant_picker",
@@ -85,6 +69,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
