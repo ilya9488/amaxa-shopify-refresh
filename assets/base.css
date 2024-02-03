@@ -107,7 +107,7 @@ body {
   display: none !important;
 }
 .ds-none {
-  display: none;
+  display: none!important;
 }
 html.no-js .no-js:not(html) {
   display: block !important;
