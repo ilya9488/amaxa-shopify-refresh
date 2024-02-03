@@ -152,7 +152,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
         "container_width": false,
-        "color_background": "#fff",
+        "color_background": "#FAFAFA",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -302,7 +302,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
         "container_width": false,
-        "color_background": "#fff",
+        "color_background": "#FAFAFA",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
