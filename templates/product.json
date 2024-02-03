@@ -8,13 +8,13 @@
           "settings": {
           }
         },
-        "rating": {
-          "type": "rating",
+        "description": {
+          "type": "description",
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "rating": {
+          "type": "rating",
           "settings": {
           }
         },
@@ -29,16 +29,16 @@
           "settings": {
           }
         },
+        "price": {
+          "type": "price",
+          "settings": {
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
           }
         },
         "share": {
@@ -50,12 +50,12 @@
       },
       "block_order": [
         "title",
+        "description",
         "rating",
-        "price",
         "variant_picker",
         "quantity_selector",
+        "price",
         "buy_buttons",
-        "description",
         "share"
       ],
       "settings": {
