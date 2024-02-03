@@ -3,6 +3,13 @@
     "main": {
       "type": "main-product",
       "blocks": {
+        "text_tkKz8M": {
+          "type": "text",
+          "settings": {
+            "text": "UK's No.1 Pregnancy Brand",
+            "text_style": "body"
+          }
+        },
         "title": {
           "type": "title",
           "settings": {
@@ -49,6 +56,7 @@
         }
       },
       "block_order": [
+        "text_tkKz8M",
         "title",
         "description",
         "rating",
