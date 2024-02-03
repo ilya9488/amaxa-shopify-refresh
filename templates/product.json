@@ -15,6 +15,13 @@
           "settings": {
           }
         },
+        "text_nVHXwH": {
+          "type": "text",
+          "settings": {
+            "text": "12 sashe",
+            "text_style": "body"
+          }
+        },
         "description": {
           "type": "description",
           "settings": {
@@ -47,24 +54,18 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": true
           }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
-          }
         }
       },
       "block_order": [
         "text_tkKz8M",
         "title",
+        "text_nVHXwH",
         "description",
         "rating",
         "variant_picker",
         "quantity_selector",
         "price",
-        "buy_buttons",
-        "share"
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
