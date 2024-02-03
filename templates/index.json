@@ -9,7 +9,7 @@
             "image": "shopify:\/\/shop_images\/Woman.jpg",
             "image_position": 78,
             "button_label": "Women",
-            "button_url": ""
+            "button_url": "shopify:\/\/collections\/for-women"
           }
         },
         "page_kU984m": {
@@ -18,7 +18,7 @@
             "image": "shopify:\/\/shop_images\/Men.jpg",
             "image_position": 50,
             "button_label": "Men",
-            "button_url": ""
+            "button_url": "shopify:\/\/collections\/for-men"
           }
         },
         "page_bYGkTV": {
@@ -27,7 +27,7 @@
             "image": "shopify:\/\/shop_images\/Kids.jpg",
             "image_position": 50,
             "button_label": "Kids",
-            "button_url": ""
+            "button_url": "shopify:\/\/collections\/for-kids"
           }
         }
       },

@@ -3,13 +3,6 @@
     "main": {
       "type": "main-product",
       "blocks": {
-        "text_tkKz8M": {
-          "type": "text",
-          "settings": {
-            "text": "UK's No.1 Pregnancy Brand",
-            "text_style": "body"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -31,40 +24,32 @@
             "picker_type": "button"
           }
         },
-        "quantity_selector": {
-          "type": "quantity_selector",
+        "price": {
+          "type": "price",
           "settings": {
           }
         },
-        "price": {
-          "type": "price",
+        "quantity_selector": {
+          "type": "quantity_selector",
           "settings": {
           }
         },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
-            "show_dynamic_checkout": true,
-            "show_gift_card_recipient": true
-          }
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share"
+            "show_dynamic_checkout": false,
+            "show_gift_card_recipient": false
           }
         }
       },
       "block_order": [
-        "text_tkKz8M",
         "title",
         "description",
         "rating",
         "variant_picker",
-        "quantity_selector",
         "price",
-        "buy_buttons",
-        "share"
+        "quantity_selector",
+        "buy_buttons"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -84,6 +69,7 @@
     },
     "related-products": {
       "type": "related-products",
+      "disabled": true,
       "settings": {
         "heading": "You may also like",
         "heading_size": "h2",
