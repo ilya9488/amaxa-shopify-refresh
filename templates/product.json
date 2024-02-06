@@ -88,6 +88,7 @@
     },
     "pagefly_section_LjrQUV": {
       "type": "pagefly-section",
+      "disabled": true,
       "settings": {
         "section_id": "pf-78973895"
       }
