@@ -63,6 +63,24 @@
             "delivery_title": "Free UK Delivery",
             "delivery_sub_title": "on this item"
           }
+        },
+        "collapsible_tab_DNNwxf": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "PRODUCT DETAILS",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.accordion_details | metafield_tag }}",
+            "page": ""
+          }
+        },
+        "collapsible_tab_NiDBEb": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "REWARDS, DELIVERY & RETURNS",
+            "icon": "none",
+            "content": "{{ product.metafields.custom.accordion_delivery_returns | metafield_tag }}",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -75,7 +93,9 @@
         "price",
         "quantity_selector",
         "buy_buttons",
-        "discount_delivery_4iJbxL"
+        "discount_delivery_4iJbxL",
+        "collapsible_tab_DNNwxf",
+        "collapsible_tab_NiDBEb"
       ],
       "settings": {
         "color_page": "#ffffff",
