@@ -98,7 +98,7 @@
 .card--card .card__inner .card__media {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
-  box-shadow: 1.53846px 1.53846px 3.07692px rgba(19, 67, 150, 0.15);
+  /* box-shadow: 1.53846px 1.53846px 3.07692px rgba(19, 67, 150, 0.15); */
 }
 
 .card--standard.card--text {
