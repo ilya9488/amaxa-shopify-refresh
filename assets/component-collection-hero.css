@@ -1,6 +1,7 @@
 .collection-hero__inner {
   display: flex;
   flex-direction: column;
+  
 }
 
 .collection-hero--with-image .collection-hero__inner {
@@ -59,6 +60,11 @@
 
   .collection-hero--with-image .collection-hero__description {
     max-width: 100%;
+    /* text-align: center; */
+  }
+  .collection-hero__description .__top_banner_title,
+  .collection-hero__description {
+    text-align: center;
   }
 }
 
@@ -80,19 +86,20 @@
 @media screen and (max-width: 749px) {
   .collection-hero__image-container {
     height: 20rem;
+    border-radius: 0;
   }
 }
 
 @media screen and (min-width: 750px) {
   .collection-hero--with-image .collection-hero__text-wrapper {
     padding: 4rem 2rem 4rem 0;
-    flex-basis: 50%;
   }
 
   .collection-hero__image-container {
     align-self: stretch;
     flex: 1 0 50%;
-    margin-left: 3rem;
     min-height: 20rem;
+    aspect-ratio: 16/5;
+    border-radius: 0;
   }
 }

@@ -162,17 +162,23 @@ quick-add-modal .product__column-sticky {
   top: 0;
   position: relative;
 }
+.product-form__input input[type=radio]+label {
+  font-size: 13px !important;
+  padding: 9px !important;
+  height: fit-content;
+}
 
 @media screen and (min-width: 750px) {
-  quick-add-modal .product:not(.product--no-media) .product__media-wrapper {
+  /* quick-add-modal .product:not(.product--no-media) .product__media-wrapper {
     max-width: 45%;
     width: calc(45% - var(--grid-desktop-horizontal-spacing) / 2);
-  }
+  } */
 
   quick-add-modal .product:not(.product--no-media) .product__info-wrapper {
-    padding-left: 4rem;
+    /* padding-left: 4rem;
     max-width: 54%;
-    width: calc(54% - var(--grid-desktop-horizontal-spacing) / 2);
+    width: calc(54% - var(--grid-desktop-horizontal-spacing) / 2); */
+    max-width: 100%;
   }
 
   quick-add-modal .product--columns .product__media-item:not(.product__media-item--single):not(:only-child) {
@@ -210,9 +216,15 @@ quick-add-modal .product-form__buttons {
 }
 
 .quick-add__submit {
-  padding: 0.8rem;
+  /* padding: 0.8rem;
   min-width: 100%;
-  box-sizing: border-box;
+  box-sizing: border-box; */
+  margin: 0 auto;
+  width: fit-content;
+  padding: 5px 10px;
+  height: auto;
+  min-height: inherit;
+
 }
 
 quick-add-modal .product-media-container.constrain-height {

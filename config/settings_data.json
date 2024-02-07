@@ -132,9 +132,21 @@
         }
       }
     },
-    "content_for_index": [
-
-    ],
+    "content_for_index": [],
+    "blocks": {
+      "9537345080411485756": {
+        "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/Collection_star\/0cf5caa0-e138-46b8-999b-520d16633e4c",
+        "disabled": false,
+        "settings": {
+          "collection_target_class": "",
+          "hide_name": false,
+          "hide_email": false,
+          "hide_title": false,
+          "hide_description": false,
+          "hide_image": false
+        }
+      }
+    },
     "color_schemes": {
       "background-1": {
         "settings": {
@@ -253,9 +265,9 @@
           }
         }
       },
-      "type_header_font": "archivo_n7",
+      "type_header_font": "",
       "heading_scale": 110,
-      "type_body_font": "questrial_n4",
+      "type_body_font": "",
       "body_scale": 105,
       "page_width": 1200,
       "spacing_sections": 0,
@@ -384,5 +396,10 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      ".collapsible-content-wrapper-narrow {max-width: var(--page-width); padding-left: 5rem; padding-right: 5rem;}"
+    ]
   }
 }

@@ -3,6 +3,11 @@
   height: 100%;
   position: relative;
   text-decoration: none;
+  border: 1px solid #f6f6f6;
+  border-radius: 6px;
+}
+.card-wrapper:hover {
+  border: 1px solid transparent;
 }
 
 .card {
@@ -93,6 +98,7 @@
 .card--card .card__inner .card__media {
   border-bottom-right-radius: 0;
   border-bottom-left-radius: 0;
+  box-shadow: 1.53846px 1.53846px 3.07692px rgba(19, 67, 150, 0.15);
 }
 
 .card--standard.card--text {
@@ -147,6 +153,10 @@
 .card__information {
   grid-row-start: 2;
   padding: 1.3rem 1rem;
+  text-align: center;
+}
+.card__information * {
+  text-align: center;
 }
 
 .card:not(.ratio)>.card__content {
@@ -199,6 +209,8 @@
 .card__heading {
   margin-top: 0;
   margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
 }
 
 .card__heading:last-child {

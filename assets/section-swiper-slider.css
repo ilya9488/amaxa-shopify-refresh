@@ -106,6 +106,7 @@
 
 .slider-container {
   position: relative;
+  width: 87%;
 }
 
 .slider-container .swiper-arrow {
