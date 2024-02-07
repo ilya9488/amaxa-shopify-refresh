@@ -169,6 +169,7 @@
       "block_order": [
         "product_review_myappgurus_form_9HmJAX"
       ],
+      "disabled": true,
       "settings": {
         "include_margins": true
       }

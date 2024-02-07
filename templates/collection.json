@@ -12,6 +12,7 @@
     },
     "product-cards": {
       "type": "product-cards",
+      "disabled": true,
       "settings": {
         "collections": "frontpage",
         "clickable": true,
