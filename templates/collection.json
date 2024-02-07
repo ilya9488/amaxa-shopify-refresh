@@ -1,1 +1,130 @@
-{"sections":{"banner":{"type":"main-collection-banner","settings":{"show_collection_description":true,"show_collection_image":false,"color_scheme":"background-1"}},"product-grid":{"type":"main-collection-product-grid","settings":{"products_per_page":24,"columns_desktop":4,"color_scheme":"background-1","image_ratio":"portrait","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"enable_quick_add":true,"enable_filtering":true,"filter_type":"horizontal","enable_sorting":true,"columns_mobile":"2","padding_top":0,"padding_bottom":60}}},"order":["banner","product-grid"]}
+{
+  "sections": {
+    "banner": {
+      "type": "main-collection-banner",
+      "settings": {
+        "show_collection_name": false,
+        "show_collection_description": true,
+        "show_collection_image": true,
+        "color_scheme": "background-1",
+        "image_modile": true
+      }
+    },
+    "product-cards": {
+      "type": "product-cards",
+      "settings": {
+        "collections": "frontpage",
+        "clickable": true,
+        "show_price": true,
+        "title_font_size": "small",
+        "content_align": "center",
+        "show_button": false,
+        "button_label": "",
+        "show_description": false,
+        "content_offset_top_none": true,
+        "navigation_enabled": true,
+        "pagination_enabled": false,
+        "image_container_height": "normal",
+        "slide_card": true,
+        "container_width": true,
+        "slider_align": "align_middle",
+        "slide_width": "310",
+        "slider_columns_desktop": 4,
+        "background_image": "",
+        "background_content": ""
+      }
+    },
+    "product-grid": {
+      "type": "main-collection-product-grid",
+      "settings": {
+        "products_per_page": 24,
+        "columns_desktop": 5,
+        "color_scheme": "background-1",
+        "image_ratio": "portrait",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": true,
+        "enable_filtering": true,
+        "filter_type": "horizontal",
+        "enable_sorting": true,
+        "columns_mobile": "2",
+        "padding_top": 0,
+        "padding_bottom": 60
+      }
+    },
+    "accordion_kid_xVXiKD": {
+      "type": "accordion-kid",
+      "blocks": {
+        "collapsible_row_UqpRmC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.faq_question_1.value }}",
+            "icon": "none",
+            "row_content": "{{ collection.metafields.custom.faq_answer_1 | metafield_tag }}"
+          }
+        },
+        "collapsible_row_YBr8PB": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.faq_question_2.value }}",
+            "icon": "none",
+            "row_content": "{{ collection.metafields.custom.faq_answer_2 | metafield_tag }}"
+          }
+        },
+        "collapsible_row_XLjyHD": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.faq_question_3.value }}",
+            "icon": "none",
+            "row_content": "{{ collection.metafields.custom.faq_answer_3 | metafield_tag }}"
+          }
+        },
+        "collapsible_row_pVixMe": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.faq_question_4.value }}",
+            "icon": "none",
+            "row_content": "{{ collection.metafields.custom.faq_answer_4 | metafield_tag }}"
+          }
+        },
+        "collapsible_row_LVNgyd": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "{{ collection.metafields.custom.faq_question_5.value }}",
+            "icon": "none",
+            "row_content": "{{ collection.metafields.custom.faq_answer_5 | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_UqpRmC",
+        "collapsible_row_YBr8PB",
+        "collapsible_row_XLjyHD",
+        "collapsible_row_pVixMe",
+        "collapsible_row_LVNgyd"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "{{ collection.metafields.custom.faq_title.value }}",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    }
+  },
+  "order": [
+    "banner",
+    "product-cards",
+    "product-grid",
+    "accordion_kid_xVXiKD"
+  ]
+}

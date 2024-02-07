@@ -155,6 +155,10 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
+
+          {% comment %} <span>{{ product.metafields.custom.tablets }}</span> {% endcomment %}
+          <span class="card__information-tablet">{{ card_product.metafields.custom.tablets }}</span>
+
           <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
@@ -286,7 +290,7 @@
                   >
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
-                        {{ 'products.product.add_to_cart' | t }}
+                        {{ 'products.product.buy_now' | t }}
                       {%- else -%}
                         {{ 'products.product.sold_out' | t }}
                       {%- endif -%}

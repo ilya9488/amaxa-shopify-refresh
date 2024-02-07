@@ -1,0 +1,110 @@
+{{ 'faq-tabs.css' | asset_url | stylesheet_tag }}
+
+<section class="page-width faq-tabs">
+  <ul class="tabs">
+    <li class="active">
+      <span class="reviews-btn" style="color: {{ section.settings.tabs_text_color }}">
+        {{- section.settings.reviews -}}
+      </span>
+    </li>
+    <li>
+      <span style="color: {{ product.metafields.custom.tabs_title_color }}">
+        {{- section.settings.nutritional_information -}}
+      </span>
+    </li>
+    <li>
+      <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
+    </li>
+    <li>
+      <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.faqs }}</span>
+    </li>
+  </ul>
+  <div class="tabs-content">
+    <div class="tabs-panel active" data-index="0">
+      <div class="wrap"></div>
+    </div>
+    <div class="tabs-panel" data-index="1">
+      <div class="wrap">
+        {%- if product.metafields.custom.tabs_panel_2 != blank -%}
+          {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="tabs-panel" data-index="2">
+      <div class="wrap">
+        {%- if product.metafields.custom.tabs_panel_3 != blank -%}
+          {{ product.metafields.custom.tabs_panel_3 | metafield_tag }}
+        {%- endif -%}
+      </div>
+    </div>
+    <div class="tabs-panel" data-index="3">
+      <div class="wrap">
+        {%- if product.metafields.custom.tabs_panel_4 != blank -%}
+          {{ product.metafields.custom.tabs_panel_4 }}
+        {%- endif -%}
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const tabLinks = document.querySelectorAll('.tabs span');
+    const tabPanels = document.querySelectorAll('.tabs-panel');
+    {% comment %} const reviewSlider = document.querySelector('.review-slider'); {% endcomment %}
+    const reviewSlider = document.querySelector('#mag-product-review');
+
+    for (let el of tabLinks) {
+      el.addEventListener('click', (e) => {
+        if (reviewSlider) {
+          reviewSlider.style.display = 'none';
+          if (el.classList.contains('reviews-btn')) {
+            reviewSlider.style.display = 'block';
+          }
+        }
+
+        document.querySelector('.tabs li.active').classList.remove('active');
+        document.querySelector('.tabs-panel.active').classList.remove('active');
+        const parentListItem = el.parentElement;
+        parentListItem.classList.add('active');
+        const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+        const panel = [...tabPanels].filter((el) => el.getAttribute('data-index') == index);
+        panel[0].classList.add('active');
+      });
+    }
+    new Accordion('.accordion-container');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Tabs product",
+  "class": "product-tabs-wrapper",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "reviews",
+      "label": "Reviews"
+    },
+    {
+      "type": "text",
+      "id": "nutritional_information",
+      "label": "Nutritional information"
+    },
+    {
+      "type": "text",
+      "id": "directions",
+      "label": "Directions"
+    },
+    {
+      "type": "text",
+      "id": "faqs",
+      "label": "FAQs"
+    }
+  ]
+}
+{% endschema %}

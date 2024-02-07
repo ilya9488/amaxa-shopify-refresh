@@ -239,9 +239,6 @@
         font-size: 1.5rem;
         letter-spacing: 0.06rem;
         line-height: calc(1 + 0.8 / var(--font-body-scale));
-        font-family: var(--font-body-family);
-        font-style: var(--font-body-style);
-        font-weight: var(--font-body-weight);
       }
 
       @media screen and (min-width: 750px) {
@@ -250,11 +247,12 @@
         }
       }
     {% endstyle %}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
     {{ 'base.css' | asset_url | stylesheet_tag }}
     {{ 'section-swiper-slider.css' | asset_url | stylesheet_tag }}
     {{ 'custom.css' | asset_url | stylesheet_tag }}
+    {{ 'metropolis.css' | asset_url | stylesheet_tag }}
 
     {%- unless settings.type_body_font.system? -%}
       <link rel="preload" as="font" href="{{ settings.type_body_font | font_url }}" type="font/woff2" crossorigin>
@@ -276,7 +274,12 @@
         onload="this.media='all'"
       >
     {%- endif -%}
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer" defer="defer"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+      defer="defer"
+    ></script>
 
     <script>
       document.documentElement.className = document.documentElement.className.replace('no-js', 'js');
@@ -352,6 +355,9 @@
     {%- if settings.predictive_search_enabled -%}
       <script src="{{ 'predictive-search.js' | asset_url }}" defer="defer"></script>
     {%- endif -%}
+
+    <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.0/dist/accordion.min.css">
+    <script src="https://unpkg.com/accordion-js@3.1.0/dist/accordion.min.js" defer="defer"></script>
 
     <script src="{{ 'swiper-slider.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>

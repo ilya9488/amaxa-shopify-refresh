@@ -107,16 +107,12 @@
 </div>
 
 <script>
-  let accordionTitle = document.querySelectorAll(".accordion__title");
+  let accordionTitle = document.querySelectorAll('.accordion__title');
   accordionTitle.forEach((item) => {
     if (item.textContent.length == 0) {
-      item.parentNode.parentNode.parentNode.style.display = "none";
+      item.parentNode.parentNode.parentNode.style.display = 'none';
     }
   });
-
-
-
-  {% comment %} console.log('test'); {% endcomment %}
 </script>
 
 {% schema %}
