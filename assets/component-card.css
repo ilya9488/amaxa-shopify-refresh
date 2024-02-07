@@ -3,12 +3,12 @@
   height: 100%;
   position: relative;
   text-decoration: none;
-  border: 1px solid #f6f6f6;
-  border-radius: 6px;
+  /* border: 1px solid #f6f6f6;
+  border-radius: 6px; */
 }
-.card-wrapper:hover {
+/* .card-wrapper:hover {
   border: 1px solid transparent;
-}
+} */
 
 .card {
   text-decoration: none;
