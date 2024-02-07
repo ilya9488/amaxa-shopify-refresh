@@ -132,7 +132,9 @@
         }
       }
     },
-    "content_for_index": [],
+    "content_for_index": [
+
+    ],
     "blocks": {
       "9537345080411485756": {
         "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/Collection_star\/0cf5caa0-e138-46b8-999b-520d16633e4c",

@@ -3,11 +3,9 @@
     "banner": {
       "type": "main-collection-banner",
       "settings": {
-        "show_collection_name": false,
         "show_collection_description": true,
         "show_collection_image": true,
-        "color_scheme": "background-1",
-        "image_modile": true
+        "color_scheme": "background-1"
       }
     },
     "product-cards": {
