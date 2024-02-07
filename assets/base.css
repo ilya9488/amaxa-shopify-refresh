@@ -949,9 +949,12 @@ summary::-webkit-details-marker {
   flex-grow: 1;
   flex-shrink: 0;
 }
+.collection .grid__item {
+  background-color: #fff;
+  box-shadow: 0 0 2.5rem #0000000d;
+}
 
-background-color: #fff;
-box-shadow: 0 0 2.5rem #0000000d;
+
 
 @media screen and (min-width: 750px) {
   .grid__item {
