@@ -134,17 +134,40 @@
         "padding_bottom": 60
       }
     },
-    "pagefly_section_LjrQUV": {
-      "type": "pagefly-section",
-      "disabled": true,
+    "1707311986fd283435": {
+      "type": "apps",
+      "blocks": {
+        "product_review_myappgurus_form_9HmJAX": {
+          "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/Form\/0cf5caa0-e138-46b8-999b-520d16633e4c",
+          "settings": {
+            "block_heading": "",
+            "rating": "",
+            "no_rating": "",
+            "subtitle1": "",
+            "subtitle2": "",
+            "review_btn": "",
+            "form_heading": "",
+            "name_label": "",
+            "email_label": "",
+            "review_title_label": "",
+            "review_description_label": "",
+            "ratings_label": "",
+            "review_image_label": "",
+            "submit_btn_label": ""
+          }
+        }
+      },
+      "block_order": [
+        "product_review_myappgurus_form_9HmJAX"
+      ],
       "settings": {
-        "section_id": "pf-78973895"
+        "include_margins": true
       }
     }
   },
   "order": [
     "main",
     "related-products",
-    "pagefly_section_LjrQUV"
+    "1707311986fd283435"
   ]
 }
