@@ -42,7 +42,7 @@
         "quantity_selector": {
           "type": "quantity_selector",
           "settings": {
-            "buy_button_color": "#4770DB"
+            "buy_button_color": "#4770db"
           }
         },
         "buy_buttons": {
@@ -55,11 +55,13 @@
         "discount_delivery_4iJbxL": {
           "type": "discount_delivery",
           "settings": {
-            "color": "#000000",
-            "discount_title": "",
-            "discount_sub_title": "",
-            "delivery_title": "",
-            "delivery_sub_title": ""
+            "color": "#077d4d",
+            "discount_image": "shopify:\/\/shop_images\/Screenshot_from_2024-02-06_08-26-53.png",
+            "discount_title": "3 for 2",
+            "discount_sub_title": "On All Products",
+            "delivery_image": "shopify:\/\/shop_images\/Screenshot_from_2024-02-06_08-27-02.png",
+            "delivery_title": "Free UK Delivery",
+            "delivery_sub_title": "on this item"
           }
         }
       },
