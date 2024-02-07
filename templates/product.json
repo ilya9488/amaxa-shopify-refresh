@@ -134,6 +134,15 @@
         "padding_bottom": 60
       }
     },
+    "tabs-for-dpp": {
+      "type": "tabs-for-dpp",
+      "settings": {
+        "reviews": "REVIEWS",
+        "nutritional_information": "NUTRITIONAL INFORMATION",
+        "directions": "DIRECTIONS",
+        "faqs": "FAQs"
+      }
+    },
     "1707311986fd283435": {
       "type": "apps",
       "blocks": {
@@ -168,6 +177,7 @@
   "order": [
     "main",
     "related-products",
+    "tabs-for-dpp",
     "1707311986fd283435"
   ]
 }
