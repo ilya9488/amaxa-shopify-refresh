@@ -342,6 +342,9 @@ fieldset.product-form__input .form__label {
 .product-form__submit span {
   color: white;
 }
+.product-form__submit:hover span {
+  color: var(--color-primary);
+}
 
 .no-js .product-form__submit.button--secondary {
   --color-button: inherit;
