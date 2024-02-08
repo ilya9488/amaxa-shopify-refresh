@@ -333,8 +333,14 @@
       "
       style="--ratio-percent: 100%;"
     >
+      {% comment %}
+        <div
+          class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
+          style="--ratio-percent: 100%;"
+        >
+      {% endcomment %}
       <div
-        class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
+        class="card__inner{% if settings.card_style == 'standard' %} color-{{ settings.card_color_scheme }} gradient{% endif %}"
         style="--ratio-percent: 100%;"
       >
         <div class="card__media">
