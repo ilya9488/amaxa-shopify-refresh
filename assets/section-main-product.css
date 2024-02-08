@@ -507,6 +507,7 @@ a.product__text {
 }
 .product__description ul li:before {
   content: "-   ";
+  margin-right: 11px;
 }
 .product__description {
   line-height: 27px;
