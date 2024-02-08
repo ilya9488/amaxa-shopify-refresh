@@ -503,12 +503,13 @@ a.product__text {
 
 .product__description ul {
   padding-left: 0;
-}
-.product__description {
-  line-height: 27px;
+  list-style-type: none;
 }
 .product__description ul li:before {
   content: "- ";
+}
+.product__description {
+  line-height: 27px;
 }
 .product__description-title {
   font-weight: 600;
