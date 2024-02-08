@@ -184,7 +184,7 @@
 }
 @media (max-width: 425px) {
   .wrapper__quantity-buy-btn {
-    flex-direction: column;
+    /* flex-direction: column; */
   }
 }
 .product-form__wrapper {
