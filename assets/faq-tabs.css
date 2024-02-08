@@ -168,7 +168,7 @@
     box-shadow: #0000001f 0 1px 6px;
     border: 1px solid transparent;
 }
-button.swiper-arrow.swiper-button-next {
+/* button.swiper-arrow.swiper-button-next {
     background: #fff;
     border-radius: 50%;
     cursor: pointer;
@@ -201,7 +201,7 @@ button.swiper-arrow.swiper-button-prev {
     box-shadow: #0000001f 0 1px 6px;
     border: 1px solid transparent;
     right: -12px;
-}
+} */
 
 .swiper-button-next:after {
     content: "";
