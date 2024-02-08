@@ -501,6 +501,9 @@ a.product__text {
   }
 }
 
+.product__description ul {
+  padding-left: 0;
+}
 .product__description {
   line-height: 27px;
 }
