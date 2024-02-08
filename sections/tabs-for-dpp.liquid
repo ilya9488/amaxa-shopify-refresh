@@ -82,7 +82,8 @@
 
   const reviewsWrapper = document.querySelector('.reviews__wrapper');
   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent); {% endcomment %}
-  console.log(reviewsWrapper.getAttribute("data-reviews"));
+  {% comment %} console.log(reviewsWrapper.getAttribute("data-reviews")); {% endcomment %}
+  console.log({{ product.metafields.custom.reviews | json }};);
 
   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute("reviews")); {% endcomment %}
 
