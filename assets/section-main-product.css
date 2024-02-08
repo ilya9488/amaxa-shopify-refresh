@@ -507,6 +507,9 @@ a.product__text {
 .product__description {
   line-height: 27px;
 }
+.product__description ul li:before {
+  content: "- ";
+}
 .product__description-title {
   font-weight: 600;
 }
