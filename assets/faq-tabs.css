@@ -70,6 +70,12 @@
     z-index: 2;
     padding: 5px;
 }
+@media (max-width: 1024px) {
+    .faq-tabs .tabs-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
 .faq-tabs .tabs-content::-webkit-scrollbar {
     width: 6px
 }
