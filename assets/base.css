@@ -1177,7 +1177,7 @@ summary::-webkit-details-marker {
   height: auto;
   width: 100%;
 }
-.card__media .media.media--transparent.media--hover-effect {
+.media.media--transparent.media--hover-effect {
   display: flex;
   align-items: center;
 }
