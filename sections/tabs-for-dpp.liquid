@@ -51,8 +51,8 @@
   document.addEventListener('DOMContentLoaded', (event) => {
     const tabLinks = document.querySelectorAll('.tabs span');
     const tabPanels = document.querySelectorAll('.tabs-panel');
-    {% comment %} const reviewSlider = document.querySelector('.review-slider'); {% endcomment %}
-    const reviewSlider = document.querySelector('#mag-product-review');
+    const reviewSlider = document.querySelector('.review-slider');
+    {% comment %} const reviewSlider = document.querySelector('#mag-product-review'); {% endcomment %}
 
     for (let el of tabLinks) {
       el.addEventListener('click', (e) => {
