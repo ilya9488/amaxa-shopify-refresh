@@ -93,11 +93,7 @@
         <p class="slider-content--title-desc"><small>${item.verified}</small></p>
         <p>
           ${item.stars_quantity}
-          ${star}
-          ${star}
-          ${star}
-          ${star}
-          ${star}
+          ${star}.repeat(item.stars_quantity)
         </p>
         <p class="review-content">${item.comment_text}</p>
       `;
