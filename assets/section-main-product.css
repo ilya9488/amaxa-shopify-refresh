@@ -189,7 +189,6 @@
 }
 .product-form__wrapper {
   width: 100%;
-  /* border: 1px solid red; */
 }
 /* Form Elements */
 .product-form__input {
@@ -593,6 +592,7 @@ a.product__text {
 }
 .product-form__buttons button  {
   margin-bottom: 0;
+  width: 100%;
 }
 @media (max-width: 425px) {
   .product-form__buttons button {
