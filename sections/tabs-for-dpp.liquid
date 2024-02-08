@@ -84,6 +84,8 @@
   const reviewsWrapper = document.querySelector('.reviews__wrapper');
   const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent);
 
+  console.log(reviewsWrapperJson);
+
   reviewsWrapperJson.forEach((item) => {
     console.log(item);
   });
@@ -92,7 +94,6 @@
 
 
   const reviewsJson = reviewsWrapper;
-  {% comment %} console.log(reviewsWrapperJson); {% endcomment %}
 </script>
 
 {% schema %}
