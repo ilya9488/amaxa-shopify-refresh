@@ -19,7 +19,8 @@
   --section-margin-block-end-middle: 70px;
   --section-margin-block-end-big: 100px;
 
-  --color-primary: #464646;
+  /* --color-primary: #464646; */
+  --color-primary: #424242;
   --color-secendary: #F6F6F6;
   --color-grey: #8C8A92;
   --color-grey-dark: #6d6d6d;
