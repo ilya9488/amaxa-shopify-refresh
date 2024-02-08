@@ -506,7 +506,7 @@ a.product__text {
   list-style-type: none;
 }
 .product__description ul li:before {
-  content: "- ";
+  content: "-   ";
 }
 .product__description {
   line-height: 27px;
