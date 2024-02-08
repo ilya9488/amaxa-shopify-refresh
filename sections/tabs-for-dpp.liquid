@@ -58,12 +58,12 @@
 
     for (let el of tabLinks) {
       el.addEventListener('click', (e) => {
-        if (reviewSlider) {
+        {% comment %} if (reviewSlider) {
           reviewSlider.style.display = 'none';
           if (el.classList.contains('reviews-btn')) {
             reviewSlider.style.display = 'block';
           }
-        }
+        } {% endcomment %}
 
         document.querySelector('.tabs li.active').classList.remove('active');
         document.querySelector('.tabs-panel.active').classList.remove('active');
