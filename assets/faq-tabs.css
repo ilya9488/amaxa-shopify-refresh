@@ -169,7 +169,7 @@ button.swiper-arrow.swiper-button-next {
     right: -12px;
 }
 
-.slider-container .swiper-arrow:after {
+.swiper-button-next:after {
     content: "";
     height: 12px;
     width: 12px;
