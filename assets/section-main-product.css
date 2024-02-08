@@ -596,7 +596,7 @@ a.product__text {
 }
 @media (max-width: 425px) {
   .product-form__buttons button {
-      width: 300px;
+      /* width: 300px; */
   }
 }
 .product-form__buttons button:hover  {
