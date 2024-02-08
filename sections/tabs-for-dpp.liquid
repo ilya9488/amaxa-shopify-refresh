@@ -22,7 +22,7 @@
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
       <div class="wrap">
-        <div class="swiper-container">
+        <div class="swiper">
           <div class="reviews__wrapper swiper-wrapper"></div>
         </div>
       </div>
@@ -104,7 +104,7 @@
 
 
 
-  const sliders = document.querySelectorAll('.swiper-container')
+  const sliders = document.querySelectorAll('.swiper')
 
   sliders.forEach(slider => {
     const columns = slider.dataset.columns ?? 3
