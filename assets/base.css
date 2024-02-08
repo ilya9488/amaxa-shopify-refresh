@@ -1320,7 +1320,7 @@ button.shopify-payment-button__button--unbranded {
   border-radius: var(--buttons-radius);
   transition: box-shadow var(--duration-short) ease;
   display: block;
-  border: 1px solid rgba(var(--color-button-text));
+  border: 1px solid var(--title-color-primary);
 }
 .shopify-challenge__button:after,
 .customer button:after,
