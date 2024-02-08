@@ -23,12 +23,15 @@
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
       <div class="wrap wrap-review">
-        {{ product.metafields.custom.reviews }}
-        <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
-          <div class="reviews__wrapper swiper-wrapper"></div>
-        </div>
-        <button class="swiper-arrow swiper-button-next"></button>
-        <button class="swiper-arrow swiper-button-prev"></button>
+        {% if product.metafields.custom.reviews != blank %}
+          <p>Reviews not found</p>
+        {% else %}
+          <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
+            <div class="reviews__wrapper swiper-wrapper"></div>
+          </div>
+          <button class="swiper-arrow swiper-button-next"></button>
+          <button class="swiper-arrow swiper-button-prev"></button>
+        {% endif %}
       </div>
     </div>
     <div class="tabs-panel" data-index="1">
