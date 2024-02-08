@@ -188,8 +188,8 @@
   grid-row-start: 1;
 }
 .card__badge.top {
-  align-self: flex-start;
-  grid-row-start: 1;
+  margin-left: -15px;
+    margin-top: -17px;
 }
 
 .card__badge.right {
