@@ -86,11 +86,13 @@
   {% endif %}
 </div>
 
-<div class="reviews__wrapper">
-  {%- if product.metafields.custom.reviews != blank -%}
-    {{ product.metafields.custom.reviews }}
-  {%- endif -%}
-</div>
+{% comment %}
+  <div class="reviews__wrapper">
+    {%- if product.metafields.custom.reviews != blank -%}
+      {{ product.metafields.custom.reviews }}
+    {%- endif -%}
+  </div>
+{% endcomment %}
 
 <script></script>
 
