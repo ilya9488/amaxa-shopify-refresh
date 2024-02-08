@@ -1342,7 +1342,7 @@ button.shopify-payment-button__button--unbranded {
 .button:not([disabled]):hover::after {
   --border-offset: 1.3px;
   border: 1px solid rgba(var(--color-button-text));
-  background-color: aqua;
+  background-color: #f6f6f6;
 }
 
 .shopify-challenge__button:hover::after,
