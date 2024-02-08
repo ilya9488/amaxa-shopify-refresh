@@ -456,8 +456,8 @@ a.product__text {
 }
 
 .product__info-container .product__accordion {
-  border-bottom: 0.1rem solid #424242;
-  color: #424242;
+  border-bottom: 0.1rem solid var(--color-primary);
+  color: var(--color-primary);
 }
 .product__info-container .product__accordion {
   border-top: none !important;
@@ -468,7 +468,7 @@ a.product__text {
 .product__info-container .accordion__title {
   font-weight: 600;
   font-size: 16px;
-  color: #424242;
+  color: var(--color-primary);
 }
 
 .product .price .badge {
