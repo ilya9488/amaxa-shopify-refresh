@@ -1177,6 +1177,9 @@ summary::-webkit-details-marker {
   height: auto;
   width: 100%;
 }
+.card__media img {
+  
+}
 
 .media > img {
   object-fit: cover;
