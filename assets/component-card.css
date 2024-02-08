@@ -187,6 +187,10 @@
   align-self: flex-start;
   grid-row-start: 1;
 }
+.card__badge.top {
+  align-self: flex-start;
+  grid-row-start: 1;
+}
 
 .card__badge.right {
   justify-self: flex-end;
