@@ -35,8 +35,6 @@
 
 .product-card-wrapper .card,
 .contains-card--product {
-  /* --border-radius: var(--product-card-corner-radius); */
-  /* --border-width: var(--product-card-border-width); */
   --border-opacity: var(--product-card-border-opacity);
   --shadow-horizontal-offset: var(--product-card-shadow-horizontal-offset);
   --shadow-vertical-offset: var(--product-card-shadow-vertical-offset);
@@ -104,6 +102,7 @@ body {
   font-family: Metropolis, sans-serif;
   font-size: 17px;
   font-weight: 400;
+  color: var(--color-primary) !important;
 
 }
 .no-js:not(html) {
