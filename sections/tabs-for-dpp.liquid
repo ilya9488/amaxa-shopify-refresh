@@ -82,7 +82,7 @@
   });
 
   const reviewsWrapper = document.querySelector('.reviews__wrapper');
-  const reviewsWrapperJson = reviewsWrapper.textContent;
+  const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent);
   {% comment %} const reviewsJson = reviewsWrapper; {% endcomment %}
   console.log(reviewsWrapperJson);
 </script>
