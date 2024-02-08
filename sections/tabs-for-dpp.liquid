@@ -55,57 +55,51 @@
 </section>
 
 <script>
-  document.addEventListener('DOMContentLoaded', (event) => {
-    const tabLinks = document.querySelectorAll('.tabs span');
-    const tabPanels = document.querySelectorAll('.tabs-panel');
-    const reviewSlider = document.querySelector('.review-slider');
-    {% comment %} const reviewSlider = document.querySelector('#mag-product-review'); {% endcomment %}
+   document.addEventListener('DOMContentLoaded', (event) => {
+     const tabLinks = document.querySelectorAll('.tabs span');
+     const tabPanels = document.querySelectorAll('.tabs-panel');
+     const reviewSlider = document.querySelector('.review-slider');
+     {% comment %} const reviewSlider = document.querySelector('#mag-product-review'); {% endcomment %}
 
-    for (let el of tabLinks) {
-      el.addEventListener('click', (e) => {
-        if (reviewSlider) {
-          reviewSlider.style.display = 'none';
-          if (el.classList.contains('reviews-btn')) {
-            reviewSlider.style.display = 'block';
-          }
-        }
+     for (let el of tabLinks) {
+       el.addEventListener('click', (e) => {
+         if (reviewSlider) {
+           reviewSlider.style.display = 'none';
+           if (el.classList.contains('reviews-btn')) {
+             reviewSlider.style.display = 'block';
+           }
+         }
 
-        document.querySelector('.tabs li.active').classList.remove('active');
-        document.querySelector('.tabs-panel.active').classList.remove('active');
-        const parentListItem = el.parentElement;
-        parentListItem.classList.add('active');
-        const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
-        const panel = [...tabPanels].filter((el) => el.getAttribute('data-index') == index);
-        panel[0].classList.add('active');
-      });
-    }
-    new Accordion('.accordion-container');
-  });
+         document.querySelector('.tabs li.active').classList.remove('active');
+         document.querySelector('.tabs-panel.active').classList.remove('active');
+         const parentListItem = el.parentElement;
+         parentListItem.classList.add('active');
+         const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+         const panel = [...tabPanels].filter((el) => el.getAttribute('data-index') == index);
+         panel[0].classList.add('active');
+       });
+     }
+     new Accordion('.accordion-container');
+   });
 
-  const reviewsWrapper = document.querySelector('.reviews__wrapper');
-  {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent); {% endcomment %}
-  {% comment %} console.log(reviewsWrapper.getAttribute("data-reviews")); {% endcomment %}
+   const reviewsWrapper = document.querySelector('.reviews__wrapper');
+   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent); {% endcomment %}
+   {% comment %} console.log(reviewsWrapper.getAttribute("data-reviews")); {% endcomment %}
 
-  var content = {{ product.metafields.custom.reviews }};
-  console.log(content);
+   var reviewsWrapperJson = {{ product.metafields.custom.reviews }};
 
-  {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute("reviews")); {% endcomment %}
+   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute("reviews")); {% endcomment %}
 
-  {% comment %} console.log(reviewsWrapperJson);
+  console.log(reviewsWrapperJson);
 
-  reviewsWrapperJson.reviews.forEach((item) => {
-    console.log(item);
-      const reviewItemWrapper = document.createElement('div');
-      reviewItemWrapper.classList.add('review-item-wrapper');
-      reviewItemWrapper.addEventListener('click', () => console.log(item));
-      reviewsWrapper.appendChild(reviewItemWrapper);
+   reviewsWrapperJson.reviews.forEach((item) => {
+     console.log(item);
+       const reviewItemWrapper = document.createElement('div');
+       reviewItemWrapper.classList.add('review-item-wrapper');
+       reviewItemWrapper.addEventListener('click', () => console.log(item));
+       reviewsWrapper.appendChild(reviewItemWrapper);
 
-  });
-
-
-
-
-  const reviewsJson = reviewsWrapper; {% endcomment %}
+   });
 </script>
 
 {% schema %}
