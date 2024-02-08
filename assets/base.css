@@ -2999,7 +2999,7 @@ details-disclosure > details {
   word-break: break-word;
   height: 40px;
   width: 40px;
-  font-size: 10px;
+  /* font-size: 10px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -3007,6 +3007,7 @@ details-disclosure > details {
   border-radius: 50%;
   background: linear-gradient(135deg, #020024 0%, #ffd800 0%, #dcc366 0%, #ba8223 58%);
   text-transform: uppercase;
+  font-size: 8.8px;
 }
 
 .gradient {
