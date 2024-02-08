@@ -183,7 +183,7 @@
   justify-self: flex-start;
 }
 
-.card__badge.top {
+.card__badge.top.left {
   align-self: flex-start;
   grid-row-start: 1;
 }
