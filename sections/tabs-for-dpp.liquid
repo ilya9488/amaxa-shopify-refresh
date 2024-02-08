@@ -81,7 +81,7 @@
     var reviewsWrapperJson = {{ product.metafields.custom.reviews }};
     reviewsWrapperJson.reviews.forEach((item) => {
       const reviewItemWrapper = document.createElement('div');
-      reviewItemWrapper.classList.add('review-item-wrapper');
+      reviewItemWrapper.classList.add('swiper-slide');
       reviewItemWrapper.innerHTML =  `
         <p>${item.user_name}</p>
         <p>${item.verified}</p>
