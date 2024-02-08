@@ -2900,7 +2900,7 @@ details[open] > .header__menu-item .icon-caret {
 
 .header__active-menu-item {
   transition: text-decoration-thickness var(--duration-short) ease;
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-primary));
   text-decoration: underline;
   text-underline-offset: 0.3rem;
 }
