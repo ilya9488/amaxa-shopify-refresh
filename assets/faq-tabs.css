@@ -243,6 +243,13 @@ button.swiper-arrow.swiper-button-prev {
     font-weight: 600 !important;
     color: #424242 !important;
 }
+@media (max-width: 425px) {
+    .ac .ac-trigger {
+        font-size: 15px !important;
+        font-weight: 600 !important;
+        color: #424242 !important;
+    }
+}
 .ac-text {
     font-size: 15px !important;
     color: #424242 !important;
