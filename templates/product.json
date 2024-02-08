@@ -56,10 +56,10 @@
           "type": "discount_delivery",
           "settings": {
             "color": "{{ product.metafields.custom.discount_delivery_color.value }}",
-            "discount_image": "shopify:\/\/shop_images\/Screenshot_from_2024-02-06_08-26-53.png",
+            "discount_image": "{{ product.metafields.custom.discount_delivery_image_1.value }}",
             "discount_title": "3 for 2",
             "discount_sub_title": "On All Products",
-            "delivery_image": "shopify:\/\/shop_images\/Screenshot_from_2024-02-06_08-27-02.png",
+            "delivery_image": "{{ product.metafields.custom.discount_delivery_image_2.value }}",
             "delivery_title": "Free UK Delivery",
             "delivery_sub_title": "on this item"
           }
