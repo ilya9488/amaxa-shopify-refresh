@@ -59,6 +59,10 @@
   </div>
 </section>
 
+{% if product.metafields.custom.reviews != blank %}
+  {% assign rev = product.metafields.custom.reviews %}
+{% endif %}
+
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
     const tabLinks = document.querySelectorAll('.tabs span');
