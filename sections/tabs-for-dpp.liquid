@@ -89,7 +89,7 @@
           </svg>`;
     reviewsWrapperJson.reviews.forEach((item) => {
       const reviewItemWrapper = document.createElement('div');
-      reviewItemWrapper.classList.add('swiper-slide');
+      reviewItemWrapper.classList.add('swiper-slide, swiper-slide--inner');
       reviewItemWrapper.innerHTML =  `
         <p class="slider-content--title">${item.user_name}</p>
         <p class="slider-content--title-desc"><small>${item.verified}</small></p>
