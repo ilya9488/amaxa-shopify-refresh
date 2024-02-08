@@ -22,11 +22,10 @@
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
       <div class="wrap">
-        <div class="reviews__wrapper" data-reviews="">
-          {%- if product.metafields.custom.reviews != blank -%}
-            {{ product.metafields.custom.reviews }}
-          {%- endif -%}
-        </div>
+        <div
+          class="reviews__wrapper"
+          data-reviews="{%- if product.metafields.custom.reviews != blank -%}{{ product.metafields.custom.reviews }}{%- endif -%}"
+        ></div>
       </div>
     </div>
     <div class="tabs-panel" data-index="1">
