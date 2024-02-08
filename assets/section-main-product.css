@@ -333,10 +333,17 @@ fieldset.product-form__input .form__label {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 @media (min-width: 768px) {
   .product-form__submit {
     width: 300px;
   }
+}
+.product-form__submit {
+  margin-bottom: 1rem;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .no-js .product-form__submit.button--secondary {
