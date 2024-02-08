@@ -77,12 +77,10 @@
     new Accordion('.accordion-container');
 
 
-
-
     const reviewsWrapper = document.querySelector('.reviews__wrapper');
     var reviewsWrapperJson = {{ product.metafields.custom.reviews }};
     reviewsWrapperJson.reviews.forEach((item) => {
-      console.log(item);
+      {% comment %} console.log(item); {% endcomment %}
       const reviewItemWrapper = document.createElement('div');
       reviewItemWrapper.classList.add('review-item-wrapper');
       reviewItemWrapper.innerHTML =  `
