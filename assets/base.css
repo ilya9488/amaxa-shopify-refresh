@@ -3003,7 +3003,7 @@ details-disclosure > details {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-weight: 600;
+  font-weight: 500;
   border-radius: 50%;
   background: linear-gradient(135deg, #020024 0%, #ffd800 0%, #dcc366 0%, #ba8223 58%);
   text-transform: uppercase;
