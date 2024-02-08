@@ -16,12 +16,12 @@
 {%- liquid
   assign ratio = 1
   if card_collection.featured_image and media_aspect_ratio == 'portrait'
-    assign ratio = 0.8
+    assign ratio = 1
   elsif card_collection.featured_image and media_aspect_ratio == 'adapt'
     assign ratio = card_collection.featured_image.aspect_ratio
   endif
   if ratio == 0 or ratio == null
-    assign ratio = 0.5
+    assign ratio = 1
   endif
   assign card_color_scheme = settings.card_color_scheme
   assign card_style = settings.card_style
