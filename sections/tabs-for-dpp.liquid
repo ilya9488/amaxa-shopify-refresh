@@ -61,8 +61,10 @@
 
 {% if product.metafields.custom.reviews != blank %}
   {% assign reviews = product.metafields.custom.reviews %}
+  1 {{ reviews }}
 {% else %}
   {% assign reviews = '' %}
+  2 {{ reviews }}
 {% endif %}
 
 <script>
