@@ -16,7 +16,7 @@
   </div>
   <div
     class="
-      test swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
+      swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
       {% if section.settings.slide_card %} slides-card {% endif %}
       {% if section.settings.images_height != 'default' %} slide-image-{{ section.settings.image_width }} {% endif %}
     "
@@ -85,6 +85,16 @@
     <ul class="swiper-pagination"></ul>
   {% endif %}
 </div>
+
+{% comment %}
+  <div class="reviews__wrapper">
+    {%- if product.metafields.custom.reviews != blank -%}
+      {{ product.metafields.custom.reviews }}
+    {%- endif -%}
+  </div>
+{% endcomment %}
+
+<script></script>
 
 {% schema %}
 {

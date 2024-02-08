@@ -216,14 +216,14 @@ quick-add-modal .product-form__buttons {
 }
 
 .quick-add__submit {
-  /* padding: 0.8rem;
-  min-width: 100%;
-  box-sizing: border-box; */
   margin: 0 auto;
   width: fit-content;
-  padding: 5px 10px;
+  padding: 8px 26px;
   height: auto;
   min-height: inherit;
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--title-color-primary);
 
 }
 

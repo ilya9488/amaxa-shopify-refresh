@@ -949,6 +949,12 @@ summary::-webkit-details-marker {
   flex-grow: 1;
   flex-shrink: 0;
 }
+.collection .grid__item {
+  background-color: #fff;
+  box-shadow: 0 0 2.5rem #0000000d;
+}
+
+
 
 @media screen and (min-width: 750px) {
   .grid__item {
@@ -1168,8 +1174,15 @@ summary::-webkit-details-marker {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100%;
+  height: auto;
   width: 100%;
+}
+.media.media--transparent.media--hover-effect {
+  display: flex;
+  align-items: center;
+}
+.card__media img {
+  top: auto !important;
 }
 
 .media > img {
@@ -1303,7 +1316,19 @@ button.shopify-payment-button__button--unbranded {
     rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
-.button:after,
+.button:not(.product-form__submit):after {
+  content: '';
+  position: absolute;
+  top: var(--buttons-border-width);
+  right: var(--buttons-border-width);
+  bottom: var(--buttons-border-width);
+  left: var(--buttons-border-width);
+  z-index: 1;
+  border-radius: var(--buttons-radius);
+  transition: box-shadow var(--duration-short) ease;
+  display: block;
+  border: 1px solid var(--title-color-primary);
+}
 .shopify-challenge__button:after,
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
@@ -1321,7 +1346,12 @@ button.shopify-payment-button__button--unbranded {
   transition: box-shadow var(--duration-short) ease;
 }
 
-.button:not([disabled]):hover::after,
+.button:not([disabled]):hover::after {
+  --border-offset: 1.3px;
+  border: 1px solid rgba(var(--color-button-text));
+  /* background-color: #f6f6f6; */
+}
+
 .shopify-challenge__button:hover::after,
 .customer button:hover::after,
 .shopify-payment-button__button--unbranded:hover::after {
@@ -2967,12 +2997,25 @@ details-disclosure > details {
   font-size: 1.2rem;
   letter-spacing: 0.1rem;
   line-height: 1;
-  padding: 0.5rem 1.3rem 0.6rem 1.3rem;
+  /* padding: 0.5rem 1.3rem 0.6rem 1.3rem; */
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
-  border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
-  color: rgb(var(--color-badge-foreground));
+  /* background-color: rgb(var(--color-badge-background)); */
+  /* border-color: rgba(var(--color-badge-border), var(--alpha-badge-border)); */
+  /* color: rgb(var(--color-badge-foreground)); */
+  color: white;
   word-break: break-word;
+  height: 40px;
+  width: 40px;
+  /* font-size: 10px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #020024 0%, #ffd800 0%, #dcc366 0%, #ba8223 58%);
+  text-transform: uppercase;
+  font-size: 9px;
+  letter-spacing: 0;
 }
 
 .gradient {

@@ -1,4 +1,5 @@
 {{ 'faq-tabs.css' | asset_url | stylesheet_tag }}
+{{ 'section-review-swiper-slider.css' | asset_url | stylesheet_tag }}
 
 <section class="page-width faq-tabs">
   <ul class="tabs">
@@ -21,7 +22,18 @@
   </ul>
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
-      <div class="wrap"></div>
+      <div class="wrap wrap-review">
+        {% if product.metafields.custom.reviews != blank %}
+          <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
+            <div class="reviews__wrapper swiper-wrapper"></div>
+          </div>
+          <button class="swiper-arrow swiper-button-next"></button>
+          <button class="swiper-arrow swiper-button-prev"></button>
+        {% else %}
+          <p class="reviews--not-found">Reviews not found</p>
+          {{ product.metafields.custom.reviews }}
+        {% endif %}
+      </div>
     </div>
     <div class="tabs-panel" data-index="1">
       <div class="wrap">
@@ -47,21 +59,27 @@
   </div>
 </section>
 
+{% if product.metafields.custom.reviews != blank %}
+  {%- assign reviews_ = product.metafields.custom.reviews -%}
+{% else %}
+  {%- assign reviews_ = 'false' -%}
+{% endif %}
+
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
     const tabLinks = document.querySelectorAll('.tabs span');
     const tabPanels = document.querySelectorAll('.tabs-panel');
     {% comment %} const reviewSlider = document.querySelector('.review-slider'); {% endcomment %}
-    const reviewSlider = document.querySelector('#mag-product-review');
+    {% comment %} const reviewSlider = document.querySelector('#mag-product-review'); {% endcomment %}
 
     for (let el of tabLinks) {
       el.addEventListener('click', (e) => {
-        if (reviewSlider) {
+        {% comment %} if (reviewSlider) {
           reviewSlider.style.display = 'none';
           if (el.classList.contains('reviews-btn')) {
             reviewSlider.style.display = 'block';
           }
-        }
+        } {% endcomment %}
 
         document.querySelector('.tabs li.active').classList.remove('active');
         document.querySelector('.tabs-panel.active').classList.remove('active');
@@ -73,6 +91,34 @@
       });
     }
     new Accordion('.accordion-container');
+
+
+    const reviewsWrapper = document.querySelector('.reviews__wrapper');
+
+    var rev = {{ reviews_ }};
+
+    if (rev) {
+      var reviewsWrapperJson = rev;
+      star = `<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z"></path>
+            </svg>`;
+      reviewsWrapperJson.reviews.forEach((item) => {
+        const reviewItemWrapper = document.createElement('div');
+        reviewItemWrapper.classList.add('swiper-slide');
+        reviewItemWrapper.classList.add('swiper-slide--inner');
+        reviewItemWrapper.innerHTML =  `
+          <p class="slider-content--title">${item.user_name}</p>
+          <p class="slider-content--title-desc"><small>${item.verified}</small></p>
+          <p class="slider-content--stars stars-filled--${item.stars_quantity}">${star.repeat(item.stars_quantity)}</p>
+          <p class="review-content">${item.comment_text}</p>
+        `;
+        reviewsWrapper.appendChild(reviewItemWrapper);
+      });
+    }
+    
+
+     swiperSliderInit()
+
   });
 </script>
 
