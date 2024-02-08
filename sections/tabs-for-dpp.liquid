@@ -85,6 +85,7 @@
       console.log(item);
       const reviewItemWrapper = document.createElement('div');
       reviewItemWrapper.classList.add('review-item-wrapper');
+      reviewItemWrapper.innerHTML = item;
       {% comment %} reviewItemWrapper.addEventListener('click', () => console.log(item)); {% endcomment %}
       reviewsWrapper.appendChild(reviewItemWrapper);
      });
