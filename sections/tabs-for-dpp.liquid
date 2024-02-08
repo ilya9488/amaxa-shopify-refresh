@@ -69,8 +69,6 @@
   document.addEventListener('DOMContentLoaded', (event) => {
     const tabLinks = document.querySelectorAll('.tabs span');
     const tabPanels = document.querySelectorAll('.tabs-panel');
-    {% comment %} const reviewSlider = document.querySelector('.review-slider'); {% endcomment %}
-    {% comment %} const reviewSlider = document.querySelector('#mag-product-review'); {% endcomment %}
 
     for (let el of tabLinks) {
       el.addEventListener('click', (e) => {
@@ -92,11 +90,8 @@
     }
     new Accordion('.accordion-container');
 
-
     const reviewsWrapper = document.querySelector('.reviews__wrapper');
-
     var rev = {{ reviews_ }};
-
     if (rev) {
       var reviewsWrapperJson = rev;
       star = `<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -116,8 +111,7 @@
       });
     }
     
-
-     swiperSliderInit()
+    swiperSliderInit()
 
   });
 </script>
