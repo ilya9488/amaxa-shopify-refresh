@@ -60,11 +60,9 @@
 </section>
 
 {% if product.metafields.custom.reviews != blank %}
-  {% assign reviews = product.metafields.custom.reviews %}
-  1 {{ reviews }}
+  {%- assign reviews = product.metafields.custom.reviews -%}
 {% else %}
-  {% assign reviews = '' %}
-  2 {{ reviews }}
+  {%- assign reviews = '' -%}
 {% endif %}
 
 <script>
