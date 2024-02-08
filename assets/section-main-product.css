@@ -613,7 +613,7 @@ a.product__text {
 .product-form__buttons button:hover  {
   box-shadow: 1.53846px 1.53846px 3.07692px #13439626;
   background: none !important;
-  color: grey !important;
+  /* color: grey !important; */
   border: 1px solid grey !important;
   transition: all 0.2s;
 }
