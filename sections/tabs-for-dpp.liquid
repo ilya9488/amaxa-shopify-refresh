@@ -60,9 +60,9 @@
 </section>
 
 {% if product.metafields.custom.reviews != blank %}
-  {% assign rev = product.metafields.custom.reviews %}
+  {% assign reviews = product.metafields.custom.reviews %}
 {% else %}
-  {% assign rev = '' %}
+  {% assign reviews = '' %}
 {% endif %}
 
 <script>
@@ -94,6 +94,7 @@
 
 
     const reviewsWrapper = document.querySelector('.reviews__wrapper');
+    var reviewsWrapperJson = reviews;
     if (rev) {
       var reviewsWrapperJson = rev;
       star = `<svg xmlns="http://www.w3.org/2000/svg" class="icon" width="44" height="44" viewBox="0 0 24 24" stroke-width="1" stroke="#2c3e50" fill="none" stroke-linecap="round" stroke-linejoin="round">
