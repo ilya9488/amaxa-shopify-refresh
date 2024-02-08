@@ -450,6 +450,7 @@ a.product__text {
   font-size: 14px;
   line-height: 23px;
   margin-top: 6px;
+      padding-right: 45px;
 }
 
 .product__info-container .product__accordion {
