@@ -103,7 +103,9 @@ body {
   font-size: 17px;
   font-weight: 400;
   color: var(--color-primary) !important;
-
+}
+body * {
+  color: var(--color-primary) !important;
 }
 .no-js:not(html) {
   display: none !important;
