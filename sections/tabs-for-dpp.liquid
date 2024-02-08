@@ -55,43 +55,35 @@
 </section>
 
 <script>
-   document.addEventListener('DOMContentLoaded', (event) => {
-     const tabLinks = document.querySelectorAll('.tabs span');
-     const tabPanels = document.querySelectorAll('.tabs-panel');
-     const reviewSlider = document.querySelector('.review-slider');
-     {% comment %} const reviewSlider = document.querySelector('#mag-product-review'); {% endcomment %}
+  document.addEventListener('DOMContentLoaded', (event) => {
+    const tabLinks = document.querySelectorAll('.tabs span');
+    const tabPanels = document.querySelectorAll('.tabs-panel');
+    const reviewSlider = document.querySelector('.review-slider');
+    {% comment %} const reviewSlider = document.querySelector('#mag-product-review'); {% endcomment %}
 
-     for (let el of tabLinks) {
-       el.addEventListener('click', (e) => {
-         if (reviewSlider) {
-           reviewSlider.style.display = 'none';
-           if (el.classList.contains('reviews-btn')) {
-             reviewSlider.style.display = 'block';
-           }
-         }
+    for (let el of tabLinks) {
+      el.addEventListener('click', (e) => {
+        if (reviewSlider) {
+          reviewSlider.style.display = 'none';
+          if (el.classList.contains('reviews-btn')) {
+            reviewSlider.style.display = 'block';
+          }
+        }
 
-         document.querySelector('.tabs li.active').classList.remove('active');
-         document.querySelector('.tabs-panel.active').classList.remove('active');
-         const parentListItem = el.parentElement;
-         parentListItem.classList.add('active');
-         const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
-         const panel = [...tabPanels].filter((el) => el.getAttribute('data-index') == index);
-         panel[0].classList.add('active');
-       });
-     }
-     new Accordion('.accordion-container');
-   });
+        document.querySelector('.tabs li.active').classList.remove('active');
+        document.querySelector('.tabs-panel.active').classList.remove('active');
+        const parentListItem = el.parentElement;
+        parentListItem.classList.add('active');
+        const index = [...parentListItem.parentElement.children].indexOf(parentListItem);
+        const panel = [...tabPanels].filter((el) => el.getAttribute('data-index') == index);
+        panel[0].classList.add('active');
+      });
+    }
+    new Accordion('.accordion-container');
+  });
 
    const reviewsWrapper = document.querySelector('.reviews__wrapper');
-   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent); {% endcomment %}
-   {% comment %} console.log(reviewsWrapper.getAttribute("data-reviews")); {% endcomment %}
-
    var reviewsWrapperJson = {{ product.metafields.custom.reviews }};
-
-   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute("reviews")); {% endcomment %}
-
-  console.log(reviewsWrapperJson);
-
    reviewsWrapperJson.reviews.forEach((item) => {
      console.log(item);
        const reviewItemWrapper = document.createElement('div');
