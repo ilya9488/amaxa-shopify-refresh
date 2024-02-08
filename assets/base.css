@@ -2992,7 +2992,7 @@ details-disclosure > details {
   line-height: 1;
   /* padding: 0.5rem 1.3rem 0.6rem 1.3rem; */
   text-align: center;
-  background-color: rgb(var(--color-badge-background));
+  /* background-color: rgb(var(--color-badge-background)); */
   border-color: rgba(var(--color-badge-border), var(--alpha-badge-border));
   color: rgb(var(--color-badge-foreground));
   word-break: break-word;
@@ -3004,6 +3004,7 @@ details-disclosure > details {
   justify-content: center;
   font-weight: 600;
   border-radius: 50%;
+  background: linear-gradient(135deg, #020024 0%, #ffd800 0%, #dcc366 0%, #ba8223 58%);
 }
 
 .gradient {
