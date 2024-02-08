@@ -241,7 +241,7 @@ button.swiper-arrow.swiper-button-prev {
 .ac .ac-trigger {
     font-size: 15px !important;
     font-weight: 500 !important;
-    color: #424242 !important;
+    color: var(--color-primary) !important;
 }
 @media (max-width: 425px) {
     .ac .ac-trigger {
@@ -254,7 +254,7 @@ button.swiper-arrow.swiper-button-prev {
 }
 .ac-text {
     font-size: 15px !important;
-    color: #424242 !important;
+    color: var(--color-primary) !important;
 }
 
 details summary~div {
