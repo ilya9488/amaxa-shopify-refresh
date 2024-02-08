@@ -75,18 +75,22 @@
       });
     }
     new Accordion('.accordion-container');
+
+
+
+
+    const reviewsWrapper = document.querySelector('.reviews__wrapper');
+    var reviewsWrapperJson = {{ product.metafields.custom.reviews }};
+    reviewsWrapperJson.reviews.forEach((item) => {
+      console.log(item);
+      const reviewItemWrapper = document.createElement('div');
+      reviewItemWrapper.classList.add('review-item-wrapper');
+      {% comment %} reviewItemWrapper.addEventListener('click', () => console.log(item)); {% endcomment %}
+      reviewsWrapper.appendChild(reviewItemWrapper);
+     });
+
+
   });
-
-  const reviewsWrapper = document.querySelector('.reviews__wrapper');
-  var reviewsWrapperJson = {{ product.metafields.custom.reviews }};
-  reviewsWrapperJson.reviews.forEach((item) => {
-    console.log(item);
-    const reviewItemWrapper = document.createElement('div');
-    reviewItemWrapper.classList.add('review-item-wrapper');
-    {% comment %} reviewItemWrapper.addEventListener('click', () => console.log(item)); {% endcomment %}
-    reviewsWrapper.appendChild(reviewItemWrapper);
-
-   });
 </script>
 
 {% schema %}
