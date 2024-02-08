@@ -86,8 +86,8 @@
   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent); {% endcomment %}
   {% comment %} console.log(reviewsWrapper.getAttribute("data-reviews")); {% endcomment %}
 
-  product.metafields.custom.reviews
-  console.log({{ product.metafields.custom.reviews | json }});
+  var content = {{ product.metafields.custom.reviews | json }};
+  console.log(content);
 
   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute("reviews")); {% endcomment %}
 
