@@ -22,12 +22,7 @@
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
       <div class="wrap">
-        {% comment %}
-          <div
-            class="reviews__wrapper"
-            data-reviews="{%- if product.metafields.custom.reviews != blank -%}{{- product.metafields.custom.reviews -}}{%- endif -%}"
-          ></div>
-        {% endcomment %}
+        <div class="reviews__wrapper"></div>
       </div>
     </div>
     <div class="tabs-panel" data-index="1">
@@ -86,10 +81,10 @@
   var reviewsWrapperJson = {{ product.metafields.custom.reviews }};
   reviewsWrapperJson.reviews.forEach((item) => {
     console.log(item);
-    {% comment %} const reviewItemWrapper = document.createElement('div');
+    const reviewItemWrapper = document.createElement('div');
     reviewItemWrapper.classList.add('review-item-wrapper');
-    reviewItemWrapper.addEventListener('click', () => console.log(item));
-    reviewsWrapper.appendChild(reviewItemWrapper); {% endcomment %}
+    {% comment %} reviewItemWrapper.addEventListener('click', () => console.log(item)); {% endcomment %}
+    reviewsWrapper.appendChild(reviewItemWrapper);
 
    });
 </script>
