@@ -168,3 +168,15 @@ button.swiper-arrow.swiper-button-next {
     border: 1px solid transparent;
     right: -12px;
 }
+
+.slider-container .swiper-arrow:after {
+    content: "";
+    height: 12px;
+    width: 12px;
+    border-left: 2px solid #646464;
+    border-bottom: 2px solid #646464;
+    position: absolute;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0;
+}
