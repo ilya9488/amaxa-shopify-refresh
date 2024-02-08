@@ -22,7 +22,7 @@
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
       <div class="wrap">
-        <div class="reviews__wrapper">
+        <div class="reviews__wrapper" data-reviews="">
           {%- if product.metafields.custom.reviews != blank -%}
             {{ product.metafields.custom.reviews }}
           {%- endif -%}
@@ -88,6 +88,10 @@
 
   reviewsWrapperJson.reviews.forEach((item) => {
     console.log(item);
+      const reviewItemWrapper = document.createElement('div');
+      reviewItemWrapper.classList.add('review-item-wrapper');
+      reviewItemWrapper.addEventListener('click', () => console.log(item));
+      reviewsWrapper.appendChild(reviewItemWrapper);
 
   });
 
