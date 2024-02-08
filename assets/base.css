@@ -1182,7 +1182,7 @@ summary::-webkit-details-marker {
   align-items: center;
 }
 .card__media img {
-  top: auto;
+  top: auto !important;
 }
 
 .media > img {
