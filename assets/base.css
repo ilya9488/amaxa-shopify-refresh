@@ -1309,7 +1309,17 @@ button.shopify-payment-button__button--unbranded {
     rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
-.button:after,
+.button:after {
+  content: '';
+  position: absolute;
+  top: var(--buttons-border-width);
+  right: var(--buttons-border-width);
+  bottom: var(--buttons-border-width);
+  left: var(--buttons-border-width);
+  z-index: 1;
+  border-radius: var(--buttons-radius);
+  transition: box-shadow var(--duration-short) ease;
+}
 .shopify-challenge__button:after,
 .customer button:after,
 .shopify-payment-button__button--unbranded:after {
