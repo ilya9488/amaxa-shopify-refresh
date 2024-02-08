@@ -231,3 +231,7 @@ button.swiper-arrow.swiper-button-prev {
     text-align: center;
     width: 100%;
 }
+
+.ac .ac-trigger {
+    font-size: 15px !important;
+}
