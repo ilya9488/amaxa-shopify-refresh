@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'Gunny Rewritten';
-    src: local('Gunny Rewritten'), local('GunnyRewritten'), url('gunnyrewritten.woff2') format('woff2'), url('gunnyrewritten.woff') format('woff'), url('gunnyrewritten.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-
-@font-face {
     font-family: 'Metropolis';
     src: local('Metropolis Thin'), local('Metropolis-Thin'), url('Metropolisthin.woff2') format('woff2'), url('Metropolisthin.woff') format('woff'), url('Metropolisthin.ttf') format('truetype');
     font-weight: 100;
