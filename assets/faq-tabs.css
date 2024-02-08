@@ -226,3 +226,7 @@ button.swiper-arrow.swiper-button-prev {
     cursor: pointer;
     font-size: 0;
 }
+
+.reviews--not-found {
+    text-align: center;
+}
