@@ -259,6 +259,16 @@ button.swiper-arrow.swiper-button-prev {
 
 details summary~div {
     overflow: hidden;
+    max-height: 0;
+}
+details[open] summary~div {
+    transition-duration: 3s;
+    max-height: 2000px;
+}
+
+
+/* details summary~div {
+    overflow: hidden;
 }
 details[open] summary~div {
     animation: sweep 2s ease-in-out;
@@ -270,4 +280,4 @@ details[open] summary~div {
     100% {
         max-height: 2000px;
     }
-}
+} */
