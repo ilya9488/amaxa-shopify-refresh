@@ -4,6 +4,7 @@
   line-height: 1;
   padding: 1.5rem 0;
   cursor: pointer;
+  padding-bottom: 27px;
 }
 
 .accordion .summary__title {
