@@ -462,6 +462,7 @@ a.product__text {
 }
 .product__info-container .accordion__title {
   font-weight: 600;
+  font-size: 15px;
 }
 
 .product .price .badge {
