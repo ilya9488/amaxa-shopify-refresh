@@ -1,12 +1,6 @@
 {{ 'faq-tabs.css' | asset_url | stylesheet_tag }}
 
 <section class="page-width faq-tabs">
-  <div class="reviews__wrapper">
-    {%- if product.metafields.custom.reviews != blank -%}
-      {{ product.metafields.custom.reviews }}
-    {%- endif -%}
-  </div>
-
   <ul class="tabs">
     <li class="active">
       <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
@@ -27,7 +21,13 @@
   </ul>
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
-      <div class="wrap"></div>
+      <div class="wrap">
+        <div class="reviews__wrapper">
+          {%- if product.metafields.custom.reviews != blank -%}
+            {{ product.metafields.custom.reviews }}
+          {%- endif -%}
+        </div>
+      </div>
     </div>
     <div class="tabs-panel" data-index="1">
       <div class="wrap">
