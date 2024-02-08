@@ -247,7 +247,10 @@ button.swiper-arrow.swiper-button-prev {
     .ac .ac-trigger {
         padding-left: 0 !important;
     }
-    
+    .faq-tabs .tabs-panel .wrap p {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .ac-text {
     font-size: 15px !important;
