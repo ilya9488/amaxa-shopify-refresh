@@ -183,7 +183,7 @@ button.swiper-arrow.swiper-button-next {
     transition: all .25s;
     box-shadow: #0000001f 0 1px 6px;
     border: 1px solid transparent;
-    right: -12px;
+    right: 0;
 }
 button.swiper-arrow.swiper-button-prev {
     background: #fff;
@@ -200,7 +200,7 @@ button.swiper-arrow.swiper-button-prev {
     transition: all .25s;
     box-shadow: #0000001f 0 1px 6px;
     border: 1px solid transparent;
-    left: -12px;
+    left: 0;
 }
 
 .swiper-button-next:after {
