@@ -475,10 +475,6 @@ a.product__text {
   margin-bottom: 0.5rem;
 }
 
-/*.product .price__container {
-  margin-bottom: 0.5rem;
-}*/
-
 .product .price dl {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -1847,4 +1843,22 @@ details {
 .review-content p {
   line-height: 22px;
   font-size: 13px;
+}
+
+details summary~div {
+  overflow: hidden;
+}
+
+details[open] summary~div {
+  animation: sweep 2s ease-in-out;
+}
+
+@keyframes sweep {
+  0% {
+    max-height: 0;
+  }
+
+  100% {
+    max-height: 2000px;
+  }
 }
