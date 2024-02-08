@@ -455,6 +455,7 @@ a.product__text {
 
 .product__info-container .product__accordion {
   border-bottom: 0.1rem solid #424242;
+  color: #424242;
 }
 .product__info-container .product__accordion {
   border-top: none !important;
