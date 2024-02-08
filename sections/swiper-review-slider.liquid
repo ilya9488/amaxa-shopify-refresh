@@ -86,6 +86,12 @@
   {% endif %}
 </div>
 
+<div class="reviews__wrapper">
+  {%- if product.metafields.custom.tabs_panel_4 != blank -%}
+    {{ product.metafields.custom.tabs_panel_4 }}
+  {%- endif -%}
+</div>
+
 <script></script>
 
 {% schema %}
