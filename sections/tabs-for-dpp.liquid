@@ -87,11 +87,10 @@
       reviewItemWrapper.classList.add('review-item-wrapper');
       reviewItemWrapper.innerHTML =  `
         <p>${item.user_name}</p>
-        <p>${item.Verified}</p>
+        <p>${item.verified}</p>
         <p>${item.stars_quantity}</p>
         <p>${item.comment_text}</p>
       `;
-      {% comment %} reviewItemWrapper.addEventListener('click', () => console.log(item)); {% endcomment %}
       reviewsWrapper.appendChild(reviewItemWrapper);
      });
 
