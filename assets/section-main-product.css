@@ -187,6 +187,10 @@
     flex-direction: column;
   }
 }
+.product-form__wrapper {
+  width: 100%;
+  /* border: 1px solid red; */
+}
 /* Form Elements */
 .product-form__input {
   flex: 0 0 100%;
