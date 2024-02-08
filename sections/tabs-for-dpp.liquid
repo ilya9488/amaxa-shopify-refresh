@@ -86,7 +86,8 @@
       const reviewItemWrapper = document.createElement('div');
       reviewItemWrapper.classList.add('review-item-wrapper');
       reviewItemWrapper.innerHTML =  `
-        <p>${item.}</p>
+        <p>${item.user_name}</p>
+        <p>${item.user_name}</p>
       `;
       {% comment %} reviewItemWrapper.addEventListener('click', () => console.log(item)); {% endcomment %}
       reviewsWrapper.appendChild(reviewItemWrapper);
