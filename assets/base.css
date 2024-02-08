@@ -1309,7 +1309,7 @@ button.shopify-payment-button__button--unbranded {
     rgba(var(--color-shadow), var(--shadow-opacity));
 }
 
-.button:after {
+.button:not(.product-form__submit):after {
   content: '';
   position: absolute;
   top: var(--buttons-border-width);
