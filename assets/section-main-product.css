@@ -1762,6 +1762,7 @@ a.product__text {
 
 .tablets {
   font-weight: 600;
+  margin-bottom: -5px;
 }
 
 .section-discount-delivery {
