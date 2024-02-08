@@ -86,7 +86,7 @@
 
   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute("reviews")); {% endcomment %}
 
-  console.log(reviewsWrapperJson);
+  {% comment %} console.log(reviewsWrapperJson);
 
   reviewsWrapperJson.reviews.forEach((item) => {
     console.log(item);
@@ -100,7 +100,7 @@
 
 
 
-  const reviewsJson = reviewsWrapper;
+  const reviewsJson = reviewsWrapper; {% endcomment %}
 </script>
 
 {% schema %}
