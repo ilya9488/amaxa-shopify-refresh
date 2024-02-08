@@ -339,11 +339,8 @@ fieldset.product-form__input .form__label {
     width: 300px;
   }
 }
-.product-form__submit {
-  margin-bottom: 1rem;
-  font-size: 15px;
-  font-weight: 600;
-  text-transform: uppercase;
+.product-form__submit span {
+color: 
 }
 
 .no-js .product-form__submit.button--secondary {
