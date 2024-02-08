@@ -257,6 +257,7 @@
         "page_VkXJzc",
         "page_NtixXW"
       ],
+      "disabled": true,
       "settings": {
         "clickable": false,
         "content_align": "left",
