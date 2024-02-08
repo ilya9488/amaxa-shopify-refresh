@@ -3006,6 +3006,7 @@ details-disclosure > details {
   font-weight: 600;
   border-radius: 50%;
   background: linear-gradient(135deg, #020024 0%, #ffd800 0%, #dcc366 0%, #ba8223 58%);
+  text-transform: uppercase;
 }
 
 .gradient {
