@@ -93,10 +93,10 @@
       reviewsWrapper.appendChild(reviewItemWrapper);
      });
 
-    const swiperReviews = new Swiper('.swiper', {
+    {% comment %} const swiperReviews = new Swiper('.swiper', {
       speed: 400,
       spaceBetween: 100,
-    });
+    }); {% endcomment %}
 
 
 
@@ -104,7 +104,7 @@
 
 
 
-  const sliders = document.querySelectorAll('.swiper-container')
+  const sliders = document.querySelectorAll('.swiper')
 
   sliders.forEach(slider => {
     const columns = slider.dataset.columns ?? 3
