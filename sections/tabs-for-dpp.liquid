@@ -81,9 +81,10 @@
     new Accordion('.accordion-container');
   });
 
-  const reviews__wrapper = document.querySelector('.reviews__wrapper');
-  const reviewsJson = ;
-  console.log(reviewsJson);
+  const reviewsWrapper = document.querySelector('.reviews__wrapper');
+  const reviewsWrapperJson = reviewsWrapper.textContent;
+  {% comment %} const reviewsJson = reviewsWrapper; {% endcomment %}
+  console.log(reviewsWrapperJson);
 </script>
 
 {% schema %}
