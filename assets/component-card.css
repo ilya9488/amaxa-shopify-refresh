@@ -183,13 +183,13 @@
   justify-self: flex-start;
 }
 
-.card__badge.top.left {
+.card__badge.top {
   align-self: flex-start;
   grid-row-start: 1;
 }
-.card__badge.top {
+.card__badge.top.left {
   margin-left: -15px;
-    margin-top: -17px;
+  margin-top: -17px;
 }
 
 .card__badge.right {
