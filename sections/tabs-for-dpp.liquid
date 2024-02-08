@@ -93,7 +93,7 @@
       reviewItemWrapper.innerHTML =  `
         <p class="slider-content--title">${item.user_name}</p>
         <p class="slider-content--title-desc"><small>${item.verified}</small></p>
-        <p>${star.repeat(item.stars_quantity)}</p>
+        <p class="slider-content--stars stars-filled--${star}">${star.repeat(item.stars_quantity)}</p>
         <p class="review-content">${item.comment_text}</p>
       `;
       reviewsWrapper.appendChild(reviewItemWrapper);
