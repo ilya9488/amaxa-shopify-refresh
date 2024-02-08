@@ -102,7 +102,7 @@ body {
   font-family: Metropolis, sans-serif;
   font-size: 17px;
   font-weight: 400;
-  color: var(--color-primary) !important;
+  color: var(--color-primary);
 }
 body * {
   color: var(--color-primary);
