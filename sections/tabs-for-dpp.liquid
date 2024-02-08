@@ -82,7 +82,7 @@
 
   const reviewsWrapper = document.querySelector('.reviews__wrapper');
   {% comment %} const reviewsWrapperJson = JSON.parse(reviewsWrapper.textContent); {% endcomment %}
-  const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute(reviews));
+  const reviewsWrapperJson = JSON.parse(reviewsWrapper.getAttribute("reviews"));
 
   console.log(reviewsWrapperJson);
 
