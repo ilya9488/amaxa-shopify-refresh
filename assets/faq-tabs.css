@@ -240,7 +240,7 @@ button.swiper-arrow.swiper-button-prev {
 
 .ac .ac-trigger {
     font-size: 15px !important;
-    font-weight: 600 !important;
+    font-weight: 500 !important;
     color: #424242 !important;
 }
 @media (max-width: 425px) {
@@ -265,19 +265,3 @@ details[open] summary~div {
     transition-duration: 3s ease-out;
     max-height: 2000px;
 }
-
-
-/* details summary~div {
-    overflow: hidden;
-}
-details[open] summary~div {
-    animation: sweep 2s ease-in-out;
-}
-@keyframes sweep {
-    0% {
-        max-height: 0;
-    }
-    100% {
-        max-height: 2000px;
-    }
-} */
