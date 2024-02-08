@@ -1178,7 +1178,7 @@ summary::-webkit-details-marker {
   width: 100%;
 }
 .card__media img {
-  
+  top: auto;
 }
 
 .media > img {
