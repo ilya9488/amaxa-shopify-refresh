@@ -1729,7 +1729,7 @@ a.product__text {
   border-radius: 10px 10px 0 0;
 }
 .product__brand p {
-  padding: 5px;
+  /* padding: 5px; */
   margin: 0;
   text-align: center;
   font-size: 24px;
