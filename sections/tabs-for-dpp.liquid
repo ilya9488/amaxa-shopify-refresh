@@ -39,17 +39,16 @@
       </div>
     </div>
 
-    {% assign count = count | plus: 1 %}
-    {%- if product.metafields.custom.tabs_panel_2 != blank -%}
-      {% comment %} <div class="tabs-panel" data-index="1"> {% endcomment %}
-      <div class="tabs-panel" data-index="{{ count }}">
-        <div class="wrap">
+    <div class="tabs-panel" data-index="{{ count }}">
+      <div class="wrap">
+        {% assign count = count | plus: 1 %}
+        {%- if product.metafields.custom.tabs_panel_2 != blank -%}
           {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
-        </div>
+        {% else %}
+          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
+        {%- endif -%}
       </div>
-    {% else %}
-      <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
-    {%- endif -%}
+    </div>
 
     {% assign count = count | plus: 1 %}
     {%- if product.metafields.custom.tabs_panel_3 != blank -%}
