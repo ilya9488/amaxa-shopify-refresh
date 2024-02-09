@@ -3,13 +3,14 @@
 
 <section class="page-width faq-tabs">
   <ul class="tabs">
-    {%- if product.metafields.custom.reviews != blank -%}
-      <li class="active">
-        <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
-          {{- section.settings.reviews -}}
-        </span>
-      </li>
-    {%- endif -%}
+    {% comment %} {%- if product.metafields.custom.reviews != blank -%} {% endcomment %}
+    <li class="active">
+      <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
+        {{- section.settings.reviews -}}
+      </span>
+    </li>
+    {% comment %} {%- endif -%} {% endcomment %}
+
     {% comment %}
       <li class="active">
         <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
@@ -53,8 +54,8 @@
     {% endcomment %}
   </ul>
   <div class="tabs-content">
-    {% comment %} <div class="tabs-panel active" data-index="0"> {% endcomment %}
-    <div class="tabs-panel" data-index="0">
+    <div class="tabs-panel active" data-index="0">
+      {% comment %} <div class="tabs-panel" data-index="0"> {% endcomment %}
       <div class="wrap wrap-review">
         {% if product.metafields.custom.reviews != blank %}
           <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
