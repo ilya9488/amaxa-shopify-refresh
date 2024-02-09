@@ -72,7 +72,8 @@
           data-section="{{ section.id }}"
           data-url="{{ product.url }}"
           class="product__info-container{% if section.settings.enable_sticky_info %} product__column-sticky{% endif %}"
-          style="{%- if section.settings.block[discount_delivery].settings.discount_image != blank -%}padding-bottom: 40px;{% endif %}"
+          {% comment %} style="{%- if section.block[discount_delivery].settings.discount_image != blank -%}padding-bottom: 40px;{% endif %}" {% endcomment %}
+          style="{%- if section.block[discount_delivery].settings.discount_image != blank -%}padding-bottom: 40px;{% endif %}"
         >
           {%- assign product_form_id = 'product-form-' | append: section.id -%}
           {%- for block in section.blocks -%}
