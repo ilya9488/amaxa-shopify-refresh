@@ -221,7 +221,7 @@ quick-add-modal .product-form__buttons {
   padding: 13px 26px;
   height: auto;
   min-height: inherit;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 15px;
   color: var(--title-color-primary);
 
