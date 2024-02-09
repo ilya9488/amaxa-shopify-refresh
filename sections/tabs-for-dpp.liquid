@@ -27,7 +27,6 @@
     {%- endif -%}
   </ul>
   <div class="tabs-content">
-    {% comment %} {% if product.metafields.custom.reviews != blank %} {% endcomment %}
     <div class="tabs-panel active" data-index="0">
       <div class="wrap wrap-review">
         <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
@@ -37,13 +36,6 @@
         <button class="swiper-arrow swiper-button-prev"></button>
       </div>
     </div>
-    {% comment %}
-      {% else %}
-        <p class="reviews--not-found">{{ section.settings.data_not_found_first_tab }}</p>
-        {{ product.metafields.custom.reviews }}
-      {% endif %}
-    {% endcomment %}
-
     {%- if product.metafields.custom.tabs_panel_2 != blank -%}
       <div class="tabs-panel" data-index="1">
         <div class="wrap">
