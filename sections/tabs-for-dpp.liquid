@@ -27,9 +27,9 @@
     {%- endif -%}
   </ul>
 
-  {% assign count = 0 %}
-
   <div class="tabs-content">
+    {% assign count = 0 %}
+
     <div class="tabs-panel active" data-index="{{ count }}">
       <div class="wrap wrap-review">
         {% if product.metafields.custom.reviews != blank %}
@@ -44,7 +44,6 @@
       </div>
     </div>
 
-    {% comment %} {% assign count = count | plus: 1 %} {% endcomment %}
     <div class="tabs-panel" data-index="{% increment count %}">
       <div class="wrap">
         {%- if product.metafields.custom.tabs_panel_2 != blank -%}
@@ -55,7 +54,6 @@
       </div>
     </div>
 
-    {% comment %} {% assign count = count | plus: 1 %} {% endcomment %}
     <div class="tabs-panel" data-index="{% increment count %}">
       <div class="wrap">
         {%- if product.metafields.custom.tabs_panel_3 != blank -%}
@@ -66,7 +64,6 @@
       </div>
     </div>
 
-    {% comment %} {% assign count = count | plus: 1 %} {% endcomment %}
     <div class="tabs-panel" data-index="{% increment count %}">
       <div class="wrap">
         {%- if product.metafields.custom.tabs_panel_4 != blank -%}
