@@ -3612,7 +3612,7 @@ details[open] {
   animation: slide .5s ease-in-out;
 }
 
-@keyframes slide {
+/* @keyframes slide {
   0% {
     opacity: 0;
   }
@@ -3620,4 +3620,4 @@ details[open] {
   100% {
     opacity: 1;
   }
-}
+} */
