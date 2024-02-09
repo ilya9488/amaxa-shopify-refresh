@@ -14,11 +14,14 @@
         "text_AExqbr": {
           "type": "text",
           "settings": {
-            "text": "<p>We are always happy to answer questions. If you don't find your answer below please<a href=\"https://www.vitabiotics.com/pages/contact-us\">Contact Us</a></p>"
+            "text": "<p>We are always happy to answer questions. If you don't find your answer below please<a href=\"https:\/\/www.vitabiotics.com\/pages\/contact-us\">Contact Us<\/a><\/p>"
           }
         }
       },
-      "block_order": ["heading_Rn3TrD", "text_AExqbr"],
+      "block_order": [
+        "heading_Rn3TrD",
+        "text_AExqbr"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -36,7 +39,7 @@
           "settings": {
             "heading": "How Do I See The Progress Of My Vitabiotics order?",
             "icon": "none",
-            "row_content": "<p>You can see the status and track your order by checking the tracking emails sent to you which have links to the live status of the orders, or by signing in to your account<a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p>",
+            "row_content": "<p>You can see the status and track your order by checking the tracking emails sent to you which have links to the live status of the orders, or by signing in to your account<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -45,16 +48,16 @@
           "settings": {
             "heading": "I Need Help Placing An Order",
             "icon": "none",
-            "row_content": "<p>If you are having trouble placing an order please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>for advice.</p>",
+            "row_content": "<p>If you are having trouble placing an order please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for advice.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_K6w6dr": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What Do I Do If I Receive A Faulty / Incorrect Item?",
+            "heading": "What Do I Do If I Receive A Faulty \/ Incorrect Item?",
             "icon": "none",
-            "row_content": "<p>In the rare event that you receive a faulty or incorrect item, please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>for advice. You may be required to provide proof of delivery and / or photographic evidence.</p>",
+            "row_content": "<p>In the rare event that you receive a faulty or incorrect item, please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for advice. You may be required to provide proof of delivery and \/ or photographic evidence.<\/p>",
             "page": ""
           }
         },
@@ -63,7 +66,7 @@
           "settings": {
             "heading": "I Have Entered The Wrong Shipping Address, Can This Be Changed?",
             "icon": "none",
-            "row_content": "<p>If the order has been dispatched then it will be too late to amend your delivery address. If the order is still being prepared for dispatch please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>for assistance. In some cases the order may be cancelled in order for you to place it again with the correct details.</p>",
+            "row_content": "<p>If the order has been dispatched then it will be too late to amend your delivery address. If the order is still being prepared for dispatch please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for assistance. In some cases the order may be cancelled in order for you to place it again with the correct details.<\/p>",
             "page": ""
           }
         },
@@ -72,7 +75,7 @@
           "settings": {
             "heading": "What Does The 3 For 2 Offer Mean?",
             "icon": "none",
-            "row_content": "<p>Purchase any three products across the Vitabiotics range and get the lowest priced one free. This does not apply to Subscribe & Save orders. Simply add at least any three items to your basket and the discount will be automatically calculated in your basket.</p><p>Remember you can choose any items across the website: for example, if you chose a Wellman Plus, Perfectil Original and a Wellkid Smart Chewable, you would get the Wellkid product for free, as this is the least expensive item.</p>",
+            "row_content": "<p>Purchase any three products across the Vitabiotics range and get the lowest priced one free. This does not apply to Subscribe & Save orders. Simply add at least any three items to your basket and the discount will be automatically calculated in your basket.<\/p><p>Remember you can choose any items across the website: for example, if you chose a Wellman Plus, Perfectil Original and a Wellkid Smart Chewable, you would get the Wellkid product for free, as this is the least expensive item.<\/p>",
             "page": ""
           }
         },
@@ -81,7 +84,7 @@
           "settings": {
             "heading": "How Do I Use Voucher Codes?",
             "icon": "none",
-            "row_content": "<p>To use a voucher code valid for Vitabiotics.com, simply enter the code when you see the ‘Enter Promo Code’ box in the checkout and press the ‘Apply’ button. Please note that voucher codes cannot be used at the same time as Vitabiotics<a href=\"https://www.vitabiotics.com/pages/rewards\">Rewards Points</a>nor with<a href=\"https://www.vitabiotics.com/pages/subscribe\">Subscribe & Save</a>orders. </p>",
+            "row_content": "<p>To use a voucher code valid for Vitabiotics.com, simply enter the code when you see the ‘Enter Promo Code’ box in the checkout and press the ‘Apply’ button. Please note that voucher codes cannot be used at the same time as Vitabiotics<a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a>nor with<a href=\"https:\/\/www.vitabiotics.com\/pages\/subscribe\">Subscribe & Save<\/a>orders. <\/p>",
             "page": ""
           }
         }
@@ -117,7 +120,7 @@
           "settings": {
             "heading": "Can I Amend The Delivery Details For My Order?",
             "icon": "none",
-            "row_content": "<p>If the order has been dispatched then it will be too late to amend your delivery address. If the order is still being prepared for dispatch please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>for assistance. In some cases the order may be cancelled in order for you to place it again with the correct details.</p>",
+            "row_content": "<p>If the order has been dispatched then it will be too late to amend your delivery address. If the order is still being prepared for dispatch please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for assistance. In some cases the order may be cancelled in order for you to place it again with the correct details.<\/p>",
             "page": ""
           }
         },
@@ -126,7 +129,7 @@
           "settings": {
             "heading": "How do I Track my Order Delivery?",
             "icon": "none",
-            "row_content": "<p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status<a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p>",
+            "row_content": "<p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -135,7 +138,7 @@
           "settings": {
             "heading": "What Is Your Returns Policy?",
             "icon": "none",
-            "row_content": "<p>Items can be returned if they are damaged, faulty, if we have made an error with the order, or if they are unwanted. Items need to be unopened (with any seals and shrink wrap intact) and in the original packaging. We can only accept the return of opened items if they are faulty.</p><p>If an item is no longer required, then you have 14 days to contact us regarding the return of the item(s) from the date of receiving the order. You then have 14 days to return your item(s). </p><p>If an item is damaged or faulty then you may be eligible for a refund up to 30 days after purchase. Between 30 days and six months, you're only entitled to a replacement, not a refund. </p><p>Photographic evidence may be requested to support your claim for damaged, faulty or missing items. We will then process refunds accordingly on receipt of the items back to us.</p>",
+            "row_content": "<p>Items can be returned if they are damaged, faulty, if we have made an error with the order, or if they are unwanted. Items need to be unopened (with any seals and shrink wrap intact) and in the original packaging. We can only accept the return of opened items if they are faulty.<\/p><p>If an item is no longer required, then you have 14 days to contact us regarding the return of the item(s) from the date of receiving the order. You then have 14 days to return your item(s). <\/p><p>If an item is damaged or faulty then you may be eligible for a refund up to 30 days after purchase. Between 30 days and six months, you're only entitled to a replacement, not a refund. <\/p><p>Photographic evidence may be requested to support your claim for damaged, faulty or missing items. We will then process refunds accordingly on receipt of the items back to us.<\/p>",
             "page": ""
           }
         },
@@ -144,7 +147,7 @@
           "settings": {
             "heading": "How Do I Return Items?",
             "icon": "none",
-            "row_content": "<p>Please follow the steps below to enable us to process your refund efficiently:</p><p>1. Wrap the item securely in its original packaging with all accompanying documentation.</p><p>2. Contact Customer Services at <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>, who will provide you with a freepost return address providing you are able to return your order under the returns policy outlined above. If postage is paid by customers, this cannot be refunded as we have a freepost system where no postage is required.</p><p>3. We will notify you via e-mail when we have processed your refund.</p><p>Please note that international orders are not free to return, unless they are faulty.</p>",
+            "row_content": "<p>Please follow the steps below to enable us to process your refund efficiently:<\/p><p>1. Wrap the item securely in its original packaging with all accompanying documentation.<\/p><p>2. Contact Customer Services at <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>, who will provide you with a freepost return address providing you are able to return your order under the returns policy outlined above. If postage is paid by customers, this cannot be refunded as we have a freepost system where no postage is required.<\/p><p>3. We will notify you via e-mail when we have processed your refund.<\/p><p>Please note that international orders are not free to return, unless they are faulty.<\/p>",
             "page": ""
           }
         },
@@ -153,7 +156,7 @@
           "settings": {
             "heading": "Do Vitabiotics Deliver Overseas?",
             "icon": "none",
-            "row_content": "<p>Yes, Vitabiotics delivers to countries all over the world including America, Asia & Pacific, Europe, Middle East & Africa - you can see the list of countries we ship on our<a href=\"https://www.vitabiotics.com/pages/shipping-delivery\">International Shipping</a>page.</p>",
+            "row_content": "<p>Yes, Vitabiotics delivers to countries all over the world including America, Asia & Pacific, Europe, Middle East & Africa - you can see the list of countries we ship on our<a href=\"https:\/\/www.vitabiotics.com\/pages\/shipping-delivery\">International Shipping<\/a>page.<\/p>",
             "page": ""
           }
         },
@@ -162,7 +165,7 @@
           "settings": {
             "heading": "How Much Does Delivery Cost?",
             "icon": "none",
-            "row_content": "<p>Standard UK delivery is free on all products. If you need your order sooner, then we offer an express option for an additional cost.</p><p>International delivery charges vary, the cost of shipping will be displayed at checkout upon placing your order. To see the countries we ship to, please see the <a href=\"https://www.vitabiotics.com/pages/shipping-delivery\">International Shipping</a> page.</p><p>We are unable to comment on any customs fees that may be applied by the destination country and these will be the customer's obligation, and are subject to change and local rules.</p>",
+            "row_content": "<p>Standard UK delivery is free on all products. If you need your order sooner, then we offer an express option for an additional cost.<\/p><p>International delivery charges vary, the cost of shipping will be displayed at checkout upon placing your order. To see the countries we ship to, please see the <a href=\"https:\/\/www.vitabiotics.com\/pages\/shipping-delivery\">International Shipping<\/a> page.<\/p><p>We are unable to comment on any customs fees that may be applied by the destination country and these will be the customer's obligation, and are subject to change and local rules.<\/p>",
             "page": ""
           }
         },
@@ -171,7 +174,7 @@
           "settings": {
             "heading": "Do You Deliver To PO Box Addresses?",
             "icon": "none",
-            "row_content": "<p>Yes we deliver to PO Box addresses.</p>",
+            "row_content": "<p>Yes we deliver to PO Box addresses.<\/p>",
             "page": ""
           }
         },
@@ -180,7 +183,7 @@
           "settings": {
             "heading": "Do You Deliver To BFPO Addresses?",
             "icon": "none",
-            "row_content": "<p>Yes we deliver to BFPO addresses.</p>",
+            "row_content": "<p>Yes we deliver to BFPO addresses.<\/p>",
             "page": ""
           }
         },
@@ -189,7 +192,7 @@
           "settings": {
             "heading": "Can You Deliver To My Workplace?",
             "icon": "none",
-            "row_content": "<p>Yes we can deliver to workplaces but please check with your employer first.</p>",
+            "row_content": "<p>Yes we can deliver to workplaces but please check with your employer first.<\/p>",
             "page": ""
           }
         },
@@ -198,7 +201,7 @@
           "settings": {
             "heading": "How Long Will My Vitabiotics Order Take?",
             "icon": "none",
-            "row_content": "<p>Standard free delivery for UK orders is 3 - 5 working days. If you require your UK order sooner, then we offer an express delivery service for an additional fee. Delivery times may vary depending on the time of year and / or exceptional circumstances, such as around Black Friday week or the festive season and New year. </p><p>International delivery has a lead time of 10-12 working days.</p><p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status <a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one <a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p>",
+            "row_content": "<p>Standard free delivery for UK orders is 3 - 5 working days. If you require your UK order sooner, then we offer an express delivery service for an additional fee. Delivery times may vary depending on the time of year and \/ or exceptional circumstances, such as around Black Friday week or the festive season and New year. <\/p><p>International delivery has a lead time of 10-12 working days.<\/p><p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status <a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one <a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         }
@@ -238,7 +241,7 @@
           "settings": {
             "heading": "What Are The Benefits of Having a Customer Account?",
             "icon": "none",
-            "row_content": "<p>Creating a customer account gives you the facility to see and track your order, your order history, save your payment details and amend your details where applicable. You can also see your<a href=\"https://www.vitabiotics.com/pages/rewards\">Rewards Points</a>balance and history. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p>",
+            "row_content": "<p>Creating a customer account gives you the facility to see and track your order, your order history, save your payment details and amend your details where applicable. You can also see your<a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a>balance and history. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -247,25 +250,25 @@
           "settings": {
             "heading": "Where Can I See My Vitabiotics Order History?",
             "icon": "none",
-            "row_content": "<p>If you already have an account, then you can login to see your order history<a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p>",
+            "row_content": "<p>If you already have an account, then you can login to see your order history<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_kUakEE": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "My Username / Password Doesn’t Seem To Be Working To Log In",
+            "heading": "My Username \/ Password Doesn’t Seem To Be Working To Log In",
             "icon": "none",
-            "row_content": "<p>Please reset your password by using the ‘Forgotten Password?’ link on the<a href=\"https://www.vitabiotics.com/account/login\">My Account</a>page. Please ensure your email address is spelt correctly. You do not automatically create an account when you place an order on vitabiotics.com, so if you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p>",
+            "row_content": "<p>Please reset your password by using the ‘Forgotten Password?’ link on the<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">My Account<\/a>page. Please ensure your email address is spelt correctly. You do not automatically create an account when you place an order on vitabiotics.com, so if you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_D8hCF6": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How Do I Subscribe / Unsubscribe To Vitabiotics Emails?",
+            "heading": "How Do I Subscribe \/ Unsubscribe To Vitabiotics Emails?",
             "icon": "none",
-            "row_content": "<p>Subscribing to emails can be done either at the checkout stage (where you also collect <a href=\"https://www.vitabiotics.com/pages/rewards\">Rewards Points</a> for signing up) or at the bottom of the website pages, or via a “pop-up” box which often appears when you visit the site.</p><p>To unsubscribe, simply click the link at the top of any email received and you will automatically be unsubscribed from all marketing emails (except order and delivery related transactional email notifications).</p>",
+            "row_content": "<p>Subscribing to emails can be done either at the checkout stage (where you also collect <a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a> for signing up) or at the bottom of the website pages, or via a “pop-up” box which often appears when you visit the site.<\/p><p>To unsubscribe, simply click the link at the top of any email received and you will automatically be unsubscribed from all marketing emails (except order and delivery related transactional email notifications).<\/p>",
             "page": ""
           }
         },
@@ -274,7 +277,7 @@
           "settings": {
             "heading": "How Do I Change My Personal Details?",
             "icon": "none",
-            "row_content": "<p>If you already have an account, then <a href=\"https://www.vitabiotics.com/account/login\">login</a> and you can update your details under the ‘My Details’ section. If you do not currently have an account, then you can create one <a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p><p>If you are looking to change your details relating to a <a href=\"https://www.vitabiotics.com/pages/subscribe\">Subscribe & Save</a> order, then you will need to do this in the ‘Subscribe and Save’ section of your account. </p>",
+            "row_content": "<p>If you already have an account, then <a href=\"https:\/\/www.vitabiotics.com\/account\/login\">login<\/a> and you can update your details under the ‘My Details’ section. If you do not currently have an account, then you can create one <a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p><p>If you are looking to change your details relating to a <a href=\"https:\/\/www.vitabiotics.com\/pages\/subscribe\">Subscribe & Save<\/a> order, then you will need to do this in the ‘Subscribe and Save’ section of your account. <\/p>",
             "page": ""
           }
         },
@@ -283,16 +286,16 @@
           "settings": {
             "heading": "Where Can I Find Your Terms & Conditions?",
             "icon": "none",
-            "row_content": "<p>You can find our Terms & Conditions<a href=\"https://www.vitabiotics.com/pages/terms\">here</a>and our Privacy Policy<a href=\"https://www.vitabiotics.com/pages/privacy-policy-cookies\">here</a>.</p>",
+            "row_content": "<p>You can find our Terms & Conditions<a href=\"https:\/\/www.vitabiotics.com\/pages\/terms\">here<\/a>and our Privacy Policy<a href=\"https:\/\/www.vitabiotics.com\/pages\/privacy-policy-cookies\">here<\/a>.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_f9W7pf": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How Do I Get A VAT Refund / Receipt?",
+            "heading": "How Do I Get A VAT Refund \/ Receipt?",
             "icon": "none",
-            "row_content": "<p>Please email<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>with your order number and we will email it across.</p>",
+            "row_content": "<p>Please email<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>with your order number and we will email it across.<\/p>",
             "page": ""
           }
         }
@@ -329,7 +332,7 @@
           "settings": {
             "heading": "What Is Subscribe & Save?",
             "icon": "none",
-            "row_content": "<p>Subscribe & Save is a regular product subscription. It’s an easy and convenient way to save on your Vitabiotics supplements. You’ll receive a 20% discount on each order and every fifth consecutive item is free. You can find out more on our<a href=\"https://www.vitabiotics.com/pages/subscribe\">Subscribe & Save page</a>. </p>",
+            "row_content": "<p>Subscribe & Save is a regular product subscription. It’s an easy and convenient way to save on your Vitabiotics supplements. You’ll receive a 20% discount on each order and every fifth consecutive item is free. You can find out more on our<a href=\"https:\/\/www.vitabiotics.com\/pages\/subscribe\">Subscribe & Save page<\/a>. <\/p>",
             "page": ""
           }
         },
@@ -338,7 +341,7 @@
           "settings": {
             "heading": "How Do I Add An Item To My Subscription?",
             "icon": "none",
-            "row_content": "<p>You can increase the quantity of an existing Subscribe & Save order item, but we cannot add new items to the same order. You can place a new Subscribe & Save order for the new item and select the frequency and dates. </p>",
+            "row_content": "<p>You can increase the quantity of an existing Subscribe & Save order item, but we cannot add new items to the same order. You can place a new Subscribe & Save order for the new item and select the frequency and dates. <\/p>",
             "page": ""
           }
         },
@@ -347,7 +350,7 @@
           "settings": {
             "heading": "How Do I Pause Or Amend My Subscription?",
             "icon": "none",
-            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in <a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one <a href=\"https://www.vitabiotics.com/account/register\">here</a> and follow the simple steps to pause or amend your subscription.</p>",
+            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in <a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one <a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a> and follow the simple steps to pause or amend your subscription.<\/p>",
             "page": ""
           }
         },
@@ -356,7 +359,7 @@
           "settings": {
             "heading": "How Do I Cancel My Subscription?",
             "icon": "none",
-            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in<a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>and follow the simple steps to cancel your subscription.</p>",
+            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>and follow the simple steps to cancel your subscription.<\/p>",
             "page": ""
           }
         },
@@ -365,7 +368,7 @@
           "settings": {
             "heading": "How Do I Change My Delivery Address For My Subscription?",
             "icon": "none",
-            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in<a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>. Please note that you will need to change your address in the ‘Subscribe & Save section and NOT the address in the ‘My Details’ section.</p>",
+            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>. Please note that you will need to change your address in the ‘Subscribe & Save section and NOT the address in the ‘My Details’ section.<\/p>",
             "page": ""
           }
         },
@@ -374,7 +377,7 @@
           "settings": {
             "heading": "How Do I Change My Payment Card For My Subscription?",
             "icon": "none",
-            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in<a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>. Go to the ‘Subscribe & Save section and change or update your card details.</p>",
+            "row_content": "<p>You will need an account to do this. If you already have one, then please sign in<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>. Go to the ‘Subscribe & Save section and change or update your card details.<\/p>",
             "page": ""
           }
         },
@@ -383,7 +386,7 @@
           "settings": {
             "heading": "How Does 5th Item Free Work?",
             "icon": "none",
-            "row_content": "<p>With each product subscription, every fifth item free of the same product in sequence is automatically allocated for you and processed after the fourth item in sequence has been paid for and dispatched. It will be automatically sent out to you according to your chosen delivery frequency.</p>",
+            "row_content": "<p>With each product subscription, every fifth item free of the same product in sequence is automatically allocated for you and processed after the fourth item in sequence has been paid for and dispatched. It will be automatically sent out to you according to your chosen delivery frequency.<\/p>",
             "page": ""
           }
         }
@@ -420,7 +423,7 @@
           "settings": {
             "heading": "What Are Rewards Points?",
             "icon": "none",
-            "row_content": "<p>Vitabiotics Rewards Points is an easy way for you to save money. Simply collect free Rewards Points every time you shop and use them for an instant saving on your next order. You can find out more on our<a href=\"https://www.vitabiotics.com/pages/rewards\">Rewards Points</a>page.</p>",
+            "row_content": "<p>Vitabiotics Rewards Points is an easy way for you to save money. Simply collect free Rewards Points every time you shop and use them for an instant saving on your next order. You can find out more on our<a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a>page.<\/p>",
             "page": ""
           }
         },
@@ -429,7 +432,7 @@
           "settings": {
             "heading": "How do I collect, manage and redeem Rewards Points?",
             "icon": "none",
-            "row_content": "<p>Collect free Rewards Points every time you shop on Vitabiotics.com. You’ll also receive 150 free Rewards Points when you<a href=\"https://www.vitabiotics.com/account/register\">create an accoun</a>t. Every 100 Points collected = £1 off your next order! Sign in to your account and simply redeem these at checkout. To spend your points, you will need a vitabiotics.com account. You can find out more on our<a href=\"https://www.vitabiotics.com/pages/rewards\">Rewards Points</a>page.</p>",
+            "row_content": "<p>Collect free Rewards Points every time you shop on Vitabiotics.com. You’ll also receive 150 free Rewards Points when you<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">create an accoun<\/a>t. Every 100 Points collected = £1 off your next order! Sign in to your account and simply redeem these at checkout. To spend your points, you will need a vitabiotics.com account. You can find out more on our<a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a>page.<\/p>",
             "page": ""
           }
         },
@@ -438,7 +441,7 @@
           "settings": {
             "heading": "How do I Hear about The Special Rewards Points Offers?",
             "icon": "none",
-            "row_content": "<p>Our email newsletters often feature exclusive Rewards Points promotions. You can sign up to our newsletters<a href=\"https://www.vitabiotics.com/pages/frequently-asked-questions#shopify-section-footer\">here</a>.</p>",
+            "row_content": "<p>Our email newsletters often feature exclusive Rewards Points promotions. You can sign up to our newsletters<a href=\"https:\/\/www.vitabiotics.com\/pages\/frequently-asked-questions#shopify-section-footer\">here<\/a>.<\/p>",
             "page": ""
           }
         }
@@ -471,7 +474,7 @@
           "settings": {
             "heading": "Which Vitabiotics' Products Are Suitable For Vegetarians?",
             "icon": "none",
-            "row_content": "<p>You can see all of our vegetarian-friendly products by visiting our<a href=\"https://www.vitabiotics.com/collections/vegetarian-supplements\">Vitamins & Supplements for Vegetarians</a>Collection.</p>",
+            "row_content": "<p>You can see all of our vegetarian-friendly products by visiting our<a href=\"https:\/\/www.vitabiotics.com\/collections\/vegetarian-supplements\">Vitamins & Supplements for Vegetarians<\/a>Collection.<\/p>",
             "page": ""
           }
         },
@@ -480,7 +483,7 @@
           "settings": {
             "heading": "Which Vitabiotics' Products Are Suitable For Vegans?",
             "icon": "none",
-            "row_content": "<p>You can see all of our vegan-friendly products by visiting our<a href=\"https://www.vitabiotics.com/collections/vegan-supplements\">Vegan Vitamins & Supplements</a>Collection.</p>",
+            "row_content": "<p>You can see all of our vegan-friendly products by visiting our<a href=\"https:\/\/www.vitabiotics.com\/collections\/vegan-supplements\">Vegan Vitamins & Supplements<\/a>Collection.<\/p>",
             "page": ""
           }
         },
@@ -489,7 +492,7 @@
           "settings": {
             "heading": "Do You Have Any Gluten Free Products?",
             "icon": "none",
-            "row_content": "<p>Yes, you can find all of our gluten free products on our<a href=\"https://www.vitabiotics.com/collections/gluten-free-supplements\">Gluten Free Vitamins & Supplements </a>Collection. </p>",
+            "row_content": "<p>Yes, you can find all of our gluten free products on our<a href=\"https:\/\/www.vitabiotics.com\/collections\/gluten-free-supplements\">Gluten Free Vitamins & Supplements <\/a>Collection. <\/p>",
             "page": ""
           }
         },
@@ -498,7 +501,7 @@
           "settings": {
             "heading": "Are Vitabiotics Products Halal?",
             "icon": "none",
-            "row_content": "<p>You can see all of our Halal-friendly products on our<a href=\"https://www.vitabiotics.com/collections/halal\">Halal Vitamins</a>Collection.</p>",
+            "row_content": "<p>You can see all of our Halal-friendly products on our<a href=\"https:\/\/www.vitabiotics.com\/collections\/halal\">Halal Vitamins<\/a>Collection.<\/p>",
             "page": ""
           }
         },
@@ -507,7 +510,7 @@
           "settings": {
             "heading": "When Is The Best Time To Take Multivitamin And Mineral Supplements?",
             "icon": "none",
-            "row_content": "<p>Scientific opinion varies, but it is often thought that earlier in the day is better for vitamin intake.  However, it is important to ensure the supplements are taken with your largest meal of the day to maximise nutrient absorption, whether this is your lunch or evening meal. Avoid taking with breakfast if this is only a light meal for you. </p>",
+            "row_content": "<p>Scientific opinion varies, but it is often thought that earlier in the day is better for vitamin intake.  However, it is important to ensure the supplements are taken with your largest meal of the day to maximise nutrient absorption, whether this is your lunch or evening meal. Avoid taking with breakfast if this is only a light meal for you. <\/p>",
             "page": ""
           }
         },
@@ -516,16 +519,16 @@
           "settings": {
             "heading": "Is It Necessary To Take The Capsules And Tablets With A Glass Of Water?",
             "icon": "none",
-            "row_content": "<p>Yes. Always ensure that tablets or capsules are taken with plenty of liquid to help swallowing and to wash it down. It is not recommended to take tablets or capsules with hot drinks such as tea or coffee, as not only could you burn your mouth if you take too large a sip, but this may also cause the tablet or capsule to disintegrate too early.</p>",
+            "row_content": "<p>Yes. Always ensure that tablets or capsules are taken with plenty of liquid to help swallowing and to wash it down. It is not recommended to take tablets or capsules with hot drinks such as tea or coffee, as not only could you burn your mouth if you take too large a sip, but this may also cause the tablet or capsule to disintegrate too early.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_MxmPFg": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "I Find It Difficult To Swallow Tablets / Capsules, Do You Have Any Advice?",
+            "heading": "I Find It Difficult To Swallow Tablets \/ Capsules, Do You Have Any Advice?",
             "icon": "none",
-            "row_content": "<p>Difficulty in swallowing tablets is quite a common experience. Vitabiotics have researched this extensively and recommend that after chewing some food (e.g. banana), just before you swallow, pop the tablet into your mouth and swallow it together with the chewed food, followed by some liquid. The throat opens up wider to swallow the chewed food and so the tablet should go down with greater ease. Alternatively, the tablets may be swallowed with thicker liquids such as yoghurts or smoothies.</p><p>If you are looking for an alternative to tablets, then we also offer a range of <a href=\"https://www.vitabiotics.com/collections/liquid-vitamins\">Liquid Vitamins</a> and chewable <a href=\"https://www.vitabiotics.com/collections/vitamin-gummies\">Vitamin Gummies</a>. </p>",
+            "row_content": "<p>Difficulty in swallowing tablets is quite a common experience. Vitabiotics have researched this extensively and recommend that after chewing some food (e.g. banana), just before you swallow, pop the tablet into your mouth and swallow it together with the chewed food, followed by some liquid. The throat opens up wider to swallow the chewed food and so the tablet should go down with greater ease. Alternatively, the tablets may be swallowed with thicker liquids such as yoghurts or smoothies.<\/p><p>If you are looking for an alternative to tablets, then we also offer a range of <a href=\"https:\/\/www.vitabiotics.com\/collections\/liquid-vitamins\">Liquid Vitamins<\/a> and chewable <a href=\"https:\/\/www.vitabiotics.com\/collections\/vitamin-gummies\">Vitamin Gummies<\/a>. <\/p>",
             "page": ""
           }
         },
@@ -534,7 +537,7 @@
           "settings": {
             "heading": "Can The Capsule Or Tablet Products Be Taken By Small Children?",
             "icon": "none",
-            "row_content": "<p>No, this is not recommended as we have specific liquid and chewable formats for children. Of course, many Vitabiotics' products are for specific adult requirements or life stages, and are therefore not recommended for children. Because of the size of some capsules and tablets, we do not recommend they be taken by children under the age of 12, unless specified otherwise under the directions for use. Browse our range of<a href=\"https://www.vitabiotics.com/collections/kids-vitamins\">Children's Vitamins & Multivitamins</a>to find something that suits your child’s needs. </p>",
+            "row_content": "<p>No, this is not recommended as we have specific liquid and chewable formats for children. Of course, many Vitabiotics' products are for specific adult requirements or life stages, and are therefore not recommended for children. Because of the size of some capsules and tablets, we do not recommend they be taken by children under the age of 12, unless specified otherwise under the directions for use. Browse our range of<a href=\"https:\/\/www.vitabiotics.com\/collections\/kids-vitamins\">Children's Vitamins & Multivitamins<\/a>to find something that suits your child’s needs. <\/p>",
             "page": ""
           }
         },
@@ -543,7 +546,7 @@
           "settings": {
             "heading": "How Big Are The Tablets? Are They Easy To Swallow?",
             "icon": "none",
-            "row_content": "<p>Tablet sizes vary from product to product. You can contact <a href=\"mailto:productcare@vitabiotics.com\">productcare@vitabiotics.com</a> for further advice and helpful tips. </p><p>In many of our ranges we include alternatives to tablets and capsules - including Liquid Vitamins, <a href=\"https://www.vitabiotics.com/collections/vitamin-gummies\">Vitamin Gummies</a>, effervescent tablets that dissolve into a nutrient-rich drink and chewables for kids.</p>",
+            "row_content": "<p>Tablet sizes vary from product to product. You can contact <a href=\"mailto:productcare@vitabiotics.com\">productcare@vitabiotics.com<\/a> for further advice and helpful tips. <\/p><p>In many of our ranges we include alternatives to tablets and capsules - including Liquid Vitamins, <a href=\"https:\/\/www.vitabiotics.com\/collections\/vitamin-gummies\">Vitamin Gummies<\/a>, effervescent tablets that dissolve into a nutrient-rich drink and chewables for kids.<\/p>",
             "page": ""
           }
         },
@@ -552,7 +555,7 @@
           "settings": {
             "heading": "Where Are Vitabiotics Products Manufactured?",
             "icon": "none",
-            "row_content": "<p>We are a British company and always aim to keep our manufacturing in the UK to GMP standards. The vast majority of our products are made right here in the UK, which includes our tablet formulations and all of our liquid and effervescent products. We also use facilities in other countries including France, Germany and Switzerland, for a number of our products. Raw materials can be sourced in the UK and across the world, to strict pharmaceutical or food grade standards.</p>",
+            "row_content": "<p>We are a British company and always aim to keep our manufacturing in the UK to GMP standards. The vast majority of our products are made right here in the UK, which includes our tablet formulations and all of our liquid and effervescent products. We also use facilities in other countries including France, Germany and Switzerland, for a number of our products. Raw materials can be sourced in the UK and across the world, to strict pharmaceutical or food grade standards.<\/p>",
             "page": ""
           }
         }
@@ -592,7 +595,7 @@
           "settings": {
             "heading": "What Is The Quickest Way To Contact Vitabiotics?",
             "icon": "none",
-            "row_content": "<p>Please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>.</p>",
+            "row_content": "<p>Please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -601,7 +604,7 @@
           "settings": {
             "heading": "How Do I Make A Complaint?",
             "icon": "none",
-            "row_content": "<p>Please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>.</p>",
+            "row_content": "<p>Please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -610,7 +613,7 @@
           "settings": {
             "heading": "I Have A Press Enquiry",
             "icon": "none",
-            "row_content": "<p>Please contact our press team<a href=\"https://www.vitabiotics.com/pages/get-in-touch\">here</a>.</p>",
+            "row_content": "<p>Please contact our press team<a href=\"https:\/\/www.vitabiotics.com\/pages\/get-in-touch\">here<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -619,7 +622,7 @@
           "settings": {
             "heading": "How Do I Contact Your Marketing Team?",
             "icon": "none",
-            "row_content": "<p>Please contact our marketing team<a href=\"https://www.vitabiotics.com/pages/get-in-touch\"> here</a>.</p>",
+            "row_content": "<p>Please contact our marketing team<a href=\"https:\/\/www.vitabiotics.com\/pages\/get-in-touch\"> here<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -628,7 +631,7 @@
           "settings": {
             "heading": "How Do I Open A Trade Account?",
             "icon": "none",
-            "row_content": "<p>For UK trade enquiries, please contact <a href=\"https://www.alliance-healthcare.co.uk/\">Alliance Healthcare</a>.</p><p>For international enquiries, please contact our <a href=\"https://www.vitabiotics.com/pages/get-in-touch\">Export team</a>.</p>",
+            "row_content": "<p>For UK trade enquiries, please contact <a href=\"https:\/\/www.alliance-healthcare.co.uk\/\">Alliance Healthcare<\/a>.<\/p><p>For international enquiries, please contact our <a href=\"https:\/\/www.vitabiotics.com\/pages\/get-in-touch\">Export team<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -637,7 +640,7 @@
           "settings": {
             "heading": "How Do I Find A Job At Vitabiotics?",
             "icon": "none",
-            "row_content": "<p>Want to join the UK’s number one vitamin company? You can see all of our open roles on our<a href=\"https://www.vitabiotics.com/pages/careers\">Careers page</a>. </p>",
+            "row_content": "<p>Want to join the UK’s number one vitamin company? You can see all of our open roles on our<a href=\"https:\/\/www.vitabiotics.com\/pages\/careers\">Careers page<\/a>. <\/p>",
             "page": ""
           }
         }

@@ -4,7 +4,7 @@
     "image_banner_V7NCDa": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/1.webp",
+        "image": "shopify:\/\/shop_images\/1.webp",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "middle-center",
@@ -30,11 +30,14 @@
         "text_RzWbdn": {
           "type": "text",
           "settings": {
-            "text": "<p>We understand that convenience and peace of mind are essential when shopping online. That's why we've designed our delivery and returns process with you in mind. On this page, you'll find all the information you need to ensure a smooth and hassle-free shopping experience. Whether you're curious about our delivery options or need guidance on returns, we've got you covered.</p>"
+            "text": "<p>We understand that convenience and peace of mind are essential when shopping online. That's why we've designed our delivery and returns process with you in mind. On this page, you'll find all the information you need to ensure a smooth and hassle-free shopping experience. Whether you're curious about our delivery options or need guidance on returns, we've got you covered.<\/p>"
           }
         }
       },
-      "block_order": ["heading_n7teU4", "text_RzWbdn"],
+      "block_order": [
+        "heading_n7teU4",
+        "text_RzWbdn"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -52,7 +55,7 @@
           "settings": {
             "heading": "UK Delivery",
             "icon": "none",
-            "row_content": "<p>Standard UK delivery is free on all products. If you need your order sooner, then we offer an express option for an additional cost. </p><p><strong>UK Delivery</strong></p><p>    <strong>Approximate Delivery Time*</strong></p><p>Free Standard UK Delivery</p><p>   3-5 working days</p><p>Express UK Delivery</p><p>   1-2 working days</p><p>*These estimates are on the basis that orders are placed before 13:00 Monday-Friday and your products are in stock.</p>",
+            "row_content": "<p>Standard UK delivery is free on all products. If you need your order sooner, then we offer an express option for an additional cost. <\/p><p><strong>UK Delivery<\/strong><\/p><p>    <strong>Approximate Delivery Time*<\/strong><\/p><p>Free Standard UK Delivery<\/p><p>   3-5 working days<\/p><p>Express UK Delivery<\/p><p>   1-2 working days<\/p><p>*These estimates are on the basis that orders are placed before 13:00 Monday-Friday and your products are in stock.<\/p>",
             "page": ""
           }
         },
@@ -61,7 +64,7 @@
           "settings": {
             "heading": "How Do I Track My Order?",
             "icon": "none",
-            "row_content": "<p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status<a href=\"https://www.vitabiotics.com/account/login\">here</a>. If you do not currently have an account, then you can create one<a href=\"https://www.vitabiotics.com/account/register\">here</a>.</p>",
+            "row_content": "<p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         },
@@ -70,7 +73,7 @@
           "settings": {
             "heading": "Undeliverable Packages",
             "icon": "none",
-            "row_content": "<p>Occasionally packages are returned to us as undeliverable because they have been refused, unclaimed or the delivery address is incorrect. If this happens, you are able to get the package re-sent. If you no longer require the package, the value of the items contained will be refunded, less any extra shipping costs incurred for the carrier to return the package to us. No delivery charges, original or otherwise, will be refunded.</p>",
+            "row_content": "<p>Occasionally packages are returned to us as undeliverable because they have been refused, unclaimed or the delivery address is incorrect. If this happens, you are able to get the package re-sent. If you no longer require the package, the value of the items contained will be refunded, less any extra shipping costs incurred for the carrier to return the package to us. No delivery charges, original or otherwise, will be refunded.<\/p>",
             "page": ""
           }
         },
@@ -79,7 +82,7 @@
           "settings": {
             "heading": "Not At Home to Receive Your Delivery?",
             "icon": "none",
-            "row_content": "<p>If delivery is attempted and you are not there to receive it, a card may be left asking you to collect the parcel from your local collection point, which will be much closer than the nearest depot of a national carrier. At the time of ordering, you may also specify that the order is delivered to your work address if you are unable to be at home to receive it.</p>",
+            "row_content": "<p>If delivery is attempted and you are not there to receive it, a card may be left asking you to collect the parcel from your local collection point, which will be much closer than the nearest depot of a national carrier. At the time of ordering, you may also specify that the order is delivered to your work address if you are unable to be at home to receive it.<\/p>",
             "page": ""
           }
         },
@@ -88,16 +91,16 @@
           "settings": {
             "heading": "International Delivery",
             "icon": "none",
-            "row_content": "<p><strong>International Delivery Method                             Approximate Delivery Time*</strong></p><p>International Signed (Royal Mail)                          10-12 working days</p><p>International Tracked and Signed (Royal Mail)    10-12 working days</p><p>International Parcel (Courier)                                7-10 working days*</p><p>*These estimates are on the basis that orders are placed before 13:00 Monday-Friday and your products are in stock. Please note that delivery times can vary depending on country, and may be subject to delays arising from customs clearance or your local carrier. Customers outside of the United Kingdom may be subject to customs fees and/or import duties and taxes, which are levied once an order reaches your country.</p><p>Vitabiotics.com delivers most items internationally. Click <a href=\"https://www.vitabiotics.com/pages/shipping-delivery\">here</a> to view items that cannot be delivered to your country or territory.</p><p>In the rare instance that a parcel becomes lost in transit, Vitabiotics will aim to issue a full refund or replacement within 28 working days based on the date of dispatch.</p>",
+            "row_content": "<p><strong>International Delivery Method                             Approximate Delivery Time*<\/strong><\/p><p>International Signed (Royal Mail)                          10-12 working days<\/p><p>International Tracked and Signed (Royal Mail)    10-12 working days<\/p><p>International Parcel (Courier)                                7-10 working days*<\/p><p>*These estimates are on the basis that orders are placed before 13:00 Monday-Friday and your products are in stock. Please note that delivery times can vary depending on country, and may be subject to delays arising from customs clearance or your local carrier. Customers outside of the United Kingdom may be subject to customs fees and\/or import duties and taxes, which are levied once an order reaches your country.<\/p><p>Vitabiotics.com delivers most items internationally. Click <a href=\"https:\/\/www.vitabiotics.com\/pages\/shipping-delivery\">here<\/a> to view items that cannot be delivered to your country or territory.<\/p><p>In the rare instance that a parcel becomes lost in transit, Vitabiotics will aim to issue a full refund or replacement within 28 working days based on the date of dispatch.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_XgqbcV": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Brexit / Custom Fares",
+            "heading": "Brexit \/ Custom Fares",
             "icon": "none",
-            "row_content": "<p>Customers outside of the United Kingdom may be subject to customs fees and/or import duties and taxes, which are levied once the order reaches the destination country. We are unable to cover any additional charges applied during customs clearance, these must be paid for at the customer’s obligation. Unfortunately, international delivery costs are non-refundable, unless the product is faulty. This is applicable to consignments that are returned by the customer, courier, fail the customs clearance process or are rejected on delivery.</p>",
+            "row_content": "<p>Customers outside of the United Kingdom may be subject to customs fees and\/or import duties and taxes, which are levied once the order reaches the destination country. We are unable to cover any additional charges applied during customs clearance, these must be paid for at the customer’s obligation. Unfortunately, international delivery costs are non-refundable, unless the product is faulty. This is applicable to consignments that are returned by the customer, courier, fail the customs clearance process or are rejected on delivery.<\/p>",
             "page": ""
           }
         },
@@ -106,7 +109,7 @@
           "settings": {
             "heading": "No Dispatch Days",
             "icon": "none",
-            "row_content": "<p>Please note that Vitabiotics do not dispatch on UK public holidays, and there may be a backlog of orders after a holiday date causing your package to take an extra 1-2 days for delivery.</p>",
+            "row_content": "<p>Please note that Vitabiotics do not dispatch on UK public holidays, and there may be a backlog of orders after a holiday date causing your package to take an extra 1-2 days for delivery.<\/p>",
             "page": ""
           }
         }
@@ -143,7 +146,7 @@
           "settings": {
             "heading": "Our Returns Policy",
             "icon": "none",
-            "row_content": "<p>Items can be returned if they are damaged, faulty, if we have made an error with the order, or if they are unwanted. Items need to be unopened (with any seals and shrink wrap intact) and in the original packaging. We can only accept the return of opened items if they are faulty.</p><p>If an item is no longer required, then you have 14 days to contact us regarding the return of the item(s) from the date of receiving the order. You then have 14 days to return your item(s). </p><p>If an item is damaged or faulty then you may be eligible for a refund up to 30 days after purchase. Between 30 days and six months, you're only entitled to a replacement, not a refund. </p><p>Photographic evidence may be requested to support your claim for damaged, faulty or missing items. We will then process refunds accordingly on receipt of the items back to us.</p>",
+            "row_content": "<p>Items can be returned if they are damaged, faulty, if we have made an error with the order, or if they are unwanted. Items need to be unopened (with any seals and shrink wrap intact) and in the original packaging. We can only accept the return of opened items if they are faulty.<\/p><p>If an item is no longer required, then you have 14 days to contact us regarding the return of the item(s) from the date of receiving the order. You then have 14 days to return your item(s). <\/p><p>If an item is damaged or faulty then you may be eligible for a refund up to 30 days after purchase. Between 30 days and six months, you're only entitled to a replacement, not a refund. <\/p><p>Photographic evidence may be requested to support your claim for damaged, faulty or missing items. We will then process refunds accordingly on receipt of the items back to us.<\/p>",
             "page": ""
           }
         },
@@ -152,7 +155,7 @@
           "settings": {
             "heading": "How To Return Items",
             "icon": "none",
-            "row_content": "<p>Please follow the steps below to enable us to process your refund efficiently:</p><p>1. Wrap the item securely in its original packaging with all accompanying documentation.</p><p>2. Contact Customer Services at <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>, who will provide you with a freepost return address providing you are able to return your order under the returns policy outlined above. If postage is paid by customers, this cannot be refunded as we have a freepost system where no postage is required.</p><p>3. We will notify you via e-mail when we have processed your refund.</p><p>Please note that international orders are not free to return.</p>",
+            "row_content": "<p>Please follow the steps below to enable us to process your refund efficiently:<\/p><p>1. Wrap the item securely in its original packaging with all accompanying documentation.<\/p><p>2. Contact Customer Services at <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>, who will provide you with a freepost return address providing you are able to return your order under the returns policy outlined above. If postage is paid by customers, this cannot be refunded as we have a freepost system where no postage is required.<\/p><p>3. We will notify you via e-mail when we have processed your refund.<\/p><p>Please note that international orders are not free to return.<\/p>",
             "page": ""
           }
         },
@@ -161,7 +164,7 @@
           "settings": {
             "heading": "How to Claim For Missing Items",
             "icon": "none",
-            "row_content": "<p>If an item is missing from your order, please contact Customer Services at: <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a> as soon as you receive your order, ideally within three days. </p><p>If you are missing more than one item, please remember that heavy orders may be split into two or more parcels.</p>",
+            "row_content": "<p>If an item is missing from your order, please contact Customer Services at: <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a> as soon as you receive your order, ideally within three days. <\/p><p>If you are missing more than one item, please remember that heavy orders may be split into two or more parcels.<\/p>",
             "page": ""
           }
         },
@@ -170,7 +173,7 @@
           "settings": {
             "heading": "How to Claim For Missing Orders",
             "icon": "none",
-            "row_content": "<p>Non delivery of orders must be reported to <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a> within two weeks of receiving notification of dispatch, this extends to four weeks for deliveries outside of the UK. Unfortunately we are unable to accept claims which fall outside of this time.</p><p>If you have any questions regarding delivery fees, or delays in receiving your order, you can contact us by emailing <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>. </p>",
+            "row_content": "<p>Non delivery of orders must be reported to <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a> within two weeks of receiving notification of dispatch, this extends to four weeks for deliveries outside of the UK. Unfortunately we are unable to accept claims which fall outside of this time.<\/p><p>If you have any questions regarding delivery fees, or delays in receiving your order, you can contact us by emailing <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>. <\/p>",
             "page": ""
           }
         },
@@ -179,7 +182,7 @@
           "settings": {
             "heading": "Refunds For Orders Using Promotions",
             "icon": "none",
-            "row_content": "<p>When an item is sold as part of a promotion or where a discount has been applied (for example with our 3 for 2 offer and / or using<a href=\"https://www.vitabiotics.com/pages/rewards\">Rewards Points</a>), then any refund or partial refund will be calculated and adjusted accordingly to the correct transaction value or discount method applied.</p>",
+            "row_content": "<p>When an item is sold as part of a promotion or where a discount has been applied (for example with our 3 for 2 offer and \/ or using<a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a>), then any refund or partial refund will be calculated and adjusted accordingly to the correct transaction value or discount method applied.<\/p>",
             "page": ""
           }
         }
@@ -212,11 +215,13 @@
         "text_WMYpd3": {
           "type": "text",
           "settings": {
-            "text": "<p>If you have any questions regarding delivery or returns, you can contact us by emailing<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com</a>.</p>"
+            "text": "<p>If you have any questions regarding delivery or returns, you can contact us by emailing<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>.<\/p>"
           }
         }
       },
-      "block_order": ["text_WMYpd3"],
+      "block_order": [
+        "text_WMYpd3"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
