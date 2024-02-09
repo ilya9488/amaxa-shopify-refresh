@@ -39,6 +39,8 @@
       <div class="wrap">
         {%- if product.metafields.custom.tabs_panel_2 != blank -%}
           {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
+        {% else %}
+          <p class="reviews--not-found">Reviews not found</p>
         {%- endif -%}
       </div>
     </div>
