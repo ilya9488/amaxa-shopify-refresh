@@ -40,7 +40,7 @@
         {%- if product.metafields.custom.tabs_panel_2 != blank -%}
           {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
         {% else %}
-          <p class="reviews--not-found">Content in update</p>
+          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
         {%- endif -%}
       </div>
     </div>
@@ -49,7 +49,7 @@
         {%- if product.metafields.custom.tabs_panel_3 != blank -%}
           {{ product.metafields.custom.tabs_panel_3 | metafield_tag }}
         {% else %}
-          <p class="reviews--not-found">Content in update</p>
+          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
         {%- endif -%}
       </div>
     </div>
@@ -58,8 +58,7 @@
         {%- if product.metafields.custom.tabs_panel_4 != blank -%}
           {{ product.metafields.custom.tabs_panel_4 }}
         {% else %}
-          {% comment %} <p class="reviews--not-found">Content in update</p> {% endcomment %}
-          {{ section.settings.data_not_found }}
+          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
         {%- endif -%}
       </div>
     </div>
