@@ -2611,6 +2611,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__icon span {
   height: 100%;
+  color: white;
 }
 
 .header__icon::after {
