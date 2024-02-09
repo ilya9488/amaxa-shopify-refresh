@@ -246,9 +246,9 @@ fieldset.product-form__input .form__label {
 .product-form__input input[type='radio'] + label {
   border: var(--variant-pills-border-width) solid rgba(var(--color-foreground), var(--variant-pills-border-opacity));
   background-color: rgb(var(--color-background));
-  color: rgba(var(--color-foreground));
+  color: rgba(var(--color-primary));
   border-radius: var(--variant-pills-radius);
-  color: rgb(var(--color-foreground));
+  color: rgb(var(--color-primary));
   display: inline-block;
   margin: 0.7rem 0.5rem 0.2rem 0;
   padding: 1rem 1.5rem;
@@ -333,10 +333,17 @@ fieldset.product-form__input .form__label {
   font-weight: 600;
   text-transform: uppercase;
 }
+
 @media (min-width: 768px) {
   .product-form__submit {
     width: 300px;
   }
+}
+.product-form__submit span {
+  color: white;
+}
+.product-form__submit:hover span {
+  color: var(--color-primary) !important;
 }
 
 .no-js .product-form__submit.button--secondary {
@@ -376,6 +383,7 @@ fieldset.product-form__input .form__label {
 .product__info-container {
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
 }
 @media (max-width: 425px) {
   .product__info-container {
@@ -456,28 +464,25 @@ a.product__text {
 }
 
 .product__info-container .product__accordion {
-  border-bottom: 0.1rem solid #424242;
-  color: #424242;
+  border-bottom: 0.1rem solid var(--color-primary);
+  color: var(--color-primary);
 }
 .product__info-container .product__accordion {
   border-top: none !important;
 }
 .product__info-container .accordion:last-of-type {
   border-bottom: none !important;
+  margin-bottom: -40px;
 }
 .product__info-container .accordion__title {
   font-weight: 600;
   font-size: 16px;
-  color: #424242;
+  color: var(--color-primary);
 }
 
 .product .price .badge {
   margin-bottom: 0.5rem;
 }
-
-/*.product .price__container {
-  margin-bottom: 0.5rem;
-}*/
 
 .product .price dl {
   margin-top: 0.5rem;
@@ -512,6 +517,9 @@ a.product__text {
   }
 }
 
+.product__description ul {
+  line-height: 27px;
+}
 .product__description ul {
   padding-left: 0;
   list-style-type: none;
@@ -602,16 +610,12 @@ a.product__text {
   margin-bottom: 0;
   width: 100%;
 }
-@media (max-width: 425px) {
-  .product-form__buttons button {
-      /* width: 300px; */
-  }
-}
+
 .product-form__buttons button:hover  {
   box-shadow: 1.53846px 1.53846px 3.07692px #13439626;
   background: none !important;
-  color: grey !important;
-  border: 1px solid grey !important;
+  color: var(--color-primary) !important;
+  border: 1px solid var(--color-primary) !important;
   transition: all 0.2s;
 }
 .product-form__buttons button:after  {
@@ -1848,3 +1852,5 @@ details {
   line-height: 22px;
   font-size: 13px;
 }
+
+

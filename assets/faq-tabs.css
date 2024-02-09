@@ -21,7 +21,7 @@
 }
 @media (max-width: 425px) {
     .faq-tabs {
-        max-width: 90%;
+        /* max-width: 90%; */
         margin-left: auto;
         margin-right: auto;
     }
@@ -69,6 +69,12 @@
     position: relative;
     z-index: 2;
     padding: 5px;
+}
+@media (max-width: 1024px) {
+    .faq-tabs .tabs-content {
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 .faq-tabs .tabs-content::-webkit-scrollbar {
     width: 6px
@@ -230,4 +236,35 @@ button.swiper-arrow.swiper-button-prev {
 .reviews--not-found {
     text-align: center;
     width: 100%;
+}
+
+.ac .ac-trigger {
+    font-size: 15px !important;
+    font-weight: 500 !important;
+    color: var(--color-primary) !important;
+}
+@media (max-width: 425px) {
+    .ac .ac-trigger {
+        padding-left: 0 !important;
+    }
+    .faq-tabs .tabs-panel .wrap p {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+.ac-text {
+    font-size: 15px !important;
+    color: var(--color-primary) !important;
+}
+
+details[open] {
+    animation: slide .5s ease-in-out;
+}
+@keyframes slide {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

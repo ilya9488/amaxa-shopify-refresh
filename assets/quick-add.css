@@ -218,10 +218,10 @@ quick-add-modal .product-form__buttons {
 .quick-add__submit {
   margin: 0 auto;
   width: fit-content;
-  padding: 8px 26px;
+  padding: 13px 26px;
   height: auto;
   min-height: inherit;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 15px;
   color: var(--title-color-primary);
 
