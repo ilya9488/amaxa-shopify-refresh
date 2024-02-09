@@ -221,42 +221,44 @@
                   <div class="product__bg" style="background-color: {{ block.settings.color_page }}" bis_skin_checked="1"></div>
                 {% endcomment %}
               {%- when 'discount_delivery' -%}
-                <div class="section-discount-delivery">
-                  <div class="discount-delivery__wrapper">
-                    {%- if block.settings.discount_image != blank -%}
-                      {{ block.settings.discount_image | image_url: width: 30 | image_tag }}
-                    {%- endif -%}
-                    <p>
-                      <span style="color: {{ block.settings.color }}">
-                        {%- if block.settings.discount_title != blank -%}
-                          {{- block.settings.discount_title -}}
-                        {%- endif -%}
-                      </span>
-                      <span>
-                        {%- if block.settings.discount_sub_title != blank -%}
-                          {{ block.settings.discount_sub_title }}
-                        {%- endif -%}
-                      </span>
-                    </p>
+                {%- if block.settings.discount_image != blank -%}
+                  <div class="section-discount-delivery">
+                    <div class="discount-delivery__wrapper">
+                      {%- if block.settings.discount_image != blank -%}
+                        {{ block.settings.discount_image | image_url: width: 30 | image_tag }}
+                      {%- endif -%}
+                      <p>
+                        <span style="color: {{ block.settings.color }}">
+                          {%- if block.settings.discount_title != blank -%}
+                            {{- block.settings.discount_title -}}
+                          {%- endif -%}
+                        </span>
+                        <span>
+                          {%- if block.settings.discount_sub_title != blank -%}
+                            {{ block.settings.discount_sub_title }}
+                          {%- endif -%}
+                        </span>
+                      </p>
+                    </div>
+                    <div class="discount-delivery__wrapper">
+                      {%- if block.settings.delivery_image != blank -%}
+                        {{ block.settings.delivery_image | image_url: width: 30 | image_tag }}
+                      {%- endif -%}
+                      <p>
+                        <span style="color: {{ block.settings.color }}">
+                          {%- if block.settings.delivery_title != blank -%}
+                            {{- block.settings.delivery_title -}}
+                          {%- endif -%}
+                        </span>
+                        <span>
+                          {%- if block.settings.delivery_sub_title != blank -%}
+                            {{ block.settings.delivery_sub_title }}
+                          {%- endif -%}
+                        </span>
+                      </p>
+                    </div>
                   </div>
-                  <div class="discount-delivery__wrapper">
-                    {%- if block.settings.delivery_image != blank -%}
-                      {{ block.settings.delivery_image | image_url: width: 30 | image_tag }}
-                    {%- endif -%}
-                    <p>
-                      <span style="color: {{ block.settings.color }}">
-                        {%- if block.settings.delivery_title != blank -%}
-                          {{- block.settings.delivery_title -}}
-                        {%- endif -%}
-                      </span>
-                      <span>
-                        {%- if block.settings.delivery_sub_title != blank -%}
-                          {{ block.settings.delivery_sub_title }}
-                        {%- endif -%}
-                      </span>
-                    </p>
-                  </div>
-                </div>
+                {%- endif -%}
               {%- when 'collapsible_tab' -%}
                 {%- if block.settings.content != blank -%}
                   <div class="product__accordion accordion quick-add-hidden" {{ block.shopify_attributes }}>
