@@ -260,6 +260,7 @@ button.swiper-arrow.swiper-button-prev {
 details summary~div {
     overflow: hidden;
     max-height: 0;
+    transition-duration: 3s ease-out;
 }
 details[open] summary~div {
     transition-duration: 3s ease-out;
