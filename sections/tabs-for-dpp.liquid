@@ -3,11 +3,20 @@
 
 <section class="page-width faq-tabs">
   <ul class="tabs">
-    <li class="active">
-      <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
-        {{- section.settings.reviews -}}
-      </span>
-    </li>
+    {%- if product.metafields.custom.tabs_panel_2 != blank -%}
+      <li class="active">
+        <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
+          {{- section.settings.reviews -}}
+        </span>
+      </li>
+    {%- endif -%}
+    {% comment %}
+      <li class="active">
+        <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
+          {{- section.settings.reviews -}}
+        </span>
+      </li>
+    {% endcomment %}
     {%- if product.metafields.custom.tabs_panel_2 != blank -%}
       <li>
         <span style="color: {{ product.metafields.custom.tabs_title_color }}">
