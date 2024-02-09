@@ -111,17 +111,17 @@
     const tabLinks = document.querySelectorAll('.tabs span');
     const tabPanels = document.querySelectorAll('.tabs-panel');
 
-    tabPanels.forEach((item, index) => {
+    {% comment %} tabPanels.forEach((item, index) => {
       if(index == 0){
         item.classList.remove('active');
       }
-    });
+    }); {% endcomment %}
 
     for (let [i, el] of tabLinks.entries()) {
 
-      if (i == 0) {
+      {% comment %} if (i == 0) {
         el.parentNode.classList.add('active');
-      }
+      } {% endcomment %}
 
       el.addEventListener('click', (e) => {
         document.querySelector('.tabs li.active').classList.remove('active');
