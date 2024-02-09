@@ -42,33 +42,35 @@
       {{ product.metafields.custom.reviews }}
     {% endif %}
 
-    <div class="tabs-panel" data-index="1">
-      <div class="wrap">
-        {%- if product.metafields.custom.tabs_panel_2 != blank -%}
+    {%- if product.metafields.custom.tabs_panel_2 != blank -%}
+      <div class="tabs-panel" data-index="1">
+        <div class="wrap">
           {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
-        {% else %}
-          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
-        {%- endif -%}
+        </div>
       </div>
-    </div>
-    <div class="tabs-panel" data-index="2">
-      <div class="wrap">
-        {%- if product.metafields.custom.tabs_panel_3 != blank -%}
+    {% else %}
+      <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
+    {%- endif -%}
+
+    {%- if product.metafields.custom.tabs_panel_3 != blank -%}
+      <div class="tabs-panel" data-index="2">
+        <div class="wrap">
           {{ product.metafields.custom.tabs_panel_3 | metafield_tag }}
-        {% else %}
-          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
-        {%- endif -%}
+        </div>
       </div>
-    </div>
-    <div class="tabs-panel" data-index="3">
-      <div class="wrap">
-        {%- if product.metafields.custom.tabs_panel_4 != blank -%}
+    {% else %}
+      <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
+    {%- endif -%}
+
+    {%- if product.metafields.custom.tabs_panel_4 != blank -%}
+      <div class="tabs-panel" data-index="3">
+        <div class="wrap">
           {{ product.metafields.custom.tabs_panel_4 }}
-        {% else %}
-          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
-        {%- endif -%}
+        </div>
       </div>
-    </div>
+    {% else %}
+      <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
+    {%- endif -%}
   </div>
 </section>
 
