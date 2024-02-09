@@ -110,7 +110,9 @@
     const tabPanels = document.querySelectorAll('.tabs-panel');
 
     tabPanels.forEach((item, index) => {
-
+      if(index == 0){
+        item.classList.remove('active');
+      }
     });
 
     for (let [i, el] of tabLinks.entries()) {
