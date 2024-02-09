@@ -39,9 +39,9 @@
       </div>
     </div>
 
+    {% assign count = count | plus: 1 %}
     <div class="tabs-panel" data-index="{{ count }}">
       <div class="wrap">
-        {% assign count = count | plus: 1 %}
         {%- if product.metafields.custom.tabs_panel_2 != blank -%}
           {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
         {% else %}
@@ -50,9 +50,9 @@
       </div>
     </div>
 
+    {% assign count = count | plus: 1 %}
     <div class="tabs-panel" data-index="{{ count }}">
       <div class="wrap">
-        {% assign count = count | plus: 1 %}
         {%- if product.metafields.custom.tabs_panel_3 != blank -%}
           {{ product.metafields.custom.tabs_panel_3 | metafield_tag }}
         {% else %}
@@ -61,9 +61,9 @@
       </div>
     </div>
 
+    {% assign count = count | plus: 1 %}
     <div class="tabs-panel" data-index="{{ count }}">
       <div class="wrap">
-        {% assign count = count | plus: 1 %}
         {%- if product.metafields.custom.tabs_panel_4 != blank -%}
           {{ product.metafields.custom.tabs_panel_4 }}
         {% else %}
