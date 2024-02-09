@@ -29,7 +29,8 @@
   {% assign count = 0 %}
   <div class="tabs-content">
     {% assign count = count | plus: 1 %}
-    <div class="tabs-panel active" data-index="0">
+    {% comment %} <div class="tabs-panel active" data-index="0"> {% endcomment %}
+    <div class="tabs-panel active" data-index="{{ count }}">
       <div class="wrap wrap-review">
         <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
           <div class="reviews__wrapper swiper-wrapper"></div>
