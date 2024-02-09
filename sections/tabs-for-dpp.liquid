@@ -27,20 +27,21 @@
     {%- endif -%}
   </ul>
   <div class="tabs-content">
-    <div class="tabs-panel active" data-index="0">
-      <div class="wrap wrap-review">
-        {% if product.metafields.custom.reviews != blank %}
+    {% if product.metafields.custom.reviews != blank %}
+      <div class="tabs-panel active" data-index="0">
+        <div class="wrap wrap-review">
           <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
             <div class="reviews__wrapper swiper-wrapper"></div>
           </div>
           <button class="swiper-arrow swiper-button-next"></button>
           <button class="swiper-arrow swiper-button-prev"></button>
-        {% else %}
-          <p class="reviews--not-found">{{ section.settings.data_not_found_first_tab }}</p>
-          {{ product.metafields.custom.reviews }}
-        {% endif %}
+    {% else %}
+      <p class="reviews--not-found">{{ section.settings.data_not_found_first_tab }}</p>
+      {{ product.metafields.custom.reviews }}
       </div>
-    </div>
+      </div>
+    {% endif %}
+
     <div class="tabs-panel" data-index="1">
       <div class="wrap">
         {%- if product.metafields.custom.tabs_panel_2 != blank -%}
