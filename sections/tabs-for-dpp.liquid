@@ -58,7 +58,8 @@
         {%- if product.metafields.custom.tabs_panel_4 != blank -%}
           {{ product.metafields.custom.tabs_panel_4 }}
         {% else %}
-          <p class="reviews--not-found">Content in update</p>
+          {% comment %} <p class="reviews--not-found">Content in update</p> {% endcomment %}
+          {{ section.settings.data_not_found }}
         {%- endif -%}
       </div>
     </div>

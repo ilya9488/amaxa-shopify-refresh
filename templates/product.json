@@ -140,7 +140,8 @@
         "reviews": "REVIEWS",
         "nutritional_information": "NUTRITIONAL INFORMATION",
         "directions": "DIRECTIONS",
-        "faqs": "FAQs"
+        "faqs": "FAQs",
+        "data_not_found": "Content in update!"
       }
     },
     "1707311986fd283435": {
