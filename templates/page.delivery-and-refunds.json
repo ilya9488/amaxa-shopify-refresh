@@ -1,5 +1,5 @@
 {
-  "wrapper": "div#div_id.div_class[attribute-one=value]",
+  "wrapper": "div.page-delivery",
   "sections": {
     "image_banner_V7NCDa": {
       "type": "image-banner",

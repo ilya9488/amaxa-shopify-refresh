@@ -1,4 +1,5 @@
 {
+  "wrapper": "div.page-delivery",
   "sections": {
     "rich_text_faNq8L": {
       "type": "rich-text",
@@ -20,9 +21,6 @@
       "block_order": [
         "heading_Rn3TrD",
         "text_AExqbr"
-      ],
-      "custom_css": [
-
       ],
       "settings": {
         "desktop_content_position": "center",
