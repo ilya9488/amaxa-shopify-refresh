@@ -3,21 +3,11 @@
 
 <section class="page-width faq-tabs">
   <ul class="tabs">
-    {% comment %} {%- if product.metafields.custom.reviews != blank -%} {% endcomment %}
     <li class="active">
       <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
         {{- section.settings.reviews -}}
       </span>
     </li>
-    {% comment %} {%- endif -%} {% endcomment %}
-
-    {% comment %}
-      <li class="active">
-        <span class="reviews-btn" style="color: {{ product.metafields.custom.tabs_title_color }}">
-          {{- section.settings.reviews -}}
-        </span>
-      </li>
-    {% endcomment %}
     {%- if product.metafields.custom.tabs_panel_2 != blank -%}
       <li>
         <span style="color: {{ product.metafields.custom.tabs_title_color }}">
@@ -25,37 +15,19 @@
         </span>
       </li>
     {%- endif -%}
-    {% comment %}
-      <li>
-        <span style="color: {{ product.metafields.custom.tabs_title_color }}">
-          {{- section.settings.nutritional_information -}}
-        </span>
-      </li>
-    {% endcomment %}
     {%- if product.metafields.custom.tabs_panel_3 != blank -%}
       <li>
         <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
       </li>
     {%- endif -%}
-    {% comment %}
-      <li>
-        <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
-      </li>
-    {% endcomment %}
     {%- if product.metafields.custom.tabs_panel_4 != blank -%}
       <li>
         <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.faqs }}</span>
       </li>
     {%- endif -%}
-    {% comment %}
-      <li>
-        <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.faqs }}</span>
-      </li>
-    {% endcomment %}
   </ul>
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
-      {% comment %} <div class="tabs-panel" data-index="0"> {% endcomment %}
       <div class="wrap wrap-review">
         {% if product.metafields.custom.reviews != blank %}
           <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
@@ -107,22 +79,9 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
-    {% comment %} document.querySelector('.faq-tabs tabs li').classList.add('active'); {% endcomment %}
     const tabLinks = document.querySelectorAll('.tabs span');
     const tabPanels = document.querySelectorAll('.tabs-panel');
-
-    {% comment %} tabPanels.forEach((item, index) => {
-      if(index == 0){
-        item.classList.remove('active');
-      }
-    }); {% endcomment %}
-
     for (let [i, el] of tabLinks.entries()) {
-
-      {% comment %} if (i == 0) {
-        el.parentNode.classList.add('active');
-      } {% endcomment %}
-
       el.addEventListener('click', (e) => {
         document.querySelector('.tabs li.active').classList.remove('active');
         document.querySelector('.tabs-panel.active').classList.remove('active');
@@ -155,9 +114,7 @@
         reviewsWrapper.appendChild(reviewItemWrapper);
       });
     }
-    
     swiperSliderInit()
-
   });
 </script>
 
