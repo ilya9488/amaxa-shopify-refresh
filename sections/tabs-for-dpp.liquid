@@ -109,7 +109,7 @@
     const tabLinks = document.querySelectorAll('.tabs span');
     const tabPanels = document.querySelectorAll('.tabs-panel');
 
-    for (let el of tabLinks) {
+    for (let el of tabLinks.entries()) {
       el.addEventListener('click', (e) => {
         document.querySelector('.tabs li.active').classList.remove('active');
         document.querySelector('.tabs-panel.active').classList.remove('active');
