@@ -3590,3 +3590,10 @@ details-disclosure > details {
     --border-offset: 0px; /* Prevent the border from growing on buttons when this effect is on. */
   }
 }
+
+
+.page-faqs h3.accordion__title.inline-richtext.h4,
+.page-delivery h3.accordion__title.inline-richtext.h4 {
+  font-size: 17px;
+  font-weight: 600;
+}
