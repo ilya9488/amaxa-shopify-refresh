@@ -87,15 +87,6 @@
             "row_content": "<p>To use a voucher code valid for Vitabiotics.com, simply enter the code when you see the ‘Enter Promo Code’ box in the checkout and press the ‘Apply’ button. Please note that voucher codes cannot be used at the same time as Vitabiotics<a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a>nor with<a href=\"https:\/\/www.vitabiotics.com\/pages\/subscribe\">Subscribe & Save<\/a>orders. <\/p>",
             "page": ""
           }
-        },
-        "collapsible_row_TywdBb": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "",
-            "icon": "none",
-            "row_content": "",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -104,8 +95,7 @@
         "collapsible_row_K6w6dr",
         "collapsible_row_KdYmkU",
         "collapsible_row_HHAPYT",
-        "collapsible_row_FfVcdf",
-        "collapsible_row_TywdBb"
+        "collapsible_row_FfVcdf"
       ],
       "settings": {
         "caption": "",
