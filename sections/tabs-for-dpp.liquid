@@ -32,9 +32,16 @@
         <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
       </li>
     {% endcomment %}
-    <li>
-      <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.faqs }}</span>
-    </li>
+    {%- if product.metafields.custom.tabs_panel_4 != blank -%}
+      <li>
+        <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.faqs }}</span>
+      </li>
+    {%- endif -%}
+    {% comment %}
+      <li>
+        <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.faqs }}</span>
+      </li>
+    {% endcomment %}
   </ul>
   <div class="tabs-content">
     <div class="tabs-panel active" data-index="0">
