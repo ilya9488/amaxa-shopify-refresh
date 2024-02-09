@@ -263,6 +263,5 @@ details summary~div {
     transition-duration: 3s;
 }
 details[open] summary~div {
-    transition-duration: 3s ease-out;
     max-height: 2000px;
 }
