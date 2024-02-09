@@ -3607,3 +3607,17 @@ details-disclosure > details {
 .soldout-in-dpp {
   padding-top: 10px;
 }
+
+details[open] {
+  animation: slide .5s ease-in-out;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
