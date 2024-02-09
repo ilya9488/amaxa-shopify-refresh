@@ -22,9 +22,16 @@
         </span>
       </li>
     {% endcomment %}
-    <li>
-      <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
-    </li>
+    {%- if product.metafields.custom.tabs_title_color != blank -%}
+      <li>
+        <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
+      </li>
+    {%- endif -%}
+    {% comment %}
+      <li>
+        <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
+      </li>
+    {% endcomment %}
     <li>
       <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.faqs }}</span>
     </li>
