@@ -41,7 +41,8 @@
 
     {% assign count = count | plus: 1 %}
     {%- if product.metafields.custom.tabs_panel_2 != blank -%}
-      <div class="tabs-panel" data-index="1">
+      {% comment %} <div class="tabs-panel" data-index="1"> {% endcomment %}
+      <div class="tabs-panel" data-index="{{ count }}">
         <div class="wrap">
           {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
         </div>
@@ -52,7 +53,8 @@
 
     {% assign count = count | plus: 1 %}
     {%- if product.metafields.custom.tabs_panel_3 != blank -%}
-      <div class="tabs-panel" data-index="2">
+      {% comment %} <div class="tabs-panel" data-index="2"> {% endcomment %}
+      <div class="tabs-panel" data-index="{{ count }}">
         <div class="wrap">
           {{ product.metafields.custom.tabs_panel_3 | metafield_tag }}
         </div>
@@ -63,7 +65,8 @@
 
     {% assign count = count | plus: 1 %}
     {%- if product.metafields.custom.tabs_panel_4 != blank -%}
-      <div class="tabs-panel" data-index="3">
+      {% comment %} <div class="tabs-panel" data-index="3"> {% endcomment %}
+      <div class="tabs-panel" data-index="{{ count }}">
         <div class="wrap">
           {{ product.metafields.custom.tabs_panel_4 }}
         </div>
