@@ -105,14 +105,14 @@
 
 <script>
   document.addEventListener('DOMContentLoaded', (event) => {
-    document.querySelector('.faq-tabs tabs li').classList.add('active');
+    {% comment %} document.querySelector('.faq-tabs tabs li').classList.add('active'); {% endcomment %}
     const tabLinks = document.querySelectorAll('.tabs span');
     const tabPanels = document.querySelectorAll('.tabs-panel');
 
     for (let [i, el] of tabLinks.entries()) {
 
       if (i == 0) {
-      el.classList.add('active');
+        el.parentNode.classList.add('active');
       }
 
       el.addEventListener('click', (e) => {
