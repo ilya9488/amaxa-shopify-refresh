@@ -3597,3 +3597,8 @@ details-disclosure > details {
   font-size: 17px;
   font-weight: 600;
 }
+
+.page-faqs .accordion__content,
+.page-delivery .accordion__content {
+  padding-left: 0;
+}
