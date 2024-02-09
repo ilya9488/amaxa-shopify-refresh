@@ -8,11 +8,20 @@
         {{- section.settings.reviews -}}
       </span>
     </li>
-    <li>
-      <span style="color: {{ product.metafields.custom.tabs_title_color }}">
-        {{- section.settings.nutritional_information -}}
-      </span>
-    </li>
+    {%- if product.metafields.custom.tabs_panel_2 != blank -%}
+      <li>
+        <span style="color: {{ product.metafields.custom.tabs_title_color }}">
+          {{- section.settings.nutritional_information -}}
+        </span>
+      </li>
+    {%- endif -%}
+    {% comment %}
+      <li>
+        <span style="color: {{ product.metafields.custom.tabs_title_color }}">
+          {{- section.settings.nutritional_information -}}
+        </span>
+      </li>
+    {% endcomment %}
     <li>
       <span style="color: {{ product.metafields.custom.tabs_title_color }}">{{ section.settings.directions }}</span>
     </li>
