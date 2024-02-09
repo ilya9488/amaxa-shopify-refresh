@@ -257,7 +257,7 @@ button.swiper-arrow.swiper-button-prev {
     color: var(--color-primary) !important;
 }
 
-details[open] .accordion__content {
+details[open] {
     animation: slide .5s ease-in-out;
 }
 @keyframes slide {
