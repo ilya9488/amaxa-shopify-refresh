@@ -44,35 +44,41 @@
       </div>
     </div>
 
-    <div class="tabs-panel" data-index="{% increment count %}">
-      <div class="wrap">
-        {%- if product.metafields.custom.tabs_panel_2 != blank -%}
-          {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
-        {% else %}
-          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
-        {%- endif -%}
+    {%- if product.metafields.custom.tabs_panel_2 != blank -%}
+      <div class="tabs-panel" data-index="{% increment count %}">
+        <div class="wrap">
+          {%- if product.metafields.custom.tabs_panel_2 != blank -%}
+            {{ product.metafields.custom.tabs_panel_2 | metafield_tag }}
+          {% else %}
+            <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
+          {%- endif -%}
+        </div>
       </div>
-    </div>
+    {%- endif -%}
 
-    <div class="tabs-panel" data-index="{% increment count %}">
-      <div class="wrap">
-        {%- if product.metafields.custom.tabs_panel_3 != blank -%}
-          {{ product.metafields.custom.tabs_panel_3 | metafield_tag }}
-        {% else %}
-          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
-        {%- endif -%}
+    {%- if product.metafields.custom.tabs_panel_3 != blank -%}
+      <div class="tabs-panel" data-index="{% increment count %}">
+        <div class="wrap">
+          {%- if product.metafields.custom.tabs_panel_3 != blank -%}
+            {{ product.metafields.custom.tabs_panel_3 | metafield_tag }}
+          {% else %}
+            <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
+          {%- endif -%}
+        </div>
       </div>
-    </div>
+    {%- endif -%}
 
-    <div class="tabs-panel" data-index="{% increment count %}">
-      <div class="wrap">
-        {%- if product.metafields.custom.tabs_panel_4 != blank -%}
-          {{ product.metafields.custom.tabs_panel_4 }}
-        {% else %}
-          <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
-        {%- endif -%}
+    {%- if product.metafields.custom.tabs_panel_4 != blank -%}
+      <div class="tabs-panel" data-index="{% increment count %}">
+        <div class="wrap">
+          {%- if product.metafields.custom.tabs_panel_4 != blank -%}
+            {{ product.metafields.custom.tabs_panel_4 }}
+          {% else %}
+            <p class="reviews--not-found">{{ section.settings.data_not_found }}</p>
+          {%- endif -%}
+        </div>
       </div>
-    </div>
+    {%- endif -%}
   </div>
 </section>
 
