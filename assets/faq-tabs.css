@@ -257,27 +257,16 @@ button.swiper-arrow.swiper-button-prev {
     color: var(--color-primary) !important;
 }
 
-/* details summary~div {
-    overflow: hidden;
-    max-height: 0;
-    transition-duration: 3s;
-}
-details[open] summary~div {
-    max-height: 2000px;
-} */
-
 details[open] {
     animation: slide .5s ease-in-out;
 }
-
 @keyframes slide {
     0% {
         opacity: 0;
-        transform: translate(0, -10px);
+        /* transform: translate(0, -10px); */
     }
-
     100% {
         opacity: 1;
-        transform: translate(0, 0);
+        /* transform: translate(0, 0); */
     }
 }
