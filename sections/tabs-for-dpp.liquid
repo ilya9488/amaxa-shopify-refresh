@@ -30,7 +30,7 @@
           <button class="swiper-arrow swiper-button-next"></button>
           <button class="swiper-arrow swiper-button-prev"></button>
         {% else %}
-          <p class="reviews--not-found">Reviews not found</p>
+          <p class="reviews--not-found">{{ section.settings.data_not_found_first_tab }}</p>
           {{ product.metafields.custom.reviews }}
         {% endif %}
       </div>
@@ -146,8 +146,13 @@
     },
     {
       "type": "text",
+      "id": "data_not_found_first_tab",
+      "label": "Text for the Reviews tab No Data"
+    },
+    {
+      "type": "text",
       "id": "data_not_found",
-      "label": "Text if tabs not complete"
+      "label": "Text for the All tabs No Data"
     }
   ]
 }
