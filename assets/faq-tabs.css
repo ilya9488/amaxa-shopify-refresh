@@ -267,7 +267,7 @@ details[open] summary~div {
 } */
 
 details[open] {
-    animation: slide .9s ease-in-out;
+    animation: slide .6s ease-in-out;
 }
 
 @keyframes slide {
