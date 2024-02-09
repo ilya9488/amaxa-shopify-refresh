@@ -53,7 +53,8 @@
     {% endcomment %}
   </ul>
   <div class="tabs-content">
-    <div class="tabs-panel active" data-index="0">
+    {% comment %} <div class="tabs-panel active" data-index="0"> {% endcomment %}
+    <div class="tabs-panel" data-index="0">
       <div class="wrap wrap-review">
         {% if product.metafields.custom.reviews != blank %}
           <div class="swiper review-slider slider-container swiper-review-slider swiper-container">
