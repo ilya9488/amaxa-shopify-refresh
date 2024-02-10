@@ -385,7 +385,7 @@ fieldset.product-form__input .form__label {
   padding-right: 40px;
   padding-bottom: 40px;
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
   .product__info-container {
       padding-left: 15px;
       padding-right: 15px;
