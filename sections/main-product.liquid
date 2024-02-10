@@ -770,7 +770,7 @@
         detailsAll.forEach((item) => {
           item.addEventListener('toggle', () => {
             if (item.open) {
-              item.querySelector('.accordion__content');
+              {% comment %} item.querySelector('.accordion__content'); {% endcomment %}
               item.querySelector('summary .wrapper__svg').innerHTML = `
               <svg
                   xmlns="http://www.w3.org/2000/svg"
