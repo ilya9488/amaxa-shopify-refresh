@@ -121,7 +121,7 @@
     line-height: 23px;
     margin-bottom: 0;
 }
-@media (max-width: 425px) {
+@media (max-width: 576px) {
     .faq-tabs .tabs-panel .wrap {
         flex-direction: column;
         gap: 20px;
