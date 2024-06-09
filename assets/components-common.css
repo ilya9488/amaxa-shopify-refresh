@@ -3,11 +3,12 @@
   display: flex;
   gap: var(--offset-middle);
   justify-content: center;
+  align-items: center;
   margin-block-end: 3rem;
 }
 .cart-page-steps .cart-step {
   display: flex;
-  gap: var(--offset-normal);
+  gap: var(--offset-small);
 }
 .cart-page-steps .cart-steps-delimiter {
   height: 2px;

@@ -85,9 +85,7 @@
   display: block;
   font-size: var(--font-size-l);
 }
-td {
-  vertical-align: middle;
-}
+
 .cart-item__name:hover {
   text-decoration: underline;
   text-underline-offset: 0.3rem;
@@ -226,6 +224,9 @@ td {
     justify-content: flex-end;
   }
 }
+.cart-items td {
+
+}
 
 @media screen and (min-width: 750px) {
   .cart-items {
@@ -263,15 +264,5 @@ td {
 
   .cart-item__media {
     width: 10rem;
-  }
-}
-
-@media screen and (min-width: 990px) {
-  .cart-item__details {
-    width: 50rem;
-  }
-
-  .cart-items thead th:first-child {
-    width: 60%;
   }
 }
