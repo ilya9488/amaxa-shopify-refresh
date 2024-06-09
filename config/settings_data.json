@@ -113,7 +113,7 @@
     "predictive_search_show_vendor": false,
     "predictive_search_show_price": false,
     "currency_code_enabled": false,
-    "cart_type": "drawer",
+    "cart_type": "page",
     "show_vendor": false,
     "show_cart_note": false,
     "cart_drawer_collection": "",
@@ -135,20 +135,6 @@
     "content_for_index": [
 
     ],
-    "blocks": {
-      "9537345080411485756": {
-        "type": "shopify:\/\/apps\/product-review-myappgurus\/blocks\/Collection_star\/0cf5caa0-e138-46b8-999b-520d16633e4c",
-        "disabled": false,
-        "settings": {
-          "collection_target_class": "",
-          "hide_name": false,
-          "hide_email": false,
-          "hide_title": false,
-          "hide_description": false,
-          "hide_image": false
-        }
-      }
-    },
     "color_schemes": {
       "background-1": {
         "settings": {
