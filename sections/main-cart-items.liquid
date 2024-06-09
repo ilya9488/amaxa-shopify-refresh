@@ -29,18 +29,18 @@
   <div class="page-width">
     <div class="cart-page-steps">
       <div class="cart-step">
-        <span class="cart-step-number">1</span>
+        <span class="cart-step-number current">1</span>
         <span class="cart-step-label">Bag</span>
       </div>
 
-      <div class="cart-step-delimiter"></div>
+      <div class="cart-steps-delimiter"></div>
 
       <div class="cart-step">
         <span class="cart-step-number">2</span>
         <span class="cart-step-label">Checkout</span>
       </div>
 
-      <div class="cart-step-delimiter"></div>
+      <div class="cart-steps-delimiter"></div>
 
       <div class="cart-step">
         <span class="cart-step-number">3</span>
@@ -105,14 +105,14 @@
                       {% if item.image %}
                         {% comment %} Leave empty space due to a:empty CSS display: none rule {% endcomment %}
                         <a href="{{ item.url }}" class="cart-item__link" aria-hidden="true" tabindex="-1"> </a>
-                        <div class="cart-item__image-container gradient global-media-settings">
+                        <div class="cart-item__image-container gradient">
                           <img
                             src="{{ item.image | image_url: width: 300 }}"
                             class="cart-item__image"
                             alt="{{ item.image.alt | escape }}"
                             loading="lazy"
                             width="150"
-                            height="{{ 150 | divided_by: item.image.aspect_ratio | ceil }}"
+                            height="{{ 250 | divided_by: item.image.aspect_ratio | ceil }}"
                           >
                         </div>
                       {% endif %}
@@ -236,7 +236,7 @@
                               href="{{ item.url_to_remove }}"
                               aria-label="{{ 'sections.cart.remove_title' | t: title: item.title }}"
                             >
-                              <b class="label">Remove</b>
+                              <span class="label">Remove</span>
                             </a>
                           </cart-remove-button>
                         </div>

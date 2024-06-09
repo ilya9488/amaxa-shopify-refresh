@@ -3,19 +3,22 @@
   display: flex;
   gap: var(--offset-middle);
   justify-content: center;
-  margin-block: 3rem;
+  margin-block-end: 3rem;
 }
 .cart-page-steps .cart-step {
   display: flex;
   gap: var(--offset-normal);
 }
-.cart-page-steps .cart-step-delimiter {
+.cart-page-steps .cart-steps-delimiter {
   height: 2px;
   width: 6.25rem;
   background: var(--color-grey);
+  display: block;
 }
 .cart-page-steps .cart-step-number {
   border-radius: 50%;
+  width: 32px;
+  height: 32px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,6 +27,7 @@
 }
 .cart-page-steps .cart-step-number.current {
   background: var(--color-main-dark);
+  color: #fff;
 }
 .cart-page-steps .cart-step-number.done {
   background: var(--color-success);
