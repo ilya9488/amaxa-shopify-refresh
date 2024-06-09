@@ -1,0 +1,30 @@
+/* cart steps */
+.cart-page-steps {
+  display: flex;
+  gap: var(--offset-middle);
+  justify-content: center;
+  margin-block: 3rem;
+}
+.cart-page-steps .cart-step {
+  display: flex;
+  gap: var(--offset-normal);
+}
+.cart-page-steps .cart-step-delimiter {
+  height: 2px;
+  width: 6.25rem;
+  background: var(--color-grey);
+}
+.cart-page-steps .cart-step-number {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border: 1px solid var(--color-grey);
+}
+.cart-page-steps .cart-step-number.current {
+  background: var(--color-main-dark);
+}
+.cart-page-steps .cart-step-number.done {
+  background: var(--color-success);
+}

@@ -19,7 +19,8 @@
   --section-margin-block-end-middle: 70px;
   --section-margin-block-end-big: 100px;
 
-  /* --color-primary: #464646; */
+  --color-success: green;
+  --color-main-dark: #334153;
   --color-primary: #424242;
   --color-secendary: #F6F6F6;
   --color-grey: #8C8A92;
@@ -32,6 +33,8 @@
   --breckpoint-xs: 576px;
   --breckpoint-xsm: 460px;
   --breckpoint-sm: 375px;
+
+  --font-size-l: 18px;
 }
 
 .product-card-wrapper .card,
