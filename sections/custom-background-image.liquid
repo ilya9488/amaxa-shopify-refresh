@@ -1,0 +1,214 @@
+{{ 'section-custom-background-image.css' | asset_url | stylesheet_tag }}
+
+<div
+    id="Banner-{{ section.id }}"
+    class="background-image-banner
+
+      {% if section.settings.container_height != blank %} images-banner-height--{{ section.settings.container_height }}{% endif %}
+
+      {% if section.settings.box_shadow %} images-banner-shadow{% endif %}
+
+      {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
+      {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
+    style="
+        {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
+        {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
+        {% if section.settings.background_image !=blank %}background-image: url('{{ block.settings.image | img_url: 'original' }}');{% endif %}
+    "
+>
+  {% for block in section.blocks %}
+    <div
+        class="images-banner--image"
+        style="
+           background-image: url('{{ block.settings.image  | img_url: 'original' }}');
+          
+          {%- if block.settings.image_position != 50 -%}background-position-x: {{ block.settings.image_position }}%; {%- endif -%}
+        ">
+      
+    </div>
+  {% endfor %}
+
+  {% if section.settings.heading != blank %}
+    <h1 class="images-banner--title {{ section.settings.heading_size }}">
+      {{ section.settings.heading }}
+    </h1>
+  {% endif %}
+</div>
+
+
+
+
+{% schema %}
+{
+  "name": "Custom Background Image",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        }
+      ],
+      "default": "h1",
+      "label": "H1"
+    },
+    {
+      "type": "select",
+      "id": "margin_top",
+      "label": "Margin top",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "container_height",
+      "label": "Image height",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_shadow",
+      "default": true,
+      "label": "box-shadow"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_custom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "label": "Margin bottom"
+    },    
+    {
+      "type": "color_background",
+      "id": "background_image",
+      "label": "Background images"
+    },
+    {
+      "type": "color_background",
+      "id": "background_container",
+      "label": "Background container"
+    }
+
+  ],
+  "blocks": [
+    {
+      "type": "page",
+      "name": "Image block",
+      "limit": 3,
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Select image"
+        },
+        {
+          "type": "range",
+          "id": "image_position",
+          "min": 0,
+          "max": 100,
+          "step": 1,
+          "default": 50,
+          "label": "Image position by 'x'"
+        },
+        {
+          "type": "text",
+          "id": "button_label",
+          "label": "Button label"
+        },
+        {
+          "type": "url",
+          "id": "button_url",
+          "label": "Button url"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Background Image",
+      "blocks": [
+        {
+          "type": "page"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
