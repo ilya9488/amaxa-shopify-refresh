@@ -1,7 +1,7 @@
 {{ 'section-custom-background-image.css' | asset_url | stylesheet_tag }}
 
 {% comment %} (!) The section is visible only for development (!) {% endcomment %}
-{% if shop.domain contains 'amaxa-prime.com' %}
+{% comment %} {% if shop.domain contains 'amaxa-prime.com' %} {% endcomment %}
   
   <div
       id="Banner-{{ section.id }}"
@@ -19,7 +19,7 @@
           {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
           
       "
-  >
+    >
   
     {% if section.settings.heading != blank %}
       <h1 class="background-image-banner--title {{ section.settings.heading_size }}">
@@ -29,8 +29,7 @@
 
   </div>
 
-{% endif %}
-
+{% comment %} {% endif %} {% endcomment %}
 
 {% schema %}
 {
