@@ -4,10 +4,10 @@
       "type": "custom-background-image",
       "settings": {
         "heading": "Lorem ipsum dolor sit amet.",
-        "heading_size": "h1",
+        "heading_size": "h4",
         "margin_top": "none",
-        "margin_bottom": "none",
-        "container_height": "medium",
+        "margin_bottom": "default",
+        "container_height": "small",
         "box_shadow": true,
         "margin_bottom_custom": 0,
         "background_image": "shopify:\/\/shop_images\/eng___1638_1.jpg",
