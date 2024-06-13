@@ -1,5 +1,6 @@
 {{ 'section-custom-background-image.css' | asset_url | stylesheet_tag }}
 
+{% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
   <div
       id="Banner-{{ section.id }}"
