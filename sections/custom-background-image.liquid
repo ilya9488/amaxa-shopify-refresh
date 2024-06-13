@@ -15,7 +15,7 @@
       style="
           {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
           {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
-          {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
+          {% comment %} {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %} {% endcomment %}
           {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
           
       "
@@ -64,7 +64,7 @@
         }
       ],
       "default": "h1",
-      "label": "H1"
+      "label": "Heading Size"
     },
     {
       "type": "select",
@@ -138,7 +138,7 @@
       "type": "checkbox",
       "id": "box_shadow",
       "default": true,
-      "label": "box-shadow"
+      "label": "Box Shadow"
     },
     {
       "type": "range",
@@ -147,12 +147,12 @@
       "max": 100,
       "step": 2,
       "default": 0,
-      "label": "Margin bottom"
-    },    
+      "label": "Margin bottom custom"
+    },
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background images"
+      "label": "Background Image"
     },
     {
       "type": "select",
@@ -166,20 +166,19 @@
         {
           "value": "contain",
           "label": "Contain"
-        },
+        }
       ],
-      "default": "cover",
+      "default": "cover"
     },
     {
       "type": "color_background",
       "id": "background_color",
       "label": "Background Color"
     }
-
   ],
   "presets": [
     {
-      "name": "Custom Background Image",
+      "name": "Custom Background Image"
     }
   ]
 }
