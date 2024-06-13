@@ -1,9 +1,9 @@
 {
   "sections": {
-    "custom_background_image_88z4dt": {
+    "custom_background_image_i4QkxG": {
       "type": "custom-background-image",
       "blocks": {
-        "page_UUUmaV": {
+        "page_MdFYbV": {
           "type": "page",
           "settings": {
             "image_position": 50,
@@ -13,7 +13,7 @@
         }
       },
       "block_order": [
-        "page_UUUmaV"
+        "page_MdFYbV"
       ],
       "settings": {
         "heading": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore dignissimos corporis molestiae. Eaque, consectetur quae voluptate id tempora explicabo officia officiis repudiandae provident culpa pariatur excepturi sit libero inventore!",
@@ -605,7 +605,7 @@
     }
   },
   "order": [
-    "custom_background_image_88z4dt",
+    "custom_background_image_i4QkxG",
     "custom_image_banner_twfGEn",
     "custom_image_banner_dNPwtP",
     "rich_text_hCEbxw",
