@@ -1,6 +1,6 @@
 {{ 'section-custom-background-image.css' | asset_url | stylesheet_tag }}
 
-{% if section.settings.show_dev_only != true and request.host contains 'myshopify.com' %}
+{% if section.settings.show_dev_only === true and request.host contains 'myshopify.com' %}
   <div
       id="Banner-{{ section.id }}"
       class="background-image-banner
