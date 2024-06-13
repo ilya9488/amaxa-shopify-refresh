@@ -1,7 +1,7 @@
 {{ 'section-custom-background-image.css' | asset_url | stylesheet_tag }}
 
 {% comment %} (!) The section is visible only for development (!) {% endcomment %}
-{% comment %} {% if shop.domain contains 'amaxa-prime.com' %} {% endcomment %}
+{% if shop.domain contains 'amaxa-prime.com' %}
   
   <div
       id="Banner-{{ section.id }}"
@@ -29,7 +29,7 @@
 
   </div>
 
-{% comment %} {% endif %} {% endcomment %}
+{% endif %}
 
 {% schema %}
 {
