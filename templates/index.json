@@ -2,19 +2,6 @@
   "sections": {
     "custom_background_image_NHpJT9": {
       "type": "custom-background-image",
-      "blocks": {
-        "page_UA8UQD": {
-          "type": "page",
-          "settings": {
-            "image_position": 50,
-            "button_label": "",
-            "button_url": ""
-          }
-        }
-      },
-      "block_order": [
-        "page_UA8UQD"
-      ],
       "settings": {
         "heading": "Lorem ipsum dolor sit amet.",
         "heading_size": "h1",
@@ -23,8 +10,9 @@
         "container_height": "medium",
         "box_shadow": true,
         "margin_bottom_custom": 0,
-        "background_image": "shopify:\/\/shop_images\/Screen_Shot_2024-06-11_at_7.41.20_PM.png",
-        "background_container": ""
+        "background_image": "shopify:\/\/shop_images\/eng___1638_1.jpg",
+        "background_size": "cover",
+        "background_color": ""
       }
     },
     "custom_image_banner_twfGEn": {
