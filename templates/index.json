@@ -12,7 +12,8 @@
         "margin_bottom_custom": 0,
         "background_image": "shopify:\/\/shop_images\/eng___1638_1.jpg",
         "background_size": "cover",
-        "background_color": ""
+        "background_color": "",
+        "show_dev_only": true
       }
     },
     "custom_image_banner_twfGEn": {
