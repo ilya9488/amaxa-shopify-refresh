@@ -1,9 +1,9 @@
 {
   "sections": {
-    "custom_background_image_i4QkxG": {
+    "custom_background_image_NHpJT9": {
       "type": "custom-background-image",
       "blocks": {
-        "page_MdFYbV": {
+        "page_UA8UQD": {
           "type": "page",
           "settings": {
             "image_position": 50,
@@ -13,10 +13,10 @@
         }
       },
       "block_order": [
-        "page_MdFYbV"
+        "page_UA8UQD"
       ],
       "settings": {
-        "heading": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa labore dignissimos corporis molestiae. Eaque, consectetur quae voluptate id tempora explicabo officia officiis repudiandae provident culpa pariatur excepturi sit libero inventore!",
+        "heading": "Lorem ipsum dolor sit amet.",
         "heading_size": "h1",
         "margin_top": "none",
         "margin_bottom": "none",
@@ -605,7 +605,7 @@
     }
   },
   "order": [
-    "custom_background_image_i4QkxG",
+    "custom_background_image_NHpJT9",
     "custom_image_banner_twfGEn",
     "custom_image_banner_dNPwtP",
     "rich_text_hCEbxw",
