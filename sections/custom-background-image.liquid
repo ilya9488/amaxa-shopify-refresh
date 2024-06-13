@@ -1,40 +1,49 @@
 {{ 'section-custom-background-image.css' | asset_url | stylesheet_tag }}
 
-<div
-    id="Banner-{{ section.id }}"
-    class="background-image-banner
-
-      {% if section.settings.container_height != blank %} images-banner-height--{{ section.settings.container_height }}{% endif %}
-      {% if section.settings.box_shadow %} images-banner-shadow{% endif %}
-      {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
-      {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
-
-    style="
-        {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
-        {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
-        {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
-        
-    "
->
-  123
-  {% for block in section.blocks %}
-    <div
-        class="images-banner--image"
-        style="
-           background-image: url('{{ block.settings.image  | img_url: 'original' }}');
+{% comment %} (!) The section is visible only for development (!) {% endcomment %}
+{% if shop.domain contains 'myshopify.com' %}
+  
+  
+  <div
+      id="Banner-{{ section.id }}"
+      class="background-image-banner
+  
+        {% if section.settings.container_height != blank %} images-banner-height--{{ section.settings.container_height }}{% endif %}
+        {% if section.settings.box_shadow %} images-banner-shadow{% endif %}
+        {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
+        {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
+  
+      style="
+          {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
+          {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
+          {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
           
-          {%- if block.settings.image_position != 50 -%}background-position-x: {{ block.settings.image_position }}%; {%- endif -%}
-        ">
-      
-    </div>
-  {% endfor %}
+      "
+  >
+    123
+    {% for block in section.blocks %}
+      <div
+          class="images-banner--image"
+          style="
+             background-image: url('{{ block.settings.image  | img_url: 'original' }}');
+            
+            {%- if block.settings.image_position != 50 -%}background-position-x: {{ block.settings.image_position }}%; {%- endif -%}
+          ">
+        
+      </div>
+    {% endfor %}
+  
+    {% if section.settings.heading != blank %}
+      <h1 class="images-banner--title {{ section.settings.heading_size }}">
+        {{ section.settings.heading }}
+      </h1>
+    {% endif %}
+  </div>
 
-  {% if section.settings.heading != blank %}
-    <h1 class="images-banner--title {{ section.settings.heading_size }}">
-      {{ section.settings.heading }}
-    </h1>
-  {% endif %}
-</div>
+
+  
+{% endif %}
+
 
 
 
