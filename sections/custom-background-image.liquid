@@ -1,8 +1,9 @@
 {{ 'section-custom-background-image.css' | asset_url | stylesheet_tag }}
 
-{% if shop.domain contains 'amaxa-prime.com' %}
-  <!-- Блок для разработки -->
+{% if request.host contains 'myshopify.com' %}
+  <!-- Блок для разработки {{ request.host }} -->
 {% endif %}
+
 
   <div
       id="Banner-{{ section.id }}"
