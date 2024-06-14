@@ -139,7 +139,7 @@
         "collections": "frontpage",
         "clickable": true,
         "show_price": true,
-        "title_font_size": "small",
+        "title_font_size": "normal",
         "content_align": "center",
         "show_button": false,
         "button_label": "",
@@ -152,7 +152,7 @@
         "container_width": true,
         "slider_align": "align_middle",
         "slide_width": "310",
-        "slider_columns_desktop": 4,
+        "slider_columns_desktop": 3,
         "background_image": "",
         "background_content": ""
       }
