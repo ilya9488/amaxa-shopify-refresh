@@ -150,7 +150,7 @@
         "image_container_height": "normal",
         "slide_card": true,
         "container_width": true,
-        "slider_align": "align_left",
+        "slider_align": "align_middle",
         "slide_width": "310",
         "slider_columns_desktop": 3,
         "background_image": "",
