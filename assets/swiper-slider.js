@@ -8,12 +8,14 @@ function swiperSliderInit() {
 
   sliders.forEach(slider => {
     const columns = slider.dataset.columns ?? 3
+    const centered = slider.dataset.centered === 'align_middle'
     
       new Swiper(slider, {
         slidesPerView: columns,
         spaceBetween: 0,
         slidesPerColumn: 1,
         watchOverflow: true,
+        centeredSlides: centered,
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
