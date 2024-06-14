@@ -14,7 +14,7 @@
       {% if containerWidth > 0 %} style="max-width: {{ containerWidth }}px" {% endif %}
        data-columns="{{ section.settings.slider_columns_desktop }}"
        data-slide-width="{{ slide_width }}"
-       data-slide-centered="{{ section.settings.slider_align }}"
+       data-centered="{{ section.settings.slider_align }}"
   >
     <div class="swiper-wrapper">
       {% for product in collections [section.settings.collections].products %}

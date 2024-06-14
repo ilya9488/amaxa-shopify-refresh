@@ -19,6 +19,10 @@
 .swiper .swiper-container {
   padding-inline: 6px;
 }
+.swiper .swiper-wrapper.align_middle {
+  display: flex;
+  justify-content: center;
+}
 
 .swiper-slide-container {
   padding: var(--offset-normal)
