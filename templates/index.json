@@ -140,7 +140,7 @@
         "clickable": true,
         "show_price": true,
         "title_font_size": "normal",
-        "content_align": "center",
+        "content_align": "left",
         "show_button": false,
         "button_label": "",
         "show_description": false,
