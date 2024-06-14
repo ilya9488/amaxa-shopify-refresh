@@ -603,9 +603,6 @@ a.product__text {
   margin: 0 auto 1.2rem auto;
 }
 
-.product-form__buttons {
-  max-width: 44rem;
-}
 .product-form__buttons button  {
   margin-bottom: 0;
   width: 100%;
