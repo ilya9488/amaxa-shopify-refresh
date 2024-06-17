@@ -1,6 +1,7 @@
-cart-items .page-width {
-  padding-top: 36px;
-  padding-bottom: 36px;
+/* cart-items .page-width { */
+cart-items .cart__contents {
+  padding-top: 32px;
+  padding-bottom: 32px;
   border-top: 1px solid var(--color-secendary);
   border-bottom: 1px solid var(--color-secendary);
 }
