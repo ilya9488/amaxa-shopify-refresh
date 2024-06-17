@@ -1,21 +1,5 @@
 {
   "sections": {
-    "custom_background_image_EzW6y3": {
-      "type": "custom-background-image",
-      "settings": {
-        "heading": "Lorem ipsum dolor sit amet consectetur adipisicing.",
-        "heading_size": "h4",
-        "margin_top": "none",
-        "margin_bottom": "none",
-        "container_height": "small",
-        "box_shadow": true,
-        "margin_bottom_custom": 0,
-        "background_image": "shopify:\/\/shop_images\/eng___1638_1.jpg",
-        "background_size": "cover",
-        "background_color": "",
-        "show_dev_only": true
-      }
-    },
     "custom_background_image_NHpJT9": {
       "type": "custom-background-image",
       "settings": {
@@ -577,7 +561,6 @@
     }
   },
   "order": [
-    "custom_background_image_EzW6y3",
     "custom_background_image_NHpJT9",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
