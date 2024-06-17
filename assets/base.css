@@ -1243,6 +1243,12 @@ deferred-media {
   --color-button: var(--color-secondary-button);
   --color-button-text: var(--color-secondary-button-text);
 }
+.button--secondary:hover,
+.button--tertiary:hover {
+  --color-button: var(--color-secondary-button-text);
+  --color-button-text: var(--color-secondary-button);
+  transition: all .4s;
+}
 
 .button--tertiary {
   --alpha-button-background: 0;

@@ -95,3 +95,18 @@
 .images-banner-height--large .images-banner--image{
   height: var(--banner-image-height-large);
 }
+
+@media (max-width: 990px) {
+  .images-banner {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .images-banner .images-banner--image{
+    width: calc(50% - 3px);
+  }
+}
+@media (max-width: 550px) {
+  .images-banner .images-banner--image{
+    width: 100%;
+  }
+}
