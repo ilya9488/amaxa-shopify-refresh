@@ -7,6 +7,7 @@ cart-items .cart__contents {
 }
 cart-items .title-wrapper-with-link {
   margin-top: 0;
+  margin-bottom: 18px;
 }
 
 .cart-items td,
@@ -372,6 +373,7 @@ cart-items .title-wrapper-with-link {
     box-shadow: none;
     width: 100%;
     display: table;
+    border-spacing: 0;
   }
 
   .cart-items th {
