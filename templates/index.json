@@ -117,7 +117,7 @@
         "show_price": true,
         "title_font_size": "normal",
         "content_align": "center",
-        "show_button": false,
+        "show_button": true,
         "button_label": "",
         "show_description": false,
         "content_offset_top_none": true,
