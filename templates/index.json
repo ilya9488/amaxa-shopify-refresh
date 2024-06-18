@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "custom_background_image_NHpJT9": {
@@ -108,7 +117,7 @@
         "show_price": true,
         "title_font_size": "normal",
         "content_align": "center",
-        "show_button": false,
+        "show_button": true,
         "button_label": "",
         "show_description": false,
         "content_offset_top_none": true,
@@ -169,6 +178,7 @@
         "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
         "container_width": false,
         "color_background": "#FAFAFA",
+        "image_stretch": "cover",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -319,6 +329,7 @@
         "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
         "container_width": false,
         "color_background": "#FAFAFA",
+        "image_stretch": "cover",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "image_first",
@@ -423,6 +434,7 @@
         "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
         "container_width": false,
         "color_background": "#fff",
+        "image_stretch": "cover",
         "height": "adapt",
         "desktop_image_width": "medium",
         "layout": "text_first",
