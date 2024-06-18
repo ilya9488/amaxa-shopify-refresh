@@ -1,5 +1,5 @@
 :root {
-  --review-slider-height-default: 275px;
+  --review-slider-height-default: 285px;
 }
 
 .swiper-review-slider .swiper-slide--inner {
@@ -10,9 +10,12 @@
 
 .swiper-review-slider .review-content {
   display: block;
-  padding-block: 10px;
+  margin-top: 5px;
+  padding-block: 5px 0;
+  padding-right: 5px;
   overflow-y: auto;
   height: 180px;
+  font-size: 16px;
 }
 .swiper-review-slider .review-content p {
   margin: 0;
