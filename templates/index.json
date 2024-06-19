@@ -25,23 +25,6 @@
         "show_dev_only": false
       }
     },
-    "custom_hero_96CCeP": {
-      "type": "custom-hero",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "margin_top": "none",
-        "margin_bottom": "default",
-        "container_height": "large",
-        "box_shadow": false,
-        "margin_bottom_custom": 0,
-        "to_top_shift_upward": 0,
-        "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
-        "background_size": "cover",
-        "background_color": "",
-        "show_dev_only": true
-      }
-    },
     "custom_image_banner_twfGEn": {
       "type": "custom-image-banner",
       "blocks": {
@@ -591,7 +574,6 @@
   },
   "order": [
     "custom_hero_UMdGeL",
-    "custom_hero_96CCeP",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
     "swiper_product_slider_RhcrGB",
