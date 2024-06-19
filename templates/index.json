@@ -9,6 +9,22 @@
 */
 {
   "sections": {
+    "custom_background_image_WyHhCe": {
+      "type": "custom-background-image",
+      "settings": {
+        "heading": "",
+        "heading_size": "h1",
+        "margin_top": "none",
+        "margin_bottom": "none",
+        "container_height": "large",
+        "box_shadow": true,
+        "margin_bottom_custom": 0,
+        "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
+        "background_size": "cover",
+        "background_color": "",
+        "show_dev_only": true
+      }
+    },
     "custom_background_image_NHpJT9": {
       "type": "custom-background-image",
       "settings": {
@@ -573,6 +589,7 @@
     }
   },
   "order": [
+    "custom_background_image_WyHhCe",
     "custom_background_image_NHpJT9",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
