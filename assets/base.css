@@ -2639,6 +2639,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
   overflow: hidden;
 }
 
+.header__icons .header-faq-link {
+  margin-right: 10px;
+}
 .header__icons .header-faq-link a{
   text-decoration: none;
   text-transform: uppercase;
