@@ -43,22 +43,6 @@
         "show_dev_only": false
       }
     },
-    "custom_background_image_tYmK8q": {
-      "type": "custom-background-image",
-      "settings": {
-        "heading": "",
-        "heading_size": "h1",
-        "margin_top": "none",
-        "margin_bottom": "none",
-        "container_height": "small",
-        "box_shadow": true,
-        "margin_bottom_custom": 0,
-        "background_image": "shopify:\/\/shop_images\/eng___1638_1.jpg",
-        "background_size": "cover",
-        "background_color": "",
-        "show_dev_only": false
-      }
-    },
     "custom_image_banner_twfGEn": {
       "type": "custom-image-banner",
       "blocks": {
@@ -609,7 +593,6 @@
   "order": [
     "custom_hero_HREUxX",
     "custom_hero_3bXXcH",
-    "custom_background_image_tYmK8q",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
     "swiper_product_slider_RhcrGB",
