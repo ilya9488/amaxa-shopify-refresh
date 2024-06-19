@@ -9,8 +9,7 @@
 {%- endif -%}
 
 {% if settings.select_faq_page %}
-  {% assign page = pages[settings.select_faq_page] %}
-  <a href="{{ page.url }}">{{ page.title }}</a>
+  <a href="{{ settings.select_faq_page.url }}">{{ settings.select_faq_page.title }}</a>
 {% endif %}
 
 {%- if section.settings.menu_type_desktop == 'mega' -%}
