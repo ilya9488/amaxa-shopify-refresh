@@ -12,7 +12,7 @@
     "custom_hero_HREUxX": {
       "type": "custom-hero",
       "settings": {
-        "heading": "",
+        "heading": "Lorem, ipsum dolor.",
         "heading_size": "h1",
         "margin_top": "none",
         "margin_bottom": "none",
@@ -29,7 +29,7 @@
     "custom_hero_3bXXcH": {
       "type": "custom-hero",
       "settings": {
-        "heading": "Lorem, ipsum dolor.",
+        "heading": "",
         "heading_size": "h1",
         "margin_top": "none",
         "margin_bottom": "none",
