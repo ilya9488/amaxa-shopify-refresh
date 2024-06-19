@@ -23,6 +23,23 @@
         "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
         "background_size": "cover",
         "background_color": "",
+        "show_dev_only": true
+      }
+    },
+    "custom_hero_3bXXcH": {
+      "type": "custom-hero",
+      "settings": {
+        "heading": "Lorem, ipsum dolor.",
+        "heading_size": "h1",
+        "margin_top": "none",
+        "margin_bottom": "none",
+        "container_height": "large",
+        "box_shadow": true,
+        "margin_bottom_custom": 0,
+        "to_top_shift_upward": 64,
+        "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
+        "background_size": "cover",
+        "background_color": "",
         "show_dev_only": false
       }
     },
@@ -591,6 +608,7 @@
   },
   "order": [
     "custom_hero_HREUxX",
+    "custom_hero_3bXXcH",
     "custom_background_image_tYmK8q",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
