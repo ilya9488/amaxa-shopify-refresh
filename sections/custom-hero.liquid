@@ -1,0 +1,199 @@
+{{ 'section-custom-hero.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Dev Mode - condition {% endcomment %}
+{% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
+  <div
+      id="Banner-{{ section.id }}"
+      class="custom-hero
+  
+        {% if section.settings.container_height != blank %} custom-hero-height--{{ section.settings.container_height }}{% endif %}
+        {% if section.settings.box_shadow %} custom-hero-shadow{% endif %}
+        {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
+        {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
+  
+      style="
+      
+          {% if section.settings.to_top_shift_upward > 0 %}margin-top: calc(-{{section.settings.to_top_shift_upward }}px * 3);{% endif %}
+          {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
+          {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
+          {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
+          {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
+          
+      "
+    >
+  
+    {% if section.settings.heading != blank %}
+      <h1 class="custom-hero--title {{ section.settings.heading_size }}">
+        {{ section.settings.heading }}
+      </h1>
+    {% endif %}
+  
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Custom Hero",
+  "class": "section",
+  "settings": [
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading Size"
+    },
+    {
+      "type": "select",
+      "id": "margin_top",
+      "label": "Margin top",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "container_height",
+      "label": "Image height",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "checkbox",
+      "id": "box_shadow",
+      "default": true,
+      "label": "Box Shadow"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_custom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "label": "Margin bottom custom"
+    },
+    {
+      "type": "range",
+      "id": "to_top_shift_upward",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 70,
+      "label": "Shift Upward"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    {
+      "type": "select",
+      "id": "background_size",
+      "label": "Background Size",
+      "options": [
+        {
+          "value": "cover",
+          "label": "Cover"
+        },
+        {
+          "value": "contain",
+          "label": "Contain"
+        }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "color_background",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dev_only",
+      "default": false,
+      "label": "Show Dev Only"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Hero"
+    }
+  ]
+}
+{% endschema %}
