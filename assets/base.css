@@ -2461,7 +2461,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header-wrapper {
   display: block;
   position: relative;
-  background-color: rgb(var(--color-background));
+  /* position: fixed; */
+  /* width: 100%; */
+  background-color: transparent;
   /* z-index: 20; */
 }
 
@@ -2625,6 +2627,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 /* Header icons */
 .header__icons {
   display: flex;
+  align-items: center;
   grid-area: icons;
   justify-self: end;
   padding-right: 0.8rem;
@@ -2634,6 +2637,18 @@ product-info .loading__spinner:not(.hidden) ~ *,
   max-width: 4.4rem;
   max-height: 4.4rem;
   overflow: hidden;
+}
+
+.header__icons .header-faq-link a{
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--color-grey);
+  transition: .3s;
+}
+.header__icons .header-faq-link a:hover{
+  color: var(--color-primary);
 }
 
 .header__icon:not(.header__icon--summary),
@@ -2689,6 +2704,9 @@ product-info .loading__spinner:not(.hidden) ~ *,
   display: block;
   position: absolute;
   background: rgba(var(--color-foreground), 0.5);
+}
+.shopify-section-header-sticky.scrolled-past-header .header-wrapper{
+  background-color: #fff;
 }
 .shopify-section-header-sticky.scrolled-past-header .header {
   border-bottom: 1px solid var(--color-secendary);

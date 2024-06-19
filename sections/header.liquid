@@ -8,10 +8,6 @@
   <link rel="stylesheet" href="{{ 'component-price.css' | asset_url }}" media="print" onload="this.media='all'">
 {%- endif -%}
 
-{% if settings.select_faq_page %}
-  <a href="{{ settings.select_faq_page.url }}">{{ settings.select_faq_page.title }}</a>
-{% endif %}
-
 {%- if section.settings.menu_type_desktop == 'mega' -%}
   <link rel="stylesheet" href="{{ 'component-mega-menu.css' | asset_url }}" media="print" onload="this.media='all'">
   <noscript>{{ 'component-mega-menu.css' | asset_url | stylesheet_tag }}</noscript>
@@ -300,6 +296,19 @@
         {%- endif -%}
       </div>
       {% render 'header-search', input_id: 'Search-In-Modal' %}
+
+      {% comment %} Custom FAQ Link {% endcomment %}
+      {% if section.settings.select_faq_page != blank %}
+        <div class="header-faq-link">
+          <a href="{{ section.settings.select_faq_page.url }}">
+            {% if section.settings.faq_page_name != blank %}
+              {{ section.settings.faq_page_name }}
+              {% else %}
+              {{ section.settings.select_faq_page }}
+            {% endif %}
+          </a>
+        </div>
+      {% endif %}
 
       {%- if shop.customer_accounts_enabled -%}
         <a href="{%- if customer -%}{{ routes.account_url }}{%- else -%}{{ routes.account_login_url }}{%- endif -%}" class="header__icon header__icon--account link focus-inset{% if section.settings.menu != blank %} small-hide{% endif %}">
@@ -631,6 +640,11 @@
       "type": "page",
       "id": "select_faq_page",
       "label": "Select FAQ Page"
+    },
+    {
+      "type": "text",
+      "id": "faq_page_name",
+      "label": "FAQ Page Name"
     },
     {
       "type": "header",
