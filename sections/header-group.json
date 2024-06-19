@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "10% Off Your First Order: Use code \n<br>\nWELCOME10 at checkout",
+            "text": "10% Off Your First Order: Use code \nWELCOME10 at checkout",
             "link": ""
           }
         }
