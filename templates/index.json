@@ -28,7 +28,7 @@
         "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
         "background_size": "cover",
         "background_color": "",
-        "show_dev_only": false
+        "show_dev_only": true
       }
     },
     "custom_hero_3bXXcH": {
