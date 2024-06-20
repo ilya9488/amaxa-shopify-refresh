@@ -7,14 +7,13 @@
       class="custom-hero
   
         {% if section.settings.container_height != blank %} custom-hero-height--{{ section.settings.container_height }}{% endif %}
-        {% if section.settings.box_shadow %} custom-hero-shadow{% endif %}
         {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
         {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
   
       style="
       
           {% if section.settings.to_top_shift_upward > 0 %}margin-top: calc(-{{section.settings.to_top_shift_upward }}px * 3);{% endif %}
-          {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
+          {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 2);{% endif %}
           {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
           {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
           {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
@@ -55,26 +54,6 @@
   "class": "section",
   "settings": [
     {
-      "type": "inline_richtext",
-      "id": "heading",
-      "label": "Heading"
-    },
-    {
-      "type": "richtext",
-      "id": "text",
-      "label": "Text"
-    },
-    {
-      "type": "text",
-      "id": "button_label",
-      "label": "Button label"
-    },
-    {
-      "type": "url",
-      "id": "button_url",
-      "label": "Button url"
-    },
-    {
       "type": "select",
       "id": "heading_size",
       "options": [
@@ -97,6 +76,26 @@
       ],
       "default": "h1",
       "label": "Heading Size"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button url"
     },
     {
       "type": "select",
@@ -147,6 +146,24 @@
       "default": "none"
     },
     {
+      "type": "range",
+      "id": "margin_bottom_custom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "label": "Margin bottom custom"
+    },
+    {
+      "type": "range",
+      "id": "to_top_shift_upward",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "default": 70,
+      "label": "Shift Upward"
+    },
+    {
       "type": "select",
       "id": "container_height",
       "label": "Image height",
@@ -165,30 +182,6 @@
         }
       ],
       "default": "medium"
-    },
-    {
-      "type": "checkbox",
-      "id": "box_shadow",
-      "default": true,
-      "label": "Box Shadow"
-    },
-    {
-      "type": "range",
-      "id": "margin_bottom_custom",
-      "min": 0,
-      "max": 100,
-      "step": 2,
-      "default": 0,
-      "label": "Margin bottom custom"
-    },
-    {
-      "type": "range",
-      "id": "to_top_shift_upward",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 70,
-      "label": "Shift Upward"
     },
     {
       "type": "image_picker",
