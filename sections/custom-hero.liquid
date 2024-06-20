@@ -4,7 +4,7 @@
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
   <div
       id="Banner-{{ section.id }}"
-      class="custom-hero
+      class="custom-hero 
   
         {% if section.settings.container_height != blank %} custom-hero-height--{{ section.settings.container_height }}{% endif %}
         {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
@@ -13,57 +13,62 @@
       style="
       
           {% if section.settings.to_top_shift_upward > 0 %}margin-top: calc(-{{section.settings.to_top_shift_upward }}px * 3);{% endif %}
-          {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 2);{% endif %}
+          {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 3);{% endif %}
           {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
           {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
           {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
           
       "
     >
-  
-    <div class="text-wrap">
-
-      {% if section.settings.heading != blank %}
-        <h1 class="custom-hero--title {{ section.settings.heading_size }}">
-          {{ section.settings.heading }}
-        </h1>
-      {% endif %}
-
-      {% if section.settings.text != blank %}
-        <p class="custom-hero--text {{ section.settings.text_size }}">
-          {{ section.settings.text }}
-        </p>
-      {% endif %}
-
-      {% if section.settings.button_label != blank %}
-        <div class="images-banner--buttons">
-          <a href="{{ section.settings.button_url }}" class="button">
-            {{ section.settings.button_label }}
-          </a>
+    <div class="page-width">
+      <div class="custom-hero--content-wrap">
+        <div class="custom-hero--text-wrap">
+    
+          {% if section.settings.heading != blank %}
+            <h1 class="custom-hero--title {{ section.settings.heading_size }}">
+              {{ section.settings.heading }}
+            </h1>
+          {% endif %}
+    
+          {% if section.settings.text != blank %}
+            <p class="custom-hero--text {{ section.settings.text_size }}">
+              {{ section.settings.text }}
+            </p>
+          {% endif %}
+    
+          {% if section.settings.button_label != blank %}
+            <div class="custom-hero--images-banner--buttons">
+              <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+                {{ section.settings.button_label }}
+              </a>
+            </div>
+          {% endif %}
+      
         </div>
-      {% endif %}
-
-      <div class="images-wrap">
-        {% if section.settings.image_product_1 != blank %}
-          <img
-            src="{{ section.settings.image_product_1 | image_url: width: 140 }}"
-            alt="{{ section.settings.image_product_1.alt | escape }}"
-            width="70"
-            height="{{ 70 | divided_by: section.settings.image_product_1.aspect_ratio | ceil }}"
-            loading="lazy"
-          >
-        {% endif %}
-        {% if section.settings.image_product_2 != blank %}
-          <img
-            src="{{ section.settings.image_product_2 | image_url: width: 140 }}"
-            alt="{{ section.settings.image_product_2.alt | escape }}"
-            width="70"
-            height="{{ 70 | divided_by: section.settings.image_product_2.aspect_ratio | ceil }}"
-            loading="lazy"
-          >
-        {% endif %}
+    
+        <div class="custom-hero--images-wrap">
+          {% if section.settings.image_product_1 != blank %}
+            <img
+              class="custom-hero--image_1"
+              src="{{ section.settings.image_product_1 | image_url: width: 500 }}"
+              alt="{{ section.settings.image_product_1.alt | escape }}"
+              width="70"
+              height="{{ 70 | divided_by: section.settings.image_product_1.aspect_ratio | ceil }}"
+              loading="lazy"
+            >
+          {% endif %}
+          {% if section.settings.image_product_2 != blank %}
+            <img
+              class="custom-hero--image_2"
+              src="{{ section.settings.image_product_2 | image_url: width: 500 }}"
+              alt="{{ section.settings.image_product_2.alt | escape }}"
+              width="70"
+              height="{{ 70 | divided_by: section.settings.image_product_2.aspect_ratio | ceil }}"
+              loading="lazy"
+            >
+          {% endif %}
+        </div>
       </div>
-
     </div>
   
   </div>
@@ -114,9 +119,29 @@
       "label": "Button label"
     },
     {
-      "type": "url",
+      "type": "text",
       "id": "button_url",
-      "label": "Button url"
+      "label": "Button Anchor '#block_id'"
+    },
+    {
+      "type": "select",
+      "id": "button_type",
+      "label": "Button type",
+      "options": [
+        {
+          "value": "button--primary",
+          "label": "Primary"
+        },
+        {
+          "value": "button--secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "button--primary_sm",
+          "label": "Primary - SM"
+        }
+      ],
+      "default": "button--primary_sm"
     },
     {
       "type": "image_picker",
