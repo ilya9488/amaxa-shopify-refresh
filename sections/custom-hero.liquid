@@ -43,6 +43,27 @@
         </div>
       {% endif %}
 
+      <div class="images-wrap">
+        {% if section.settings.image_product_1 != blank %}
+          <img
+            src="{{ section.settings.image_product_1 | image_url: width: 140 }}"
+            alt="{{ section.settings.image_product_1.alt | escape }}"
+            width="70"
+            height="{{ 70 | divided_by: section.settings.image_product_1.aspect_ratio | ceil }}"
+            loading="lazy"
+          >
+        {% endif %}
+        {% if section.settings.image_product_2 != blank %}
+          <img
+            src="{{ section.settings.image_product_2 | image_url: width: 140 }}"
+            alt="{{ section.settings.image_product_2.alt | escape }}"
+            width="70"
+            height="{{ 70 | divided_by: section.settings.image_product_2.aspect_ratio | ceil }}"
+            loading="lazy"
+          >
+        {% endif %}
+      </div>
+
     </div>
   
   </div>
@@ -96,6 +117,16 @@
       "type": "url",
       "id": "button_url",
       "label": "Button url"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_product_1",
+      "label": "Image Product (1)"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_product_2",
+      "label": "Image Product (2)"
     },
     {
       "type": "select",
