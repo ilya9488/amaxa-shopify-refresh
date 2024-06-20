@@ -1,30 +1,48 @@
 :root {
-  --banner-image-height-small: 300px;
-  --banner-image-height-medium: 400px;
-  --banner-image-height-large: 600px;
-  --banner-image-title-font-size-base: 7rem;
+  --custom-hero-height-small: 300px;
+  --custom-hero-height-medium: 400px;
+  --custom-hero-height-large: 600px;
+  --custom-hero-title-font-size-base: 5rem;
+  --custom-hero-title-font-size-base-md: 4rem;
+  --custom-hero-title-font-size-base-sm: 3rem;
 }
 
 .custom-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: var(--banner-image-height-small);
+  min-height: var(--custom-hero-height-small);
   position: relative;
   background-position-y: 0;
   background-position-x: center;
   background-repeat: no-repeat;
-  padding: 60px;
+  padding-top: 200px;
+  padding-bottom: 60px;
+}
+.custom-hero--content-wrap {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 35px;
+}
+.custom-hero--text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  text-align: right;
+  /* flex: 1; */
+  max-width: 60%;
+}
+.custom-hero--custom-hero--text {
+  color: var(--color-primary);
 }
 
 .custom-hero-height--small {
-  min-height: var(--banner-image-height-small);
+  min-height: var(--custom-hero-height-small);
 }
 .custom-hero-height--medium {
-  min-height: var(--banner-image-height-medium);
+  min-height: var(--custom-hero-height-medium);
 }
 .custom-hero-height--large {
-  min-height: var(--banner-image-height-large);
+  min-height: var(--custom-hero-height-large);
 }
 
 /* Offsets */
@@ -48,56 +66,113 @@
 }
 
 /* Title */
-.custom-hero .custom-hero--title {
-  text-align: center;
+.custom-hero--title {
   width: 100%;
-  font-weight: 700;
-  color: #fff;
-  text-shadow: rgb(0 0 0 / 83%) 0px 3px 8px;
-  font-size: calc(var(--banner-image-title-font-size-base) + 1vmin);
+  color: var(--color-grey-dark);
+  font-size: var(--custom-hero-title-font-size-base);
   margin: 0;
 }
 /* Title`s */
 .custom-hero--title.h2 {
-  --banner-image-title-font-size-base: 6rem;
+  --custom-hero-title-font-size-base: 4.5rem;
 }
 .custom-hero--title.h3 {
-  --banner-image-title-font-size-base: 5rem;
+  --custom-hero-title-font-size-base: 4rem;
 }
 .custom-hero--title.h4 {
-  --banner-image-title-font-size-base: 4rem;
+  --custom-hero-title-font-size-base: 3.5rem;
+}
+
+/* Images */
+.custom-hero--images-wrap {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  min-width: 300px;
+  padding-left: 40px;
+  max-width: 40%;
+}
+.custom-hero--images-wrap img{
+  width: auto;
+  height: auto;
+  max-height: 250px;
+  max-width: 100%;
+}
+.custom-hero--image_1{
+  position: relative;
+  margin-right: 55%;
+  margin-bottom: -42%;
+}
+.custom-hero--image_2{
+  position: relative;
 }
 
 @media (max-width: 990px) {
   .custom-hero {
-    padding: 40px;
+    min-height: auto;
+    padding-top: 220px;
+    padding-bottom: 40px;
+  }
+
+  /* Title */
+  .custom-hero--title {
+    font-size: var(--custom-hero-title-font-size-base-md);
   }
 
   /* Title`s */
   .custom-hero--title.h2 {
-    --banner-image-title-font-size-base: 5rem;
+    --custom-hero-title-font-size-base: 4rem;
   }
   .custom-hero--title.h3 {
-    --banner-image-title-font-size-base: 4rem;
+    --custom-hero-title-font-size-base: 3.5rem;
   }
   .custom-hero--title.h4 {
-    --banner-image-title-font-size-base: 3rem;
+    --custom-hero-title-font-size-base: 3rem;
+  }
+
+  .custom-hero--images-wrap{
+    padding-top: 0;
   }
 }
 
 @media (max-width: 750px) {
-  .custom-hero {
-    padding: 40px 20px;
+  /* Title */
+  .custom-hero--title {
+    font-size: var(--custom-hero-title-font-size-base-sm);
   }
 
   /* Title`s */
   .custom-hero--title.h2 {
-    --banner-image-title-font-size-base: 4rem;
+    --custom-hero-title-font-size-base: 3.5rem;
   }
   .custom-hero--title.h3 {
-    --banner-image-title-font-size-base: 3rem;
+    --custom-hero-title-font-size-base: 3rem;
   }
   .custom-hero--title.h4 {
-    --banner-image-title-font-size-base: 2.5rem;
+    --custom-hero-title-font-size-base: 2.5rem;
   }
+
+  .custom-hero--content-wrap {
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .custom-hero--text-wrap{
+    align-items: center;
+    text-align: center;
+    max-width: none;
+  }
+
+  .custom-hero--images-wrap{
+    min-width: auto;
+    max-width: none;
+  }
+
+  .custom-hero--images-wrap img{
+    max-height: 220px;
+  }
+
 }

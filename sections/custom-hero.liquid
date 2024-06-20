@@ -53,7 +53,7 @@
               src="{{ section.settings.image_product_1 | image_url: width: 500 }}"
               alt="{{ section.settings.image_product_1.alt | escape }}"
               width="70"
-              height="{{ 70 | divided_by: section.settings.image_product_1.aspect_ratio | ceil }}"
+              height="{{ 500 | divided_by: section.settings.image_product_1.aspect_ratio | ceil }}"
               loading="lazy"
             >
           {% endif %}
@@ -63,7 +63,7 @@
               src="{{ section.settings.image_product_2 | image_url: width: 500 }}"
               alt="{{ section.settings.image_product_2.alt | escape }}"
               width="70"
-              height="{{ 70 | divided_by: section.settings.image_product_2.aspect_ratio | ceil }}"
+              height="{{ 500 | divided_by: section.settings.image_product_2.aspect_ratio | ceil }}"
               loading="lazy"
             >
           {% endif %}
