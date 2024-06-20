@@ -110,7 +110,7 @@
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-530e7c38-2457-4f7a-9261-324fcbdb9928",
         "full_width": true,
         "padding_top": 60,
         "padding_bottom": 32
@@ -137,7 +137,7 @@
         "slide_width": "310",
         "slider_columns_desktop": 4,
         "background_image": "",
-        "background_content": ""
+        "background_content": "linear-gradient(357deg, rgba(176, 176, 210, 1) 1%, rgba(228, 222, 236, 1) 98%)"
       }
     },
     "image_with_text_xLx3Yj": {
