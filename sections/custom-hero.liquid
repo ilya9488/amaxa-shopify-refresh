@@ -23,7 +23,7 @@
     >
   
     <div class="text-wrap">
-      
+
       {% if section.settings.heading != blank %}
         <h1 class="custom-hero--title {{ section.settings.heading_size }}">
           {{ section.settings.heading }}
@@ -58,6 +58,11 @@
       "type": "inline_richtext",
       "id": "heading",
       "label": "Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
     },
     {
       "type": "text",
