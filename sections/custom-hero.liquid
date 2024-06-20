@@ -38,7 +38,7 @@
     
           {% if section.settings.button_label != blank %}
             <div class="custom-hero--images-banner--buttons">
-              <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+              <a href="#{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
                 {{ section.settings.button_label }}
               </a>
             </div>
@@ -121,8 +121,8 @@
     {
       "type": "text",
       "id": "button_url",
-      "label": "Button Anchor",
-      "default": "#block_id"
+      "default": "block_id",
+      "label": "Button Anchor"
     },
     {
       "type": "select",
