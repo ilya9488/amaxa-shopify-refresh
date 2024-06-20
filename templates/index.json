@@ -12,7 +12,10 @@
     "custom_hero_HREUxX": {
       "type": "custom-hero",
       "settings": {
-        "heading": "Lorem, ipsum dolor.",
+        "heading": "Stay in Your Prime",
+        "text": "<p><strong>Premium Supplements, Prime Results<\/strong><\/p>",
+        "button_label": "Find Your Perfect Fit",
+        "button_url": "",
         "heading_size": "h1",
         "margin_top": "none",
         "margin_bottom": "default",
@@ -30,6 +33,9 @@
       "type": "custom-hero",
       "settings": {
         "heading": "",
+        "text": "",
+        "button_label": "",
+        "button_url": "",
         "heading_size": "h1",
         "margin_top": "none",
         "margin_bottom": "default",
