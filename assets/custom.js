@@ -10,6 +10,8 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         top: targetElement.offsetTop - 100,
         behavior: 'smooth'
       });
+      
+      history.pushState(null, null, ' ');
     }
   });
 });
