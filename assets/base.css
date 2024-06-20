@@ -27,6 +27,10 @@
   --color-secendary: #F6F6F6;
   --color-grey: #8C8A92;
   --color-grey-dark: #6d6d6d;
+  --color-purple: #B0B0D2;
+  --color-purple-dark: #7975A9;
+  --color-grey-lite: #FCFCFE;
+  --color-clear: #ffffff;
 
   --breckpoint-xl: 1200px;
   --breckpoint-xls: 1100px;
@@ -187,7 +191,7 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 750px) {
   .page-width {
-    padding: 0 5rem;
+    padding: 0 2rem;
   }
 
   .header.page-width,
@@ -1677,6 +1681,21 @@ details[open] > .share-button__fallback {
 
 .share-button__message:not(:empty):not(.hidden) ~ * {
   display: none;
+}
+
+.button--primary_sm {
+  border: none;
+  background-color: var(--color-purple);
+  color: var(--color-grey-lite);
+  transition: all .4s;
+}
+.button--primary_sm::before,
+.button--primary_sm::after{
+  display: none !important;
+}
+.button--primary_sm:hover {
+  background-color: var(--color-purple-dark);
+  color: var(--color-clear);
 }
 
 /* component-form */
