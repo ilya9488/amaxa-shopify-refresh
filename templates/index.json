@@ -21,34 +21,14 @@
         "image_product_1": "shopify:\/\/shop_images\/miofolic_side_eng_180424.png",
         "image_product_2": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424.png",
         "margin_top": "none",
-        "margin_bottom": "default",
-        "margin_bottom_custom": 100,
         "to_top_shift_upward": 69,
+        "margin_bottom": "default",
+        "margin_bottom_custom": 0,
         "container_height": "large",
         "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
         "background_size": "cover",
         "background_color": "",
         "show_dev_only": true
-      }
-    },
-    "custom_hero_3bXXcH": {
-      "type": "custom-hero",
-      "settings": {
-        "heading_size": "h1",
-        "heading": "",
-        "text": "",
-        "button_label": "",
-        "button_url": "",
-        "button_type": "button--primary_sm",
-        "margin_top": "none",
-        "margin_bottom": "default",
-        "margin_bottom_custom": 0,
-        "to_top_shift_upward": 69,
-        "container_height": "large",
-        "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
-        "background_size": "cover",
-        "background_color": "",
-        "show_dev_only": false
       }
     },
     "custom_image_banner_twfGEn": {
@@ -600,7 +580,6 @@
   },
   "order": [
     "custom_hero_HREUxX",
-    "custom_hero_3bXXcH",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
     "swiper_product_slider_RhcrGB",
