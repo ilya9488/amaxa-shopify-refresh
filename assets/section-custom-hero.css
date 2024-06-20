@@ -28,7 +28,6 @@
   flex-direction: column;
   align-items: flex-end;
   text-align: right;
-  /* flex: 1; */
   max-width: 60%;
 }
 .custom-hero--custom-hero--text {
@@ -91,7 +90,7 @@
   margin: 0 auto;
   align-items: center;
   min-width: 300px;
-  padding-left: 40px;
+  padding-left: 50px;
   max-width: 40%;
 }
 .custom-hero--images-wrap img{
@@ -102,7 +101,7 @@
 }
 .custom-hero--image_1{
   position: relative;
-  margin-right: 55%;
+  margin-right: 75%;
   margin-bottom: -42%;
 }
 .custom-hero--image_2{
