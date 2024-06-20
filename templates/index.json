@@ -22,7 +22,7 @@
         "image_product_2": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424.png",
         "margin_top": "none",
         "to_top_shift_upward": 69,
-        "margin_bottom": "default",
+        "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "large",
         "background_image": "shopify:\/\/shop_images\/hero-baner-1.jpg",
@@ -67,6 +67,7 @@
         "page_kU984m",
         "page_bYGkTV"
       ],
+      "disabled": true,
       "settings": {
         "image_clickable": false,
         "heading": "",
@@ -214,6 +215,7 @@
       "block_order": [
         "heading_RbQxFm"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -281,6 +283,7 @@
         "page_jza4KT",
         "page_H6YbXW"
       ],
+      "disabled": true,
       "settings": {
         "clickable": true,
         "show_title": true,
@@ -351,111 +354,6 @@
         "padding_bottom": 68
       }
     },
-    "rich_text_XAdfny": {
-      "type": "rich-text",
-      "blocks": {
-        "heading_c9fEAQ": {
-          "type": "heading",
-          "settings": {
-            "heading": "Our Products",
-            "heading_size": "h1"
-          }
-        },
-        "text_AKPyxX": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Every age. Every lifestyle. We help everyone be at their best.<\/p>"
-          }
-        }
-      },
-      "block_order": [
-        "heading_c9fEAQ",
-        "text_AKPyxX"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 16
-      }
-    },
-    "swiper_product_slider_MYUWVp": {
-      "type": "swiper-product-slider",
-      "settings": {
-        "collections": "frontpage",
-        "clickable": true,
-        "show_price": true,
-        "title_font_size": "middle",
-        "content_align": "center",
-        "show_button": false,
-        "button_label": "",
-        "show_description": false,
-        "content_offset_top_none": true,
-        "navigation_enabled": true,
-        "pagination_enabled": false,
-        "image_container_height": "normal",
-        "slide_card": true,
-        "container_width": true,
-        "slider_align": "align_middle",
-        "slide_width": "310",
-        "slider_columns_desktop": 4,
-        "background_image": "",
-        "background_content": ""
-      }
-    },
-    "image_with_text_Fqfza6": {
-      "type": "image-with-text",
-      "blocks": {
-        "heading_RD4k4r": {
-          "type": "heading",
-          "settings": {
-            "heading": "Get to Know Amaxa Bionica",
-            "heading_size": "h1"
-          }
-        },
-        "text_PTLKiM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>We’re an independent, family-run British business – a name people have trusted for 50 years for safe, balanced and effective support. Our team brings together decades of experience, all with the goal of helping you to be at your best, day-after-day.<\/p>",
-            "text_style": "body"
-          }
-        },
-        "button_jNC7eQ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Show more",
-            "button_link": "shopify:\/\/policies\/privacy-policy",
-            "button_style_secondary": false
-          }
-        }
-      },
-      "block_order": [
-        "heading_RD4k4r",
-        "text_PTLKiM",
-        "button_jNC7eQ"
-      ],
-      "settings": {
-        "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
-        "container_width": false,
-        "color_background": "#fff",
-        "image_stretch": "cover",
-        "height": "adapt",
-        "desktop_image_width": "medium",
-        "layout": "text_first",
-        "desktop_content_position": "top",
-        "desktop_content_alignment": "left",
-        "content_layout": "no-overlap",
-        "button_type": "button--secondary",
-        "section_color_scheme": "",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "left",
-        "padding_top": 68,
-        "padding_bottom": 68
-      }
-    },
     "rich_text_K4CaG8": {
       "type": "rich-text",
       "blocks": {
@@ -470,6 +368,7 @@
       "block_order": [
         "heading_pHbqAA"
       ],
+      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
@@ -562,6 +461,7 @@
         "page_VkXJzc",
         "page_NtixXW"
       ],
+      "disabled": true,
       "settings": {
         "clickable": false,
         "content_align": "left",
@@ -587,9 +487,6 @@
     "rich_text_cXmiwn",
     "swiper_page_slider_rXTf9q",
     "image_with_text_jdJWhJ",
-    "rich_text_XAdfny",
-    "swiper_product_slider_MYUWVp",
-    "image_with_text_Fqfza6",
     "rich_text_K4CaG8",
     "swiper_review_slider_Ct6beM"
   ]
