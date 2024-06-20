@@ -33,7 +33,7 @@
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ block.shopify_attributes }}
       >
-        {%- if section.blocks.first.settings.text != blank -%}
+        {%- if section.blocks.first.settings.text != blank or section.blocks.first.settings.text_2 != blank -%}
           {%- if section.blocks.first.settings.link != blank -%}
             <a
               href="{{ section.blocks.first.settings.link }}"
@@ -42,6 +42,14 @@
           {%- endif -%}
           <p class="announcement-bar__message h5">
             <span>{{ section.blocks.first.settings.text | escape }}</span>
+            {%- if section.blocks.first.settings.text_2 != blank -%}
+              <span>
+                {% comment %} To Next Line {% endcomment %}
+                {%- if section.blocks.first.settings.line_break -%}<br>{%- endif -%}
+                {% comment %} Text Line 2 {% endcomment %}
+                {{ section.blocks.first.settings.text_2 | escape }}
+              </span>
+            {%- endif -%}
             {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
             {%- endif -%}
@@ -303,6 +311,17 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
+        },
+        {
+          "type": "checkbox",
+          "id": "line_break",
+          "default": true,
+          "label": "Line Break"
+        },
+        {
+          "type": "textarea",
+          "id": "text_2",
+          "label": "Text Line 2"
         },
         {
           "type": "url",
