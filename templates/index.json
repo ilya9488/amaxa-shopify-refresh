@@ -197,6 +197,7 @@
         "caption_hAx8hC",
         "caption_f8fCyK"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
         "container_width": false,
@@ -214,6 +215,48 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 68,
+        "padding_bottom": 0
+      }
+    },
+    "image_with_text_ikt6dM": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_QYrwyt": {
+          "type": "heading",
+          "settings": {
+            "heading": "Scientifically Formulated,  Naturally Sourced:",
+            "heading_size": "h2"
+          }
+        },
+        "text_e7PcDB": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Our products combine the best of science and nature to support your health.<\/p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_QYrwyt",
+        "text_e7PcDB"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-us-1.jpg",
+        "container_width": false,
+        "color_background": "#FCFAFF",
+        "image_stretch": "cover",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "button_type": "button--secondary",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
         "padding_bottom": 0
       }
     },
@@ -535,6 +578,7 @@
     "rich_text_hCEbxw",
     "swiper_product_slider_RhcrGB",
     "image_with_text_xLx3Yj",
+    "image_with_text_ikt6dM",
     "rich_text_cXmiwn",
     "swiper_page_slider_rXTf9q",
     "image_with_text_jdJWhJ",
