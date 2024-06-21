@@ -260,6 +260,40 @@
         "padding_bottom": 0
       }
     },
+    "multirow_KAHXc6": {
+      "type": "multirow",
+      "blocks": {
+        "row_dVmtzW": {
+          "type": "row",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-us-1.jpg",
+            "caption": "",
+            "heading": "Scientifically Formulated, Naturally Sourced:",
+            "text": "<p>Our products combine the best of science and nature  to support your health.<\/p>",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "row_dVmtzW"
+      ],
+      "settings": {
+        "image_height": "medium",
+        "desktop_image_width": "medium",
+        "heading_size": "h1",
+        "text_style": "body",
+        "button_style": "secondary",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "left",
+        "image_layout": "alternate-left",
+        "section_color_scheme": "",
+        "row_color_scheme": "",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
     "rich_text_cXmiwn": {
       "type": "rich-text",
       "blocks": {
@@ -579,6 +613,7 @@
     "swiper_product_slider_RhcrGB",
     "image_with_text_xLx3Yj",
     "image_with_text_ikt6dM",
+    "multirow_KAHXc6",
     "rich_text_cXmiwn",
     "swiper_page_slider_rXTf9q",
     "image_with_text_jdJWhJ",
