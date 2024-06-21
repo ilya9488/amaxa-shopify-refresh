@@ -36,8 +36,10 @@
     {% endif %}
   
     {% if section.settings.text != blank %}
-      <div class="custom-about-us--text {{ section.settings.text_size }}">
-        {{ section.settings.text }}
+      <div class="custom-about-us--text-wrap">
+        <p class="custom-about-us--text {{ section.settings.text_size }}">
+          {{ section.settings.text | newline_to_br  }}
+        </p>
       </div>
     {% endif %}
   
