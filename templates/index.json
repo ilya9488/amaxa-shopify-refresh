@@ -31,6 +31,22 @@
         "show_dev_only": false
       }
     },
+    "custom_about_us_iDn8Ma": {
+      "type": "custom-about-us",
+      "settings": {
+        "heading": "Jane TkachenkoScientifically Formulated, Naturally Sourced: Our products combine the best of science and nature to support your health.",
+        "heading_size": "h1",
+        "margin_top": "none",
+        "margin_bottom": "none",
+        "container_height": "medium",
+        "box_shadow": true,
+        "margin_bottom_custom": 0,
+        "background_image": "shopify:\/\/shop_images\/about-us-1.jpg",
+        "background_size": "cover",
+        "background_color": "",
+        "show_dev_only": true
+      }
+    },
     "custom_image_banner_twfGEn": {
       "type": "custom-image-banner",
       "blocks": {
@@ -514,6 +530,7 @@
   },
   "order": [
     "custom_hero_HREUxX",
+    "custom_about_us_iDn8Ma",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
     "swiper_product_slider_RhcrGB",
