@@ -56,6 +56,30 @@
               >
                 <div class="field">
                   <input
+                    id="NewsletterForm-name-{{ section.id }}"
+                    type="text"
+                    name="contact[name]"
+                    class="field__input"
+                    value="{{ form.name }}"
+                    aria-required="true"
+                    autocorrect="off"
+                    autocapitalize="off"
+                    autocomplete="name"
+                    {% if form.errors %}
+                      autofocus
+                      aria-invalid="true"
+                      aria-describedby="Newsletter-name-error--{{ section.id }}"
+                    {% elsif form.posted_successfully? %}
+                      aria-describedby="Newsletter-name-success--{{ section.id }}"
+                    {% endif %}
+                    placeholder="name"
+                    required
+                  >
+                  <label class="field__label" for="NewsletterForm--{{ section.id }}">
+                    name
+                  </label>
+                  
+                  <input
                     id="NewsletterForm--{{ section.id }}"
                     type="email"
                     name="contact[email]"
