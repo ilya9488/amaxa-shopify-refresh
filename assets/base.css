@@ -1836,6 +1836,7 @@ details[open] > .share-button__fallback {
   width: 100%;
   display: flex;
   transition: box-shadow var(--duration-short) ease;
+  margin-bottom: 10px;
 }
 
 .customer .field {
