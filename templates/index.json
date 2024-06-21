@@ -34,16 +34,16 @@
     "custom_about_us_iDn8Ma": {
       "type": "custom-about-us",
       "settings": {
-        "heading": "Scientifically Formulated, Naturally Sourced: Our products combine the best of science and nature to support your health.",
-        "heading_size": "h1",
-        "margin_top": "none",
-        "margin_bottom": "none",
-        "container_height": "medium",
-        "box_shadow": true,
-        "margin_bottom_custom": 0,
-        "background_image": "shopify:\/\/shop_images\/about-us-1.jpg",
-        "background_size": "cover",
         "background_color": "",
+        "image": "shopify:\/\/shop_images\/about-us-1.jpg",
+        "img_min_height": "medium",
+        "img_size": "cover",
+        "text": "<p>Scientifically Formulated, Naturally Sourced: Our products combine the best of science and nature to support your health.<\/p>",
+        "text_size": "medium",
+        "margin_top": "none",
+        "margin_bottom": "default",
+        "container_min_height": "medium",
+        "margin_bottom_custom": 0,
         "show_dev_only": true
       }
     },
