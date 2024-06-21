@@ -1,0 +1,103 @@
+:root {
+  --banner-image-height-small: 300px;
+  --banner-image-height-medium: 400px;
+  --banner-image-height-large: 600px;
+  --banner-image-title-font-size-base: 7rem;
+}
+
+.custom-about-us {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: var(--banner-image-height-small);
+  position: relative;
+  background-position-y: 0;
+  background-position-x: center;
+  background-repeat: no-repeat;
+  padding: 60px;
+}
+
+.custom-about-us-height--small {
+  min-height: var(--banner-image-height-small);
+}
+.custom-about-us-height--medium {
+  min-height: var(--banner-image-height-medium);
+}
+.custom-about-us-height--large {
+  min-height: var(--banner-image-height-large);
+}
+
+/* Offsets */
+.custom-about-us.margin-top--default {
+  margin-block-start: var(--section-margin-block-start);
+}
+.custom-about-us.margin-top--middle {
+  margin-block-start: var(--section-margin-block-start-middle);
+}
+.custom-about-us.margin-top--big {
+  margin-block-start: var(--section-margin-block-start-big);
+}
+.custom-about-us.margin-bottom--default {
+  margin-block-end: var(--section-margin-block-end);
+}
+.custom-about-us.margin-bottom--middle {
+  margin-block-end: var(--section-margin-block-end-middle);
+}
+.custom-about-us.margin-bottom--big {
+  margin-block-end: var(--section-margin-block-end-big);
+}
+
+/* Title */
+.custom-about-us .custom-about-us--title {
+  text-align: center;
+  width: 100%;
+  font-weight: 700;
+  color: #fff;
+  text-shadow: rgb(0 0 0 / 83%) 0px 3px 8px;
+  font-size: calc(var(--banner-image-title-font-size-base) + 1vmin);
+  margin: 0;
+}
+/* Title`s */
+.custom-about-us--title.h2 {
+  --banner-image-title-font-size-base: 6rem;
+}
+.custom-about-us--title.h3 {
+  --banner-image-title-font-size-base: 5rem;
+}
+.custom-about-us--title.h4 {
+  --banner-image-title-font-size-base: 4rem;
+}
+
+@media (max-width: 990px) {
+  .custom-about-us {
+    padding: 40px;
+  }
+
+  /* Title`s */
+  .custom-about-us--title.h2 {
+    --banner-image-title-font-size-base: 5rem;
+  }
+  .custom-about-us--title.h3 {
+    --banner-image-title-font-size-base: 4rem;
+  }
+  .custom-about-us--title.h4 {
+    --banner-image-title-font-size-base: 3rem;
+  }
+}
+
+@media (max-width: 750px) {
+  .custom-about-us {
+    padding: 40px 20px;
+  }
+
+  /* Title`s */
+  .custom-about-us--title.h2 {
+    --banner-image-title-font-size-base: 4rem;
+  }
+  .custom-about-us--title.h3 {
+    --banner-image-title-font-size-base: 3rem;
+  }
+  .custom-about-us--title.h4 {
+    --banner-image-title-font-size-base: 2.5rem;
+  }
+}
