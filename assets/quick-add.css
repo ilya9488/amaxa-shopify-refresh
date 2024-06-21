@@ -224,7 +224,9 @@ quick-add-modal .product-form__buttons {
   font-weight: 400;
   font-size: 15px;
   color: var(--title-color-primary);
-
+}
+.quick-add__submit:hover {
+  color: var(--color-clear);
 }
 
 quick-add-modal .product-media-container.constrain-height {
