@@ -242,7 +242,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-us-1.jpg",
-        "container_width": true,
+        "container_width": false,
         "color_background": "#FCFAFF",
         "image_stretch": "cover",
         "height": "adapt",
