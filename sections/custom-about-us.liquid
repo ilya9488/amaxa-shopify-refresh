@@ -11,24 +11,16 @@
         {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
   
       style="
-      
           {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: {{ section.settings.margin_bottom_custom }}px;{% endif %}
           {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
           {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
-          
       "
     >
-  
-    {% if section.settings.text != blank %}
-      <p class="custom-about-us--title {{ section.settings.text_size }}">
-        {{ section.settings.text }}
-      </p>
-    {% endif %}
 
     {% if section.settings.image != blank %}
       <div class="custom-about-us--img-wrap 
-        {% if section.settings.img_min_height != blank %} custom-about-us-img--{{ section.settings.img_min_height }}{% endif %}
-        ">
+              {% if section.settings.img_min_height != blank %} custom-about-us-img--{{ section.settings.img_min_height }}{% endif %}
+           ">
         <img
           class="custom-about-us--image"
           style="
@@ -40,6 +32,12 @@
           height="{{ 500 | divided_by: section.settings.image.aspect_ratio | ceil }}"
           loading="lazy"
         >
+      </div>
+    {% endif %}
+  
+    {% if section.settings.text != blank %}
+      <div class="custom-about-us--text {{ section.settings.text_size }}">
+        {{ section.settings.text }}
       </div>
     {% endif %}
   
@@ -105,7 +103,7 @@
       "default": "cover"
     },
     {
-      "type": "richtext",
+      "type": "textarea",
       "id": "text",
       "label": "Text"
     },
