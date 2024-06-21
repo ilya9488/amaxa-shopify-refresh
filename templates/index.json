@@ -34,7 +34,7 @@
     "custom_about_us_iDn8Ma": {
       "type": "custom-about-us",
       "settings": {
-        "background_color": "",
+        "background_color": "#e4deec",
         "image": "shopify:\/\/shop_images\/about-us-1.jpg",
         "img_min_height": "medium",
         "img_size": "cover",
