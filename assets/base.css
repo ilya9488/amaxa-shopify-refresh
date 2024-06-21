@@ -1687,6 +1687,7 @@ details[open] > .share-button__fallback {
   border: none;
   background-color: var(--color-purple);
   color: var(--color-grey-lite);
+  font-weight: 600;
   transition: all .4s;
 }
 .button--primary_sm::before,
