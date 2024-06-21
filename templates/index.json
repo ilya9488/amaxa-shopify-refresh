@@ -304,11 +304,11 @@
         "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
         "button_type": "button--secondary",
-        "section_color_scheme": "",
-        "color_scheme": "",
+        "section_color_scheme": "background-1",
+        "color_scheme": "background-1",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
-        "padding_top": 0,
+        "padding_top": 32,
         "padding_bottom": 0
       }
     },
