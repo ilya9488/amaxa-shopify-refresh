@@ -260,6 +260,57 @@
         "padding_bottom": 0
       }
     },
+    "image_with_text_mraYTH": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_f3VpLg": {
+          "type": "heading",
+          "settings": {
+            "heading": "Explore Our Fertility Range",
+            "heading_size": "h1"
+          }
+        },
+        "text_hDicPR": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Discover the Path to Parenthood with Natural Support<\/p>",
+            "text_style": "subtitle"
+          }
+        },
+        "button_NP4WhU": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify:\/\/collections\/all",
+            "button_style_secondary": false
+          }
+        }
+      },
+      "block_order": [
+        "heading_f3VpLg",
+        "text_hDicPR",
+        "button_NP4WhU"
+      ],
+      "settings": {
+        "image": "shopify:\/\/shop_images\/about-us-2.jpg",
+        "container_width": false,
+        "color_background": "#fff",
+        "image_stretch": "cover",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "text_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "button_type": "button--secondary",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "multirow_KAHXc6": {
       "type": "multirow",
       "blocks": {
@@ -278,6 +329,7 @@
       "block_order": [
         "row_dVmtzW"
       ],
+      "disabled": true,
       "settings": {
         "image_height": "medium",
         "desktop_image_width": "medium",
@@ -427,6 +479,7 @@
         "text_B4QHEj",
         "button_THJP6h"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
         "container_width": false,
@@ -613,6 +666,7 @@
     "swiper_product_slider_RhcrGB",
     "image_with_text_xLx3Yj",
     "image_with_text_ikt6dM",
+    "image_with_text_mraYTH",
     "multirow_KAHXc6",
     "rich_text_cXmiwn",
     "swiper_page_slider_rXTf9q",
