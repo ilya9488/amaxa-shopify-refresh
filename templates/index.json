@@ -300,7 +300,7 @@
         "desktop_image_width": "medium",
         "layout": "text_first",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "left",
+        "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
         "button_type": "button--secondary",
         "section_color_scheme": "",
