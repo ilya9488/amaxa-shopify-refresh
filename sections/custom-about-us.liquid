@@ -13,7 +13,7 @@
   
       style="
       
-          {% if section.settings.margin_bottom_custom > 0 %}margin-bototm: {{ section.settings.margin_bottom_custom }}px;{% endif %}
+          {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: {{ section.settings.margin_bottom_custom }}px;{% endif %}
           {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
           {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
           {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
@@ -187,3 +187,4 @@
   ]
 }
 {% endschema %}
+
