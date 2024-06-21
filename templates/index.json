@@ -44,7 +44,7 @@
         "margin_bottom": "default",
         "container_min_height": "medium",
         "margin_bottom_custom": 0,
-        "show_dev_only": true
+        "show_dev_only": false
       }
     },
     "custom_image_banner_twfGEn": {
