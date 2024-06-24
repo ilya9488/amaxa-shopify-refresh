@@ -21,18 +21,49 @@
       "
     >
     <div class="page-width">
+
+      <div class="custom-product-hero--header">
+        <il>
+          <li>
+            Supports 
+            <br>
+            reproductive health
+          </li>
+          <li>
+            Promotes a healthy
+            <br>
+            pregnancy            
+          </li>
+          <li>
+            Recommended in
+            <br>
+            PCOS cases
+          </li>
+        </il>
+      </div>
+
       <div class="custom-product-hero--content-wrap">
         <div class="custom-product-hero--text-wrap">
+
+          {% comment %} 🗑 {% endcomment %}
+          <p class="custom-product-hero--subtitle">
+            Start life right with the proper supplements
+          </p>
+          {% if section.settings.top_subtitle != blank %}
+            <p class="custom-product-hero--top-subtitle">
+              {{ section.settings.top_subtitle | newline_to_br }}
+            </p>
+          {% endif %}
     
           {% if section.settings.heading != blank %}
             <h1 class="custom-product-hero--title {{ section.settings.heading_size }}">
-              {{ section.settings.heading }}
+              {{ section.settings.heading | newline_to_br  }}
             </h1>
           {% endif %}
     
           {% if section.settings.text != blank %}
             <p class="custom-product-hero--text {{ section.settings.text_size }}">
-              {{ section.settings.text }}
+              {{ section.settings.text | newline_to_br  }}
             </p>
           {% endif %}
     
@@ -79,6 +110,12 @@
   "name": "Custom Product Hero",
   "class": "section",
   "settings": [
+    
+    {
+      "type": "richtext",
+      "id": "top_subtitle",
+      "label": "Top Subtitle"
+    },
     {
       "type": "select",
       "id": "heading_size",
@@ -104,12 +141,12 @@
       "label": "Heading Size"
     },
     {
-      "type": "inline_richtext",
+      "type": "richtext",
       "id": "heading",
       "label": "Heading"
     },
     {
-      "type": "inline_richtext",
+      "type": "richtext",
       "id": "text",
       "label": "Text"
     },
