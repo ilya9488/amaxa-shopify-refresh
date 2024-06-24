@@ -25,9 +25,7 @@
       <div class="custom-product-hero--header">
         
         {% if section.settings.header_list != blank %}
-          <p class="custom-product-hero--top-subtitle">
-            {{ section.settings.header_list | newline_to_br }}
-          </p>
+          {{ section.settings.header_list | newline_to_br }}
         {% endif %}
       </div>
 
@@ -36,29 +34,29 @@
         <div class="custom-product-hero--left-col">
 
           {% if section.settings.top_subtitle != blank %}
-            <p class="custom-product-hero--top-subtitle">
+            <div class="custom-product-hero--top-subtitle">
               {{ section.settings.top_subtitle | newline_to_br }}
-            </p>
+            </div>
           {% endif %}
-
-          <div class="custom-product-hero--product-img">
+          <div class="custom-product-hero--title-wrap">
             {% if section.settings.product_img != blank %}
-              <img
-                class="custom-product-hero--image_1"
-                src="{{ section.settings.product_img | image_url: width: 500 }}"
-                alt="{{ section.settings.product_img.alt | escape }}"
-                width="70"
-                height="{{ 500 | divided_by: section.settings.product_img.aspect_ratio | ceil }}"
-                loading="lazy"
-              >
+              <div class="custom-product-hero--product-img">
+                <img
+                  src="{{ section.settings.product_img | image_url: width: 300 }}"
+                  alt="{{ section.settings.product_img.alt | escape }}"
+                  width="300"
+                  height="{{ 300 | divided_by: section.settings.product_img.aspect_ratio | ceil }}"
+                  loading="lazy"
+                >
+              </div>
+            {% endif %}
+            {% if section.settings.heading != blank %}
+              <h1 class="custom-product-hero--title {{ section.settings.heading_size }}">
+                {{ section.settings.heading | newline_to_br  }}
+              </h1>
             {% endif %}
           </div>
     
-          {% if section.settings.heading != blank %}
-            <h1 class="custom-product-hero--title {{ section.settings.heading_size }}">
-              {{ section.settings.heading | newline_to_br  }}
-            </h1>
-          {% endif %}
     
           {% if section.settings.button_label != blank %}
             <div class="custom-product-hero--button">
@@ -71,13 +69,12 @@
         </div>
         
         <div class="custom-product-hero--right-col">
-          <div class="custom-product-hero--right-img">
+          <div class="custom-product-hero--img">
             {% if section.settings.right_img != blank %}
               <img
-                class="custom-product-hero--image_1"
                 src="{{ section.settings.right_img | image_url: width: 500 }}"
                 alt="{{ section.settings.right_img.alt | escape }}"
-                width="70"
+                width="500"
                 height="{{ 500 | divided_by: section.settings.right_img.aspect_ratio | ceil }}"
                 loading="lazy"
               >
@@ -114,7 +111,7 @@
       "info": "It is recommended to use only the list."
     },
     {
-      "type": "richtext",
+      "type": "textarea",
       "id": "top_subtitle",
       "label": "Top Subtitle"
     },
