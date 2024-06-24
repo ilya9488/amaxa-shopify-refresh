@@ -11,30 +11,36 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 28
       }
     },
-    "image_banner_pdQegb": {
-      "type": "image-banner",
+    "custom_product_hero_HQ77hR": {
+      "type": "custom-product-hero",
       "settings": {
-        "image": "shopify:\/\/shop_images\/miofolic_boxsache.png",
-        "image_overlay_opacity": 0,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-center",
-        "show_text_box": true,
-        "desktop_content_alignment": "center",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "heading_size": "h1",
+        "heading": "Nurturing Nutrition for Women",
+        "text": "Miofolic is a non-hormonal supplement designed to enhance female reproductive health andsupport overall well-being during pregnancy planning and beyond. This innovative complexcombines the benefits of Myo-inositol, 4th Generation Folic Acid, and Vitamin B12, providingcomprehensive support for women aiming to conceive and maintain a healthy pregnancy.",
+        "button_label": "",
+        "button_url": "block_id",
+        "button_type": "button--primary_sm",
+        "image_product_1": "shopify:\/\/shop_images\/miofolic_side_eng_180424.png",
+        "margin_top": "none",
+        "to_top_shift_upward": 0,
+        "margin_bottom": "none",
+        "margin_bottom_custom": 0,
+        "container_height": "medium",
+        "background_image": "shopify:\/\/shop_images\/screen_2x_e491953d-20f4-4474-b43d-f46ee11978cb.webp",
+        "background_size": "cover",
+        "background_color": "",
+        "show_dev_only": true
       }
     }
   },
   "order": [
     "main",
-    "image_banner_pdQegb"
+    "custom_product_hero_HQ77hR"
   ]
 }
