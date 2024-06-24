@@ -23,37 +23,36 @@
     <div class="page-width">
 
       <div class="custom-product-hero--header">
-        <il>
-          <li>
-            Supports 
-            <br>
-            reproductive health
-          </li>
-          <li>
-            Promotes a healthy
-            <br>
-            pregnancy            
-          </li>
-          <li>
-            Recommended in
-            <br>
-            PCOS cases
-          </li>
-        </il>
+        
+        {% if section.settings.header_list != blank %}
+          <p class="custom-product-hero--top-subtitle">
+            {{ section.settings.header_list | newline_to_br }}
+          </p>
+        {% endif %}
       </div>
 
       <div class="custom-product-hero--content-wrap">
-        <div class="custom-product-hero--text-wrap">
 
-          {% comment %} 🗑 {% endcomment %}
-          <p class="custom-product-hero--subtitle">
-            Start life right with the proper supplements
-          </p>
+        <div class="custom-product-hero--left-col">
+
           {% if section.settings.top_subtitle != blank %}
             <p class="custom-product-hero--top-subtitle">
               {{ section.settings.top_subtitle | newline_to_br }}
             </p>
           {% endif %}
+
+          <div class="custom-product-hero--product-img">
+            {% if section.settings.product_img != blank %}
+              <img
+                class="custom-product-hero--image_1"
+                src="{{ section.settings.product_img | image_url: width: 500 }}"
+                alt="{{ section.settings.product_img.alt | escape }}"
+                width="70"
+                height="{{ 500 | divided_by: section.settings.product_img.aspect_ratio | ceil }}"
+                loading="lazy"
+              >
+            {% endif %}
+          </div>
     
           {% if section.settings.heading != blank %}
             <h1 class="custom-product-hero--title {{ section.settings.heading_size }}">
@@ -61,45 +60,42 @@
             </h1>
           {% endif %}
     
-          {% if section.settings.text != blank %}
-            <p class="custom-product-hero--text {{ section.settings.text_size }}">
-              {{ section.settings.text | newline_to_br  }}
-            </p>
-          {% endif %}
-    
           {% if section.settings.button_label != blank %}
             <div class="custom-product-hero--button">
-              <a href="#{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+              <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
                 {{ section.settings.button_label }}
               </a>
             </div>
           {% endif %}
-      
+
         </div>
-    
-        <div class="custom-product-hero--images-wrap">
-          {% if section.settings.image_product_1 != blank %}
-            <img
-              class="custom-product-hero--image_1"
-              src="{{ section.settings.image_product_1 | image_url: width: 500 }}"
-              alt="{{ section.settings.image_product_1.alt | escape }}"
-              width="70"
-              height="{{ 500 | divided_by: section.settings.image_product_1.aspect_ratio | ceil }}"
-              loading="lazy"
-            >
-          {% endif %}
-          {% if section.settings.image_product_2 != blank %}
-            <img
-              class="custom-product-hero--image_2"
-              src="{{ section.settings.image_product_2 | image_url: width: 500 }}"
-              alt="{{ section.settings.image_product_2.alt | escape }}"
-              width="70"
-              height="{{ 500 | divided_by: section.settings.image_product_2.aspect_ratio | ceil }}"
-              loading="lazy"
-            >
-          {% endif %}
+        
+        <div class="custom-product-hero--right-col">
+          <div class="custom-product-hero--right-img">
+            {% if section.settings.right_img != blank %}
+              <img
+                class="custom-product-hero--image_1"
+                src="{{ section.settings.right_img | image_url: width: 500 }}"
+                alt="{{ section.settings.right_img.alt | escape }}"
+                width="70"
+                height="{{ 500 | divided_by: section.settings.right_img.aspect_ratio | ceil }}"
+                loading="lazy"
+              >
+            {% endif %}
+          </div>
         </div>
+
+
       </div>
+
+      <div class="custom-product-hero--footer">
+        {% if section.settings.text != blank %}
+          <div class="custom-product-hero--text {{ section.settings.text_size }}">
+            {{ section.settings.text | newline_to_br  }}
+          </div>
+        {% endif %}
+      </div>
+
     </div>
   
   </div>
@@ -147,14 +143,14 @@
       "label": "Heading Size"
     },
     {
-      "type": "richtext",
-      "id": "heading",
-      "label": "Heading"
+      "type": "image_picker",
+      "id": "product_img",
+      "label": "Product Image"
     },
     {
       "type": "richtext",
-      "id": "text",
-      "label": "Text"
+      "id": "heading",
+      "label": "Heading"
     },
     {
       "type": "text",
@@ -164,8 +160,17 @@
     {
       "type": "text",
       "id": "button_url",
-      "default": "block_id",
-      "label": "Button Anchor"
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "right_img",
+      "label": "Right Image"
+    },
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Text"
     },
     {
       "type": "select",
@@ -186,16 +191,6 @@
         }
       ],
       "default": "button--primary_sm"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_product_1",
-      "label": "Image Product (1)"
-    },
-    {
-      "type": "image_picker",
-      "id": "image_product_2",
-      "label": "Image Product (2)"
     },
     {
       "type": "select",
