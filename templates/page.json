@@ -19,6 +19,7 @@
     "custom_product_hero_HQ77hR": {
       "type": "custom-product-hero",
       "settings": {
+        "header_list": "<ul><li>Supports<br\/>reproductive health<\/li><li>Promotes a healthy<br\/>pregnancy<\/li><li>Recommended in<br\/>PCOS cases<\/li><\/ul>",
         "top_subtitle": "",
         "heading_size": "h1",
         "heading": "<p>Nurturing <\/p><p>Nutrition <\/p><p>for Women<\/p>",
