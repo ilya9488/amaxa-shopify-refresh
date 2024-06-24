@@ -35,7 +35,7 @@
         "margin_bottom_custom": 0,
         "container_height": "medium",
         "background_size": "cover",
-        "background_color": "",
+        "background_color": "#eee3d8",
         "show_dev_only": true
       }
     },
