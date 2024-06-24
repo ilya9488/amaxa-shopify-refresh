@@ -36,12 +36,67 @@
         "container_height": "small",
         "background_size": "cover",
         "background_color": "#eee3d8",
-        "show_dev_only": true
+        "show_dev_only": false
+      }
+    },
+    "multicolumn_R4FVma": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CYyBYK": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_x6p3ak": {
+          "type": "column",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/s.webp",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EaAEz4": {
+          "type": "column",
+          "settings": {
+            "title": "",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CYyBYK",
+        "column_x6p3ak",
+        "column_EaAEz4"
+      ],
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
       }
     }
   },
   "order": [
     "main",
-    "custom_product_hero_HQ77hR"
+    "custom_product_hero_HQ77hR",
+    "multicolumn_R4FVma"
   ]
 }
