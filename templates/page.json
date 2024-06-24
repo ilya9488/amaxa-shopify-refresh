@@ -11,7 +11,6 @@
   "sections": {
     "main": {
       "type": "main-page",
-      "disabled": true,
       "settings": {
         "padding_top": 36,
         "padding_bottom": 28
@@ -37,10 +36,27 @@
         "background_color": "",
         "show_dev_only": true
       }
+    },
+    "image_banner_GmkAqq": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify:\/\/shop_images\/miofolic_boxsache.png",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
     }
   },
   "order": [
     "main",
-    "custom_product_hero_HQ77hR"
+    "custom_product_hero_HQ77hR",
+    "image_banner_GmkAqq"
   ]
 }
