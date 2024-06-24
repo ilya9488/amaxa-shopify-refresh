@@ -12,7 +12,6 @@
   
       style="
       
-          {% if section.settings.to_top_shift_upward > 0 %}margin-top: calc(-{{section.settings.to_top_shift_upward }}px * 3);{% endif %}
           {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 3);{% endif %}
           {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
           {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
@@ -216,15 +215,6 @@
         }
       ],
       "default": "none"
-    },
-    {
-      "type": "range",
-      "id": "to_top_shift_upward",
-      "min": 0,
-      "max": 100,
-      "step": 1,
-      "default": 70,
-      "label": "Shift Upward"
     },
     {
       "type": "select",
