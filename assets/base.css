@@ -31,6 +31,8 @@
   --color-purple-dark: #7975A9;
   --color-grey-lite: #FCFCFE;
   --color-clear: #ffffff;
+  --color-pink: #C90091;
+  --color-dark-pink: #CB007B;
 
   --breckpoint-xl: 1200px;
   --breckpoint-xls: 1100px;
@@ -1696,6 +1698,25 @@ details[open] > .share-button__fallback {
 }
 .button--primary_sm:hover {
   background-color: var(--color-purple-dark);
+  color: var(--color-clear);
+}
+
+/* Button Primary Pink */
+.button--border-pink {
+  border: none;
+  background-color: transparent;
+  color: var(--color-pink);
+  font-weight: 500;
+  transition: all .4s;
+  border: 2px solid var(--color-dark-pink);
+  min-width: 220px;
+}
+.button--border-pink::before,
+.button--border-pink::after{
+  display: none !important;
+}
+.button--border-pink:hover {
+  background-color: var(--color-dark-pink);
   color: var(--color-clear);
 }
 
