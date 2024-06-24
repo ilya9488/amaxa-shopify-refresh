@@ -41,7 +41,7 @@
       "type": "header",
       "settings": {
         "logo_position": "middle-left",
-        "menu": "main-menu",
+        "menu": "",
         "menu_type_desktop": "mega",
         "sticky_header_type": "reduce-logo-size",
         "show_line_separator": false,
@@ -49,7 +49,7 @@
         "menu_color_scheme": "background-1",
         "enable_country_selector": false,
         "enable_language_selector": false,
-        "select_faq_page": "faqs",
+        "select_faq_page": "",
         "faq_page_name": "FAQ",
         "mobile_logo_position": "center",
         "margin_bottom": 0,
