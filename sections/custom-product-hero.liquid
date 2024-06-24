@@ -39,17 +39,26 @@
             </p>
           {% endif %}
           <div class="custom-product-hero--title-wrap">
-            {% if section.settings.product_img != blank %}
-              <div class="custom-product-hero--product-img">
-                <img
-                  src="{{ section.settings.product_img | image_url: width: 300 }}"
-                  alt="{{ section.settings.product_img.alt | escape }}"
-                  width="300"
-                  height="{{ 300 | divided_by: section.settings.product_img.aspect_ratio | ceil }}"
-                  loading="lazy"
-                >
-              </div>
-            {% endif %}
+            <div class="custom-product-hero--img-wrap">
+              {% if section.settings.product_img != blank %}
+                <div class="custom-product-hero--product-img">
+                  <img
+                    src="{{ section.settings.product_img | image_url: width: 250 }}"
+                    alt="{{ section.settings.product_img.alt | escape }}"
+                    width="250"
+                    height="{{ 250 | divided_by: section.settings.product_img.aspect_ratio | ceil }}"
+                    loading="lazy"
+                  >
+                </div>
+              {% endif %}
+              {% if section.settings.button_label != blank %}
+                <div class="custom-product-hero--button">
+                  <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+                    {{ section.settings.button_label }}
+                  </a>
+                </div>
+              {% endif %}
+            </div>
             {% if section.settings.heading != blank %}
               <h1 class="custom-product-hero--title {{ section.settings.heading_size }}">
                 {{ section.settings.heading | newline_to_br  }}
@@ -57,35 +66,23 @@
             {% endif %}
           </div>
     
-    
-          {% if section.settings.button_label != blank %}
-            <div class="custom-product-hero--button">
-              <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
-                {{ section.settings.button_label }}
-              </a>
-            </div>
-          {% endif %}
-
         </div>
         
         <div class="custom-product-hero--right-col">
           <div class="custom-product-hero--img">
             {% if section.settings.right_img != blank %}
               <img
-                src="{{ section.settings.right_img | image_url: width: 500 }}"
+                src="{{ section.settings.right_img | image_url: width: 400 }}"
                 alt="{{ section.settings.right_img.alt | escape }}"
-                width="500"
-                height="{{ 500 | divided_by: section.settings.right_img.aspect_ratio | ceil }}"
+                width="390"
+                height="{{ 520 | divided_by: section.settings.right_img.aspect_ratio | ceil }}"
                 loading="lazy"
               >
             {% endif %}
           </div>
         </div>
 
-
       </div>
-
-      
     </div>
 
     {% if section.settings.text != blank %}
@@ -178,6 +175,10 @@
       "label": "Button type",
       "options": [
         {
+          "value": "button--border-pink",
+          "label": "Button Border Pink"
+        },
+        {
           "value": "button--primary",
           "label": "Primary"
         },
@@ -190,7 +191,7 @@
           "label": "Primary - SM"
         }
       ],
-      "default": "button--primary_sm"
+      "default": "button--border-pink"
     },
     {
       "type": "select",
@@ -276,7 +277,7 @@
           "label": "Large"
         }
       ],
-      "default": "medium"
+      "default": "small"
     },
     {
       "type": "image_picker",
