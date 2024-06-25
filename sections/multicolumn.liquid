@@ -91,9 +91,10 @@
                 <div class="multicolumn-card__image-wrapper multicolumn-card__image-wrapper--{{ section.settings.image_width }}-width{% if section.settings.image_width != 'full' or spaced_image %} multicolumn-card-spacing{% endif %}">
                   <div
                     class="media media--transparent media--{{ section.settings.image_ratio }}"
-                    {% if section.settings.image_ratio == 'adapt' %}
-                      style="padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;"
-                    {% endif %}
+                    style="
+                      {% if section.settings.image_ratio == 'adapt' %}padding-bottom: {{ 1 | divided_by: highest_ratio | times: 100 }}%;{% endif %}
+                      {% if section.settings.img_border_radius !=blank %}border-radius: {{ section.settings.img_border_radius }}px;{% endif %}
+                    "
                   >
                     {%- liquid
                       assign number_of_columns = section.settings.columns_desktop
@@ -383,6 +384,16 @@
       "step": 2,
       "unit": "px",
       "label": "Custom Border Radius",
+      "default": 50
+    },
+    {
+      "type": "range",
+      "id": "img_border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Block Images Border Radius",
       "default": 50
     },
     {
