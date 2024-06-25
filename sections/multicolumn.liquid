@@ -80,6 +80,7 @@
                     {% if section.settings.custom_bg_color !=blank %}background: {{ section.settings.custom_bg_color }};{% endif %}
                     {% if section.settings.blocks_border !=blank %}border: 1px solid #404040 ;{% endif %}
                     {% if section.settings.blocks_border_color !=blank %}border-color: {{ section.settings.blocks_border_color }};{% endif %}
+                    {% if section.settings.border_width !=blank %}border-width: {{ section.settings.border_width }};{% endif %}
                 "
               >
               {%- if block.settings.image != blank -%}
@@ -331,6 +332,16 @@
       "id": "blocks_border_color",
       "label": "Border Color Blocks",
       "info": "The color of the brother blocks"
+    },
+    {
+      "type": "range",
+      "id": "border_width",
+      "min": 1,
+      "max": 8,
+      "step": 1,
+      "unit": "px",
+      "label": "Border Width",
+      "default": 2
     },
     {
       "type": "text",
