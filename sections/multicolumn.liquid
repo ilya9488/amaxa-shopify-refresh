@@ -80,7 +80,8 @@
                     {% if section.settings.custom_bg_color !=blank %}background: {{ section.settings.custom_bg_color }};{% endif %}
                     {% if section.settings.blocks_border !=blank %}border: 1px solid #404040 ;{% endif %}
                     {% if section.settings.blocks_border_color !=blank %}border-color: {{ section.settings.blocks_border_color }};{% endif %}
-                    {% if section.settings.border_width !=blank %}border-width: {{ section.settings.border_width }};{% endif %}
+                    {% if section.settings.border_width !=blank %}border-width: {{ section.settings.border_width }}px;{% endif %}
+                    {% if section.settings.border_radius !=blank %}border-radius: {{ section.settings.border_radius }}px;{% endif %}
                 "
               >
               {%- if block.settings.image != blank -%}
@@ -373,6 +374,15 @@
       "unit": "px",
       "label": "Border Width",
       "default": 2
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Custom Border Radius"
     },
     {
       "type": "text",
