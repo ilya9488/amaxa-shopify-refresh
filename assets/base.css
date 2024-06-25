@@ -1720,6 +1720,22 @@ details[open] > .share-button__fallback {
   color: var(--color-clear);
 }
 
+/* Button White Label */
+.button--white-label {
+  border: none;
+  background-color: transparent;
+  color: var(--color-clear);
+  transition: all .4s;
+}
+.button--white-label::before,
+.button--white-label::after{
+  display: none !important;
+}
+.button--white-label:hover {
+  background-color: var(--color-clear);
+  color: var(--color-purple-dark);
+}
+
 /* component-form */
 .field__input,
 .select__select,
