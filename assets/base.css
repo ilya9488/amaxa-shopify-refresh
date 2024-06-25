@@ -31,6 +31,7 @@
   --color-purple-dark: #7975A9;
   --color-grey-lite: #FCFCFE;
   --color-clear: #ffffff;
+  --color-rgb-clear: 255, 255, 255;
   --color-pink: #C90091;
   --color-dark-pink: #CB007B;
 
@@ -1732,7 +1733,7 @@ details[open] > .share-button__fallback {
   display: none !important;
 }
 .button--white-label:hover {
-  background-color: var(--color-clear);
+  background-color: rgba(var(--color-rgb-clear), 0.8);
   color: var(--color-purple-dark);
 }
 
