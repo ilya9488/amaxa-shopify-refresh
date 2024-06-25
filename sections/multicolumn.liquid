@@ -75,7 +75,11 @@
               style="--animation-order: {{ forloop.index }};"
             {% endif %}
           >
-            <div class="multicolumn-card content-container">
+            <div class="multicolumn-card content-container"
+                  style="
+                    {% if section.settings.custom_bg_color !=blank %}background-color: {{ section.settings.custom_bg_color }};{% endif %}
+                "
+              >
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -307,6 +311,13 @@
       ],
       "default": "primary",
       "label": "t:sections.multicolumn.settings.background_style.label"
+    },
+    {
+      "type": "color",
+      "id": "custom_bg_color",
+      "label": "Custom Background Color",
+      "default": "transparent",
+      "info": "Arbitrary background color for blocks"
     },
     {
       "type": "text",
