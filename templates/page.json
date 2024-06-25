@@ -87,7 +87,7 @@
         "custom_bg_color": "linear-gradient(180deg, rgba(255, 211, 226, 0), rgba(168, 255, 251, 0) 100%)",
         "blocks_border": true,
         "blocks_border_color": "#c90091",
-        "border_width": 1,
+        "border_width": 2,
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-4be43481-f82e-40cd-95c1-f388f0f26462",
