@@ -82,7 +82,7 @@
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
-        "column_alignment": "left",
+        "column_alignment": "center",
         "background_style": "primary",
         "custom_bg_color": "linear-gradient(180deg, rgba(255, 211, 226, 0), rgba(168, 255, 251, 0) 100%)",
         "button_label": "",
