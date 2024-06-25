@@ -129,8 +129,8 @@
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext"
                     style="
-                    {% if block.settings.title_color !=blank %}
-                      color: {{ block.settings.title_color | default: 'inherit' }};
+                    {% if section.settings.title_color !=blank %}
+                      color: {{ section.settings.title_color | default: 'inherit' }};
                     {% endif %}
                     "
                   >{{ block.settings.title }}</h3>
@@ -235,6 +235,11 @@
       ],
       "default": "h1",
       "label": "t:sections.all.heading_size.label"
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Blocks Heading Custom Color"
     },
     {
       "type": "select",
@@ -432,11 +437,6 @@
           "id": "title",
           "default": "Column",
           "label": "t:sections.multicolumn.blocks.column.settings.title.label"
-        },
-        {
-          "type": "color",
-          "id": "title_color",
-          "label": "Heading Custom Color"
         },
         {
           "type": "richtext",
