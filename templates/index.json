@@ -295,7 +295,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/about-us-2.jpg",
         "container_width": false,
-        "color_background": "#FCFAFF",
+        "color_background": "linear-gradient(90deg, rgba(148, 88, 255, 1) 1%, rgba(219, 149, 250, 1) 100%)",
         "image_stretch": "cover",
         "height": "adapt",
         "desktop_image_width": "small",
@@ -305,7 +305,7 @@
         "content_layout": "no-overlap",
         "button_type": "button--secondary",
         "section_color_scheme": "background-1",
-        "color_scheme": "background-1",
+        "color_scheme": "scheme-bbe402c6-981e-4c4e-ba63-be3588a3a5ee",
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 32,
