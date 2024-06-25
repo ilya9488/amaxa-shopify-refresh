@@ -306,7 +306,7 @@
         "button_type": "button--secondary",
         "section_color_scheme": "background-1",
         "color_scheme": "scheme-bbe402c6-981e-4c4e-ba63-be3588a3a5ee",
-        "image_behavior": "none",
+        "image_behavior": "ambient",
         "mobile_content_alignment": "center",
         "padding_top": 32,
         "padding_bottom": 0
