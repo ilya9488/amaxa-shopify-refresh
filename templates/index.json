@@ -153,7 +153,33 @@
         "slide_width": "310",
         "slider_columns_desktop": 4,
         "background_image": "",
-        "background_content": "linear-gradient(356deg, rgba(176, 176, 210, 1) 1%, rgba(228, 222, 236, 1) 98%)"
+        "background_content": "linear-gradient(356deg, rgba(176, 176, 210, 1) 1%, rgba(228, 222, 236, 1) 98%)",
+        "show_dev_only": true
+      }
+    },
+    "swiper_product_slider_4qDKtd": {
+      "type": "swiper-product-slider",
+      "settings": {
+        "collections": "frontpage",
+        "clickable": true,
+        "show_price": true,
+        "title_font_size": "normal",
+        "content_align": "center",
+        "show_button": false,
+        "button_label": "",
+        "show_description": false,
+        "content_offset_top_none": true,
+        "navigation_enabled": true,
+        "pagination_enabled": false,
+        "image_container_height": "normal",
+        "slide_card": true,
+        "container_width": true,
+        "slider_align": "align_middle",
+        "slide_width": "310",
+        "slider_columns_desktop": 4,
+        "background_image": "",
+        "background_content": "linear-gradient(356deg, rgba(176, 176, 210, 1) 1%, rgba(228, 222, 236, 1) 98%)",
+        "show_dev_only": false
       }
     },
     "image_with_text_xLx3Yj": {
@@ -665,6 +691,7 @@
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
     "swiper_product_slider_RhcrGB",
+    "swiper_product_slider_4qDKtd",
     "image_with_text_xLx3Yj",
     "image_with_text_ikt6dM",
     "image_with_text_mraYTH",
