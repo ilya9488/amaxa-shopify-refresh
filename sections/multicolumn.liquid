@@ -129,7 +129,9 @@
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext"
                     style="
-                      {% if section.settings.title_color !=blank and section.settings.title_color != 'none' %}color: {{ section.settings.title_color }};{% endif %}
+                    {% if section.settings.title_color !=blank %}
+                      color: {{ section.settings.title_color | default: 'inherit' }};
+                    {% endif %}
                     "
                   >{{ block.settings.title }}</h3>
                 {%- endif -%}
