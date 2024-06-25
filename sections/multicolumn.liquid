@@ -127,7 +127,7 @@
               {%- endif -%}
               <div class="multicolumn-card__info">
                 {%- if block.settings.title != blank -%}
-                  <h3 class="inline-richtext"
+                  <h3 class="inline-richtext {{ section.settings.blocks_heading_size }}"
                     style="
                     {% if section.settings.title_color !=blank %}
                       color: {{ section.settings.title_color | default: 'inherit' }};
@@ -242,16 +242,16 @@
       "label": "Blocks Heading Size",
       "options": [
         {
+          "value": "",
+          "label": "none"
+        },
+        {
           "value": "h2",
           "label": "small"
         },
         {
           "value": "h1",
           "label": "medium"
-        },
-        {
-          "value": "h0",
-          "label": "Large"
         }
       ],
       "default": "h2"
