@@ -78,7 +78,7 @@
             <div class="multicolumn-card content-container"
                   style="
                     {% if section.settings.custom_bg_color !=blank %}background: {{ section.settings.custom_bg_color }};{% endif %}
-                    {% if section.settings.blocks_border !=blank %}border: 1px solid #404040 ;{% endif %}
+                    {% if section.settings.blocks_border !=blank %}border: 1px solid #404040 ; {% else %}border:none; {% endif %}
                     {% if section.settings.blocks_border_color !=blank %}border-color: {{ section.settings.blocks_border_color }};{% endif %}
                     {% if section.settings.border_width !=blank %}border-width: {{ section.settings.border_width }}px;{% endif %}
                     {% if section.settings.border_radius !=blank %}border-radius: {{ section.settings.border_radius }}px;{% endif %}
