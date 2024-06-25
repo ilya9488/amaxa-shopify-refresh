@@ -1,90 +1,93 @@
 {% assign slider_columns_desktop_int = section.settings.slider_columns_desktop | times: 1 %}
 {% assign slide_width = section.settings.slide_width | times: 1 %}
 
-{% if section.settings.container_width %}
-    {%- assign containerWidth = 0 | times: 1 -%}
-{% else %}
-  {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
-{% endif %}
-
-<div class="page-width-desktop slider-container swiper-products-slider {% if section.settings.pagination_enabled %} pagination-enabled {% endif %}">
-  <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
-        {% if section.settings.slide_card %} slides-card {% endif %}
-  "
-      {% if containerWidth > 0 %} style="max-width: {{ containerWidth }}px" {% endif %}
-       data-columns="{{ section.settings.slider_columns_desktop }}"
-       data-slide-width="{{ slide_width }}"
-       data-centered="{{ section.settings.slider_align }}"
-  >
-    <div class="swiper-wrapper">
-      {% for product in collections [section.settings.collections].products %}
-
-      {% assign buttonLabel = 'Buy' %}
-      {% if section.settings.button_label != blank %}
-        {% assign buttonLabel = section.settings.button_label %}
-      {% endif %}
-
-    {% if section.settings.clickable %}
-      <a href="{{ product.url }}" class="swiper-slide">
-        {% else %}
-        <div class="swiper-slide">
-          {% endif %}
-          <div class="swiper-slide--inner">
-            <div
-                class="swiper-slide--image image-height--{{ section.settings.image_container_height }}"
-                style="{% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}"
-            >
-              <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
-            </div>
-            <div 
-              class="swiper-slide--content slider-content content-align--{{ section.settings.content_align }}"
-              style="{% if section.settings.background_content != blank %}background: {{ section.settings.background_content }}{% endif %} 
-                  {% if section.settings.content_offset_top_none %}padding-top: 0{% endif %}
-              "
+{% comment %} Dev Mode - condition {% endcomment %}
+{% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
+  {% if section.settings.container_width %}
+      {%- assign containerWidth = 0 | times: 1 -%}
+  {% else %}
+    {%- assign containerWidth = slider_columns_desktop_int | times: slide_width -%}
+  {% endif %}
+  
+  <div class="page-width-desktop slider-container swiper-products-slider {% if section.settings.pagination_enabled %} pagination-enabled {% endif %}">
+    <div class="swiper swiper-container slider-columns-{{ section.settings.slider_columns_desktop }}
+          {% if section.settings.slide_card %} slides-card {% endif %}
+    "
+        {% if containerWidth > 0 %} style="max-width: {{ containerWidth }}px" {% endif %}
+         data-columns="{{ section.settings.slider_columns_desktop }}"
+         data-slide-width="{{ slide_width }}"
+         data-centered="{{ section.settings.slider_align }}"
+    >
+      <div class="swiper-wrapper">
+        {% for product in collections [section.settings.collections].products %}
+  
+        {% assign buttonLabel = 'Buy' %}
+        {% if section.settings.button_label != blank %}
+          {% assign buttonLabel = section.settings.button_label %}
+        {% endif %}
+  
+      {% if section.settings.clickable %}
+        <a href="{{ product.url }}" class="swiper-slide">
+          {% else %}
+          <div class="swiper-slide">
+            {% endif %}
+            <div class="swiper-slide--inner">
+              <div
+                  class="swiper-slide--image image-height--{{ section.settings.image_container_height }}"
+                  style="{% if section.settings.background_image != blank %}background: {{ section.settings.background_image }}{% endif %}"
               >
-              <p class="slider-content--title title-font-size--normal">
-                {{ product.title }}
-              </p>
-
-              {% if section.settings.show_description %}
-                <p class="slider-content--description">
-                  {{ product.description }}
+                <img src="{{ product.featured_image | img_url: 'original' }}" alt="alt">
+              </div>
+              <div 
+                class="swiper-slide--content slider-content content-align--{{ section.settings.content_align }}"
+                style="{% if section.settings.background_content != blank %}background: {{ section.settings.background_content }}{% endif %} 
+                    {% if section.settings.content_offset_top_none %}padding-top: 0{% endif %}
+                "
+                >
+                <p class="slider-content--title title-font-size--normal">
+                  {{ product.title }}
                 </p>
-              {% endif %}
-
-              {% if section.settings.show_price %}
-                <p class="slider-content--price">
-                  {% render 'price', show_compare_at_price: true %}
-                </p>
-              {% endif %}
-
-              {% if section.settings.show_button %}
-                <div>
-                  <a href="{{ product.url }}" class="button button--primary">
-                    {{ buttonLabel }}
-                  </a>
-                </div>
-              {% endif %}
+  
+                {% if section.settings.show_description %}
+                  <p class="slider-content--description">
+                    {{ product.description }}
+                  </p>
+                {% endif %}
+  
+                {% if section.settings.show_price %}
+                  <p class="slider-content--price">
+                    {% render 'price', show_compare_at_price: true %}
+                  </p>
+                {% endif %}
+  
+                {% if section.settings.show_button %}
+                  <div>
+                    <a href="{{ product.url }}" class="button button--primary">
+                      {{ buttonLabel }}
+                    </a>
+                  </div>
+                {% endif %}
+              </div>
             </div>
-          </div>
-          {% if section.settings.clickable %}
-      </a>
-      {% else %}
+            {% if section.settings.clickable %}
+        </a>
+        {% else %}
+      </div>
+      {% endif %}
+      {% endfor %}
     </div>
-    {% endif %}
-    {% endfor %}
   </div>
-</div>
-
-{% if section.settings.navigation_enabled %}
-  <button class="swiper-arrow swiper-button-next"></button>
-  <button class="swiper-arrow swiper-button-prev"></button>
+  
+  {% if section.settings.navigation_enabled %}
+    <button class="swiper-arrow swiper-button-next"></button>
+    <button class="swiper-arrow swiper-button-prev"></button>
+  {% endif %}
+  
+  {% if section.settings.pagination_enabled %}
+    <ul class="swiper-pagination"></ul>
+  {% endif %}
+  </div>
 {% endif %}
-
-{% if section.settings.pagination_enabled %}
-  <ul class="swiper-pagination"></ul>
-{% endif %}
-</div>
 
 {% schema %}
 {
@@ -261,6 +264,12 @@
       "type": "color_background",
       "id": "background_content",
       "label": "Background content"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dev_only",
+      "default": false,
+      "label": "Show Dev Only"
     }
   ],
   "presets": [
