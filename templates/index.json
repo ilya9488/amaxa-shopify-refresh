@@ -294,7 +294,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-us-2.jpg",
-        "container_width": true,
+        "container_width": false,
         "color_background": "linear-gradient(90deg, rgba(148, 88, 255, 1) 1%, rgba(219, 149, 250, 1) 100%)",
         "image_stretch": "cover",
         "height": "adapt",
