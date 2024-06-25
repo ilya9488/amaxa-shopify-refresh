@@ -268,7 +268,7 @@
           "type": "heading",
           "settings": {
             "heading": "Explore Our Fertility Range",
-            "heading_size": "h1"
+            "heading_size": "h0"
           }
         },
         "text_hDicPR": {
@@ -294,7 +294,7 @@
       ],
       "settings": {
         "image": "shopify:\/\/shop_images\/about-us-2.jpg",
-        "container_width": false,
+        "container_width": true,
         "color_background": "linear-gradient(90deg, rgba(148, 88, 255, 1) 1%, rgba(219, 149, 250, 1) 100%)",
         "image_stretch": "cover",
         "height": "adapt",
