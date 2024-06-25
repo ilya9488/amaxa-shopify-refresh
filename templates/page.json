@@ -64,6 +64,7 @@
         "column_EaAEz4": {
           "type": "column",
           "settings": {
+            "image": "shopify:\/\/shop_images\/about-us-1.jpg",
             "title": "Key Benefits:",
             "text": "<ul><li>Enhances Fertility: Miofolic helps normalize hormonal balance, increase the number of ovulatory cycles, and improve egg quality, significantly boosting your chances of conception.<\/li><li>Supports Healthy Pregnancy: By reducing the risk of gestational diabetes and fetal neural tube defects, Miofolic promotes a safer and healthier pregnancy journey.<\/li><li>Recommended for PCOS: Miofolic effectively addresses symptoms of Polycystic Ovary Syndrome (PCOS), such as irregular ovulation, acne, and hirsutism, while also aiding in weight management.<\/li><\/ul>",
             "link_label": "",
@@ -79,6 +80,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "blocks_heading_size": "h2",
         "title_color": "#c90099",
         "image_width": "full",
         "image_ratio": "adapt",
@@ -89,6 +91,7 @@
         "blocks_border": true,
         "blocks_border_color": "#c90091",
         "border_width": 2,
+        "border_radius": 50,
         "button_label": "",
         "button_link": "",
         "color_scheme": "scheme-4be43481-f82e-40cd-95c1-f388f0f26462",
