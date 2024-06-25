@@ -421,6 +421,9 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
+.image-with-text__text * {
+  color: inherit;
+}
 
 @media screen and (max-width: 749px) {
   .collapse-padding .image-with-text__grid .image-with-text__content {
