@@ -161,6 +161,7 @@
   align-items: center;
   clip-path: polygon(30% 0, 100% 0%, 100% 100%, 0% 100%);
   overflow: hidden;
+  max-width: 400px;
 }
 .custom-product-hero--img img{
   width: 100%;
@@ -329,5 +330,8 @@
     top: 0;
     height: 100%;
     width: 100%;
+  }
+  .custom-product-hero--img{
+    max-width: none;
   }
 }

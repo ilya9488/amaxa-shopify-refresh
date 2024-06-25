@@ -42,10 +42,10 @@
               {% if section.settings.product_img != blank %}
                 <div class="custom-product-hero--product-img">
                   <img
-                    src="{{ section.settings.product_img | image_url: width: 250 }}"
+                    src="{{ section.settings.product_img | image_url: width: 1000 }}"
                     alt="{{ section.settings.product_img.alt | escape }}"
-                    width="250"
-                    height="{{ 250 | divided_by: section.settings.product_img.aspect_ratio | ceil }}"
+                    width="1000"
+                    height="{{ 1000 | divided_by: section.settings.product_img.aspect_ratio | ceil }}"
                     loading="lazy"
                   >
                 </div>
@@ -71,7 +71,7 @@
           <div class="custom-product-hero--img">
             {% if section.settings.right_img != blank %}
               <img
-                src="{{ section.settings.right_img | image_url: width: 400 }}"
+                src="{{ section.settings.right_img | image_url: width: 1000 }}"
                 alt="{{ section.settings.right_img.alt | escape }}"
                 width="390"
                 height="{{ 520 | divided_by: section.settings.right_img.aspect_ratio | ceil }}"
