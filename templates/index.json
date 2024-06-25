@@ -303,7 +303,7 @@
         "desktop_content_position": "middle",
         "desktop_content_alignment": "right",
         "content_layout": "no-overlap",
-        "button_type": "button--secondary",
+        "button_type": "button--white-label",
         "section_color_scheme": "background-1",
         "color_scheme": "scheme-bbe402c6-981e-4c4e-ba63-be3588a3a5ee",
         "image_behavior": "ambient",
