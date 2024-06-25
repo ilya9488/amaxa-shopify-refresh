@@ -46,7 +46,6 @@
           "type": "column",
           "settings": {
             "title": "Scientifically Backed Ingredients:",
-            "title_color": "",
             "text": "<ul><li>Myo-inositol (2000 mg per sachet): Clinically proven to restore insulin sensitivity, regulate hormonal parameters, and support regular menstrual cycles.<\/li><li>4th Generation Folic Acid (200 mcg per sachet): A highly bioavailable form of folic acid that supports cell creation, reduces homocysteine levels, and prevents common pregnancy-related defects.<\/li><li>Vitamin B12 (2.5 mcg per sachet): Enhances folic acid absorption, boosts immunity, and maintains healthy energy metabolism.<\/li><\/ul>",
             "link_label": "",
             "link": ""
@@ -57,7 +56,6 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/s.webp",
             "title": "",
-            "title_color": "",
             "text": "",
             "link_label": "",
             "link": ""
@@ -67,7 +65,6 @@
           "type": "column",
           "settings": {
             "title": "Key Benefits:",
-            "title_color": "#aa0f71",
             "text": "<ul><li>Enhances Fertility: Miofolic helps normalize hormonal balance, increase the number of ovulatory cycles, and improve egg quality, significantly boosting your chances of conception.<\/li><li>Supports Healthy Pregnancy: By reducing the risk of gestational diabetes and fetal neural tube defects, Miofolic promotes a safer and healthier pregnancy journey.<\/li><li>Recommended for PCOS: Miofolic effectively addresses symptoms of Polycystic Ovary Syndrome (PCOS), such as irregular ovulation, acne, and hirsutism, while also aiding in weight management.<\/li><\/ul>",
             "link_label": "",
             "link": ""
@@ -82,6 +79,7 @@
       "settings": {
         "title": "",
         "heading_size": "h1",
+        "title_color": "#c90099",
         "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 3,
