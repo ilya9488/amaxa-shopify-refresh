@@ -78,6 +78,8 @@
             <div class="multicolumn-card content-container"
                   style="
                     {% if section.settings.custom_bg_color !=blank %}background: {{ section.settings.custom_bg_color }};{% endif %}
+                    {% if section.settings.blocks_border !=blank %}border: 1px solid #404040 ;{% endif %}
+                    {% if section.settings.blocks_border_color !=blank %}border-color: {{ section.settings.blocks_border_color }};{% endif %}
                 "
               >
               {%- if block.settings.image != blank -%}
@@ -318,6 +320,19 @@
       "label": "Custom Background Color",
       "info": "Arbitrary background color for blocks"
     },
+    {
+      "type": "color",
+      "id": "blocks_border_color",
+      "label": "Border Color Blocks",
+      "info": "The color of the brother blocks"
+    },
+    {
+      "type": "checkbox",
+      "id": "blocks_border",
+      "label": "Border for Blocks",
+      "default": false
+    },
+
     {
       "type": "text",
       "id": "button_label",
