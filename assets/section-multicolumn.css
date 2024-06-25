@@ -152,6 +152,7 @@
 }
 .multicolumn .multicolumn-card__image-wrapper .media {
   height: 100%;
+  min-height: 250px;
   padding: 0 !important;
 }
 .multicolumn .multicolumn-card__image-wrapper img {
