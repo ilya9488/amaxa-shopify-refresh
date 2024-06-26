@@ -153,6 +153,7 @@
     },
     "swiper_product_slider_4qDKtd": {
       "type": "swiper-product-slider",
+      "disabled": true,
       "settings": {
         "collections": "frontpage",
         "clickable": true,
