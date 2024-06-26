@@ -114,7 +114,7 @@
         "show_secondary_image": true,
         "show_vendor": false,
         "show_rating": false,
-        "enable_quick_add": false,
+        "enable_quick_add": true,
         "filter_type": "horizontal",
         "enable_filtering": false,
         "enable_sorting": false
