@@ -27,6 +27,7 @@
   --color-secendary: #F6F6F6;
   --color-grey: #8C8A92;
   --color-grey-dark: #6d6d6d;
+  --color-purple-lite: rgba(176, 176, 210, 0.2);
   --color-purple: #B0B0D2;
   --color-purple-dark: #7975A9;
   --color-grey-lite: #FCFCFE;
@@ -1284,6 +1285,32 @@ deferred-media {
   transition: all .4s;
 }
 
+.button.button--secondary_sm,
+.button--secondary_sm {
+  width: 100%;
+  font-size: 15px;
+  padding: 13px 26px;
+  min-height: inherit;
+  background-color: transparent;
+  color: var(--color-secondary-button-text);
+  transition: all .4s;
+}
+.button.button--secondary_sm {
+  margin-top: 5px;
+}
+.button.button--secondary_sm.loading,
+.button.button--secondary_sm:hover,
+.button--secondary_sm:hover {
+  background-color: var(--color-purple-lite);
+  color: var(--color-secondary-button-text);
+  transform: scale(1.03);
+  transition: all .4s;
+}
+.button--secondary_sm:not([disabled]):hover::after,
+.button.button--secondary_sm:not([disabled]):hover::after {
+  border-color: var(--color-secondary-button-text);
+}
+
 .button--tertiary {
   --alpha-button-background: 0;
   --alpha-button-border: 0.2;
@@ -1735,6 +1762,63 @@ details[open] > .share-button__fallback {
 .button--white-label:hover {
   background-color: rgba(var(--color-rgb-clear), 0.8);
   color: var(--color-purple-dark);
+}
+
+/* Swiper Arrows */
+.swiper-arrow {
+  background: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 0;
+  padding: 0;
+  position: absolute;
+  top: 55%;
+  transform: translateY(-50%);
+  height: 52px;
+  width: 52px;
+  z-index: 1;
+  transition: all .25s;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 6px;
+  border: 1px solid transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-arrow.swiper-button-lock{
+  display: none;
+}
+.swiper-arrow:hover {
+  border-color: #646464;
+}
+
+.swiper-button-next {
+  right: -12px;
+}
+
+.swiper-button-prev {
+  left: -12px;
+}
+
+.swiper-arrow::after {
+  content: "";
+  height: 12px;
+  width: 12px;
+  border-left: 2px solid #646464;
+  border-bottom: 2px solid #646464;
+  /* position: absolute; */
+  background: white;
+  cursor: pointer;
+  font-size: 0;
+}
+
+.swiper-button-prev::after {
+  transform: rotate(45deg);
+  margin: 0 -5px 0 0;
+}
+
+.swiper-button-next::after {
+  transform: rotate(-135deg);
+  margin: 0 0 0 -5px;
 }
 
 /* component-form */
