@@ -132,6 +132,25 @@
         "padding_bottom": 32
       }
     },
+    "custom_collection_product_grid_Ep3JFz": {
+      "type": "custom-collection-product-grid",
+      "settings": {
+        "products_per_page": 16,
+        "columns_desktop": 4,
+        "color_scheme": "",
+        "padding_top": 28,
+        "padding_bottom": 28,
+        "image_ratio": "adapt",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "enable_quick_add": false,
+        "filter_type": "horizontal",
+        "enable_filtering": false,
+        "enable_sorting": false
+      }
+    },
     "swiper_product_slider_4qDKtd": {
       "type": "swiper-product-slider",
       "settings": {
@@ -665,6 +684,7 @@
     "custom_about_us_iDn8Ma",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
+    "custom_collection_product_grid_Ep3JFz",
     "swiper_product_slider_4qDKtd",
     "image_with_text_xLx3Yj",
     "image_with_text_ikt6dM",
