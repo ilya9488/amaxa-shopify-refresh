@@ -57,7 +57,7 @@
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
 
-      <div class="card__content">
+      <div class="card__content grid-off">
         <div class="card__information">
           <h3
             class="card__heading underline-links-hover{% if card_product.featured_media or settings.card_style == 'standard' %} h5{% endif %}"
@@ -130,6 +130,9 @@
             {%- endif -%}
           </div>
         </div>
+        <a class="button button--secondary_sm" href="{% if read_more_url %} {{ read_more_url }} {% else %} {{ card_product.url }} {% endif %}"> 
+          Read More &nbsp;&nbsp; {%- render 'icon-arrow' -%}
+        </a>
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid
@@ -139,9 +142,6 @@
                 assign qty_rules = true
               endif
             -%}
-            <a class="button button--secondary_sm" href="{% if read_more_url %} {{ read_more_url }} {% else %} {{ card_product.url }} {% endif %}"> 
-              Read More &nbsp;&nbsp; {%- render 'icon-arrow' -%}
-            </a>
             {%- if card_product.variants.size > 1 or qty_rules -%}
               <modal-opener data-modal="#QuickAdd-{{ card_product.id }}">
                 <button
