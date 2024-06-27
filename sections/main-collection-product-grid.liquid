@@ -133,7 +133,8 @@
           </div>
         {%- else -%}
           <div class="swiper swiper-container slider-columns-1 collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
-              data-columns="{{ section.settings.columns_desktop }}"
+            data-columns="{{ section.settings.columns_desktop }}"
+            data-centered="{{ section.settings.slider_align }}"
             >
             <div class="loading-overlay gradient"></div>
             <ul
@@ -141,7 +142,6 @@
               data-id="{{ section.id }}"
               class=" swiper-wrapper collection-wrap
 
-                {% comment %} grid product-grid grid--{{ section.settings.columns_mobile }}-col-tablet-down {% endcomment %}
                 {% comment %} grid--{{ section.settings.columns_desktop }}-col-desktop {% endcomment %}
               "
             >
@@ -152,7 +152,7 @@
                 {%- endif -%}
 
                 <li
-                  class="swiper-slide ___grid__item{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+                  class="swiper-slide{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
                   {% if settings.animations_reveal_on_scroll %}
                     data-cascade
                     style="--animation-order: {{ forloop.index }};"
@@ -212,6 +212,22 @@
       "step": 1,
       "default": 4,
       "label": "t:sections.main-collection-product-grid.settings.columns_desktop.label"
+    },
+    {
+      "type": "select",
+      "id": "slider_align",
+      "label": "Align container",
+      "options": [
+        {
+          "value": "align_left",
+          "label": "left"
+        },
+        {
+          "value": "align_middle",
+          "label": "middle"
+        }
+      ],
+      "default": "align_middle"
     },
     {
       "type": "color_scheme",
@@ -351,22 +367,6 @@
     {
       "type": "header",
       "content": "t:sections.main-collection-product-grid.settings.header_mobile.content"
-    },
-    {
-      "type": "select",
-      "id": "columns_mobile",
-      "default": "2",
-      "label": "t:sections.main-collection-product-grid.settings.columns_mobile.label",
-      "options": [
-        {
-          "value": "1",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__1.label"
-        },
-        {
-          "value": "2",
-          "label": "t:sections.main-collection-product-grid.settings.columns_mobile.options__2.label"
-        }
-      ]
     },
     {
       "type": "header",
