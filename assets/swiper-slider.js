@@ -58,7 +58,7 @@ function swiperSliderInit() {
           },
           // when window width is >= 1300px
           1300: {
-            slidesPerView: 4,
+            slidesPerView: columns,
             spaceBetween: 10
           }
         }
