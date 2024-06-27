@@ -150,6 +150,9 @@
   width: 100%;
   flex-grow: 1;
 }
+.card__content.grid-off {
+  display: block;
+}
 
 .card__content--auto-margins {
   grid-template-rows: minmax(0, auto) max-content minmax(0, auto);
