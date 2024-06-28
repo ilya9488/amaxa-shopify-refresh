@@ -136,6 +136,31 @@
   padding: 2.5rem;
 }
 
+/* Typography */
+.multicolumn-card__info ul {
+  padding-top: 10px;
+  padding-left: 0;
+}
+.multicolumn-card__info li {
+  position: relative;
+  list-style: none;
+  padding: 0 5px;
+  margin-bottom: 5px;
+}
+.multicolumn-card__info li::before {
+  content: '';
+  width: 7px;
+  height: 7px;
+  display: block;
+  border: 1px solid currentColor;
+  /* background-color: currentColor; */
+  margin-right: auto;
+  border-radius: 50%;
+  position: absolute;
+  right: 100%;
+  top: 10px;
+}
+
 .background-none .multicolumn-card__info {
   padding-top: 0;
   padding-left: 0;
