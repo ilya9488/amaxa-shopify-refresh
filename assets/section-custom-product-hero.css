@@ -108,6 +108,7 @@
 .custom-product-hero--img-wrap{
   flex: 1;
   max-width: 40%;
+
 }
 .custom-product-hero--product-img{
   display: flex;
@@ -153,6 +154,9 @@
 
 .custom-product-hero--button{
   padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-right: 40px;
 }
 
 .custom-product-hero--img{
