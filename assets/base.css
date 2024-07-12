@@ -2649,7 +2649,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
   .header--middle-left {
     grid-template-areas: 'heading navigation icons';
-    grid-template-columns: auto 1fr auto;
+    grid-template-columns: 1fr auto auto;
     column-gap: 2rem;
   }
 
@@ -3070,7 +3070,6 @@ details[open] > .header__submenu {
   
   .header--middle-left .header__inline-menu {
     margin-left: 0;
-    margin-top: 20px;
     text-shadow: 0.2px 0.2px 0px var(--color-dark);
   }
 }
