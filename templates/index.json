@@ -22,7 +22,7 @@
         "to_top_shift_upward": 0,
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
-        "container_height": "small",
+        "container_height": "medium",
         "background_size": "cover",
         "background_color": "",
         "show_dev_only": false
