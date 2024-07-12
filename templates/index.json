@@ -21,7 +21,7 @@
         "image_product_1": "shopify:\/\/shop_images\/miofolic_side_eng_180424.png",
         "image_product_2": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424.png",
         "margin_top": "none",
-        "to_top_shift_upward": 77,
+        "to_top_shift_upward": 0,
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "large",
