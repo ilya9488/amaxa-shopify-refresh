@@ -118,6 +118,8 @@
   bottom: 0;
   position: absolute;
   top: 0;
+
+  overflow: visible;
 }
 
 .card .media {
@@ -203,9 +205,14 @@
   margin: 1.3rem;
 }
 
+.card__media .media {
+  justify-content: center;
+  max-height: 280px;
+}
 .card__media .media img {
   height: 100%;
-  object-fit: cover;
+  max-height: 260px;
+  object-fit: contain;
   object-position: center center;
   width: 100%;
 }
