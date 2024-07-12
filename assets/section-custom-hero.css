@@ -16,12 +16,26 @@
   padding-top: 280px;
   padding-bottom: 80px;
 }
+.custom-hero--video-block{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.custom-hero--video-block video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .custom-hero--content-wrap {
+  position: relative;
   display: flex;
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   gap: 35px;
+  z-index: 1;
 }
 .custom-hero--text-wrap {
   display: flex;
