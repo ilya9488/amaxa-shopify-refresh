@@ -23,6 +23,7 @@
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "large",
+        "background_video": "shopify:\/\/files\/videos\/477935c4ad (1).mp4",
         "background_size": "cover",
         "background_color": "",
         "show_dev_only": false
