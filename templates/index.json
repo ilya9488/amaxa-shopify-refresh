@@ -31,6 +31,28 @@
         "show_dev_only": false
       }
     },
+    "custom_hero_ngJLQp": {
+      "type": "custom-hero",
+      "settings": {
+        "heading_size": "h1",
+        "heading": "Stay in Your Prime",
+        "text": "<strong>Premium Supplements, Prime Results<\/strong>",
+        "button_label": "Find Your Perfect Fit",
+        "button_url": "shopify-section-template--20728768463182__rich_text_hCEbxw",
+        "button_type": "button--primary_sm",
+        "image_product_1": "shopify:\/\/shop_images\/miofolic_side_eng_180424.png",
+        "image_product_2": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424.png",
+        "margin_top": "none",
+        "to_top_shift_upward": 77,
+        "margin_bottom": "none",
+        "margin_bottom_custom": 0,
+        "container_height": "large",
+        "background_image": "shopify:\/\/shop_images\/hero-baner-x2.jpg",
+        "background_size": "cover",
+        "background_color": "",
+        "show_dev_only": true
+      }
+    },
     "custom_about_us_iDn8Ma": {
       "type": "custom-about-us",
       "disabled": true,
@@ -684,6 +706,7 @@
   },
   "order": [
     "custom_hero_HREUxX",
+    "custom_hero_ngJLQp",
     "custom_about_us_iDn8Ma",
     "custom_image_banner_twfGEn",
     "rich_text_hCEbxw",
