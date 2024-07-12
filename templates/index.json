@@ -33,6 +33,7 @@
     },
     "custom_about_us_iDn8Ma": {
       "type": "custom-about-us",
+      "disabled": true,
       "settings": {
         "background_color": "#e4deec",
         "image": "shopify:\/\/shop_images\/about-us-1.jpg",
@@ -137,6 +138,7 @@
       "settings": {
         "products_per_page": 16,
         "columns_desktop": 4,
+        "slider_align": "align_middle",
         "color_scheme": "",
         "image_ratio": "adapt",
         "image_shape": "default",
@@ -147,7 +149,6 @@
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
-        "columns_mobile": "2",
         "padding_top": 0,
         "padding_bottom": 20
       }
