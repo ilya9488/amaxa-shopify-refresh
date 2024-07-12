@@ -9,20 +9,6 @@
 */
 {
   "sections": {
-    "video_wkCVaU": {
-      "type": "video",
-      "settings": {
-        "heading": "Video",
-        "heading_size": "h2",
-        "enable_video_looping": true,
-        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "full_width": true,
-        "color_scheme": "",
-        "padding_top": 0,
-        "padding_bottom": 0
-      }
-    },
     "custom_hero_HREUxX": {
       "type": "custom-hero",
       "settings": {
@@ -719,7 +705,6 @@
     }
   },
   "order": [
-    "video_wkCVaU",
     "custom_hero_HREUxX",
     "custom_hero_ngJLQp",
     "custom_about_us_iDn8Ma",
