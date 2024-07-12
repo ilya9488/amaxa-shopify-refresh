@@ -23,10 +23,9 @@
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "small",
-        "background_image": "shopify:\/\/shop_images\/hero-baner-x2.jpg",
         "background_size": "cover",
         "background_color": "",
-        "show_dev_only": true
+        "show_dev_only": false
       }
     },
     "custom_hero_ngJLQp": {
@@ -48,7 +47,7 @@
         "background_image": "shopify:\/\/shop_images\/hero-baner-x2.jpg",
         "background_size": "cover",
         "background_color": "",
-        "show_dev_only": false
+        "show_dev_only": true
       }
     },
     "custom_about_us_iDn8Ma": {
