@@ -22,9 +22,17 @@
     >
 
     <div class="custom-hero--video-block">
-      <video autoplay loop muted playsinline> 
-        <source src="//amaxa-prime.com/cdn/shop/videos/c/vp/22ab8267eb0b4e01a15da2775d005fe0/22ab8267eb0b4e01a15da2775d005fe0.HD-1080p-2.5Mbps-31644076.mp4?v=0"  type="video/mp4">
-      </video>
+      {% if section.settings.background_video !=blank %}
+        {{
+          section.settings.background_video
+          | video_tag:
+            image_size: '1100x',
+            autoplay: true,
+            loop: true,
+            controls: false,
+            muted: true
+        }}
+      {% endif %}
     </div>
 
     <div class="page-width">
