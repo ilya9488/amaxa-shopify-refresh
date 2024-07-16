@@ -380,7 +380,7 @@ h5,
 
 @media only screen and (min-width: 750px) {
   .h0 {
-    font-size: calc(var(--font-heading-scale) * 5rem);
+    font-size: calc(var(--font-heading-scale) * 4.7rem);
   }
 }
 
