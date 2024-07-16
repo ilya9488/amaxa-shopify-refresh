@@ -13,6 +13,10 @@
 .newsletter__wrapper > * {
   margin-top: 0;
   margin-bottom: 0;
+  color: inherit;
+}
+.newsletter__wrapper p {
+  color: inherit;
 }
 
 .newsletter__wrapper > * + * {
