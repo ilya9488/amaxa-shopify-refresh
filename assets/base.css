@@ -223,8 +223,9 @@ body:has(.section-header .drawer-menu) .announcement-bar-section .page-width {
 
 @media screen and (min-width: 990px) {
   .header:not(.drawer-menu).page-width {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 17rem;
+    padding-right: 2rem;
+    max-width: 100%;
   }
 
   .page-width--narrow {
@@ -2724,7 +2725,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
 
 .header__heading-link {
   display: inline-block;
-  padding: 0.75rem;
+  padding: 0.5rem;
   text-decoration: none;
   word-break: break-word;
 }
