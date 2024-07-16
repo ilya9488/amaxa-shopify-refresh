@@ -48,7 +48,11 @@
               style="
                 {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
               "
-            >{{ section.blocks.first.settings.text | escape }}</span>
+            >
+            <i>
+              {{ section.blocks.first.settings.text | escape }}
+            </i>
+          </span>
             {%- if section.blocks.first.settings.text_2 != blank -%}
               <span
                 style="
@@ -58,7 +62,9 @@
                 {% comment %} To Next Line {% endcomment %}
                 {%- if section.blocks.first.settings.line_break -%}<br>{%- endif -%}
                 {% comment %} Text Line 2 {% endcomment %}
-                {{ section.blocks.first.settings.text_2 | escape }}
+                <i>
+                  {{ section.blocks.first.settings.text_2 | escape }}
+                </i>
               </span>
             {%- endif -%}
             {%- if section.blocks.first.settings.link != blank -%}
