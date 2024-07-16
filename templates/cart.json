@@ -13,7 +13,7 @@
       "type": "main-cart-items",
       "settings": {
         "color_scheme": "background-1",
-        "padding_top": 16,
+        "padding_top": 20,
         "padding_bottom": 0
       }
     },
