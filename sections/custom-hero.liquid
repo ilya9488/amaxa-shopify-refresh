@@ -35,34 +35,35 @@
       {% endif %}
     </div>
 
-    {% comment %} <div class="page-width"> {% endcomment %}
-      <div class="custom-hero--content-wrap">
-        {% if section.settings.heading != blank or section.settings.text != blank or section.settings.button_label != blank or section.settings.button_url != blank %}
-          <div class="custom-hero--text-wrap">
-      
-            {% if section.settings.heading != blank %}
-              <h1 class="custom-hero--title {{ section.settings.heading_size }}">
-                {{ section.settings.heading }}
-              </h1>
-            {% endif %}
-      
-            {% if section.settings.text != blank %}
-              <p class="custom-hero--text {{ section.settings.text_size }}">
-                {{ section.settings.text }}
-              </p>
-            {% endif %}
-      
-            {% if section.settings.button_label != blank %}
-              <div class="custom-hero--button">
-                <a href="#{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
-                  {{ section.settings.button_label }}
-                </a>
-              </div>
-            {% endif %}
-        
-          </div>
-        {% endif %}
     
+    <div class="custom-hero--content-wrap">
+      {% if section.settings.heading != blank or section.settings.text != blank or section.settings.button_label != blank or section.settings.button_url != blank %}
+        <div class="custom-hero--text-wrap">
+    
+          {% if section.settings.heading != blank %}
+            <h1 class="custom-hero--title {{ section.settings.heading_size }}">
+              {{ section.settings.heading }}
+            </h1>
+          {% endif %}
+    
+          {% if section.settings.text != blank %}
+            <p class="custom-hero--text {{ section.settings.text_size }}">
+              {{ section.settings.text }}
+            </p>
+          {% endif %}
+    
+          {% if section.settings.button_label != blank %}
+            <div class="custom-hero--button">
+              <a href="#{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+                {{ section.settings.button_label }}
+              </a>
+            </div>
+          {% endif %}
+      
+        </div>
+      {% endif %}
+  
+      {% if section.settings.image_product_1 != blank or section.settings.image_product_2 != blank%}
         <div class="custom-hero--images-wrap">
           {% if section.settings.image_product_1 != blank %}
             <img
@@ -85,8 +86,8 @@
             >
           {% endif %}
         </div>
-      </div>
-    {% comment %} </div> {% endcomment %}
+      {% endif %}
+    </div>
   
   </div>
 {% endif %}
