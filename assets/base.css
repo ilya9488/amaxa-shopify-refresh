@@ -1738,6 +1738,8 @@ details[open] > .share-button__fallback {
   background-color: var(--color-sand);
   color: var(--color-grey-300);
   font-weight: 600;
+  padding-left: 55px;
+  padding-right: 55px;
   transition: all .4s;
 }
 .button--sand::before,
