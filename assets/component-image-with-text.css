@@ -418,6 +418,7 @@
 
 .image-with-text__heading {
   margin-bottom: 0;
+  color: var(--color-grey-dark);
 }
 
 .image-with-text__text p {
