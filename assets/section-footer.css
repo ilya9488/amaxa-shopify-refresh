@@ -153,6 +153,11 @@
   margin-top: 0;
   font-size: 1.6rem;
 }
+
+.color-scheme-4be43481-f82e-40cd-95c1-f388f0f26462 .footer-block__heading{
+  color: var(--color-clear);
+}
+
 .footer-block__newsletter .footer-block__heading {
   font-size: 1.5rem;
 }
@@ -353,7 +358,8 @@ footer .footer__blocks-wrapper {
 
 .footer-block__details-content .list-menu__item--link,
 .copyright__content a {
-  color: rgba(var(--color-foreground), 0.75);
+  /* color: rgba(var(--color-foreground), 0.75); */
+  color: var(--color-clear);
 }
 
 .footer-block__details-content .list-menu__item--active {
