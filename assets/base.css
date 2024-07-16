@@ -1774,6 +1774,9 @@ details[open] > .share-button__fallback {
   border: none;
   background-color: transparent;
   color: var(--color-dark);
+  font-size: 38px;
+  padding: 20px 30px;
+  font-weight: 300 !important;
   transition: all .4s;
 }
 .button--dark-label::before,
