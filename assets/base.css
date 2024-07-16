@@ -379,7 +379,7 @@ h5,
 
 @media only screen and (min-width: 750px) {
   .h0 {
-    font-size: calc(var(--font-heading-scale) * 5.2rem);
+    font-size: calc(var(--font-heading-scale) * 5rem);
   }
 }
 
@@ -949,7 +949,7 @@ summary::-webkit-details-marker {
 }
 
 .subtitle {
-  font-size: 1.8rem;
+  font-size: 2.4rem;
   line-height: calc(1 + 0.8 / var(--font-body-scale));
   letter-spacing: 0.06rem;
   color: rgba(var(--color-foreground), 0.7);
@@ -1769,20 +1769,19 @@ details[open] > .share-button__fallback {
   color: var(--color-clear);
 }
 
-/* Button White Label */
-.button--white-label {
+/* Button Dark Label */
+.button--dark-label {
   border: none;
   background-color: transparent;
-  color: var(--color-clear);
+  color: var(--color-dark);
   transition: all .4s;
 }
-.button--white-label::before,
-.button--white-label::after{
+.button--dark-label::before,
+.button--dark-label::after{
   display: none !important;
 }
-.button--white-label:hover {
+.button--dark-label:hover {
   background-color: rgba(var(--color-rgb-clear), 0.8);
-  color: var(--color-purple-dark);
 }
 
 /* Swiper Arrows */
