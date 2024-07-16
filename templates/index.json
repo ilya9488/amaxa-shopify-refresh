@@ -18,6 +18,8 @@
         "button_label": "Find Your Perfect Fit",
         "button_url": "shopify-section-template--20728768463182__rich_text_hCEbxw",
         "button_type": "button--primary_sm",
+        "image_product_1": "shopify:\/\/shop_images\/miofolic_side_eng_180424_7fb1daa3-5a58-40d5-96c0-6ce94628cb1c.png",
+        "image_product_2": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424_1__ut.png",
         "margin_top": "none",
         "to_top_shift_upward": 0,
         "margin_bottom": "none",
@@ -51,7 +53,6 @@
     },
     "custom_hero_ngJLQp": {
       "type": "custom-hero",
-      "disabled": true,
       "settings": {
         "heading_size": "h1",
         "heading": "Stay in Your Prime",
