@@ -48,6 +48,9 @@
 .image-with-text__content {
   padding-left: 56px;
 }
+.image-with-text .image-with-text__text-item > .image-with-text__content{
+  border-radius: 0;
+}
 .image-with-text .list-options p {
   margin: 0;
 }
