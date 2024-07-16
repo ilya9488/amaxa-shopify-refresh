@@ -60,7 +60,7 @@ cart-items .title-wrapper-with-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: var(--color-secendary);
+  background-image: linear-gradient(180deg, #f5f7f6c7, rgba(228, 222, 236, .3) 20%, rgba(228, 222, 236, .3) 40%, transparent 100%);
   border-radius: 10px;
   width: 100px;
   height: 100px;
