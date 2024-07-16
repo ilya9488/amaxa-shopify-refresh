@@ -360,7 +360,7 @@
       "settings": {
         "image": "shopify:\/\/shop_images\/about-us-2.jpg",
         "container_width": false,
-        "color_background": "linear-gradient(90deg, rgba(148, 88, 255, 1) 1%, rgba(219, 149, 250, 1) 100%)",
+        "color_background": "linear-gradient(90deg, rgba(215, 205, 173, 1) 1%, rgba(215, 212, 175, 1) 1.079%, rgba(215, 197, 171, 1) 50%, rgba(201, 184, 160, 1) 100%)",
         "image_stretch": "cover",
         "height": "adapt",
         "desktop_image_width": "small",
