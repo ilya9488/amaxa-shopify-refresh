@@ -1777,6 +1777,7 @@ details[open] > .share-button__fallback {
   color: var(--color-dark);
   font-size: 38px;
   padding: 20px 30px;
+  font-family: var(--font-heading-family) !important;
   font-weight: 300 !important;
   transition: all .4s;
 }
