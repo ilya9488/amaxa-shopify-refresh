@@ -27,6 +27,7 @@
   --color-secendary: #F6F6F6;
   --color-grey: #8C8A92;
   --color-grey-300: #555555;
+  --color-grey-400: #575556;
   --color-grey-dark: #6d6d6d;
   --color-purple-lite: rgba(176, 176, 210, 0.2);
   --color-purple: #B0B0D2;
@@ -1774,7 +1775,7 @@ details[open] > .share-button__fallback {
 .button--dark-label {
   border: none;
   background-color: transparent;
-  color: var(--color-dark);
+  color: var(--color-grey-400);
   font-size: 38px;
   padding: 20px 30px;
   font-family: var(--font-heading-family) !important;
