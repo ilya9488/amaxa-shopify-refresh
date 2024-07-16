@@ -41,35 +41,34 @@
             <a
               href="{{ section.blocks.first.settings.link }}"
               class="announcement-bar__link link link--text focus-inset animate-arrow"
-            >
-          {%- endif -%}
-          <p class="announcement-bar__message">
-            <span
               style="
                 {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
               "
             >
-            <i>
+          {%- endif -%}
+          <p class="announcement-bar__message"
+            style="
+                {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
+              "
+            >
+            <span style="color: inherit;">
+            <i style="color: inherit;">
               {{ section.blocks.first.settings.text | escape }}
             </i>
           </span>
             {%- if section.blocks.first.settings.text_2 != blank -%}
-              <span
-                style="
-                  {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
-                "
-              >
+              <span style="color: inherit;" >
                 {% comment %} To Next Line {% endcomment %}
                 {%- if section.blocks.first.settings.line_break -%}<br>{%- endif -%}
                 {% comment %} Text Line 2 {% endcomment %}
-                <i>
+                <i style="color: inherit;">
                   {{ section.blocks.first.settings.text_2 | escape }}
                 </i>
               </span>
             {%- endif -%}
-            {%- if section.blocks.first.settings.link != blank -%}
+            {% comment %} {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
-            {%- endif -%}
+            {%- endif -%} {% endcomment %}
           </p>
           {%- if section.blocks.first.settings.link != blank -%}
             </a>
