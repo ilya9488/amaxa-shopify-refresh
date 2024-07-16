@@ -13,8 +13,6 @@
   background-position-y: 0;
   background-position-x: center;
   background-repeat: no-repeat;
-  padding-top: 280px;
-  padding-bottom: 80px;
 }
 .custom-hero--video-block{
   position: absolute;
@@ -32,17 +30,19 @@
   position: relative;
   display: flex;
   width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  /* max-width: 1200px; */
+  /* margin: 0 auto; */
   gap: 35px;
   z-index: 1;
 }
 .custom-hero--text-wrap {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  text-align: right;
+  align-items: center;
+  text-align: center;
   max-width: 60%;
+  padding: 280px 20px;
+  background-color: rgba(var(--color-rgb-clear), 0.7);
 }
 .custom-hero--custom-hero--text {
   color: var(--color-primary);

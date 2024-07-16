@@ -30,6 +30,9 @@
   --color-purple-lite: rgba(176, 176, 210, 0.2);
   --color-purple: #B0B0D2;
   --color-purple-dark: #7975A9;
+  --color-sand-lite: rgba(222, 209, 189, 0.8);
+  --color-sand: #DED1BD;
+  --color-sand-dark: #cfbb9d;
   --color-grey-lite: #FCFCFE;
   --color-clear: #ffffff;
   --color-rgb-clear: 255, 255, 255;
@@ -1727,6 +1730,22 @@ details[open] > .share-button__fallback {
 .button--primary_sm:hover {
   background-color: var(--color-purple-dark);
   color: var(--color-clear);
+}
+
+.button--sand {
+  border: none;
+  background-color: var(--color-sand);
+  color: var(--color-grey);
+  font-weight: 600;
+  transition: all .4s;
+}
+.button--sand::before,
+.button--sand::after{
+  display: none !important;
+}
+.button--sand:hover {
+  background-color: var(--color-sand-dark);
+  /* color: var(--color-clear); */
 }
 
 /* Button Primary Pink */
