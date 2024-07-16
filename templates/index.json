@@ -26,11 +26,12 @@
         "background_video": "shopify:\/\/files\/videos\/477935c4ad (1).mp4",
         "background_size": "cover",
         "background_color": "linear-gradient(14deg, rgba(215, 197, 171, 1) 14%, rgba(255, 255, 255, 1) 89%)",
-        "show_dev_only": true
+        "show_dev_only": false
       }
     },
     "custom_hero_HREUxX": {
       "type": "custom-hero",
+      "disabled": true,
       "settings": {
         "heading_size": "h1",
         "heading": "",
