@@ -370,7 +370,7 @@
         "content_layout": "no-overlap",
         "button_type": "button--white-label",
         "section_color_scheme": "background-1",
-        "color_scheme": "inverse",
+        "color_scheme": "background-1",
         "image_behavior": "zoom-in",
         "mobile_content_alignment": "center",
         "padding_top": 32,
