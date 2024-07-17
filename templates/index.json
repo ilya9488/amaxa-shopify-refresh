@@ -333,14 +333,14 @@
           "type": "heading",
           "settings": {
             "heading": "Explore Our Fertility Range",
-            "heading_size": "h0"
+            "heading_size": "h1"
           }
         },
         "text_hDicPR": {
           "type": "text",
           "settings": {
             "text": "<p>Discover the Path to Parenthood with Natural Support<\/p>",
-            "text_style": "subtitle"
+            "text_style": "body"
           }
         },
         "button_NP4WhU": {
