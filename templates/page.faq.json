@@ -46,13 +46,104 @@
         "collapsible_row_QEVVAN": {
           "type": "collapsible_row",
           "settings": {
+            "heading": "What can be done about nausea and vomiting?",
+            "icon": "none",
+            "row_content": "<p>Usually, nausea and vomiting resolve on their own after the fourth month of pregnancy. To reduce nausea and vomiting, avoid fatty foods and coffee. Eat often but in small portions. Consult a doctor in case of severe and repeated vomiting, since this condition can be so severe it can require in-patient treatment. With careful implementation of your doctor’s recommendations, problems with severe vomiting can be avoided<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_b7zyYW": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "What is normal weight gain in pregnancy?",
+            "icon": "none",
+            "row_content": "<p>During pregnancy, you should gain no more than 10-12 kg (about 350 g per week). Check your weight regularly. As a rule, weight gain starts around week 20. Eat regularly, without overeating and reduce your consumption of salt, sweets and spicy foods, that help limit your fluid intake. Add protein food to your diet (veal, chicken, fish, lentils) not fatty food.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_4hTcxC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "I am pregnant and have a profuse discharge. Is this normal?",
+            "icon": "none",
+            "row_content": "<p>Under the influence of pregnancy hormones, vaginal mucosa cells are renewed rapidly and the dead cells are removed from the body in the form of a thick white substance. The discharge can be profuse or in small amounts. So long as it’s not accompanied by burning, itching or an unpleasant smell, and it doesn’t contain blood clots, the discharge is normal. However, it is necessary to consult a doctor to exclude leaking amniotic fluid, threat of termination or fungal and other infections.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_rWePmy": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "How long do I need to take Miofolic?",
+            "icon": "none",
+            "row_content": "<p>According to clinical studies, the minimum recommended duration of Miofolic is three months. Most gynaecologists recommend taking Miofolic from 3 to 6 months.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_mVmtWw": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can I take Miofolic if I’m not trying to get pregnant, but I have PCOS?",
+            "icon": "none",
+            "row_content": "<p>Yes, you can use Miofolic for PCOS. Miofolic daily intake of 2 sachets per day for 3-6 months improves the functioning of the woman’s reproductive system and normalises hormone levels. The positive effects of taking Miofolic in PCOS manifest in reducing or completely eliminating symptoms such as unwanted hair growth, skin problems and weight gain. In addition, taking Miofolic increases insulin sensitivity and contributes to normalising the menstrual cycle, which is especially important for PCOS.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_D4rJGk": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Can anyone use the products, or is it just for people with underlying health issues?",
+            "icon": "none",
+            "row_content": "<p>Taking Miofolic has a general strengthening effect on the body, regardless of the health problems. Among the positive impacts of Miofolic are improved appearance of skin and hair, reduced cravings for sweets and normalisation of body weight. Miofolic is very well tolerated. You do not require a doctor’s prescription to start taking Miofolic.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_row_premHC": {
+          "type": "collapsible_row",
+          "settings": {
+            "heading": "Are there any side effects from Miofolic?",
+            "icon": "none",
+            "row_content": "<p>Miofolic is very well tolerated. Studies show no side effects when taking Miofolic at the recommended dosages.<\/p>",
+            "page": ""
+          }
+        }
+      },
+      "block_order": [
+        "collapsible_row_QEVVAN",
+        "collapsible_row_b7zyYW",
+        "collapsible_row_4hTcxC",
+        "collapsible_row_rWePmy",
+        "collapsible_row_mVmtWw",
+        "collapsible_row_D4rJGk",
+        "collapsible_row_premHC"
+      ],
+      "settings": {
+        "caption": "",
+        "heading": "Products",
+        "heading_size": "h1",
+        "heading_alignment": "center",
+        "layout": "none",
+        "color_scheme": "",
+        "container_color_scheme": "",
+        "open_first_collapsible_row": false,
+        "image_ratio": "adapt",
+        "desktop_layout": "image_second",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "collapsible_content_46UPR7": {
+      "type": "collapsible-content",
+      "blocks": {
+        "collapsible_row_zA6zbR": {
+          "type": "collapsible_row",
+          "settings": {
             "heading": "How Do I See The Progress Of My Vitabiotics order?",
             "icon": "none",
             "row_content": "<p>You can see the status and track your order by checking the tracking emails sent to you which have links to the live status of the orders, or by signing in to your account<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
             "page": ""
           }
         },
-        "collapsible_row_UTpcrU": {
+        "collapsible_row_LGGaxL": {
           "type": "collapsible_row",
           "settings": {
             "heading": "I Need Help Placing An Order",
@@ -61,7 +152,7 @@
             "page": ""
           }
         },
-        "collapsible_row_K6w6dr": {
+        "collapsible_row_n6NHNt": {
           "type": "collapsible_row",
           "settings": {
             "heading": "What Do I Do If I Receive A Faulty \/ Incorrect Item?",
@@ -70,7 +161,7 @@
             "page": ""
           }
         },
-        "collapsible_row_KdYmkU": {
+        "collapsible_row_8dBUaM": {
           "type": "collapsible_row",
           "settings": {
             "heading": "I Have Entered The Wrong Shipping Address, Can This Be Changed?",
@@ -79,7 +170,7 @@
             "page": ""
           }
         },
-        "collapsible_row_HHAPYT": {
+        "collapsible_row_pVRKgA": {
           "type": "collapsible_row",
           "settings": {
             "heading": "What Does The 3 For 2 Offer Mean?",
@@ -88,7 +179,7 @@
             "page": ""
           }
         },
-        "collapsible_row_FfVcdf": {
+        "collapsible_row_FVKYdw": {
           "type": "collapsible_row",
           "settings": {
             "heading": "How Do I Use Voucher Codes?",
@@ -99,12 +190,12 @@
         }
       },
       "block_order": [
-        "collapsible_row_QEVVAN",
-        "collapsible_row_UTpcrU",
-        "collapsible_row_K6w6dr",
-        "collapsible_row_KdYmkU",
-        "collapsible_row_HHAPYT",
-        "collapsible_row_FfVcdf"
+        "collapsible_row_zA6zbR",
+        "collapsible_row_LGGaxL",
+        "collapsible_row_n6NHNt",
+        "collapsible_row_8dBUaM",
+        "collapsible_row_pVRKgA",
+        "collapsible_row_FVKYdw"
       ],
       "settings": {
         "caption": "",
@@ -681,6 +772,7 @@
   "order": [
     "rich_text_faNq8L",
     "collapsible_content_BqQHJm",
+    "collapsible_content_46UPR7",
     "collapsible_content_pANAqD",
     "collapsible_content_cWp7JN",
     "collapsible_content_tgpeQf",
