@@ -23,7 +23,7 @@
         "text_AExqbr": {
           "type": "text",
           "settings": {
-            "text": "<p>We are always happy to answer questions. If you don't find your answer below please <a href=\"https:\/\/www.vitabiotics.com\/pages\/contact-us\">Contact Us<\/a><\/p>"
+            "text": "<p>We are always happy to answer questions. If you don't find your answer below please <a href=\"\/pages\/contact\" title=\"Contact Us\">Contact Us<\/a><\/p>"
           }
         }
       },
