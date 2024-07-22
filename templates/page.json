@@ -18,7 +18,7 @@
         "heading": "<p>Empowering <br\/>Wellness <br\/>for Men<\/p>",
         "heading_size": "h1",
         "button_label": "Buy Now",
-        "button_type": "button--secondary",
+        "button_type": "button--border-blue",
         "button_url": "shopify:\/\/products\/miofolic-men",
         "text": "",
         "margin_top": "none",
