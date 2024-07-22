@@ -27,7 +27,7 @@
         "container_height": "small",
         "background_image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1_cea03c8f-b1bf-4d23-8b6e-c01cde2f92e7.jpg",
         "background_size": "cover",
-        "background_color": "",
+        "background_color": "#d7c5ab",
         "show_dev_only": true
       }
     },
