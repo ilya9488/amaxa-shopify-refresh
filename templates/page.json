@@ -11,6 +11,7 @@
   "sections": {
     "custom_product_hero_2_F3eUjR": {
       "type": "custom-product-hero-2",
+      "disabled": true,
       "settings": {
         "top_title": "Miofoliс® Men",
         "top_subtitle": "Your Natural Ally in Male Vitality",
