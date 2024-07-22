@@ -131,8 +131,9 @@
   bottom: 0;
   position: absolute;
   top: 0;
-
   overflow: visible;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .card .media {
