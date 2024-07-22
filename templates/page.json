@@ -28,7 +28,7 @@
         "background_image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1_cea03c8f-b1bf-4d23-8b6e-c01cde2f92e7.jpg",
         "background_size": "cover",
         "background_color": "#eee3d8",
-        "show_dev_only": true
+        "show_dev_only": false
       }
     },
     "main": {
@@ -41,6 +41,7 @@
     },
     "custom_product_hero_HQ77hR": {
       "type": "custom-product-hero",
+      "disabled": true,
       "settings": {
         "header_list": "<ul><li>Supports reproductive health<\/li><li>Promotes a healthy pregnancy<\/li><li>Recommended in PCOS cases<\/li><\/ul>",
         "top_subtitle": "Start life right with the proper supplements",
