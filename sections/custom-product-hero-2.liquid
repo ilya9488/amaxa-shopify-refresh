@@ -21,13 +21,6 @@
     >
     <div class="page-width">
 
-      <div class="custom-product-hero-2--header">
-        
-        {% if section.settings.header_list != blank %}
-          {{ section.settings.header_list | newline_to_br }}
-        {% endif %}
-      </div>
-
       <div class="custom-product-hero-2--content-wrap">
 
         <div class="custom-product-hero-2--left-col">
@@ -37,6 +30,7 @@
               {{ section.settings.top_subtitle | newline_to_br }}
             </p>
           {% endif %}
+          
           <div class="custom-product-hero-2--title-wrap">
             <div class="custom-product-hero-2--img-wrap">
               {% if section.settings.product_img != blank %}
@@ -58,27 +52,17 @@
                 </div>
               {% endif %}
             </div>
-            {% if section.settings.heading != blank %}
-              <h1 class="custom-product-hero-2--title {{ section.settings.heading_size }}">
-                {{ section.settings.heading | newline_to_br  }}
-              </h1>
-            {% endif %}
+            
           </div>
     
         </div>
         
         <div class="custom-product-hero-2--right-col">
-          <div class="custom-product-hero-2--img">
-            {% if section.settings.right_img != blank %}
-              <img
-                src="{{ section.settings.right_img | image_url: width: 1000 }}"
-                alt="{{ section.settings.right_img.alt | escape }}"
-                width="390"
-                height="{{ 520 | divided_by: section.settings.right_img.aspect_ratio | ceil }}"
-                loading="lazy"
-              >
-            {% endif %}
-          </div>
+          {% if section.settings.heading != blank %}
+            <h1 class="custom-product-hero-2--title {{ section.settings.heading_size }}">
+              {{ section.settings.heading | newline_to_br  }}
+            </h1>
+          {% endif %}
         </div>
 
       </div>
@@ -102,12 +86,10 @@
   "name": "Custom Product Hero 2",
   "class": "section",
   "settings": [
-    
     {
-      "type": "richtext",
-      "id": "header_list",
-      "label": "Header List",
-      "info": "It is recommended to use only the list."
+      "type": "textarea",
+      "id": "top_title",
+      "label": "Top Title"
     },
     {
       "type": "textarea",
@@ -181,11 +163,6 @@
       "type": "url",
       "id": "button_url",
       "label": "Button Link"
-    },
-    {
-      "type": "image_picker",
-      "id": "right_img",
-      "label": "Right Image"
     },
     {
       "type": "textarea",
