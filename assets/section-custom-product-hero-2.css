@@ -69,10 +69,6 @@
 .custom-product-hero-2--top-subtitle {
   color: var(--color-clear);
   font-size: 35px;
-  background-color: var(--color-clear);
-  background: linear-gradient(90deg, #2B5D9F 0%, #355483 100%);
-  display: inline-flex;
-  padding: 18px 45px;
   margin-top: 0;
 }
 
@@ -180,8 +176,6 @@
     text-align: center;
     display: block;
     font-size: 28px;
-    background: linear-gradient(90deg, rgba(43, 93, 159, 0.5) 0%, rgba(53, 84, 131, 0.5) 100%);
-    padding: 18px;
   }
 
   .custom-product-hero-2--product-img{
@@ -239,6 +233,5 @@
 
   .custom-product-hero-2--top-subtitle{
     font-size: 20px;
-    padding: 15px;
   }
 }
