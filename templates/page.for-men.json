@@ -65,11 +65,11 @@
     "multicolumn_R4FVma": {
       "type": "multicolumn",
       "blocks": {
-        "column_CYyBYK": {
+        "column_WiRUNG": {
           "type": "column",
           "settings": {
-            "title": "Scientifically Backed Ingredients:",
-            "text": "<ul><li>Myo-inositol (2000 mg per sachet): Clinically proven to restore insulin sensitivity, regulate hormonal parameters, and support regular menstrual cycles.<\/li><li>4th Generation Folic Acid (200 mcg per sachet): A highly bioavailable form of folic acid that supports cell creation, reduces homocysteine levels, and prevents common pregnancy-related defects.<\/li><li>Vitamin B12 (2.5 mcg per sachet): Enhances folic acid absorption, boosts immunity, and maintains healthy energy metabolism.<\/li><\/ul>",
+            "title": "Column",
+            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.<\/p>",
             "link_label": "",
             "link": ""
           }
@@ -83,42 +83,32 @@
             "link_label": "",
             "link": ""
           }
-        },
-        "column_EaAEz4": {
-          "type": "column",
-          "settings": {
-            "title": "Key Benefits:",
-            "text": "<ul><li>Miofolic helps normalize hormonal balance.<\/li><li>Supports Healthy Pregnancy: Miofolic promotes a safer and healthier pregnancy journey.<\/li><li>Recommended for PCOS: Miofolic effectively addresses symptoms of Polycystic Ovary Syndrome (PCOS), such as irregular ovulation, acne, and hirsutism, while also aiding in weight management.<\/li><\/ul>",
-            "link_label": "",
-            "link": ""
-          }
         }
       },
       "block_order": [
-        "column_CYyBYK",
-        "column_x6p3ak",
-        "column_EaAEz4"
+        "column_WiRUNG",
+        "column_x6p3ak"
       ],
       "disabled": true,
       "settings": {
-        "title": "",
+        "title": "олрлр",
         "heading_size": "h1",
-        "blocks_heading_size": "h2",
-        "title_color": "#aa0f71",
-        "image_width": "full",
+        "blocks_heading_size": "h1",
+        "title_color": "#4770db",
+        "image_width": "third",
         "image_ratio": "adapt",
-        "columns_desktop": 3,
+        "columns_desktop": 2,
         "column_alignment": "center",
         "background_style": "primary",
         "custom_bg_color": "linear-gradient(180deg, rgba(255, 211, 226, 0), rgba(168, 255, 251, 0) 100%)",
-        "blocks_border": true,
+        "blocks_border": false,
         "blocks_border_color": "#aa0f71",
         "border_width": 2,
         "border_radius": 50,
-        "img_border_radius": 50,
+        "img_border_radius": 0,
         "button_label": "",
         "button_link": "",
-        "color_scheme": "scheme-daf2c28c-38cb-495d-a9fe-e642e0b63801",
+        "color_scheme": "background-1",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
