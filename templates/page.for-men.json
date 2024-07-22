@@ -9,6 +9,14 @@
 */
 {
   "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
     "custom_product_hero_2_F3eUjR": {
       "type": "custom-product-hero-2",
       "settings": {
@@ -29,14 +37,6 @@
         "background_size": "cover",
         "background_color": "#eee3d8",
         "show_dev_only": false
-      }
-    },
-    "main": {
-      "type": "main-page",
-      "disabled": true,
-      "settings": {
-        "padding_top": 36,
-        "padding_bottom": 28
       }
     },
     "custom_product_hero_HQ77hR": {
@@ -125,8 +125,8 @@
     }
   },
   "order": [
-    "custom_product_hero_2_F3eUjR",
     "main",
+    "custom_product_hero_2_F3eUjR",
     "custom_product_hero_HQ77hR",
     "multicolumn_R4FVma"
   ]
