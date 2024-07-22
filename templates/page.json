@@ -11,6 +11,7 @@
   "sections": {
     "custom_product_hero_2_F3eUjR": {
       "type": "custom-product-hero-2",
+      "disabled": true,
       "settings": {
         "top_title": "Miofoliс® Men",
         "top_subtitle": "Your Natural Ally in Male Vitality",
@@ -41,7 +42,6 @@
     },
     "custom_product_hero_HQ77hR": {
       "type": "custom-product-hero",
-      "disabled": true,
       "settings": {
         "header_list": "<ul><li>Supports reproductive health<\/li><li>Promotes a healthy pregnancy<\/li><li>Recommended in PCOS cases<\/li><\/ul>",
         "top_subtitle": "Start life right with the proper supplements",
@@ -99,7 +99,6 @@
         "column_x6p3ak",
         "column_EaAEz4"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
