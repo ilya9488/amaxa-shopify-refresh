@@ -1776,7 +1776,7 @@ details[open] > .share-button__fallback {
 /* Button Primary Blue */
 .button--border-blue {
   border: none;
-  background-color: transparent;
+  background-color: var(--color-clear);
   color: var(--color-blue-500);
   font-weight: 500;
   transition: all .4s;
