@@ -48,9 +48,9 @@
             "heading": "<strong>Increases testosterone levels  1<\/strong>",
             "image": "shopify:\/\/shop_images\/Graf1.svg",
             "graph_value_1": "Before taking the medication",
-            "graph_color_1": "#4770db",
+            "graph_color_1": "#c6e3f8",
             "graph_value_2": "After 3 months of taking the medication, MI",
-            "graph_color_2": "#b0b0d2"
+            "graph_color_2": "#1f5ba5"
           }
         },
         "page_jt6zHT": {
@@ -58,10 +58,10 @@
           "settings": {
             "heading": "<strong>Normalises metabolic status 1<\/strong>",
             "image": "shopify:\/\/shop_images\/Graf2.svg",
-            "graph_value_1": "",
-            "graph_color_1": "",
-            "graph_value_2": "",
-            "graph_color_2": ""
+            "graph_value_1": "Before taking the medication",
+            "graph_color_1": "#c6e3f8",
+            "graph_value_2": "Before taking the medication",
+            "graph_color_2": "#1f5ba5"
           }
         }
       },
