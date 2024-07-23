@@ -45,6 +45,16 @@
         "page_A87qzM": {
           "type": "page",
           "settings": {
+            "image": "shopify:\/\/shop_images\/about-us-2.jpg",
+            "image_position": 50,
+            "button_label": "",
+            "button_url": ""
+          }
+        },
+        "page_jt6zHT": {
+          "type": "page",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/about-us-1.jpg",
             "image_position": 50,
             "button_label": "",
             "button_url": ""
@@ -52,7 +62,8 @@
         }
       },
       "block_order": [
-        "page_A87qzM"
+        "page_A87qzM",
+        "page_jt6zHT"
       ],
       "settings": {
         "image_clickable": false,
