@@ -37,49 +37,51 @@
               {% endif %}
               
               <div class="custom-image-column--block-graph">
-                <div class="custom-image-column--block-image-wrap">
-                  {% if block.settings.image != blank %}
-                    <img
-                      class="custom-image-column--block-img"
-                      src="{{ block.settings.image | image_url: width: 500 }}"
-                      alt="{{ block.settings.image.alt | escape }}"
-                      width="600"
-                      height="{{ 500 | divided_by: block.settings.image.aspect_ratio | ceil }}"
-                      loading="lazy"
-                    >
-                  {% endif %}
+                <div class="custom-image-column--block-graph-wrap">
+                  <div class="custom-image-column--block-image-wrap">
+                    {% if block.settings.image != blank %}
+                      <img
+                        class="custom-image-column--block-img"
+                        src="{{ block.settings.image | image_url: width: 500 }}"
+                        alt="{{ block.settings.image.alt | escape }}"
+                        width="600"
+                        height="{{ 500 | divided_by: block.settings.image.aspect_ratio | ceil }}"
+                        loading="lazy"
+                      >
+                    {% endif %}
+                  </div>
+                  <div class="custom-image-column--block-graph-values">
+                    <div class="custom-image-column--block-graph-value">
+                      {% if block.settings.graph_value_1 != blank %}
+                        <span class="custom-image-column--block-graph-mark"
+                          style="
+                          {% if block.settings.graph_color_1 !=blank %}background-color: {{ block.settings.graph_color_1 }};{% endif %}
+                          "
+                         ></span>
+                         <span class="custom-image-column--block-graph-value">
+                          {{ block.settings.graph_value_1 }}
+                        </span>
+                      {% endif %}
+                    </div>
+                    <div class="custom-image-column--block-graph-value">
+                      {% if block.settings.graph_value_2 != blank %}
+                        <span class="custom-image-column--block-graph-mark"
+                          style="
+                          {% if block.settings.graph_color_2 !=blank %}background-color: {{ block.settings.graph_color_2 }};{% endif %}
+                          "
+                         ></span>
+                         <span class="custom-image-column--block-graph-value">
+                          {{ block.settings.graph_value_2 }}
+                        </span>
+                      {% endif %}
+                    </div>
+                  </div>
                 </div>
                 {% if block.settings.caption != blank %}
                   <div class="custom-image-column--block-graph-caption">
                     {{ block.settings.caption }}
                   </div>
                 {% endif %}
-                <div class="custom-image-column--block-graph-values">
-                  <div class="custom-image-column--block-graph-value-1">
-                    {% if block.settings.graph_value_1 != blank %}
-                      <span class="custom-image-column--block-graph-mark"
-                        style="
-                        {% if block.settings.graph_color_1 !=blank %}background-color: {{ block.settings.graph_color_1 }};{% endif %}
-                        "
-                       ></span>
-                       <span class="custom-image-column--block-graph-value">
-                        {{ block.settings.graph_value_1 }}
-                      </span>
-                    {% endif %}
-                  </div>
-                  <div class="custom-image-column--block-graph-value-2">
-                    {% if block.settings.graph_value_2 != blank %}
-                      <span class="custom-image-column--block-graph-mark"
-                        style="
-                        {% if block.settings.graph_color_2 !=blank %}background-color: {{ block.settings.graph_color_2 }};{% endif %}
-                        "
-                       ></span>
-                       <span class="custom-image-column--block-graph-value">
-                        {{ block.settings.graph_value_2 }}
-                      </span>
-                    {% endif %}
-                  </div>
-                </div>
               </div>
       
             </div>
