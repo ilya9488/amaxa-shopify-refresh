@@ -8,51 +8,80 @@
         {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
         {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
       style="
-          {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 3);{% endif %}
-          {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
+        {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 3);{% endif %}
+        {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
       "
-  >
-
-    {% if section.settings.heading != blank %}
-      <h3 class="custom-image-column--title">
-        {{ section.settings.heading }}
-      </h3>
-    {% endif %}
-
-    {% if section.settings.description != blank %}
-      <div class="custom-image-column--description">
-        {{ section.settings.description }}
-      </div>
-    {% endif %}
-
-    {% if section.blocks.size > 0 %}
-      <div class="custom-image-column--blocks">
-        {% for block in section.blocks %}
-          <div class="custom-image-column--block-image">
-    
-            {% if block.settings.heading != blank %}
-              <h3 class="custom-image-column--block-title">
-                {{ block.settings.heading }}
-              </h3>
-            {% endif %}
-    
-            <div class="custom-image-column--block-image-wrap">
-              {% if block.settings.image != blank %}
-                <img
-                  class="custom-image-column--block-img"
-                  src="{{ block.settings.image | image_url: width: 500 }}"
-                  alt="{{ block.settings.image.alt | escape }}"
-                  width="600"
-                  height="{{ 500 | divided_by: block.settings.image.aspect_ratio | ceil }}"
-                  loading="lazy"
-                >
+   >
+    <div class="page-width">
+      {% if section.settings.heading != blank %}
+        <h3 class="custom-image-column--title">
+          {{ section.settings.heading }}
+        </h3>
+      {% endif %}
+  
+      {% if section.settings.description != blank %}
+        <div class="custom-image-column--description">
+          {{ section.settings.description }}
+        </div>
+      {% endif %}
+  
+      {% if section.blocks.size > 0 %}
+        <div class="custom-image-column--blocks">
+          {% for block in section.blocks %}
+            <div class="custom-image-column--block-image">
+      
+              {% if block.settings.heading != blank %}
+                <h3 class="custom-image-column--block-title">
+                  {{ block.settings.heading }}
+                </h3>
               {% endif %}
+              
+              <div class="custom-image-column--block-graph">
+                <div class="custom-image-column--block-image-wrap">
+                  {% if block.settings.image != blank %}
+                    <img
+                      class="custom-image-column--block-img"
+                      src="{{ block.settings.image | image_url: width: 500 }}"
+                      alt="{{ block.settings.image.alt | escape }}"
+                      width="600"
+                      height="{{ 500 | divided_by: block.settings.image.aspect_ratio | ceil }}"
+                      loading="lazy"
+                    >
+                  {% endif %}
+                </div>
+                <div class="custom-image-column--block-graph-values">
+                  <div class="custom-image-column--block-graph-value-1">
+                    {% if block.settings.graph_value_1 != blank %}
+                      <span class="custom-image-column--block-graph-mark"
+                        style="
+                        {% if block.settings.graph_color_1 !=blank %}background-color: {{ block.settings.graph_color_1 }};{% endif %}
+                        "
+                       ></span>
+                       <span class="custom-image-column--block-graph-value">
+                        {{ block.settings.graph_value_1 }}
+                      </span>
+                    {% endif %}
+                  </div>
+                  <div class="custom-image-column--block-graph-value-2">
+                    {% if block.settings.graph_value_2 != blank %}
+                      <span class="custom-image-column--block-graph-mark"
+                        style="
+                        {% if block.settings.graph_color_2 !=blank %}background-color: {{ block.settings.graph_color_2 }};{% endif %}
+                        "
+                       ></span>
+                       <span class="custom-image-column--block-graph-value">
+                        {{ block.settings.graph_value_2 }}
+                      </span>
+                    {% endif %}
+                  </div>
+                </div>
+              </div>
+      
             </div>
-    
-          </div>
-        {% endfor %}
-      </div>
-    {% endif %}
+          {% endfor %}
+        </div>
+      {% endif %}
+    </div>
 
   </section>
 {% endif %}
@@ -159,6 +188,27 @@
           "id": "image",
           "label": "Select image"
         },
+        {
+          "type": "text",
+          "id": "graph_value_1",
+          "label": "Graph Value 1"
+        },
+        {
+          "type": "color",
+          "id": "graph_color_1",
+          "label": "Graph Color 1"
+        },
+        {
+          "type": "text",
+          "id": "graph_value_2",
+          "label": "Graph Value 2"
+        },
+        {
+          "type": "color",
+          "id": "graph_color_2",
+          "label": "Graph Color 2"
+        },
+
       ]
     }
   ],
