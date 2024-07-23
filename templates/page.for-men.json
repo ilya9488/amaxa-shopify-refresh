@@ -54,7 +54,6 @@
       "block_order": [
         "page_A87qzM"
       ],
-      "disabled": true,
       "settings": {
         "image_clickable": false,
         "heading": "",
@@ -70,7 +69,8 @@
         "border_radius": 0,
         "margin_bottom_custom": 0,
         "background_image": "",
-        "background_container": ""
+        "background_container": "",
+        "show_dev_only": true
       }
     },
     "custom_product_hero_HQ77hR": {
