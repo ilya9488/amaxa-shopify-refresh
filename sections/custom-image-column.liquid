@@ -49,6 +49,11 @@
                     >
                   {% endif %}
                 </div>
+                {% if block.settings.caption != blank %}
+                  <div class="custom-image-column--block-graph-caption">
+                    {{ block.settings.caption }}
+                  </div>
+                {% endif %}
                 <div class="custom-image-column--block-graph-values">
                   <div class="custom-image-column--block-graph-value-1">
                     {% if block.settings.graph_value_1 != blank %}
@@ -187,6 +192,11 @@
           "type": "image_picker",
           "id": "image",
           "label": "Select image"
+        },
+        {
+          "type": "text",
+          "id": "caption",
+          "label": "Image Caption"
         },
         {
           "type": "text",
