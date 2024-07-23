@@ -91,11 +91,11 @@
       ],
       "disabled": true,
       "settings": {
-        "title": "олрлр",
+        "title": "Test title",
         "heading_size": "h1",
         "blocks_heading_size": "h1",
         "title_color": "#4770db",
-        "image_width": "third",
+        "image_width": "full",
         "image_ratio": "adapt",
         "columns_desktop": 2,
         "column_alignment": "center",
