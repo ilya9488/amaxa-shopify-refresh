@@ -45,19 +45,13 @@
         "page_A87qzM": {
           "type": "page",
           "settings": {
-            "image": "shopify:\/\/shop_images\/about-us-2.jpg",
-            "image_position": 50,
-            "button_label": "",
-            "button_url": ""
+            "image": "shopify:\/\/shop_images\/about-us-2.jpg"
           }
         },
         "page_jt6zHT": {
           "type": "page",
           "settings": {
-            "image": "shopify:\/\/shop_images\/about-us-1.jpg",
-            "image_position": 50,
-            "button_label": "",
-            "button_url": ""
+            "image": "shopify:\/\/shop_images\/about-us-1.jpg"
           }
         }
       },
@@ -66,20 +60,10 @@
         "page_jt6zHT"
       ],
       "settings": {
-        "image_clickable": false,
-        "heading": "",
-        "heading_size": "h1",
-        "button_type": "button--secondary",
-        "margin_top": "none",
+        "heading": "How does Miofolic Men work?",
+        "margin_top": "default",
         "margin_bottom": "none",
-        "container_height": "medium",
-        "box_shadow": true,
-        "full_width": true,
-        "offset_between_images": "none",
-        "border_between_images": false,
-        "border_radius": 0,
         "margin_bottom_custom": 0,
-        "background_image": "",
         "background_container": "",
         "show_dev_only": true
       }
