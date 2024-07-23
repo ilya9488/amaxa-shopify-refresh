@@ -25,22 +25,34 @@
       </div>
     {% endif %}
 
-    {% for block in section.blocks %}
-      <div class="custom-image-column--image">
-
-          {% if block.settings.image != blank %}
-            <img
-              class="custom-image-column--img"
-              src="{{ block.settings.image | image_url: width: 500 }}"
-              alt="{{ block.settings.image.alt | escape }}"
-              width="600"
-              height="{{ 500 | divided_by: block.settings.image.aspect_ratio | ceil }}"
-              loading="lazy"
-            >
-          {% endif %}
-
+    {% if section.blocks.size > 0 %}
+      <div class="custom-image-column--blocks">
+        {% for block in section.blocks %}
+          <div class="custom-image-column--block-image">
+    
+            {% if block.settings.heading != blank %}
+              <h3 class="custom-image-column--block-title">
+                {{ block.settings.heading }}
+              </h3>
+            {% endif %}
+    
+            <div class="custom-image-column--block-image-wrap">
+              {% if block.settings.image != blank %}
+                <img
+                  class="custom-image-column--block-img"
+                  src="{{ block.settings.image | image_url: width: 500 }}"
+                  alt="{{ block.settings.image.alt | escape }}"
+                  width="600"
+                  height="{{ 500 | divided_by: block.settings.image.aspect_ratio | ceil }}"
+                  loading="lazy"
+                >
+              {% endif %}
+            </div>
+    
+          </div>
+        {% endfor %}
       </div>
-    {% endfor %}
+    {% endif %}
 
   </section>
 {% endif %}
