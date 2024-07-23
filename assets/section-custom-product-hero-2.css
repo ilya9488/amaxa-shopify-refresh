@@ -50,7 +50,14 @@
 .custom-product-hero-2--content-top-wrap{
   padding: 28px 20px;
   background-position: center;
+  background-size: cover;
   background-repeat: no-repeat;
+  min-height: 380px;
+  display: flex;
+  align-items: center;
+}
+.custom-product-hero-2--content-top-wrap .page-width{
+  flex: 100%;
 }
 .custom-product-hero-2--content-bottom-wrap {
   display: flex;
