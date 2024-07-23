@@ -2,7 +2,7 @@
 
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
-  <div
+  <section
       id="Banner-{{ section.id }}"
       class="custom-image-column
         {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
@@ -12,22 +12,37 @@
           {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
       "
   >
+
+    {% if section.settings.heading != blank %}
+      <h3 class="custom-image-column--title">
+        {{ section.settings.heading }}
+      </h3>
+    {% endif %}
+
+    {% if section.settings.description != blank %}
+      <div class="custom-image-column--description">
+        {{ section.settings.description }}
+      </div>
+    {% endif %}
+
     {% for block in section.blocks %}
-      <div
-          class="custom-image-column--image"
-          style="
-            background-image: url('{{ block.settings.image  | img_url: 'original' }}');
-          ">
+      <div class="custom-image-column--image">
+
+          {% if block.settings.image != blank %}
+            <img
+              class="custom-image-column--img"
+              src="{{ block.settings.image | image_url: width: 500 }}"
+              alt="{{ block.settings.image.alt | escape }}"
+              width="600"
+              height="{{ 500 | divided_by: block.settings.image.aspect_ratio | ceil }}"
+              loading="lazy"
+            >
+          {% endif %}
 
       </div>
     {% endfor %}
 
-    {% if section.settings.heading != blank %}
-      <h1 class="custom-image-column--title">
-        {{ section.settings.heading }}
-      </h1>
-    {% endif %}
-  </div>
+  </section>
 {% endif %}
 
 {% schema %}
@@ -40,7 +55,11 @@
       "id": "heading",
       "label": "Heading"
     },
-
+    {
+      "type": "richtext",
+      "id": "description",
+      "label": "Description"
+    },
     {
       "type": "select",
       "id": "margin_top",
@@ -118,6 +137,11 @@
       "name": "Image block",
       "limit": 2,
       "settings": [
+        {
+          "type": "inline_richtext",
+          "id": "heading",
+          "label": "Heading"
+        },
         {
           "type": "image_picker",
           "id": "image",
