@@ -81,27 +81,88 @@
         "show_dev_only": false
       }
     },
-    "custom_product_hero_HQ77hR": {
-      "type": "custom-product-hero",
-      "disabled": true,
+    "custom_image_column_JC3zfD": {
+      "type": "custom-image-column",
+      "blocks": {
+        "page_9fiVaJ": {
+          "type": "page",
+          "settings": {
+            "heading": "<strong>Increases testosterone levels  1<\/strong>",
+            "image": "shopify:\/\/shop_images\/Graf1_8bbc8aa1-b70b-4897-bd45-e3da6d3099e1.svg",
+            "caption": "Testosterone pg\/ml",
+            "graph_value_1": "Before taking the medication",
+            "graph_color_1": "#c6e3f8",
+            "graph_value_2": "After 3 months of taking the medication, MI",
+            "graph_color_2": "#1f5ba5"
+          }
+        },
+        "page_7ndNxn": {
+          "type": "page",
+          "settings": {
+            "heading": "<strong>Normalises metabolic status 1<\/strong>",
+            "image": "shopify:\/\/shop_images\/Graf2_8f94cace-538c-431d-8817-57b537ffc8de.svg",
+            "caption": "Insulin resistance index (HOMA-IR)",
+            "graph_value_1": "Before taking the medication",
+            "graph_color_1": "#c6e3f8",
+            "graph_value_2": "Before taking the medication",
+            "graph_color_2": "#1f5ba5"
+          }
+        }
+      },
+      "block_order": [
+        "page_9fiVaJ",
+        "page_7ndNxn"
+      ],
       "settings": {
-        "header_list": "<ul><li>Supports reproductive health<\/li><li>Promotes a healthy pregnancy<\/li><li>Recommended in PCOS cases<\/li><\/ul>",
-        "top_subtitle": "Start life right with the proper supplements",
-        "product_img": "shopify:\/\/shop_images\/miofolic_side_eng_180424.png",
-        "heading": "<p>Nurturing <\/p><p><em>Nutrition <\/em>for <\/p><p>Women<\/p>",
-        "heading_size": "h1",
-        "button_label": "Buy Now",
-        "button_type": "button--border-pink",
-        "button_url": "shopify:\/\/products\/miofolic",
-        "right_img": "shopify:\/\/shop_images\/screen_2x_e491953d-20f4-4474-b43d-f46ee11978cb.webp",
-        "text": "Miofolic supports overall well-being during pregnancy planning and beyond. This innovative complex combines the benefits of Myo-inositol, 4th Generation Folic Acid, and Vitamin B12, providing comprehensive support for women aiming to conceive and maintain a healthy pregnancy.",
-        "margin_top": "none",
-        "margin_bottom": "none",
+        "heading": "How does Miofolic Men work?",
+        "description": "<p>Miofolic Men helps maintain hormonal balance and male reproductive function. Its actions are based on the synergistic effect of its components. Miofolic Men increases testosterone levels, normalises metabolic status and improves spermatogenesis (the production of sperm cells).  <\/p><p>Miofolic Men helps relieve erectile dysfunction and related symptoms.<\/p>",
+        "margin_top": "default",
+        "margin_bottom": "default",
         "margin_bottom_custom": 0,
-        "container_height": "small",
-        "background_size": "cover",
-        "background_color": "#eee3d8",
+        "background_container": "",
         "show_dev_only": false
+      }
+    },
+    "custom_image_column_6hDkeR": {
+      "type": "custom-image-column",
+      "blocks": {
+        "page_3kLief": {
+          "type": "page",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/2024-07-24-16-20-38.gif",
+            "caption": "",
+            "graph_value_1": "",
+            "graph_color_1": "",
+            "graph_value_2": "",
+            "graph_color_2": ""
+          }
+        },
+        "page_9MLJaW": {
+          "type": "page",
+          "settings": {
+            "heading": "",
+            "image": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424-1.png",
+            "caption": "",
+            "graph_value_1": "",
+            "graph_color_1": "",
+            "graph_value_2": "",
+            "graph_color_2": ""
+          }
+        }
+      },
+      "block_order": [
+        "page_3kLief",
+        "page_9MLJaW"
+      ],
+      "settings": {
+        "heading": "How does Miofolic Men work?",
+        "description": "<p>Miofolic Men helps maintain hormonal balance and male reproductive function. Its actions are based on the synergistic effect of its components. Miofolic Men increases testosterone levels, normalises metabolic status and improves spermatogenesis (the production of sperm cells).  <\/p><p>Miofolic Men helps relieve erectile dysfunction and related symptoms.<\/p>",
+        "margin_top": "default",
+        "margin_bottom": "default",
+        "margin_bottom_custom": 0,
+        "background_container": "",
+        "show_dev_only": true
       }
     }
   },
@@ -109,6 +170,7 @@
     "main",
     "custom_product_hero_2_F3eUjR",
     "custom_image_column_WYETM4",
-    "custom_product_hero_HQ77hR"
+    "custom_image_column_JC3zfD",
+    "custom_image_column_6hDkeR"
   ]
 }
