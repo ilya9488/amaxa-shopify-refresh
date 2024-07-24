@@ -41,7 +41,9 @@
                   <div class="custom-image-column--block-image-wrap">
                     {% if block.settings.image != blank %}
                       <img
-                        class="custom-image-column--block-img"
+                        class="custom-image-column--block-img 
+                          {% if block.settings.graph_value_1 != blank or block.settings.graph_value_2 != blank %}has-graph-values{% endif %}
+                        "
                         src="{{ block.settings.image | image_url: width: 500 }}"
                         alt="{{ block.settings.image.alt | escape }}"
                         width="600"
