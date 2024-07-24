@@ -134,7 +134,7 @@
         "margin_top": "default",
         "margin_bottom": "default",
         "margin_bottom_custom": 0,
-        "background_container": "",
+        "background_container": "#eff0f5",
         "show_dev_only": true
       }
     }
