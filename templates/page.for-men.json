@@ -145,7 +145,7 @@
         "padding_top": "default",
         "padding_bottom": "default",
         "background_container": "#f5f5f5",
-        "show_dev_only": true
+        "show_dev_only": false
       }
     }
   },
