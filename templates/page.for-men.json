@@ -148,7 +148,7 @@
         "description_text_size": "middle",
         "description_alignment": "center",
         "margin_top": "default",
-        "margin_bottom": "default",
+        "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "padding_top": "default",
         "padding_bottom": "default",
