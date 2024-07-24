@@ -22,7 +22,11 @@
       {% endif %}
   
       {% if section.settings.description != blank %}
-        <div class="custom-image-column--description" style="
+        <div class="
+          custom-image-column--description
+          {% if section.settings.description_text_size != 'none' %} {{ section.settings.description_text_size }} {% endif %}
+         "
+         style="
           text-align: {{ section.settings.description_alignment }};
          ">
           {{ section.settings.description }}
@@ -113,6 +117,21 @@
       "type": "richtext",
       "id": "description",
       "label": "Description"
+    },
+    {
+      "type": "select",
+      "id": "description_text_size",
+      "label": "Description size",
+      "options": [
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        }
+      ]
     },
     {
       "type": "text_alignment",

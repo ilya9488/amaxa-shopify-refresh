@@ -18,6 +18,17 @@
   margin-bottom: 40px;
 
 }
+.custom-image-column--description{
+  color: #444;
+}
+.custom-image-column--description.default{
+  font-size: 16px;
+  line-height: 24px;
+}
+.custom-image-column--description.middle{
+  font-size: 20px;
+  line-height: 30px;
+}
 
 /* Offsets */
 .custom-image-column.margin-top--default {
@@ -40,22 +51,22 @@
 }
 
 .custom-image-column.padding-top--default {
-  padding-top: var(--section-margin-block-start);
+  padding-top: calc(var(--section-margin-block-start) / 2);
 }
 .custom-image-column.padding-top--middle {
-  padding-top: var(--section-margin-block-start-middle);
+  padding-top: calc(var(--section-margin-block-start-middle) / 2);
 }
 .custom-image-column.padding-top--big {
-  padding-top: var(--section-margin-block-start-big);
+  padding-top: calc(var(--section-margin-block-start-big) / 2);
 }
 .custom-image-column.padding-bottom--default {
-  padding-bottom: var(--section-margin-block-end);
+  padding-bottom: calc(var(--section-margin-block-end) / 2);
 }
 .custom-image-column.padding-bottom--middle {
-  padding-bottom: var(--section-margin-block-end-middle);
+  padding-bottom: calc(var(--section-margin-block-end-middle) / 2);
 }
 .custom-image-column.padding-bottom--big {
-  padding-bottom: var(--section-margin-block-end-big);
+  padding-bottom: calc(var(--section-margin-block-end-big) / 2);
 }
 
 .custom-image-column--blocks{
