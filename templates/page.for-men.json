@@ -120,7 +120,7 @@
         "margin_bottom": "default",
         "margin_bottom_custom": 0,
         "background_container": "",
-        "show_dev_only": true
+        "show_dev_only": false
       }
     }
   },
