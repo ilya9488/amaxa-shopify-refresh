@@ -5,6 +5,8 @@
   <section
       id="Banner-{{ section.id }}"
       class="custom-image-column
+        {% if section.settings.padding_top != 'none' %} padding-top--{{ section.settings.padding_top }} {% endif %}
+        {% if section.settings.padding_bottom != 'none' %} padding-bottom--{{ section.settings.padding_bottom }} {% endif %}"
         {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
         {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
       style="
@@ -12,7 +14,7 @@
         {% if section.settings.background_container !=blank %}background-color: {{ section.settings.background_container }};{% endif %}
       "
    >
-    <div class="page-width">
+    <div class="custom-image-column-wrap">
       {% if section.settings.heading != blank %}
         <h3 class="custom-image-column--title">
           {{ section.settings.heading }}
@@ -166,7 +168,6 @@
       ],
       "default": "none"
     },
-
     {
       "type": "range",
       "id": "margin_bottom_custom",
@@ -177,6 +178,54 @@
       "label": "Margin bottom custom"
     },
 
+    {
+      "type": "select",
+      "id": "padding_top",
+      "label": "Padding top",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "padding_bottom",
+      "label": "Padding bottom",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
     {
       "type": "color",
       "id": "background_container",
