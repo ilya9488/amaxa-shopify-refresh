@@ -82,7 +82,11 @@
         "padding_top": "none",
         "padding_bottom": "none",
         "background_container": "",
-        "show_dev_only": false
+        "show_dev_only": false,
+        "background_bottom_content": "",
+        "button_link": "",
+        "button_label": "",
+        "button_type": "button--border-blue"
       }
     },
     "custom_image_column_6hDkeR": {
@@ -128,7 +132,11 @@
         "padding_top": "none",
         "padding_bottom": "none",
         "background_container": "",
-        "show_dev_only": false
+        "show_dev_only": false,
+        "background_bottom_content": "",
+        "button_link": "",
+        "button_label": "",
+        "button_type": "button--border-blue"
       }
     },
     "custom_image_column_d3z3De": {
@@ -145,7 +153,11 @@
         "padding_top": "default",
         "padding_bottom": "default",
         "background_container": "#f5f5f5",
-        "show_dev_only": false
+        "show_dev_only": false,
+        "background_bottom_content": "#eee3d8",
+        "button_link": "shopify:\/\/products\/miofolic-men",
+        "button_label": "Explore Fertility Factors",
+        "button_type": "button--border-blue"
       }
     }
   },
