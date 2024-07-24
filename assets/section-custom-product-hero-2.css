@@ -230,6 +230,10 @@
 
 
 @media (max-width: 650px) {
+  .custom-product-hero-2--content-top-wrap{
+    background-position-x: 75%;
+    min-height: 250px;
+  }
   .custom-product-hero-2--content-bottom-wrap{
     flex-wrap: wrap-reverse;
   }
@@ -241,4 +245,5 @@
   .custom-product-hero-2--top-subtitle{
     font-size: 20px;
   }
+
 }
