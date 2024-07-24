@@ -16,7 +16,12 @@
   line-height: 40px;
   font-weight: 600;
   margin-bottom: 40px;
-
+}
+.custom-image-column--block-icon-heading{
+  height: 60px;
+  position: relative;
+  top: 20px;
+  width: 60px;
 }
 .custom-image-column--description{
   color: #444;

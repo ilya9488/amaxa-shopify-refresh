@@ -17,6 +17,16 @@
     <div class="custom-image-column-wrap">
       {% if section.settings.heading != blank %}
         <h3 class="custom-image-column--title">
+          {% if section.settings.icon_heading != blank %}
+            <img
+              class="custom-image-column--block-icon-heading"
+              src="{{ section.settings.icon_heading | image_url: width: 60 }}"
+              alt="{{ section.settings.icon_heading.alt | escape }}"
+              width="60"
+              height="{{ 60 | divided_by: section.settings.icon_heading.aspect_ratio | ceil }}"
+              loading="lazy"
+            >
+          {% endif %}
           {{ section.settings.heading }}
         </h3>
       {% endif %}
@@ -40,16 +50,6 @@
       
               {% if block.settings.heading != blank %}
                 <h3 class="custom-image-column--block-title">
-                  {% if block.settings.icon_heading != blank %}
-                    <img
-                      class="custom-image-column--block-icon-heading"
-                      src="{{ block.settings.icon_heading | image_url: width: 60 }}"
-                      alt="{{ block.settings.icon_heading.alt | escape }}"
-                      width="60"
-                      height="{{ 60 | divided_by: block.settings.icon_heading.aspect_ratio | ceil }}"
-                      loading="lazy"
-                    >
-                  {% endif %}
                   {{ block.settings.heading }}
                 </h3>
               {% endif %}
