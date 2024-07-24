@@ -122,12 +122,25 @@
         "background_container": "",
         "show_dev_only": false
       }
+    },
+    "custom_image_column_d3z3De": {
+      "type": "custom-image-column",
+      "settings": {
+        "heading": "Take Miofolic Men 2 sachets a day for 3-6 months",
+        "description": "<p><strong>Please note that spermatogenesis takes 74 days to occur.<\/strong><\/p><p><strong>Results should be evaluated no earlier than after two and half months after the start of treatment.<\/strong><\/p>",
+        "margin_top": "default",
+        "margin_bottom": "default",
+        "margin_bottom_custom": 0,
+        "background_container": "",
+        "show_dev_only": true
+      }
     }
   },
   "order": [
     "main",
     "custom_product_hero_2_F3eUjR",
     "custom_image_column_WYETM4",
-    "custom_image_column_6hDkeR"
+    "custom_image_column_6hDkeR",
+    "custom_image_column_d3z3De"
   ]
 }
