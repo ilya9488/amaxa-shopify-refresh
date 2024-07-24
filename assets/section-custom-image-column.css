@@ -17,9 +17,16 @@
   margin-bottom: 40px;
 
 }
-.custom-image-column--description{
-  /*  */
+.custom-about-us.margin-bottom--default {
+  margin-block-end: var(--section-margin-block-end);
 }
+.custom-about-us.margin-bottom--middle {
+  margin-block-end: var(--section-margin-block-end-middle);
+}
+.custom-about-us.margin-bottom--big {
+  margin-block-end: var(--section-margin-block-end-big);
+}
+
 .custom-image-column--blocks{
   display: flex;
   gap: 30px;
