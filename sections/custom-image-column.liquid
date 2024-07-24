@@ -20,7 +20,9 @@
       {% endif %}
   
       {% if section.settings.description != blank %}
-        <div class="custom-image-column--description">
+        <div class="custom-image-column--description" style="
+          text-align: {{ section.settings.description_alignment }};
+         ">
           {{ section.settings.description }}
         </div>
       {% endif %}
@@ -110,6 +112,12 @@
       "id": "description",
       "label": "Description"
     },
+    {
+      "type": "text_alignment",
+      "id": "description_alignment",
+      "label": "Description alignment",
+      "default": "left"
+    },   
     {
       "type": "select",
       "id": "margin_top",
