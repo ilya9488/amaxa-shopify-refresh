@@ -17,13 +17,24 @@
   margin-bottom: 40px;
 
 }
-.custom-about-us.margin-bottom--default {
+
+/* Offsets */
+.custom-image-column.margin-top--default {
+  margin-block-start: var(--section-margin-block-start);
+}
+.custom-image-column.margin-top--middle {
+  margin-block-start: var(--section-margin-block-start-middle);
+}
+.custom-image-column.margin-top--big {
+  margin-block-start: var(--section-margin-block-start-big);
+}
+.custom-image-column.margin-bottom--default {
   margin-block-end: var(--section-margin-block-end);
 }
-.custom-about-us.margin-bottom--middle {
+.custom-image-column.margin-bottom--middle {
   margin-block-end: var(--section-margin-block-end-middle);
 }
-.custom-about-us.margin-bottom--big {
+.custom-image-column.margin-bottom--big {
   margin-block-end: var(--section-margin-block-end-big);
 }
 
