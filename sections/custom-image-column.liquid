@@ -111,23 +111,24 @@
         </div>
       {% endif %}
 
+      <div class="custom-image-column-bottom-content"
+        style="
+          {% if section.settings.background_bottom_content !=blank %}background-color: {{ section.settings.background_bottom_content }};{% endif %}
+        "
+       >
+        <div class="custom-image-column-bottom-content-wrap">
+          {% if section.settings.button_url !=blank or section.settings.button_label !=blank %}
+            <div class="custom-image-column-btn-wrap">
+              <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+                {{ section.settings.button_label }}
+              </a>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      
     </div>
 
-    <div class="custom-image-column-bottom-content"
-      style="
-        {% if section.settings.background_bottom_content !=blank %}background-color: {{ section.settings.background_bottom_content }};{% endif %}
-      "
-     >
-      <div class="custom-image-column-bottom-content-wrap">
-        {% if section.settings.button_url !=blank or section.settings.button_label !=blank %}
-          <div class="custom-image-column-btn-wrap">
-            <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
-              {{ section.settings.button_label }}
-            </a>
-          </div>
-        {% endif %}
-      </div>
-    </div>
 
   </section>
 {% endif %}
