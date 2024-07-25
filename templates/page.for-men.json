@@ -154,7 +154,7 @@
         "padding_bottom": "default",
         "background_container": "#f5f5f5",
         "show_dev_only": false,
-        "background_bottom_content": "#eee3d8",
+        "background_bottom_content": "rgba(0,0,0,0)",
         "button_link": "shopify:\/\/products\/miofolic-men",
         "button_label": "Explore Fertility Factors",
         "button_type": "button--border-blue"
