@@ -62,7 +62,7 @@
             "caption": "Insulin resistance index (HOMA-IR)",
             "graph_value_1": "Before taking the medication",
             "graph_color_1": "#c6e3f8",
-            "graph_value_2": "Before taking the medication",
+            "graph_value_2": "After 3 months of taking the medication, MI",
             "graph_color_2": "#1f5ba5"
           }
         }
