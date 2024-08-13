@@ -36,9 +36,11 @@
 
     <div class="cart__warnings">
       <h1 class="cart__empty-text">{{ 'sections.cart.empty' | t }}</h1>
-      <a href="{{ routes.all_products_collection_url }}" class="button">
+      <a href="{{ routes.all_products_collection_url }}" class="button button--sand button">
         {{ 'general.continue_shopping' | t }}
       </a>
+      <br>
+      <br>
 
       {%- if shop.customer_accounts_enabled and customer == null -%}
         <h2 class="cart__login-title">{{ 'sections.cart.login.title' | t }}</h2>
