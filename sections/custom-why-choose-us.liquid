@@ -1,0 +1,224 @@
+{{ 'section-custom-why-choose-us.css' | asset_url | stylesheet_tag }}
+
+{% comment %} Dev Mode - condition {% endcomment %}
+{% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
+  <div
+      id="Banner-{{ section.id }}"
+      class="custom-why-choose-us
+  
+        {% if section.settings.container_min_height != blank %} custom-why-choose-us-height--{{ section.settings.container_min_height }}{% endif %}
+        {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
+        {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
+  
+      style="
+          {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: {{ section.settings.margin_bottom_custom }}px;{% endif %}
+          {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
+          {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
+      "
+    >
+
+    {% if section.settings.image != blank %}
+      <div class="custom-why-choose-us--img-wrap 
+              {% if section.settings.img_min_height != blank %} custom-why-choose-us-img--{{ section.settings.img_min_height }}{% endif %}
+           ">
+        <img
+          class="custom-why-choose-us--img"
+          style="
+            {% if section.settings.img_size !=blank %}object-fit: {{ section.settings.img_size }} {% endif %}
+          "
+          src="{{ section.settings.image | image_url: width: 500 }}"
+          alt="{{ section.settings.image.alt | escape }}"
+          width="500"
+          height="{{ 500 | divided_by: section.settings.image.aspect_ratio | ceil }}"
+          loading="lazy"
+        >
+      </div>
+    {% endif %}
+  
+    {% if section.settings.text != blank %}
+      <div class="custom-why-choose-us--text-wrap">
+        <p class="custom-why-choose-us--text {{ section.settings.text_size }}">
+          {{ section.settings.text | newline_to_br  }}
+        </p>
+      </div>
+    {% endif %}
+  
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Custom Why Choose Us",
+  "class": "section",
+  "settings": [
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color",
+      "default": "#E4DEEC"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image",
+      "label": "Background Image"
+    },
+    
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Image"
+    },
+    {
+      "type": "select",
+      "id": "img_min_height",
+      "label": "Image Size",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "select",
+      "id": "img_size",
+      "label": "Image Size Type",
+      "options": [
+        {
+          "value": "cover",
+          "label": "Cover"
+        },
+        {
+          "value": "contain",
+          "label": "Contain"
+        }
+      ],
+      "default": "cover"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Text"
+    },
+    {
+      "type": "select",
+      "id": "text_size",
+      "options": [
+        {
+          "value": "large",
+          "label": "Large"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "small",
+          "label": "Small"
+        }
+      ],
+      "default": "medium",
+      "label": "Text Size"
+    },
+    
+    {
+      "type": "select",
+      "id": "margin_top",
+      "label": "Margin top",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "margin_bottom",
+      "label": "Margin bottom",
+      "options": [
+        {
+          "value": "none",
+          "label": "none"
+        },
+        {
+          "value": "default",
+          "label": "default"
+        },
+        {
+          "value": "middle",
+          "label": "middle"
+        },
+        {
+          "value": "big",
+          "label": "big"
+        }
+      ],
+      "default": "none"
+    },
+    {
+      "type": "select",
+      "id": "container_min_height",
+      "label": "Container Min Height",
+      "options": [
+        {
+          "value": "small",
+          "label": "Small"
+        },
+        {
+          "value": "medium",
+          "label": "Medium"
+        },
+        {
+          "value": "large",
+          "label": "Large"
+        }
+      ],
+      "default": "medium"
+    },
+    {
+      "type": "range",
+      "id": "margin_bottom_custom",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "default": 0,
+      "label": "Margin bottom custom"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_dev_only",
+      "default": false,
+      "label": "Show Dev Only"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Custom Why Choose Us"
+    }
+  ]
+}
+{% endschema %}
+
