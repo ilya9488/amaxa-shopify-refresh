@@ -121,7 +121,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "show_dev_only": false
       }
     },
     "multicolumn_wRDQfP": {
@@ -150,7 +151,6 @@
         "column_DB3dBV",
         "column_XB7QJg"
       ],
-      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -173,7 +173,8 @@
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
-        "padding_bottom": 36
+        "padding_bottom": 36,
+        "show_dev_only": true
       }
     }
   },
