@@ -123,12 +123,29 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "custom_why_choose_us_iCBR9K": {
+      "type": "custom-why-choose-us",
+      "settings": {
+        "background_color": "#E4DEEC",
+        "image": "shopify:\/\/shop_images\/Miofolic-MEN.png",
+        "img_min_height": "medium",
+        "img_size": "cover",
+        "text": "",
+        "text_size": "medium",
+        "margin_top": "none",
+        "margin_bottom": "none",
+        "container_min_height": "medium",
+        "margin_bottom_custom": 0,
+        "show_dev_only": true
+      }
     }
   },
   "order": [
     "custom_product_hero_2_F3eUjR",
     "main",
     "custom_product_hero_HQ77hR",
-    "multicolumn_R4FVma"
+    "multicolumn_R4FVma",
+    "custom_why_choose_us_iCBR9K"
   ]
 }
