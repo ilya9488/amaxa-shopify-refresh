@@ -123,12 +123,65 @@
         "padding_top": 36,
         "padding_bottom": 36
       }
+    },
+    "multicolumn_wRDQfP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_DB3dBV": {
+          "type": "column",
+          "settings": {
+            "title": "Scientifically Backed Ingredients:",
+            "text": "<ul><li>Myo-inositol (2000 mg per sachet): Clinically proven to restore insulin sensitivity, regulate hormonal parameters, and support regular menstrual cycles.<\/li><li>4th Generation Folic Acid (200 mcg per sachet): A highly bioavailable form of folic acid that supports cell creation, reduces homocysteine levels, and prevents common pregnancy-related defects.<\/li><li>Vitamin B12 (2.5 mcg per sachet): Enhances folic acid absorption, boosts immunity, and maintains healthy energy metabolism.<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XB7QJg": {
+          "type": "column",
+          "settings": {
+            "title": "Key Benefits:",
+            "text": "<ul><li>Miofolic helps normalize hormonal balance.<\/li><li>Supports Healthy Pregnancy: Miofolic promotes a safer and healthier pregnancy journey.<\/li><li>Recommended for PCOS: Miofolic effectively addresses symptoms of Polycystic Ovary Syndrome (PCOS), such as irregular ovulation, acne, and hirsutism, while also aiding in weight management.<\/li><\/ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DB3dBV",
+        "column_XB7QJg"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "blocks_heading_size": "h2",
+        "title_color": "#aa0f71",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "custom_bg_color": "linear-gradient(54deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 100%)",
+        "blocks_border": true,
+        "blocks_border_color": "#ffc6dc",
+        "border_width": 2,
+        "border_radius": 0,
+        "img_border_radius": 0,
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "scheme-daf2c28c-38cb-495d-a9fe-e642e0b63801",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
     "custom_product_hero_2_F3eUjR",
     "main",
     "custom_product_hero_HQ77hR",
-    "multicolumn_R4FVma"
+    "multicolumn_R4FVma",
+    "multicolumn_wRDQfP"
   ]
 }
