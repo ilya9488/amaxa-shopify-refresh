@@ -40,6 +40,7 @@
   --color-rgb-clear: 255, 255, 255;
   --color-pink: #C90091;
   --color-dark-pink: #CB007B;
+  --color-light-pink: #FFC6DC;
 
   --color-blue-500: #015AA5;
 
@@ -1761,7 +1762,7 @@ details[open] > .share-button__fallback {
   color: var(--color-pink);
   font-weight: 500;
   transition: all .4s;
-  border: 2px solid var(--color-dark-pink);
+  border: 2px solid var(--color-light-pink);
   min-width: 220px;
 }
 .button--border-pink::before,
@@ -1770,6 +1771,7 @@ details[open] > .share-button__fallback {
 }
 .button--border-pink:hover {
   background-color: var(--color-dark-pink);
+  border-color: var(--color-dark-pink);
   color: var(--color-clear);
 }
 
