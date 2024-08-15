@@ -99,6 +99,7 @@
         "column_x6p3ak",
         "column_EaAEz4"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -182,9 +183,9 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36,
-        "margin_top": 40,
-        "margin_bottom": 40,
-        "show_dev_only": true
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "show_dev_only": false
       }
     }
   },
