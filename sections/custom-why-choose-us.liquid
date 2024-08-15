@@ -1,6 +1,7 @@
 {{ 'section-custom-why-choose-us.css' | asset_url | stylesheet_tag }}
 <style> 
-{{ section.settings.heading_font | font_face }}
+  {{ section.settings.heading_font | font_face }}
+  {{ section.settings.text_font | font_face }}
 </style>
 
 {% comment %} Dev Mode - condition {% endcomment %}
@@ -21,22 +22,26 @@
       
       <div class="custom-why-choose-us--top">
         <div class="custom-why-choose-us--top-left-col">
-          <h2 class="custom-why-choose-us--title" 
-            style="
-              {% if section.settings.heading_font.family !=blank %}font-family: {{ section.settings.heading_font.family }};{% endif %}
-            "
-           >
-            {% if section.settings.top_title != blank %}
+          {% if section.settings.top_title != blank %}
+            <h2 class="custom-why-choose-us--title" 
+              style="
+                {% if section.settings.heading_font.family !=blank %}font-family: {{ section.settings.heading_font.family }};{% endif %}
+              "
+            >
               {{ section.settings.top_title | newline_to_br  }}
-            {% endif %}
-          </h2>
+            </h2>
+          {% endif %}
         </div>
         <div class="custom-why-choose-us--top-right-col">
-          <p class="custom-why-choose-us--top-right-col-text">
-            {% if section.settings.top_text != blank %}
+          {% if section.settings.top_text != blank %}
+            <p class="custom-why-choose-us--top-right-col-text"
+              style="
+                {% if section.settings.text_font.family !=blank %}font-family: {{ section.settings.text_font.family }};{% endif %}
+              "
+             >
               {{ section.settings.top_text | newline_to_br  }}
-            {% endif %}
-          </p>
+            </p>
+          {% endif %}
           
           {% if section.settings.top_image != blank %}
             <div class="custom-why-choose-us--top-img-wrap">
@@ -72,12 +77,20 @@
           <div class="custom-why-choose-us--bottom-right-col-wrap">
             <div class="custom-why-choose-us--bottom-right-text-wrap">
               {% if section.settings.bottom_title != blank %}
-                <h3 class="custom-why-choose-us--bottom-title">
+                <h3 class="custom-why-choose-us--bottom-title"
+                  style="
+                    {% if section.settings.heading_font.family !=blank %}font-family: {{ section.settings.heading_font.family }};{% endif %}
+                  "
+                 >
                   {{ section.settings.bottom_title | newline_to_br  }}
                 </h3>
               {% endif %}
               {% if section.settings.bottom_text != blank %}
-                <p class="custom-why-choose-us--bottom-right-col-text">
+                <p class="custom-why-choose-us--bottom-right-col-text"
+                  style="
+                    {% if section.settings.text_font.family !=blank %}font-family: {{ section.settings.text_font.family }};{% endif %}
+                  "
+                 >
                   {{ section.settings.bottom_text | newline_to_br  }}
                 </p>
               {% endif %}
@@ -143,12 +156,18 @@
       "type": "font_picker",
       "id": "heading_font",
       "label": "Heading font",
-      "default": "helvetica_n4"
+      "default": "inter_n4"
     },
     {
       "type": "textarea",
       "id": "top_text",
       "label": "Top Text"
+    },
+    {
+      "type": "font_picker",
+      "id": "text_font",
+      "label": "Text font",
+      "default": "inter_n4"
     },
     {
       "type": "image_picker",
