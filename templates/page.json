@@ -122,6 +122,8 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 0,
         "show_dev_only": false
       }
     },
@@ -174,6 +176,8 @@
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36,
+        "margin_top": 40,
+        "margin_bottom": 40,
         "show_dev_only": true
       }
     }
