@@ -1,4 +1,7 @@
 {{ 'section-custom-why-choose-us.css' | asset_url | stylesheet_tag }}
+<style> 
+{{ section.settings.heading_font | font_face }}
+</style>
 
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
@@ -20,7 +23,6 @@
         <div class="custom-why-choose-us--top-left-col">
           <h2 class="custom-why-choose-us--title" 
             style="
-              {{ section.settings.heading_font | font_face }}
               {% if section.settings.heading_font.family !=blank %}font-family: {{ section.settings.heading_font.family }};{% endif %}
             "
            >
