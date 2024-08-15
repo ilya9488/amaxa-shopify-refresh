@@ -18,7 +18,11 @@
 
       <div class="custom-why-choose-us--top">
         <div class="custom-why-choose-us--top-left-col">
-          <h2 class="custom-why-choose-us--title" style="font-family: {{ section.settings.heading_font | font_face }};">
+          <h2 class="custom-why-choose-us--title" 
+            style="
+              {% if section.settings.heading_font.family !=blank %}font-family: {{ section.settings.heading_font.family }};{% endif %}
+            "
+           >
             {% if section.settings.top_title != blank %}
               {{ section.settings.top_title | newline_to_br  }}
             {% endif %}
