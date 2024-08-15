@@ -99,6 +99,7 @@
         "column_x6p3ak",
         "column_EaAEz4"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -117,6 +118,9 @@
         "img_border_radius": 50,
         "button_label": "",
         "button_link": "",
+        "top_background": false,
+        "top_background_color": "#ffffff",
+        "top_background_height": 100,
         "color_scheme": "scheme-daf2c28c-38cb-495d-a9fe-e642e0b63801",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
@@ -171,14 +175,17 @@
         "img_border_radius": 0,
         "button_label": "",
         "button_link": "",
+        "top_background": true,
+        "top_background_color": "#ffffff",
+        "top_background_height": 100,
         "color_scheme": "scheme-daf2c28c-38cb-495d-a9fe-e642e0b63801",
         "columns_mobile": "1",
         "swipe_on_mobile": false,
         "padding_top": 36,
         "padding_bottom": 36,
-        "margin_top": 40,
-        "margin_bottom": 40,
-        "show_dev_only": true
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "show_dev_only": false
       }
     }
   },
