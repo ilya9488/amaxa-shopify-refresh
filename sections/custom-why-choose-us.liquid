@@ -20,6 +20,7 @@
         <div class="custom-why-choose-us--top-left-col">
           <h2 class="custom-why-choose-us--title" 
             style="
+              {{ section.settings.heading_font | font_face }}
               {% if section.settings.heading_font.family !=blank %}font-family: {{ section.settings.heading_font.family }};{% endif %}
             "
            >
