@@ -18,7 +18,7 @@
           {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
       "
     >
-
+      
       <div class="custom-why-choose-us--top">
         <div class="custom-why-choose-us--top-left-col">
           <h2 class="custom-why-choose-us--title" 
@@ -29,7 +29,6 @@
             {% if section.settings.top_title != blank %}
               {{ section.settings.top_title | newline_to_br  }}
             {% endif %}
-            Providing premium food supplements designed to enhance your life
           </h2>
         </div>
         <div class="custom-why-choose-us--top-right-col">
@@ -37,17 +36,16 @@
             {% if section.settings.top_text != blank %}
               {{ section.settings.top_text | newline_to_br  }}
             {% endif %}
-            With over 20 years of experience in the pharmaceutical field, we know how to create supplements that truly make a difference. Our deep knowledge and scientific approach ensure that every product we offer is both effective and safe.
           </p>
           
           {% if section.settings.top_image != blank %}
-            <div class="custom-why-choose-us--img-wrap ">
+            <div class="custom-why-choose-us--top-img-wrap">
               <img
                 class="custom-why-choose-us--top-img"
                 src="{{ section.settings.top_image | image_url: width: 500 }}"
                 alt="{{ section.settings.top_image.alt | escape }}"
                 width="500"
-                height="{{ 500 | divided_by: section.settings.image.aspect_ratio | ceil }}"
+                height="{{ 500 | divided_by: section.settings.top_image.aspect_ratio | ceil }}"
                 loading="lazy"
               >
             </div>
@@ -71,26 +69,27 @@
           {% endif %}
         </div>
         <div class="custom-why-choose-us--bottom-right-col">
-          <h3 class="custom-why-choose-us--bottom-title">
-            {% if section.settings.bottom_title != blank %}
-              {{ section.settings.bottom_title | newline_to_br  }}
+          <div class="custom-why-choose-us--bottom-right-col-wrap">
+            <div class="custom-why-choose-us--bottom-right-text-wrap">
+              {% if section.settings.bottom_title != blank %}
+                <h3 class="custom-why-choose-us--bottom-title">
+                  {{ section.settings.bottom_title | newline_to_br  }}
+                </h3>
+              {% endif %}
+              {% if section.settings.bottom_text != blank %}
+                <p class="custom-why-choose-us--bottom-right-col-text">
+                  {{ section.settings.bottom_text | newline_to_br  }}
+                </p>
+              {% endif %}
+            </div>  
+            {% if section.settings.button_label != blank %}
+              <div class="custom-product-hero--button">
+                <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+                  {{ section.settings.button_label }}
+                </a>
+              </div>
             {% endif %}
-            Get the edge you need.
-          </h3>
-          <p class="custom-why-choose-us--bottom-right-col-text">
-            {% if section.settings.bottom_text != blank %}
-              {{ section.settings.bottom_text | newline_to_br  }}
-            {% endif %}
-            At Amaxa,  we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible. 
-          </p>
-
-          {% if section.settings.button_label != blank %}
-            <div class="custom-product-hero--button">
-              <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
-                {{ section.settings.button_label }}
-              </a>
-            </div>
-          {% endif %}
+          </div>
 
           {% if section.settings.bottom_logo != blank %}
             <div class="custom-why-choose-us--bottom-logo-wrap ">
