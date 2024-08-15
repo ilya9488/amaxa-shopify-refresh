@@ -18,7 +18,7 @@
 
       <div class="custom-why-choose-us--top">
         <div class="custom-why-choose-us--top-left-col">
-          <h2 class="custom-why-choose-us--title">
+          <h2 class="custom-why-choose-us--title" style="font-family: {{ section.settings.heading_font | font_face }};">
             {% if section.settings.top_title != blank %}
               {{ section.settings.top_title | newline_to_br  }}
             {% endif %}
@@ -132,6 +132,12 @@
       "type": "textarea",
       "id": "top_title",
       "label": "Top Title"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "helvetica_n4"
     },
     {
       "type": "textarea",
