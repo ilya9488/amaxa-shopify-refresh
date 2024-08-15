@@ -122,8 +122,9 @@
     "custom_why_choose_us_iCBR9K": {
       "type": "custom-why-choose-us",
       "settings": {
-        "background_color": "#e4deec",
+        "background_color": "#f8f6f1",
         "top_title": "Providing premium food supplements designed to enhance your life",
+        "heading_font": "arapey_n4",
         "top_text": "With over 20 years of experience in the pharmaceutical field, we know how to create supplements that truly make a difference. Our deep knowledge and scientific approach ensure that every product we offer is both effective and safe.",
         "top_image": "shopify:\/\/shop_images\/about-us-2.jpg",
         "bottom_title": "Get the edge you need.",
