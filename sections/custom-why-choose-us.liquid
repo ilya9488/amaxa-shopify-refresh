@@ -6,7 +6,6 @@
       id="Banner-{{ section.id }}"
       class="custom-why-choose-us
   
-        {% if section.settings.container_min_height != blank %} custom-why-choose-us-height--{{ section.settings.container_min_height }}{% endif %}
         {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
         {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}"
   
@@ -17,31 +16,89 @@
       "
     >
 
-    {% if section.settings.image != blank %}
-      <div class="custom-why-choose-us--img-wrap 
-              {% if section.settings.img_min_height != blank %} custom-why-choose-us-img--{{ section.settings.img_min_height }}{% endif %}
-           ">
-        <img
-          class="custom-why-choose-us--img"
-          style="
-            {% if section.settings.img_size !=blank %}object-fit: {{ section.settings.img_size }} {% endif %}
-          "
-          src="{{ section.settings.image | image_url: width: 500 }}"
-          alt="{{ section.settings.image.alt | escape }}"
-          width="500"
-          height="{{ 500 | divided_by: section.settings.image.aspect_ratio | ceil }}"
-          loading="lazy"
-        >
+      <div class="custom-why-choose-us--top">
+        <div class="custom-why-choose-us--top-left-col">
+          <h2 class="custom-why-choose-us--title">
+            {% if section.settings.top_title != blank %}
+              {{ section.settings.top_title | newline_to_br  }}
+            {% endif %}
+            Providing premium food supplements designed to enhance your life
+          </h2>
+        </div>
+        <div class="custom-why-choose-us--top-right-col">
+          <p class="custom-why-choose-us--top-right-col-text">
+            {% if section.settings.top_text != blank %}
+              {{ section.settings.top_text | newline_to_br  }}
+            {% endif %}
+            With over 20 years of experience in the pharmaceutical field, we know how to create supplements that truly make a difference. Our deep knowledge and scientific approach ensure that every product we offer is both effective and safe.
+          </p>
+          
+          {% if section.settings.top_image != blank %}
+            <div class="custom-why-choose-us--img-wrap ">
+              <img
+                class="custom-why-choose-us--top-img"
+                src="{{ section.settings.top_image | image_url: width: 500 }}"
+                alt="{{ section.settings.top_image.alt | escape }}"
+                width="500"
+                height="{{ 500 | divided_by: section.settings.image.aspect_ratio | ceil }}"
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+        </div>
       </div>
-    {% endif %}
-  
-    {% if section.settings.text != blank %}
-      <div class="custom-why-choose-us--text-wrap">
-        <p class="custom-why-choose-us--text {{ section.settings.text_size }}">
-          {{ section.settings.text | newline_to_br  }}
-        </p>
+
+      <div class="custom-why-choose-us--bottom">
+        <div class="custom-why-choose-us--bottom-left-col">
+          {% if section.settings.bottom_image != blank %}
+            <div class="custom-why-choose-us--bottom-img-wrap ">
+              <img
+                class="custom-why-choose-us--bottom-img"
+                src="{{ section.settings.bottom_image | image_url: width: 500 }}"
+                alt="{{ section.settings.bottom_image.alt | escape }}"
+                width="500"
+                height="{{ 500 | divided_by: section.settings.image.aspect_ratio | ceil }}"
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+        </div>
+        <div class="custom-why-choose-us--bottom-right-col">
+          <h3 class="custom-why-choose-us--bottom-title">
+            {% if section.settings.bottom_title != blank %}
+              {{ section.settings.bottom_title | newline_to_br  }}
+            {% endif %}
+            Get the edge you need.
+          </h3>
+          <p class="custom-why-choose-us--bottom-right-col-text">
+            {% if section.settings.bottom_text != blank %}
+              {{ section.settings.bottom_text | newline_to_br  }}
+            {% endif %}
+            At Amaxa,  we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible. 
+          </p>
+
+          {% if section.settings.button_label != blank %}
+            <div class="custom-product-hero--button">
+              <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
+                {{ section.settings.button_label }}
+              </a>
+            </div>
+          {% endif %}
+
+          {% if section.settings.bottom_logo != blank %}
+            <div class="custom-why-choose-us--bottom-logo-wrap ">
+              <img
+                class="custom-why-choose-us--bottom-logo"
+                src="{{ section.settings.bottom_logo | image_url: width: 500 }}"
+                alt="{{ section.settings.bottom_logo.alt | escape }}"
+                width="500"
+                height="{{ 500 | divided_by: section.settings.image.aspect_ratio | ceil }}"
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+        </div>
       </div>
-    {% endif %}
   
   </div>
 {% endif %}
@@ -52,84 +109,104 @@
   "class": "section",
   "settings": [
     {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
       "type": "color",
       "id": "background_color",
       "label": "Background Color",
-      "default": "#E4DEEC"
+      "default": "#F8F6F1"
     },
     {
       "type": "image_picker",
       "id": "background_image",
       "label": "Background Image"
     },
-    
+
     {
-      "type": "image_picker",
-      "id": "image",
-      "label": "Image"
-    },
-    {
-      "type": "select",
-      "id": "img_min_height",
-      "label": "Image Size",
-      "options": [
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        }
-      ],
-      "default": "medium"
-    },
-    {
-      "type": "select",
-      "id": "img_size",
-      "label": "Image Size Type",
-      "options": [
-        {
-          "value": "cover",
-          "label": "Cover"
-        },
-        {
-          "value": "contain",
-          "label": "Contain"
-        }
-      ],
-      "default": "cover"
+      "type": "header",
+      "content": "Top Content"
     },
     {
       "type": "textarea",
-      "id": "text",
-      "label": "Text"
+      "id": "top_title",
+      "label": "Top Title"
+    },
+    {
+      "type": "textarea",
+      "id": "top_text",
+      "label": "Top Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "top_image",
+      "label": "Top Image"
+    },
+
+    {
+      "type": "header",
+      "content": "Bottom Content"
+    },
+    {
+      "type": "textarea",
+      "id": "bottom_title",
+      "label": "Top Title"
+    },
+    {
+      "type": "textarea",
+      "id": "bottom_text",
+      "label": "Top Text"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_image",
+      "label": "Bottom Image"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label"
     },
     {
       "type": "select",
-      "id": "text_size",
+      "id": "button_type",
+      "label": "Button type",
       "options": [
         {
-          "value": "large",
-          "label": "Large"
+          "value": "button--dark-gray",
+          "label": "Dark Gray"
         },
         {
-          "value": "medium",
-          "label": "Medium"
+          "value": "button--primary",
+          "label": "Primary"
         },
         {
-          "value": "small",
-          "label": "Small"
+          "value": "button--secondary",
+          "label": "Secondary"
+        },
+        {
+          "value": "button--primary_sm",
+          "label": "Primary - SM"
         }
       ],
-      "default": "medium",
-      "label": "Text Size"
+      "default": "button--dark-gray"
+    },
+    {
+      "type": "url",
+      "id": "button_url",
+      "label": "Button Link"
+    },
+    {
+      "type": "image_picker",
+      "id": "bottom_logo",
+      "label": "Bottom Logo"
     },
     
+    {
+      "type": "header",
+      "content": "Section Margins"
+    },
     {
       "type": "select",
       "id": "margin_top",
@@ -178,26 +255,7 @@
       ],
       "default": "none"
     },
-    {
-      "type": "select",
-      "id": "container_min_height",
-      "label": "Container Min Height",
-      "options": [
-        {
-          "value": "small",
-          "label": "Small"
-        },
-        {
-          "value": "medium",
-          "label": "Medium"
-        },
-        {
-          "value": "large",
-          "label": "Large"
-        }
-      ],
-      "default": "medium"
-    },
+    
     {
       "type": "range",
       "id": "margin_bottom_custom",
