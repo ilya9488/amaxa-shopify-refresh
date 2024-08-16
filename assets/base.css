@@ -1775,6 +1775,27 @@ details[open] > .share-button__fallback {
   color: var(--color-clear);
 }
 
+/* Button Dark Gray */
+.button--dark-gray {
+  border: none;
+  border-radius: 5px;
+  background-color: #303030;
+  color: #F8F6F1;
+  font-weight: 500;
+  transition: all .4s;
+  border: 2px solid #303030;
+  min-width: 220px;
+}
+.button--dark-gray::before,
+.button--dark-gray::after{
+  display: none !important;
+}
+.button--dark-gray:hover {
+  background-color: transparent;
+  border-color: #303030;
+  color: #303030;
+}
+
 /* Button Primary Blue */
 .button--border-blue {
   border: none;
