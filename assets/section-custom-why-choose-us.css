@@ -107,6 +107,10 @@
   height: 42px;
   width: auto;
 }
+.custom-why-choose-us--button{
+  display: flex;
+  justify-content: center;
+}
 
 @media (max-width: 1300px) {
   .custom-why-choose-us--top-right-col {
