@@ -6,11 +6,18 @@
 .multicolumn--top-bg:empty{
   display: block;
 }
-.multicolumn--bottom-bg,
+
 .multicolumn--top-bg{
   width: 100%;
   position: absolute;
   top: 0;
+  left: 0;
+  z-index: 0;
+}
+.multicolumn--bottom-bg {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
   left: 0;
   z-index: 0;
 }
