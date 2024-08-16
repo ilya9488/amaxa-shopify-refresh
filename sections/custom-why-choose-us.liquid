@@ -96,7 +96,11 @@
               {% endif %}
             </div>  
             {% if section.settings.button_label != blank %}
-              <div class="custom-product-hero--button">
+              <div class="custom-product-hero--button"
+                style="
+                    {% if section.settings.text_font.family !=blank %}font-family: {{ section.settings.text_font.family }};{% endif %}
+                  "
+               >
                 <a href="{{ section.settings.button_url }}" class="button {{ section.settings.button_type }}">
                   {{ section.settings.button_label }}
                 </a>
