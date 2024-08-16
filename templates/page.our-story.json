@@ -42,6 +42,7 @@
     },
     "custom_product_hero_HQ77hR": {
       "type": "custom-product-hero",
+      "disabled": true,
       "settings": {
         "header_list": "<ul><li>Supports reproductive health<\/li><li>Promotes a healthy pregnancy<\/li><li>Recommended in PCOS cases<\/li><\/ul>",
         "top_subtitle": "Start life right with the proper supplements",
@@ -88,6 +89,7 @@
         "column_CYyBYK",
         "column_EaAEz4"
       ],
+      "disabled": true,
       "settings": {
         "title": "",
         "heading_size": "h1",
@@ -141,7 +143,7 @@
         "margin_top": "none",
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
-        "show_dev_only": true
+        "show_dev_only": false
       }
     }
   },
