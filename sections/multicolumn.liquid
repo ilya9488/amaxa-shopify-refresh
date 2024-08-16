@@ -35,6 +35,14 @@
         "
       ></div>
     {% endif %}
+    {% if section.settings.bottom_background == true %}
+      <div class="multicolumn--bottom-bg"
+        style="
+          {% if section.settings.bottom_background_color !=blank %}background-color: {{ section.settings.bottom_background_color }};{% endif %}
+          {% if section.settings.bottom_background_height !=blank %}height: {{ section.settings.bottom_background_height }}px;{% endif %}
+        "
+      ></div>
+    {% endif %}
     <div
       class="page-width multicolumn-content section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
       {% if settings.animations_reveal_on_scroll %}
@@ -439,6 +447,28 @@
       "step": 2,
       "unit": "px",
       "label": "Top Background Height",
+      "default": 100
+    },
+    {
+      "type": "checkbox",
+      "id": "bottom_background",
+      "default": false,
+      "label": "Bottom Background"
+    },
+    {
+      "type": "color",
+      "id": "bottom_background_color",
+      "label": "Bottom Background Color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "bottom_background_height",
+      "min": 0,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "label": "Bottom Background Height",
       "default": 100
     },
     {

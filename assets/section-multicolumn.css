@@ -2,9 +2,11 @@
   position: relative;
 }
 
+.multicolumn--bottom-bg:empty,
 .multicolumn--top-bg:empty{
   display: block;
 }
+.multicolumn--bottom-bg,
 .multicolumn--top-bg{
   width: 100%;
   position: absolute;
