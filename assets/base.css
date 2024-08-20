@@ -1820,9 +1820,9 @@ details[open] > .share-button__fallback {
 /* Button Dark Label */
 .button--dark-label {
   border: none;
-  background-color: transparent;
+  background-color: rgba(var(--color-rgb-clear), .6);
   color: var(--color-grey-400);
-  font-size: 38px;
+  font-size: 24px;
   padding: 20px 30px;
   font-family: var(--font-heading-family) !important;
   font-weight: 300 !important;
@@ -1833,7 +1833,7 @@ details[open] > .share-button__fallback {
   display: none !important;
 }
 .button--dark-label:hover {
-  background-color: rgba(var(--color-rgb-clear), 0.8);
+  background-color: rgba(var(--color-rgb-clear), 0.9);
 }
 
 /* Swiper Arrows */
