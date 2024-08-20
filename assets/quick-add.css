@@ -90,6 +90,20 @@
   width: 100%;
 }
 
+.quick-add-modal__content-info .media > *:not(.zoom):not(.deferred-media__poster-button) {
+  width: calc(100% - 40px);
+  max-width: 500px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+@media screen and (max-width: 900px) {
+  .quick-add-modal__content-info .product-media-container.constrain-height .media {
+    /* padding-top: calc(100vw / 1.5); */
+    margin-bottom: -10vw;
+  }
+}
 @media screen and (max-width: 749px) {
   quick-add-modal .slider .product__media-item.grid__item {
     margin-left: 1.5rem;
