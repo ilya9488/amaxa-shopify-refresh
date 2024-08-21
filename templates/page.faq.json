@@ -135,30 +135,21 @@
     "collapsible_content_46UPR7": {
       "type": "collapsible-content",
       "blocks": {
-        "collapsible_row_zA6zbR": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How Do I See The Progress Of My Vitabiotics order?",
-            "icon": "none",
-            "row_content": "<p>You can see the status and track your order by checking the tracking emails sent to you which have links to the live status of the orders, or by signing in to your account<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
-            "page": ""
-          }
-        },
         "collapsible_row_LGGaxL": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "I Need Help Placing An Order",
+            "heading": "I’m Having Trouble Placing an Order—What Should I Do? ",
             "icon": "none",
-            "row_content": "<p>If you are having trouble placing an order please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for advice.<\/p>",
+            "row_content": "<p>If you're experiencing difficulties while placing an order, please reach out to us at [our email] for assistance.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_n6NHNt": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What Do I Do If I Receive A Faulty \/ Incorrect Item?",
+            "heading": "What Should I Do If I Receive a Faulty or Incorrect Item? ",
             "icon": "none",
-            "row_content": "<p>In the rare event that you receive a faulty or incorrect item, please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for advice. You may be required to provide proof of delivery and \/ or photographic evidence.<\/p>",
+            "row_content": "<p>In the unlikely event that you receive a faulty or incorrect item, please contact us at info@amaxa-prime.com  for guidance. You may need to provide proof of delivery and\/or photographic evidence.<\/p>",
             "page": ""
           }
         },
@@ -191,7 +182,6 @@
         }
       },
       "block_order": [
-        "collapsible_row_zA6zbR",
         "collapsible_row_LGGaxL",
         "collapsible_row_n6NHNt",
         "collapsible_row_8dBUaM",
