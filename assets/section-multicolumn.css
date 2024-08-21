@@ -165,6 +165,14 @@
 }
 
 /* Typography */
+.multicolumn-card__info {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+.multicolumn-card__info .multicolumn-card__info-text {
+  margin: auto;
+}
 .multicolumn-card__info ul {
   padding-top: 10px;
   padding-left: 0;
