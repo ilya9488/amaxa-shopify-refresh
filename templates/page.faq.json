@@ -207,9 +207,9 @@
         "collapsible_row_xHfWni": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What Is Your Returns Policy?",
+            "heading": "How Do I Return Items? ",
             "icon": "none",
-            "row_content": "<p>Items can be returned if they are damaged, faulty, if we have made an error with the order, or if they are unwanted. Items need to be unopened (with any seals and shrink wrap intact) and in the original packaging. We can only accept the return of opened items if they are faulty.<\/p><p>If an item is no longer required, then you have 14 days to contact us regarding the return of the item(s) from the date of receiving the order. You then have 14 days to return your item(s). <\/p><p>If an item is damaged or faulty then you may be eligible for a refund up to 30 days after purchase. Between 30 days and six months, you're only entitled to a replacement, not a refund. <\/p><p>Photographic evidence may be requested to support your claim for damaged, faulty or missing items. We will then process refunds accordingly on receipt of the items back to us.<\/p>",
+            "row_content": "<p>Please follow these steps to ensure your refund is processed efficiently: <\/p><ol><li>Securely wrap the item in its original packaging along with all accompanying documentation. <\/li><li>Contact Customer Services at [our email] who will provide you with a freepost return address if your return is eligible under our returns policy. Please note that if customers pay for postage themselves, this cannot be refunded, as we offer a freepost system where postage is not required. <\/li><li>We will notify you via email once your refund has been processed. <\/li><\/ol><p>Please note that international orders are not eligible for free returns unless the items are faulty. <\/p>",
             "page": ""
           }
         },
