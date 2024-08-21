@@ -33,12 +33,13 @@
         "heading_n7teU4": {
           "type": "heading",
           "settings": {
-            "heading": "Delivery & Returns",
+            "heading": "T&C and Shipping",
             "heading_size": "h1"
           }
         },
         "text_RzWbdn": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>We understand that convenience and peace of mind are essential when shopping online. That's why we've designed our delivery and returns process with you in mind. On this page, you'll find all the information you need to ensure a smooth and hassle-free shopping experience. Whether you're curious about our delivery options or need guidance on returns, we've got you covered.<\/p>"
           }
@@ -48,14 +49,13 @@
         "heading_n7teU4",
         "text_RzWbdn"
       ],
-      "disabled": true,
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
         "color_scheme": "",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 52
+        "padding_top": 32,
+        "padding_bottom": 0
       }
     },
     "collapsible_content_Ht3UYR": {
