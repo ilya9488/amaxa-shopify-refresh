@@ -161,32 +161,12 @@
             "row_content": "<p>If your order has already been dispatched, it may be too late to change the delivery address. If the order is still being prepared, please contact us at [our email] for help. In some cases, we may need to cancel the order so that you can place it again with the correct details.<\/p>",
             "page": ""
           }
-        },
-        "collapsible_row_pVRKgA": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "What Does The 3 For 2 Offer Mean?",
-            "icon": "none",
-            "row_content": "<p>Purchase any three products across the Vitabiotics range and get the lowest priced one free. This does not apply to Subscribe & Save orders. Simply add at least any three items to your basket and the discount will be automatically calculated in your basket.<\/p><p>Remember you can choose any items across the website: for example, if you chose a Wellman Plus, Perfectil Original and a Wellkid Smart Chewable, you would get the Wellkid product for free, as this is the least expensive item.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_FVKYdw": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How Do I Use Voucher Codes?",
-            "icon": "none",
-            "row_content": "<p>To use a voucher code valid for Vitabiotics.com, simply enter the code when you see the ‘Enter Promo Code’ box in the checkout and press the ‘Apply’ button. Please note that voucher codes cannot be used at the same time as Vitabiotics<a href=\"https:\/\/www.vitabiotics.com\/pages\/rewards\">Rewards Points<\/a>nor with<a href=\"https:\/\/www.vitabiotics.com\/pages\/subscribe\">Subscribe & Save<\/a>orders. <\/p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
         "collapsible_row_LGGaxL",
         "collapsible_row_n6NHNt",
-        "collapsible_row_8dBUaM",
-        "collapsible_row_pVRKgA",
-        "collapsible_row_FVKYdw"
+        "collapsible_row_8dBUaM"
       ],
       "settings": {
         "caption": "",
@@ -209,18 +189,18 @@
         "collapsible_row_KCJzTQ": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "Can I Amend The Delivery Details For My Order?",
+            "heading": "Can I Change the Delivery Details for My Order? ",
             "icon": "none",
-            "row_content": "<p>If the order has been dispatched then it will be too late to amend your delivery address. If the order is still being prepared for dispatch please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for assistance. In some cases the order may be cancelled in order for you to place it again with the correct details.<\/p>",
+            "row_content": "<p>If your order has already been dispatched, it may be too late to change the delivery address. However, if the order is still being prepared for dispatch, please contact us at info@amaxa-prime.com  forassistance. In some cases, we may need to cancel the order so you can place it again with the correct details.<\/p>",
             "page": ""
           }
         },
         "collapsible_row_TyNrWf": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How do I Track my Order Delivery?",
+            "heading": "What Is Your Returns Policy? ",
             "icon": "none",
-            "row_content": "<p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status<a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one<a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
+            "row_content": "<p>You can return items if they are damaged, faulty, if there was an error with your order, or if they are unwanted. Items must be unopened, with any seals and shrink wrap intact, and in their original packaging. We can only accept the return of opened items if they are faulty. <\/p><p>If you no longer need an item, you have 14 days from the date you receive your order to contact us about returning it. You then have an additional 14 days to send the item(s) back to us. <\/p><p>For damaged or faulty items, you may be eligible for a refund up to 30 days after purchase. After 30 days and up to six months, you are entitled to a replacement rather than a refund. <\/p><p>We may request photographic evidence to support claims for damaged, faulty, or missing items. Refunds will be processed once we receive the returned items. <\/p>",
             "page": ""
           }
         },
@@ -250,51 +230,6 @@
             "row_content": "<p>Yes, Vitabiotics delivers to countries all over the world including America, Asia & Pacific, Europe, Middle East & Africa - you can see the list of countries we ship on our<a href=\"https:\/\/www.vitabiotics.com\/pages\/shipping-delivery\">International Shipping<\/a>page.<\/p>",
             "page": ""
           }
-        },
-        "collapsible_row_rd4CVK": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How Much Does Delivery Cost?",
-            "icon": "none",
-            "row_content": "<p>Standard UK delivery is free on all products. If you need your order sooner, then we offer an express option for an additional cost.<\/p><p>International delivery charges vary, the cost of shipping will be displayed at checkout upon placing your order. To see the countries we ship to, please see the <a href=\"https:\/\/www.vitabiotics.com\/pages\/shipping-delivery\">International Shipping<\/a> page.<\/p><p>We are unable to comment on any customs fees that may be applied by the destination country and these will be the customer's obligation, and are subject to change and local rules.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_D7NmnX": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do You Deliver To PO Box Addresses?",
-            "icon": "none",
-            "row_content": "<p>Yes we deliver to PO Box addresses.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_cCp8B4": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Do You Deliver To BFPO Addresses?",
-            "icon": "none",
-            "row_content": "<p>Yes we deliver to BFPO addresses.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_tMGpNK": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "Can You Deliver To My Workplace?",
-            "icon": "none",
-            "row_content": "<p>Yes we can deliver to workplaces but please check with your employer first.<\/p>",
-            "page": ""
-          }
-        },
-        "collapsible_row_Fb6UKb": {
-          "type": "collapsible_row",
-          "settings": {
-            "heading": "How Long Will My Vitabiotics Order Take?",
-            "icon": "none",
-            "row_content": "<p>Standard free delivery for UK orders is 3 - 5 working days. If you require your UK order sooner, then we offer an express delivery service for an additional fee. Delivery times may vary depending on the time of year and \/ or exceptional circumstances, such as around Black Friday week or the festive season and New year. <\/p><p>International delivery has a lead time of 10-12 working days.<\/p><p>Tracking and order status can be found in the delivery update emails sent at every stage of the process, or by signing in to your account to see the latest status <a href=\"https:\/\/www.vitabiotics.com\/account\/login\">here<\/a>. If you do not currently have an account, then you can create one <a href=\"https:\/\/www.vitabiotics.com\/account\/register\">here<\/a>.<\/p>",
-            "page": ""
-          }
         }
       },
       "block_order": [
@@ -302,12 +237,7 @@
         "collapsible_row_TyNrWf",
         "collapsible_row_xHfWni",
         "collapsible_row_7EbRUT",
-        "collapsible_row_JRXwg8",
-        "collapsible_row_rd4CVK",
-        "collapsible_row_D7NmnX",
-        "collapsible_row_cCp8B4",
-        "collapsible_row_tMGpNK",
-        "collapsible_row_Fb6UKb"
+        "collapsible_row_JRXwg8"
       ],
       "settings": {
         "caption": "",
@@ -400,6 +330,7 @@
         "collapsible_row_hGDwCT",
         "collapsible_row_f9W7pf"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "My Account",
@@ -491,6 +422,7 @@
         "collapsible_row_rqBxpF",
         "collapsible_row_zVc4Cz"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Subscribe & Save",
@@ -542,6 +474,7 @@
         "collapsible_row_iBPa9x",
         "collapsible_row_rATwRP"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Rewards Points",
@@ -663,6 +596,7 @@
         "collapsible_row_3UiPTW",
         "collapsible_row_x9xtxy"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Products",
@@ -744,6 +678,7 @@
         "collapsible_row_HqPUCC",
         "collapsible_row_N49NcM"
       ],
+      "disabled": true,
       "settings": {
         "caption": "",
         "heading": "Business",
