@@ -156,9 +156,9 @@
         "collapsible_row_8dBUaM": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "I Have Entered The Wrong Shipping Address, Can This Be Changed?",
+            "heading": "I Entered the Wrong Shipping Address—Can I Change It? ",
             "icon": "none",
-            "row_content": "<p>If the order has been dispatched then it will be too late to amend your delivery address. If the order is still being prepared for dispatch please contact<a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>for assistance. In some cases the order may be cancelled in order for you to place it again with the correct details.<\/p>",
+            "row_content": "<p>If your order has already been dispatched, it may be too late to change the delivery address. If the order is still being prepared, please contact us at [our email] for help. In some cases, we may need to cancel the order so that you can place it again with the correct details.<\/p>",
             "page": ""
           }
         },
