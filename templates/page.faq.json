@@ -47,9 +47,9 @@
         "collapsible_row_QEVVAN": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "What can be done about nausea and vomiting?",
+            "heading": "What can be done about nausea and vomiting? ",
             "icon": "none",
-            "row_content": "<p>Usually, nausea and vomiting resolve on their own after the fourth month of pregnancy. To reduce nausea and vomiting, avoid fatty foods and coffee. Eat often but in small portions. Consult a doctor in case of severe and repeated vomiting, since this condition can be so severe it can require in-patient treatment. With careful implementation of your doctor’s recommendations, problems with severe vomiting can be avoided<\/p>",
+            "row_content": "<p>Nausea and vomiting typically resolve on their own after the fourth month of pregnancy. To help alleviate these symptoms, avoid fatty foods and coffee. Eat small, frequent meals. If you experience severe or persistent vomiting, consult a doctor, as this condition may require inpatient treatment. Following your doctor's recommendations closely can help manage and avoid severe vomiting.<\/p>",
             "page": ""
           }
         },
