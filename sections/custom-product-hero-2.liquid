@@ -18,7 +18,7 @@
 
     <div class="custom-product-hero-2--content-top-wrap"
       style="
-        {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
+        {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | image_url: 'master' }}');{% endif %}
         {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
       "
      >
