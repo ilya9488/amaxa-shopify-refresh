@@ -216,9 +216,9 @@
         "collapsible_row_7EbRUT": {
           "type": "collapsible_row",
           "settings": {
-            "heading": "How Do I Return Items?",
+            "heading": "How Much Does Delivery Cost? ",
             "icon": "none",
-            "row_content": "<p>Please follow the steps below to enable us to process your refund efficiently:<\/p><p>1. Wrap the item securely in its original packaging with all accompanying documentation.<\/p><p>2. Contact Customer Services at <a href=\"mailto:customerservices@vitabiotics.com\">customerservices@vitabiotics.com<\/a>, who will provide you with a freepost return address providing you are able to return your order under the returns policy outlined above. If postage is paid by customers, this cannot be refunded as we have a freepost system where no postage is required.<\/p><p>3. We will notify you via e-mail when we have processed your refund.<\/p><p>Please note that international orders are not free to return, unless they are faulty.<\/p>",
+            "row_content": "<p>Standard UK delivery is free on all products. The delivery cost, if any, will be displayed at checkout.<\/p>",
             "page": ""
           }
         },
