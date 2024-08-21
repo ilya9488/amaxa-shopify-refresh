@@ -188,7 +188,17 @@
   color: var(--color-clear);
   /* border-radius: 35px; */
 }
+.custom-product-hero--text-wrap{
+  font-size: inherit;
+  color: inherit;
+}
 
+@media (max-width: 1700px) {
+  .custom-product-hero--text-wrap{
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1199px) {
   .custom-product-hero {
     min-height: auto;
