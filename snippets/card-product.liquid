@@ -11,6 +11,7 @@
   - extend_height: {Boolean} Card height extends to available container space. Default: true (optional)
   - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
   - show_quick_add: {Boolean} Show the quick add button.
+  - show_add_to_bag: {Boolean} Show the add to bag button.
   - section_id: {String} The ID of the section that contains this card.
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
@@ -65,14 +66,14 @@
               id="title-{{ section_id }}-{{ card_product.id }}"
             {% endif %}
           >
-            <a
+            {% comment %} <a
               href="{{ card_product.url }}"
               id="CardLink-{{ section_id }}-{{ card_product.id }}"
               class="full-unstyled-link"
               aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
-            >
+            > {% endcomment %}
               {{ card_product.title | escape }}
-            </a>
+            {% comment %} </a> {% endcomment %}
           </h3>
 
           {% comment %} <span>{{ product.metafields.custom.tablets }}</span> {% endcomment %}
@@ -230,6 +231,17 @@
             {%- endif -%}
           </div>
         {%- endif -%}
+
+        {%- if show_add_to_bag -%}
+          <a href="{{ card_product.url }}"
+            id="CardLink-{{ section_id }}-{{ card_product.id }}"
+            class="button button--full-width button--secondary button--secondary_sm"
+            aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
+          >
+            Add to bag
+          </a>
+        {%- endif -%}
+
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span
