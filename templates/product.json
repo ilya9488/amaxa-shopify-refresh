@@ -105,7 +105,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Collapsible row",
-            "icon": "check_mark",
+            "icon": "chat_bubble",
             "content": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere quaerat, quisquam fuga libero cumque minima alias facilis voluptatibus porro provident iusto dolorum quo. Maxime explicabo nam expedita doloribus iure.<\/p>",
             "page": ""
           }
