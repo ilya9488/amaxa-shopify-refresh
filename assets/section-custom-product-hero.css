@@ -193,10 +193,13 @@
   color: inherit;
 }
 
-@media (max-width: 1700px) {
+@media (max-width: 1600px) {
   .custom-product-hero--text-wrap{
-    max-width: 800px;
+    max-width: 80%;
     margin: 0 auto;
+  }
+  .custom-product-hero--text-wrap br{
+    display: none;
   }
 }
 @media (max-width: 1199px) {
@@ -225,6 +228,9 @@
     --custom-product-hero-title-font-size-base: 4.1rem;
   }
 
+  .custom-product-hero--text-wrap{
+    max-width: none;
+  }
 }
 
 @media (max-width: 990px) {
