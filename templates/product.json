@@ -91,6 +91,24 @@
             "content": "{{ product.metafields.custom.accordion_delivery_returns | metafield_tag }}",
             "page": ""
           }
+        },
+        "collapsible_tab_hYe7zj": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere quaerat, quisquam fuga libero cumque minima alias facilis voluptatibus porro provident iusto dolorum quo. Maxime explicabo nam expedita doloribus iure.<\/p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_KWwiXX": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Collapsible row",
+            "icon": "check_mark",
+            "content": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere quaerat, quisquam fuga libero cumque minima alias facilis voluptatibus porro provident iusto dolorum quo. Maxime explicabo nam expedita doloribus iure.<\/p>",
+            "page": ""
+          }
         }
       },
       "block_order": [
@@ -105,7 +123,9 @@
         "buy_buttons",
         "discount_delivery_4iJbxL",
         "collapsible_tab_DNNwxf",
-        "collapsible_tab_NiDBEb"
+        "collapsible_tab_NiDBEb",
+        "collapsible_tab_hYe7zj",
+        "collapsible_tab_KWwiXX"
       ],
       "settings": {
         "color_page": "#ffffff",
