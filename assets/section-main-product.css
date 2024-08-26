@@ -1828,7 +1828,7 @@ a.product__text {
 .product__info-wrapper {
   background-color: white;
   /* width: fit-content; */
-  border: 1px solid #f6f6f6;
+  /* border: 1px solid #f6f6f6; */
   border-radius: 10px;
 }
 
