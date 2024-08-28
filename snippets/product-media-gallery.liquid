@@ -29,54 +29,6 @@
           </div>
         {%- endunless -%}
       {%- endfor -%}
-      {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          <div class="swiper-slide">
-            {%- assign media_position = media_position | default: 0 | plus: 1 -%}
-            {%- if media.media_type == 'image' -%}
-              <div class="swiper-slide-wrap" onmousemove="zoom(event)" style="background-image: url({{ media | img_url: '1024x1024' }})">
-                <img src="{{ media | img_url: '1024x1024' }}" alt="{{ media.alt | escape }}" />
-              </div>
-            {%- endif -%}
-            {%- if media.media_type == 'video' -%}
-              <video controls>
-                <source src="{{ media | video_url }}" type="{{ media.video_type }}">
-                Your browser does not support the video tag.
-              </video>
-            {%- endif -%}
-            {%- if media.media_type == 'external_video' -%}
-              <iframe src="{{ media | external_video_url }}" frameborder="0" allowfullscreen></iframe>
-            {%- endif -%}
-            {%- if media.media_type == 'model' -%}
-              <model-viewer src="{{ media | model_3d_url }}" alt="{{ media.alt | escape }}" auto-rotate camera-controls></model-viewer>
-            {%- endif -%}
-          </div>
-        {%- endunless -%}
-      {%- endfor -%}
-      {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          <div class="swiper-slide">
-            {%- assign media_position = media_position | default: 0 | plus: 1 -%}
-            {%- if media.media_type == 'image' -%}
-              <div class="swiper-slide-wrap" onmousemove="zoom(event)" style="background-image: url({{ media | img_url: '1024x1024' }})">
-                <img src="{{ media | img_url: '1024x1024' }}" alt="{{ media.alt | escape }}" />
-              </div>
-            {%- endif -%}
-            {%- if media.media_type == 'video' -%}
-              <video controls>
-                <source src="{{ media | video_url }}" type="{{ media.video_type }}">
-                Your browser does not support the video tag.
-              </video>
-            {%- endif -%}
-            {%- if media.media_type == 'external_video' -%}
-              <iframe src="{{ media | external_video_url }}" frameborder="0" allowfullscreen></iframe>
-            {%- endif -%}
-            {%- if media.media_type == 'model' -%}
-              <model-viewer src="{{ media | model_3d_url }}" alt="{{ media.alt | escape }}" auto-rotate camera-controls></model-viewer>
-            {%- endif -%}
-          </div>
-        {%- endunless -%}
-      {%- endfor -%}
 
     </div>
     <!-- Add Arrows -->
@@ -92,50 +44,6 @@
     <div class="product-swiper-wrapper">
       <!-- Slides -->
       {% comment %} <div class="swiper-slide">Slide 1</div> {% endcomment %}
-      {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          <div class="swiper-slide">
-            {%- assign media_position = media_position | default: 0 | plus: 1 -%}
-            {%- if media.media_type == 'image' -%}
-              <img src="{{ media | img_url: '1024x1024' }}" alt="{{ media.alt | escape }}" />
-            {%- endif -%}
-            {%- if media.media_type == 'video' -%}
-              <video controls>
-                <source src="{{ media | video_url }}" type="{{ media.video_type }}">
-                Your browser does not support the video tag.
-              </video>
-            {%- endif -%}
-            {%- if media.media_type == 'external_video' -%}
-              <iframe src="{{ media | external_video_url }}" frameborder="0" allowfullscreen></iframe>
-            {%- endif -%}
-            {%- if media.media_type == 'model' -%}
-              <model-viewer src="{{ media | model_3d_url }}" alt="{{ media.alt | escape }}" auto-rotate camera-controls></model-viewer>
-            {%- endif -%}
-          </div>
-        {%- endunless -%}
-      {%- endfor -%}
-      {%- for media in product.media -%}
-        {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
-          <div class="swiper-slide">
-            {%- assign media_position = media_position | default: 0 | plus: 1 -%}
-            {%- if media.media_type == 'image' -%}
-              <img src="{{ media | img_url: '1024x1024' }}" alt="{{ media.alt | escape }}" />
-            {%- endif -%}
-            {%- if media.media_type == 'video' -%}
-              <video controls>
-                <source src="{{ media | video_url }}" type="{{ media.video_type }}">
-                Your browser does not support the video tag.
-              </video>
-            {%- endif -%}
-            {%- if media.media_type == 'external_video' -%}
-              <iframe src="{{ media | external_video_url }}" frameborder="0" allowfullscreen></iframe>
-            {%- endif -%}
-            {%- if media.media_type == 'model' -%}
-              <model-viewer src="{{ media | model_3d_url }}" alt="{{ media.alt | escape }}" auto-rotate camera-controls></model-viewer>
-            {%- endif -%}
-          </div>
-        {%- endunless -%}
-      {%- endfor -%}
       {%- for media in product.media -%}
         {%- unless media.id == product.selected_or_first_available_variant.featured_media.id -%}
           <div class="swiper-slide">
