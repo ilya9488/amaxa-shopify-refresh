@@ -407,7 +407,7 @@ fieldset.product-form__input .form__label {
   padding-left: 40px;
   padding-right: 20px;
   padding-bottom: 40px;
-  margin: 0 auto;
+  margin: 0 0 0 auto;
 }
 @media (max-width: 576px) {
   .product__info-container {
@@ -529,7 +529,7 @@ a.product__text {
 
 @media screen and (min-width: 750px) {
   .product__info-container {
-    max-width: 60rem;
+    max-width: 65rem;
   }
 
   .product__info-container .price--on-sale .price-item--regular {
