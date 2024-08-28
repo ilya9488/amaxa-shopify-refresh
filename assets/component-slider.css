@@ -436,7 +436,7 @@ slider-component.slider-component-full-width {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 20px 80px;
 }
 .gallery-top .product-swiper-wrapper img{
   position: relative;
