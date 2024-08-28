@@ -405,7 +405,7 @@ fieldset.product-form__input .form__label {
 }
 .product__info-container {
   padding-left: 40px;
-  padding-right: 20px;
+  padding-right: 0;
   padding-bottom: 40px;
   margin: 0 0 0 auto;
 }
@@ -1800,6 +1800,7 @@ a.product__text {
   .product__info-container {
     padding-left: 20px;
     padding-right: 20px;
+    margin: 0 auto;
   }
 }
 
