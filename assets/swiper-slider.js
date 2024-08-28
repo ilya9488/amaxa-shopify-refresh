@@ -82,6 +82,7 @@ function swiperProductPage() {
         slidesPerView: 5,
       },
       1200: {
+        slidesPerView: 5,
         direction: "vertical",
       },
     }
