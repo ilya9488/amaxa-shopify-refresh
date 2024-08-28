@@ -1,6 +1,8 @@
 
 window.addEventListener('DOMContentLoaded', function () {
-    swiperSliderInit()
+    swiperSliderInit();
+    swiperProductPage();
+    productSlidesZoom();
 })
 
 function swiperSliderInit() {
@@ -64,4 +66,69 @@ function swiperSliderInit() {
         }
       });
   })
+}
+
+function swiperProductPage() {
+
+  var galleryThumbs = new Swiper(".gallery-thumbs", {
+    wrapperClass: 'product-swiper-wrapper',
+    spaceBetween: 10,
+    slidesPerView: 4,
+    freeMode: true,
+    watchSlidesProgress: true,
+    direction: "horizontal",
+    breakpoints: {
+      768: {
+        slidesPerView: 5,
+      },
+      1200: {
+        direction: "vertical",
+      },
+    }
+  });
+  var galleryTop = new Swiper(".gallery-top", {
+    direction: "horizontal",
+    wrapperClass: 'product-swiper-wrapper',
+    spaceBetween: 10,
+      navigation: {
+        nextEl: ".product-swiper-button-next",
+        prevEl: ".product-swiper-button-prev",
+      },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+}
+
+
+function zoom(e){
+  var zoomer = e.currentTarget;
+  e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
+  e.offsetY ? offsetY = e.offsetY : offsetX = e.touches[0].pageX
+  x = offsetX/zoomer.offsetWidth*100
+  y = offsetY/zoomer.offsetHeight*100
+  zoomer.style.backgroundPosition = x + '% ' + y + '%';
+}
+function productSlidesZoom() {
+  // // Получаем все слайды
+  // var slides = document.querySelectorAll(".swiper-container-wrapper .gallery-top .swiper-slide-wrap");
+  
+  // // Проходим по каждому слайду
+  // slides.forEach(function(slide) {
+  //   // Получаем размеры слайда
+  //   var slideWidth = slide.offsetWidth;
+  //   var slideHeight = slide.offsetHeight;
+  
+  //   // Инициализируем ImageZoom для каждого слайда
+  //   new ImageZoom(slide, {
+  //     // width: slideWidth,   // Подставляем ширину слайда
+  //     // height: slideHeight, // Подставляем высоту слайда
+  //     zoomWidth: slideWidth,
+  //     offset: {
+  //       vertical: 0,
+  //       horizontal: 0
+  //     },
+  //     zoomPosition: "original"
+  //   });
+  // });
 }
