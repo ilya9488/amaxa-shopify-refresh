@@ -405,8 +405,9 @@ fieldset.product-form__input .form__label {
 }
 .product__info-container {
   padding-left: 40px;
-  padding-right: 40px;
+  padding-right: 20px;
   padding-bottom: 40px;
+  margin: 0 auto;
 }
 @media (max-width: 576px) {
   .product__info-container {
@@ -1793,6 +1794,13 @@ a.product__text {
   .product__brand p {
       font-size: 18px;
     }
+}
+
+@media (max-width: 768px) {
+  .product__info-container {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .tablets {
