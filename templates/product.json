@@ -95,18 +95,18 @@
         "collapsible_tab_KWwiXX": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Enhancing Reproductive Health with Miofolic",
-            "icon": "clipboard",
-            "content": "<p>Miofolic is a non-hormonal supplement designed to enhance female reproductive health and support overall well-being during pregnancy planning and beyond. This innovative complex <br\/>combines the benefits of Myo-inositol, 4th Generation Folic Acid, and Vitamin B12, providing comprehensive support for women aiming to conceive and maintain a healthy pregnancy.<\/p>",
+            "heading": "Description",
+            "icon": "none",
+            "content": "<p>Miofolic’s distinctive formula combines the benefits of <strong>myo-inositol<\/strong> with <strong>folic acid<\/strong> to improve absorption and support women managing PCOS.<\/p><p><strong>Why Myo-Inositol Matters<\/strong><br\/><br\/>Myo-inositol plays a key role in supporting metabolic processes in the body. It promotes healthy insulin function and helps maintain overall balance, which can contribute to:<\/p><ul><li>Supporting regular ovulation<\/li><li>Encouraging a regular menstrual cycle<\/li><\/ul><p><strong>The Importance of Folic Acid<\/strong><br\/><br\/>Folic acid plays a crucial role in the production of new cells, including oocytes (egg cells), making it particularly beneficial for women with polycystic ovary syndrome (PCOS). Maintaining healthy folic acid levels supports overall reproductive health and contributes to balanced homocysteine levels, which are important during pregnancy preparation. As the body’s demand for folic acid increases during pregnancy, ensuring adequate intake is essential for women planning to conceive or expecting.<\/p>",
             "page": ""
           }
         },
         "collapsible_tab_c7nRJE": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Collapsible row",
-            "icon": "check_mark",
-            "content": "<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Beatae facere quaerat, quisquam fuga libero cumque minima alias facilis voluptatibus porro provident iusto dolorum quo. Maxime explicabo nam expedita doloribus iure.<\/p>",
+            "heading": "Nutritional Information: ",
+            "icon": "none",
+            "content": "<p><strong>Myo-inositol<\/strong> – 4000 mg per daily dose (2 sachets), no established Nutrient Reference Value (NRV).<\/p><p><strong>Folic Acid<\/strong> – 400 µg per daily dose (2 sachets), providing 200% of the NRV.<\/p><p><strong>Vitamin B12<\/strong> – 5 µg per daily dose (2 sachets), providing 200% of the NRV.<br\/><br\/>NRV: Nutrient reference value<\/p><p><strong>Recommended Dose:<\/strong> 1 sachet, twice daily<\/p>",
             "page": ""
           }
         }
