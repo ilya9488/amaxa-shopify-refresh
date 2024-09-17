@@ -493,9 +493,6 @@ a.product__text {
   margin: 2px;
   width: calc(100% - 4px);
 }
-.product__accordion .accordion__content table + br{
-  display: none;
-}
 
 .product__accordion .accordion__content table th,
 .product__accordion .accordion__content table td {
