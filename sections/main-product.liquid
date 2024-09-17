@@ -264,8 +264,7 @@
                         <span class="wrapper__svg">{% render 'icon-plus' %}</span>
                       </summary>
                       <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
-                        {% comment %} {{ block.settings.content }} {% endcomment %}
-                        {{ block.settings.content | raw  }}
+                        {{ block.settings.content }}
                         {{ block.settings.page.content }}
                       </div>
                     </details>
@@ -1333,7 +1332,7 @@
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.icon.label"
         },
         {
-          "type": "html",
+          "type": "richtext",
           "id": "content",
           "label": "t:sections.main-product.blocks.collapsible_tab.settings.content.label"
         },
