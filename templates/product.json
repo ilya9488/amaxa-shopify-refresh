@@ -77,7 +77,7 @@
         "collapsible_tab_DNNwxf": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "PRODUCT DETAILS",
+            "heading": "Description",
             "icon": "none",
             "content": "{{ product.metafields.custom.accordion_details | metafield_tag }}",
             "page": ""
@@ -86,7 +86,7 @@
         "collapsible_tab_NiDBEb": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "REWARDS, DELIVERY & RETURNS",
+            "heading": "Nutritional Information",
             "icon": "none",
             "content": "{{ product.metafields.custom.accordion_delivery_returns | metafield_tag }}",
             "page": ""
