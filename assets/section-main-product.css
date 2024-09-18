@@ -499,9 +499,7 @@ a.product__text {
 .product__accordion .accordion__content thead {
   background-color: rgba(252, 237, 215, 0.9);
 }
-.product__accordion .accordion__content table + br + br {
-  display: none;
-}
+
 .product__accordion .accordion__content p {
   margin: 0;
 }
