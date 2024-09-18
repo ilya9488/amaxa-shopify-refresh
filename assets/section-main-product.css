@@ -494,10 +494,12 @@ a.product__text {
   width: calc(100% - 4px);
   border: none;
   box-shadow: none;
+  table-layout: auto;
 }
 
 .product__accordion .accordion__content thead {
   background-color: rgba(252, 237, 215, 0.9);
+  white-space: nowrap;
 }
 
 .product__accordion .accordion__content p {
@@ -1834,9 +1836,17 @@ table tr:nth-child(even) {
 }
 
 @media (max-width: 1199px) {
+  .product__accordion .accordion__content thead {
+    white-space: normal;
+  }
   .product__accordion .accordion__content table th,
   .product__accordion .accordion__content table td {
     padding: 5px 8px;
+    min-width: 104px;
+  }
+  .product__accordion .accordion__content table th:last-of-type,
+  .product__accordion .accordion__content table td:last-of-type {
+    min-width: 80px;
   }
 }
 
