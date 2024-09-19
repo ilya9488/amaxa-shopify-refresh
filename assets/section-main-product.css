@@ -504,6 +504,7 @@ a.product__text {
 
 .product__accordion .accordion__content p {
   margin: 0;
+  font-size: 17px;
 }
 .product__accordion .accordion__content table th,
 .product__accordion .accordion__content table td {
