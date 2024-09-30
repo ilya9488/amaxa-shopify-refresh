@@ -193,7 +193,7 @@
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
-        "disabled_slider_mobile": false,
+        "disabled_slider_mobile": true,
         "padding_top": 0,
         "padding_bottom": 20
       }
