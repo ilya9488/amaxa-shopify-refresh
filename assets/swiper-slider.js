@@ -11,7 +11,16 @@ function swiperSliderInit() {
   sliders.forEach(slider => {
     const columns = slider.dataset.columns ?? 3;
     const centered = slider.dataset.centered === 'align_middle';
+    const slidesWrap = slider.querySelector('.swiper-wrapper');
+    const slides = slidesWrap.querySelectorAll('.swiper-slide');
     const slidesCount = slider.querySelector('.swiper-wrapper').children.length;
+
+    let mobile_slider_enabled = true;
+    if (slidesWrap.classList.contains('swiper-disavbled-mobile-if-2-slides')) {
+      mobile_slider_enabled = false;
+    } else {
+      mobile_slider_enabled = true;
+    }
 
     if (centered && slidesCount < columns) {
       slider.querySelector('.swiper-wrapper').classList.add('align_middle');
@@ -21,7 +30,15 @@ function swiperSliderInit() {
       const mediaQuery = window.matchMedia('(max-width: 600px)');
       if (mediaQuery.matches) {
         slider.querySelector('.swiper-wrapper').classList.remove('align_middle');
+        if(mobile_slider_enabled === false){
+          slidesWrap.style.flexDirection = 'column';
+          slidesWrap.style.alignItems = 'center';
+          slides.forEach(slide => { slide.style.width = '100%'; slide.style.maxWidth = '400px'; })
+        }
       } else {
+        if(mobile_slider_enabled === false){
+          slidesWrap.style.flexDirection = 'row';
+        }
         if (centered && slidesCount < columns) {
           slider.querySelector('.swiper-wrapper').classList.add('align_middle');
         }
@@ -29,7 +46,7 @@ function swiperSliderInit() {
     }
     swiperHandleResize();
     window.addEventListener('resize', swiperHandleResize);
-    
+
       new Swiper(slider, {
         slidesPerView: columns,
         spaceBetween: 0,
@@ -45,7 +62,8 @@ function swiperSliderInit() {
         breakpoints: {
           // when window width is >= 0px
           0: {
-            slidesPerView: 1,
+            enabled: mobile_slider_enabled, /* (!) */
+            slidesPerView: mobile_slider_enabled ? 1 : 0, /* (!) */
             spaceBetween: 10
           },
           // when window width is >= 600px
@@ -101,7 +119,7 @@ function swiperProductPage() {
   });
 }
 
-
+// product image zoom
 function zoom(e){
   var zoomer = e.currentTarget;
   e.offsetX ? offsetX = e.offsetX : offsetX = e.touches[0].pageX
@@ -109,27 +127,4 @@ function zoom(e){
   x = offsetX/zoomer.offsetWidth*100
   y = offsetY/zoomer.offsetHeight*100
   zoomer.style.backgroundPosition = x + '% ' + y + '%';
-}
-function productSlidesZoom() {
-  // // Получаем все слайды
-  // var slides = document.querySelectorAll(".swiper-container-wrapper .gallery-top .swiper-slide-wrap");
-  
-  // // Проходим по каждому слайду
-  // slides.forEach(function(slide) {
-  //   // Получаем размеры слайда
-  //   var slideWidth = slide.offsetWidth;
-  //   var slideHeight = slide.offsetHeight;
-  
-  //   // Инициализируем ImageZoom для каждого слайда
-  //   new ImageZoom(slide, {
-  //     // width: slideWidth,   // Подставляем ширину слайда
-  //     // height: slideHeight, // Подставляем высоту слайда
-  //     zoomWidth: slideWidth,
-  //     offset: {
-  //       vertical: 0,
-  //       horizontal: 0
-  //     },
-  //     zoomPosition: "original"
-  //   });
-  // });
 }

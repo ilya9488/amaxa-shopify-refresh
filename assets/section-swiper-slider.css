@@ -25,13 +25,15 @@
 }
 
 .swiper-slide-container {
-  padding: var(--offset-normal)
+  padding: var(--offset-normal);
+  
 }
 
 .swiper .swiper-slide {
   padding-inline: 16px;
   padding-block: 20px;
   text-decoration: none;
+  max-height: fit-content !important;
 }
 .swiper.slides-card .swiper-slide {
 }

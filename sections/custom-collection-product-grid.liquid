@@ -111,7 +111,6 @@
           %}
         </aside>
       {%- endif -%}
-
       <div
         class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
@@ -142,7 +141,7 @@
             <ul
               id="product-grid"
               data-id="{{ section.id }}"
-              class="swiper-wrapper collection-wrap"
+              class="swiper-wrapper {% if section.settings.disabled_slider_mobile == true %}swiper-disavbled-mobile-if-2-slides{% endif %} collection-wrap"
             >
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
@@ -375,6 +374,17 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
+    },
+    {
+      "type": "header",
+      "content": "Slider Settigs"
+    },
+    {
+      "type": "checkbox",
+      "id": "disabled_slider_mobile",
+      "default": true,
+      "label": "Disabled Slider Mobile",
+      "info": "Disable the slider on mobile devices. (max-w: 600px)"
     },
     {
       "type": "header",
