@@ -133,7 +133,14 @@
             </div>
           </div>
         {%- else -%}
-          <div class="swiper swiper-container slider-columns-1 collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}"
+          <div class="swiper swiper-container slider-columns-1 
+                      collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}
+                      {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
+                     "
+              {% if settings.animations_reveal_on_scroll %}
+                data-cascade
+                style="--animation-order: {{ forloop.index }};"
+              {% endif %}
               data-columns="{{ section.settings.columns_desktop }}"
               data-centered="{{ section.settings.slider_align }}"
             >
@@ -144,12 +151,7 @@
               class="swiper-wrapper 
                       {% if section.settings.disabled_slider_mobile == true %}swiper-disavbled-mobile-if-2-slides{% endif %} 
                       collection-wrap
-                      {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
                     "
-              {% if settings.animations_reveal_on_scroll %}
-                data-cascade
-                style="--animation-order: {{ forloop.index }};"
-              {% endif %}
             >
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
