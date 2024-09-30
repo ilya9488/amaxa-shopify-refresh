@@ -2,7 +2,6 @@
 window.addEventListener('DOMContentLoaded', function () {
     swiperSliderInit();
     swiperProductPage();
-    productSlidesZoom();
 })
 
 function swiperSliderInit() {

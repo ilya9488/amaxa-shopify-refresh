@@ -275,12 +275,6 @@
         onload="this.media='all'"
       >
     {%- endif -%}
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-      defer="defer"
-    ></script>
 
     <script 
       src="https://unpkg.com/js-image-zoom@0.7.0/js-image-zoom.js"
@@ -367,6 +361,7 @@
     <link rel="stylesheet" href="https://unpkg.com/accordion-js@3.1.0/dist/accordion.min.css">
     <script src="https://unpkg.com/accordion-js@3.1.0/dist/accordion.min.js" defer="defer"></script>
 
+    <script src="{{ 'swiper-bundle.min.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'swiper-slider.js' | asset_url }}" defer="defer"></script>
     <script src="{{ 'custom.js' | asset_url }}" defer="defer"></script>
   </body>
