@@ -14,7 +14,7 @@
       "settings": {
         "heading_size": "h1",
         "heading": "Stay in Your Prime",
-        "text": "<strong>Premium Supplements, Prime Results<\/strong>",
+        "text": "<strong>Premium Supplements, Prime Results</strong>",
         "button_label": "Find Your Perfect Fit",
         "button_url": "shopify-section-template--20728768463182__rich_text_hCEbxw",
         "button_type": "button--sand",
@@ -23,7 +23,7 @@
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "large",
-        "background_video": "shopify:\/\/files\/videos\/477935c4ad (1).mp4",
+        "background_video": "shopify://files/videos/477935c4ad (1).mp4",
         "background_size": "cover",
         "background_color": "linear-gradient(14deg, rgba(215, 197, 171, 1) 14%, rgba(255, 255, 255, 1) 89%)",
         "show_dev_only": false
@@ -44,7 +44,7 @@
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "large",
-        "background_video": "shopify:\/\/files\/videos\/477935c4ad (1).mp4",
+        "background_video": "shopify://files/videos/477935c4ad (1).mp4",
         "background_size": "cover",
         "background_color": "",
         "show_dev_only": false
@@ -56,18 +56,18 @@
       "settings": {
         "heading_size": "h1",
         "heading": "Stay in Your Prime",
-        "text": "<strong>Premium Supplements, Prime Results<\/strong>",
+        "text": "<strong>Premium Supplements, Prime Results</strong>",
         "button_label": "Find Your Perfect Fit",
         "button_url": "shopify-section-template--20728768463182__rich_text_hCEbxw",
         "button_type": "button--primary",
-        "image_product_1": "shopify:\/\/shop_images\/miofolic_side_eng_180424.png",
-        "image_product_2": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424.png",
+        "image_product_1": "shopify://shop_images/miofolic_side_eng_180424.png",
+        "image_product_2": "shopify://shop_images/miofolicmen_side_eng_180424.png",
         "margin_top": "none",
         "to_top_shift_upward": 0,
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "large",
-        "background_image": "shopify:\/\/shop_images\/hero-baner-x2.jpg",
+        "background_image": "shopify://shop_images/hero-baner-x2.jpg",
         "background_size": "cover",
         "background_color": "",
         "show_dev_only": false
@@ -78,7 +78,7 @@
       "disabled": true,
       "settings": {
         "background_color": "#e4deec",
-        "image": "shopify:\/\/shop_images\/about-us-1.jpg",
+        "image": "shopify://shop_images/about-us-1.jpg",
         "img_min_height": "medium",
         "img_size": "cover",
         "text": "Scientifically Formulated, \nNaturally Sourced:\n\nOur products combine the\nbest of science and nature\n to support your health.",
@@ -96,28 +96,28 @@
         "page_wcUWXX": {
           "type": "page",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Woman.jpg",
+            "image": "shopify://shop_images/Woman.jpg",
             "image_position": 78,
             "button_label": "Women",
-            "button_url": "shopify:\/\/collections\/for-women"
+            "button_url": "shopify://collections/for-women"
           }
         },
         "page_kU984m": {
           "type": "page",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Men.jpg",
+            "image": "shopify://shop_images/Men.jpg",
             "image_position": 50,
             "button_label": "Men",
-            "button_url": "shopify:\/\/collections\/for-men"
+            "button_url": "shopify://collections/for-men"
           }
         },
         "page_bYGkTV": {
           "type": "page",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Kids.jpg",
+            "image": "shopify://shop_images/Kids.jpg",
             "image_position": 50,
             "button_label": "Kids",
-            "button_url": "shopify:\/\/collections\/for-kids"
+            "button_url": "shopify://collections/for-kids"
           }
         }
       },
@@ -158,7 +158,7 @@
         "text_7GfWfy": {
           "type": "text",
           "settings": {
-            "text": "<p>Every age. Every lifestyle. We help everyone be at their best.<\/p>"
+            "text": "<p>Every age. Every lifestyle. We help everyone be at their best.</p>"
           }
         }
       },
@@ -188,10 +188,12 @@
         "show_vendor": false,
         "show_rating": false,
         "enable_quick_add": false,
+        "enable_read_more": false,
         "enable_add_to_bag": true,
         "enable_filtering": false,
         "filter_type": "horizontal",
         "enable_sorting": false,
+        "disabled_slider_mobile": true,
         "padding_top": 0,
         "padding_bottom": 20
       }
@@ -235,25 +237,25 @@
         "caption_nggmAx": {
           "type": "caption",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/QA_100x_4862c22f-efc1-440b-8784-033e1e921978.webp",
+            "icon": "shopify://shop_images/QA_100x_4862c22f-efc1-440b-8784-033e1e921978.webp",
             "item_title": "Queen’s Award Winning",
-            "item_text": "<p>The only vitamin company to receive the Queen’s Award for Innovation TWICE.<\/p>"
+            "item_text": "<p>The only vitamin company to receive the Queen’s Award for Innovation TWICE.</p>"
           }
         },
         "caption_hAx8hC": {
           "type": "caption",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
+            "icon": "shopify://shop_images/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
             "item_title": "50 Years of Innovation",
-            "item_text": "<p>We’ve been pushing the boundaries for 50 years to help you and your family be at your best.<br\/>Backed by science<\/p>"
+            "item_text": "<p>We’ve been pushing the boundaries for 50 years to help you and your family be at your best.<br/>Backed by science</p>"
           }
         },
         "caption_f8fCyK": {
           "type": "caption",
           "settings": {
-            "icon": "shopify:\/\/shop_images\/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
+            "icon": "shopify://shop_images/backed_by_science_100x_9f5f433a-0c74-4b6c-a95c-9498420eeed4.webp",
             "item_title": "Backed by Science",
-            "item_text": "<p>No other UK vitamin company has such a diverse range of published research to support its products.<\/p>"
+            "item_text": "<p>No other UK vitamin company has such a diverse range of published research to support its products.</p>"
           }
         }
       },
@@ -265,7 +267,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
+        "image": "shopify://shop_images/smiling-grandparents-holding-granddaughter-s-hands-while-she-is-riding-skateboard-in-an-autumn-park.jpg",
         "container_width": false,
         "color_background": "#FCFAFF",
         "image_stretch": "cover",
@@ -297,7 +299,7 @@
         "text_e7PcDB": {
           "type": "text",
           "settings": {
-            "text": "<p>Our products combine the best of science and nature to support your health.<\/p>",
+            "text": "<p>Our products combine the best of science and nature to support your health.</p>",
             "text_style": "subtitle"
           }
         }
@@ -308,7 +310,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/about-us-1.jpg",
+        "image": "shopify://shop_images/about-us-1.jpg",
         "container_width": false,
         "color_background": "#FCFAFF",
         "image_stretch": "cover",
@@ -340,7 +342,7 @@
         "text_hDicPR": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover the Path to Parenthood with Natural Support<\/p>",
+            "text": "<p>Discover the Path to Parenthood with Natural Support</p>",
             "text_style": "body"
           }
         },
@@ -359,7 +361,7 @@
         "button_NP4WhU"
       ],
       "settings": {
-        "image": "shopify:\/\/shop_images\/about-us-2.jpg",
+        "image": "shopify://shop_images/about-us-2.jpg",
         "container_width": false,
         "color_background": "linear-gradient(90deg, rgba(230, 220, 204, 1) 48%, rgba(245, 241, 235, 1) 100%)",
         "image_stretch": "cover",
@@ -384,10 +386,10 @@
         "row_dVmtzW": {
           "type": "row",
           "settings": {
-            "image": "shopify:\/\/shop_images\/about-us-1.jpg",
+            "image": "shopify://shop_images/about-us-1.jpg",
             "caption": "",
             "heading": "Scientifically Formulated, Naturally Sourced:",
-            "text": "<p>Our products combine the best of science and nature  to support your health.<\/p>",
+            "text": "<p>Our products combine the best of science and nature  to support your health.</p>",
             "button_label": "",
             "button_link": ""
           }
@@ -446,7 +448,7 @@
             "page": "man",
             "title": "",
             "description": "Desctiption",
-            "image": "shopify:\/\/shop_images\/banner_na_sait-scaled-1.jpg",
+            "image": "shopify://shop_images/banner_na_sait-scaled-1.jpg",
             "image_position": 90,
             "button_url": "",
             "button_label": ""
@@ -458,7 +460,7 @@
             "page": "woman",
             "title": "",
             "description": "Desctiption",
-            "image": "shopify:\/\/shop_images\/index-page_1.jpg",
+            "image": "shopify://shop_images/index-page_1.jpg",
             "image_position": 42,
             "button_url": "",
             "button_label": ""
@@ -470,7 +472,7 @@
             "page": "some-page",
             "title": "",
             "description": "Desctiption",
-            "image": "shopify:\/\/shop_images\/c71ae2a8d242a6d_370x260_ee9098a6-8d1d-4b34-b04d-109267ac3c45.jpg",
+            "image": "shopify://shop_images/c71ae2a8d242a6d_370x260_ee9098a6-8d1d-4b34-b04d-109267ac3c45.jpg",
             "image_position": 38,
             "button_url": "",
             "button_label": ""
@@ -482,7 +484,7 @@
             "page": "shipping-countries",
             "title": "Some page 2",
             "description": "Description 2",
-            "image": "shopify:\/\/shop_images\/fertility-issues-miofolic.jpg",
+            "image": "shopify://shop_images/fertility-issues-miofolic.jpg",
             "image_position": 14,
             "button_url": "",
             "button_label": ""
@@ -528,7 +530,7 @@
         "text_B4QHEj": {
           "type": "text",
           "settings": {
-            "text": "<p>We’re an independent, family-run British business – a name people have trusted for 50 years for safe, balanced and effective support. Our team brings together decades of experience, all with the goal of helping you to be at your best, day-after-day.<\/p>",
+            "text": "<p>We’re an independent, family-run British business – a name people have trusted for 50 years for safe, balanced and effective support. Our team brings together decades of experience, all with the goal of helping you to be at your best, day-after-day.</p>",
             "text_style": "body"
           }
         },
@@ -548,7 +550,7 @@
       ],
       "disabled": true,
       "settings": {
-        "image": "shopify:\/\/shop_images\/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
+        "image": "shopify://shop_images/Get_to_know_Vitabiotics_800x500_8285a02a-7dc1-4766-aa4a-e1b2deec9fdd.webp",
         "container_width": false,
         "color_background": "#FCFAFF",
         "image_stretch": "cover",
@@ -580,7 +582,7 @@
         "paragraph_6f3Dc4": {
           "type": "paragraph",
           "settings": {
-            "text": "<p>Be the first to know about new collections and exclusive offers.<\/p>"
+            "text": "<p>Be the first to know about new collections and exclusive offers.</p>"
           }
         },
         "email_form_9rRi8H": {
