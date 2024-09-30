@@ -98,7 +98,7 @@
           "settings": {
             "heading": "Description",
             "icon": "none",
-            "content": "<p>Miofolic’s distinctive formula combines the benefits of <strong>myo-inositol<\/strong> with <strong>folic acid<\/strong> to improve absorption and support women managing PCOS.<\/p><p><strong>Why Myo-Inositol Matters<\/strong><br\/><br\/>Myo-inositol plays a key role in supporting metabolic processes in the body. It promotes healthy insulin function and helps maintain overall balance, which can contribute to:<\/p><ul><li>Supporting regular ovulation<\/li><li>Encouraging a regular menstrual cycle<\/li><\/ul><p><strong>The Importance of Folic Acid<\/strong><br\/><br\/>Folic acid plays a crucial role in the production of new cells, including oocytes (egg cells), making it particularly beneficial for women with polycystic ovary syndrome (PCOS). Maintaining healthy folic acid levels supports overall reproductive health and contributes to balanced homocysteine levels, which are important during pregnancy preparation. As the body’s demand for folic acid increases during pregnancy, ensuring adequate intake is essential for women planning to conceive or expecting.<\/p>",
+            "content": "<p>Miofolic’s distinctive formula combines the benefits of <strong>myo-inositol</strong> with <strong>folic acid</strong> to improve absorption and support women managing PCOS.</p><p><strong>Why Myo-Inositol Matters</strong><br/><br/>Myo-inositol plays a key role in supporting metabolic processes in the body. It promotes healthy insulin function and helps maintain overall balance, which can contribute to:</p><ul><li>Supporting regular ovulation</li><li>Encouraging a regular menstrual cycle</li></ul><p><strong>The Importance of Folic Acid</strong><br/><br/>Folic acid plays a crucial role in the production of new cells, including oocytes (egg cells), making it particularly beneficial for women with polycystic ovary syndrome (PCOS). Maintaining healthy folic acid levels supports overall reproductive health and contributes to balanced homocysteine levels, which are important during pregnancy preparation. As the body’s demand for folic acid increases during pregnancy, ensuring adequate intake is essential for women planning to conceive or expecting.</p>",
             "page": ""
           }
         },
@@ -108,7 +108,7 @@
           "settings": {
             "heading": "Nutritional Information",
             "icon": "none",
-            "content": "<p><strong>Myo-inositol<\/strong> – 4000 mg per daily dose (2 sachets), no established Nutrient Reference Value (NRV).<\/p><p><strong>Folic Acid<\/strong> – 400 µg per daily dose (2 sachets), providing 200% of the NRV.<\/p><p><strong>Vitamin B12<\/strong> – 5 µg per daily dose (2 sachets), providing 200% of the NRV.<br\/><br\/>NRV: Nutrient reference value<\/p><p><strong>Recommended Dose:<\/strong> 1 sachet, twice daily<\/p>",
+            "content": "<p><strong>Myo-inositol</strong> – 4000 mg per daily dose (2 sachets), no established Nutrient Reference Value (NRV).</p><p><strong>Folic Acid</strong> – 400 µg per daily dose (2 sachets), providing 200% of the NRV.</p><p><strong>Vitamin B12</strong> – 5 µg per daily dose (2 sachets), providing 200% of the NRV.<br/><br/>NRV: Nutrient reference value</p><p><strong>Recommended Dose:</strong> 1 sachet, twice daily</p>",
             "page": ""
           }
         }
@@ -160,10 +160,11 @@
         "show_secondary_image": false,
         "show_vendor": false,
         "show_rating": false,
+        "enable_read_more": false,
         "enable_add_to_bag": true,
         "columns_mobile": "1",
         "padding_top": 0,
-        "padding_bottom": 0
+        "padding_bottom": 100
       }
     },
     "tabs-for-dpp": {
