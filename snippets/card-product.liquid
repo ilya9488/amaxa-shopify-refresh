@@ -12,6 +12,7 @@
   - lazy_load: {Boolean} Image should be lazy loaded. Default: true (optional)
   - show_quick_add: {Boolean} Show the quick add button.
   - show_add_to_bag: {Boolean} Show the add to bag button.
+  - show_read_more: {Boolean} Show the read more button.
   - section_id: {String} The ID of the section that contains this card.
   - horizontal_class: {Boolean} Add a card--horizontal class if set to true. Default: false (optional)
   - horizontal_quick_add: {Boolean} Changes the quick add button styles when set to true. Default: false (optional)
@@ -131,9 +132,11 @@
             {%- endif -%}
           </div>
         </div>
-        <a class="button button--secondary_sm" href="{% if read_more_url %} {{ read_more_url }} {% else %} {{ card_product.url }} {% endif %}"> 
-          Read More &nbsp;&nbsp; {%- render 'icon-arrow' -%}
-        </a>
+        {%- if show_read_more -%}
+          <a class="button button--secondary_sm" href="{% if read_more_url %} {{ read_more_url }} {% else %} {{ card_product.url }} {% endif %}"> 
+            Read More &nbsp;&nbsp; {%- render 'icon-arrow' -%}
+          </a>
+        {%- endif -%}
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid

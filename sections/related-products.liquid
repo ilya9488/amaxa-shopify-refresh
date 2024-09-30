@@ -43,6 +43,7 @@
               show_vendor: section.settings.show_vendor,
               show_rating: section.settings.show_rating,
               show_add_to_bag: section.settings.enable_add_to_bag,
+              show_read_more: section.settings.enable_read_more,
             %}
           </li>
         {% endfor %}
@@ -198,6 +199,12 @@
       "default": false,
       "label": "t:sections.related-products.settings.show_rating.label",
       "info": "t:sections.related-products.settings.show_rating.info"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_read_more",
+      "default": false,
+      "label": "Enable Read More"
     },
     {
       "type": "checkbox",
