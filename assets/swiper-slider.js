@@ -1,9 +1,3 @@
-
-window.addEventListener('DOMContentLoaded', function () {
-    swiperSliderInit();
-    swiperProductPage();
-})
-
 function swiperSliderInit() {
   const sliders = document.querySelectorAll('.swiper-container')
 
@@ -11,7 +5,6 @@ function swiperSliderInit() {
     const columns = slider.dataset.columns ?? 3;
     const centered = slider.dataset.centered === 'align_middle';
     const slidesWrap = slider.querySelector('.swiper-wrapper');
-    const slides = slidesWrap.querySelectorAll('.swiper-slide');
     const slidesCount = slider.querySelector('.swiper-wrapper').children.length;
 
     let mobile_slider_enabled = true;
@@ -29,15 +22,7 @@ function swiperSliderInit() {
       const mediaQuery = window.matchMedia('(max-width: 600px)');
       if (mediaQuery.matches) {
         slider.querySelector('.swiper-wrapper').classList.remove('align_middle');
-        if(mobile_slider_enabled === false){
-          slidesWrap.style.flexDirection = 'column';
-          slidesWrap.style.alignItems = 'center';
-          slides.forEach(slide => { slide.style.width = '100%'; slide.style.maxWidth = '400px'; })
-        }
       } else {
-        if(mobile_slider_enabled === false){
-          slidesWrap.style.flexDirection = 'row';
-        }
         if (centered && slidesCount < columns) {
           slider.querySelector('.swiper-wrapper').classList.add('align_middle');
         }
@@ -127,3 +112,8 @@ function zoom(e){
   y = offsetY/zoomer.offsetHeight*100
   zoomer.style.backgroundPosition = x + '% ' + y + '%';
 }
+
+window.addEventListener('DOMContentLoaded', function () {
+  swiperSliderInit();
+  swiperProductPage();
+})
