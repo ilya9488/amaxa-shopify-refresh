@@ -130,14 +130,12 @@
         "page_gUTVDn": {
           "type": "page",
           "settings": {
-            "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.png",
             "item_text": "<p>kjkj</p>"
           }
         },
         "page_bng6Ka": {
           "type": "page",
           "settings": {
-            "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.png",
             "item_text": "<p>utuyt</p>"
           }
         },
@@ -156,6 +154,7 @@
       "settings": {
         "heading_size": "h1",
         "heading": "hgfhgfhgfh",
+        "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.png",
         "text": "kjlkj",
         "button_label": "lklk",
         "button_url": "block_id",
