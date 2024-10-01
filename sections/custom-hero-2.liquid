@@ -2,7 +2,7 @@
 
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
-  <div
+  <section
       id="Banner-{{ section.id }}"
       class="custom-hero-2 
         {% if section.settings.container_height != blank %} custom-hero-2-height--{{ section.settings.container_height }}{% endif %}
@@ -33,7 +33,7 @@
       {% endif %}
     </div>
 
-    <div class="custom-hero-2--content-wrap">
+    <section class="custom-hero-2--content-wrap">
       {% if section.settings.heading != blank %}
         <div class="custom-hero-2--text-wrap">
     
@@ -80,7 +80,7 @@
         <ul class="custom-hero-2--list-icons">
           {% for block in section.blocks %}
             {% if block.type == 'page' %}
-              <li class="custom-hero-2--list-icons-item {{ block.type }}" id="block-{{ block.id }}">
+              <li class="custom-hero-2--list-icons-item {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
                 {% if section.settings.block_image != blank %}
                   <div class="custom-hero-2--list-icons-image">
                     <img
@@ -108,7 +108,7 @@
       {% if section.blocks.size > 0 %}
         {% for block in section.blocks %}
           {% if block.type == 'text_block' %}
-            <div class="custom-hero-2--text-block {{ block.type }}" id="block-{{ block.id }}">
+            <div class="custom-hero-2--text-block {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
               {% if block.settings.item_text != blank %}
                 <p class="custom-hero-2--list-icons-text">
                   {{ block.settings.item_text }}
@@ -122,7 +122,7 @@
 
 
     </div>  
-  </div>
+  </section>
 {% endif %}
 
 {% schema %}
