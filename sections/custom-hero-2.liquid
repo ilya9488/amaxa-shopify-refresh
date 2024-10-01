@@ -88,15 +88,34 @@
         </div>
       {% endif %}
 
-      {% if block.settings.button_label != blank %}
-        <div class="images-banner--buttons">
-          <a href="{{ block.settings.button_url }}" class="button {{ section.settings.button_type }}">
-            {{ block.settings.button_label }}
-          </a>
-        </div>
+      {% comment %} <div class="images-banner--buttons"> {% endcomment %}
+
+      {% if section.blocks.size > 0 %}  
+        {% for block in section.blocks %}
+
+          {% if block.settings.block_image != blank %}
+            <div class="custom-hero-2--image-item">
+              <img
+                class="custom-hero-2--image_1"
+                src="{{ block.settings.block_image | image_url: width: 500 }}"
+                alt="{{ block.settings.block_image.alt | escape }}"
+                width="70"
+                height="{{ 500 | divided_by: block.settings.block_image.aspect_ratio | ceil }}"
+                loading="lazy"
+              >
+            </div>
+          {% endif %}
+      
+            {% if block.settings.item_text != blank %}
+              <h3 class="custom-image-column--block-title">
+                {{ block.settings.item_text }}
+              </h3>
+            {% endif %}
+      
+          {% endfor %}
       {% endif %}
-    </div>
-  
+
+    </div>  
   </div>
 {% endif %}
 
@@ -311,6 +330,12 @@
       "name": "List Icon Item",
       "limit": 30,
       "settings": [
+        {
+          "type": "image_picker",
+          "id": "block_image",
+          "label": "Select Image",
+          "default": "https://cdn.shopify.com/s/files/1/0797/0003/3870/files/04b2ffa6-ee13-4192-9894-8ed59678a9ff.png?v=1727766997"
+        },
         {
           "type": "richtext",
           "id": "item_text",
