@@ -2,7 +2,7 @@
 
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
-  <section
+  <div
       id="Banner-{{ section.id }}"
       class="custom-hero-2 
         {% if section.settings.container_height != blank %} custom-hero-2-height--{{ section.settings.container_height }}{% endif %}
@@ -33,96 +33,96 @@
       {% endif %}
     </div>
 
-    <section class="custom-hero-2--content-wrap">
-      {% if section.settings.heading != blank %}
-        <div class="custom-hero-2--text-wrap">
+      <div class="custom-hero-2--content-wrap">
+        {% if section.settings.heading != blank %}
+          <div class="custom-hero-2--text-wrap">
+      
+            {% if section.settings.heading != blank %}
+              <h1 class="custom-hero-2--title {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h1>
+            {% endif %}
     
-          {% if section.settings.heading != blank %}
-            <h1 class="custom-hero-2--title {{ section.settings.heading_size }}">
-              {{ section.settings.heading }}
-            </h1>
-          {% endif %}
-  
-      
-        </div>
-      {% endif %}
+        
+          </div>
+        {% endif %}
 
-      {% comment %} <div class="images-banner--buttons"> {% endcomment %}
-      {% comment %} {% if section.blocks.size > 0 %}  
-        <ul class="custom-hero-2--list-icons">
-          {% for block in section.blocks %}
-            {% if block.type == 'page' %}
-              <li class="custom-hero-2--list-icons-item">
-                {% if section.settings.block_image != blank %}
-                  <div class="custom-hero-2--list-icons-image">
-                    <img
-                      class="custom-hero-2--image_1"
-                      src="{{ section.settings.block_image | image_url: width: 50 }}"
-                      alt="{{ section.settings.block_image.alt | escape }}"
-                      width="70"
-                      height="{{ 50 | divided_by: section.settings.block_image.aspect_ratio | ceil }}"
-                      loading="lazy"
-                    >
-                  </div>
-                {% endif %}
-                {% if block.settings.item_text != blank %}
-                  <p class="custom-hero-2--list-icons-text">
-                    {{ block.settings.item_text }}
-                  </p>
-                {% endif %}
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endif %} {% endcomment %}
-
-      {% if section.blocks.size > 0 %}  
-        <ul class="custom-hero-2--list-icons">
-          {% for block in section.blocks %}
-            {% if block.type == 'page' %}
-              <li class="custom-hero-2--list-icons-item {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
-                {% if section.settings.block_image != blank %}
-                  <div class="custom-hero-2--list-icons-image">
-                    <img
-                      class="custom-hero-2--image_1"
-                      src="{{ section.settings.block_image | image_url: width: 50 }}"
-                      alt="{{ section.settings.block_image.alt | escape }}"
-                      width="70"
-                      height="{{ 50 | divided_by: section.settings.block_image.aspect_ratio | ceil }}"
-                      loading="lazy"
-                    >
-                  </div>
-                {% endif %}
-                {% if block.settings.item_text != blank %}
-                  <p class="custom-hero-2--list-icons-text">
-                    {{ block.settings.item_text }}
-                  </p>
-                {% endif %}
-              </li>
-            {% endif %}
-          {% endfor %}
-        </ul>
-      {% endif %}
-
-      
-      {% if section.blocks.size > 0 %}
-        {% for block in section.blocks %}
-          {% if block.type == 'text_block' %}
-            <div class="custom-hero-2--text-block {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
-              {% if block.settings.item_text != blank %}
-                <p class="custom-hero-2--list-icons-text">
-                  {{ block.settings.item_text }}
-                </p>
+        {% comment %} <div class="images-banner--buttons"> {% endcomment %}
+        {% comment %} {% if section.blocks.size > 0 %}  
+          <ul class="custom-hero-2--list-icons">
+            {% for block in section.blocks %}
+              {% if block.type == 'page' %}
+                <li class="custom-hero-2--list-icons-item">
+                  {% if section.settings.block_image != blank %}
+                    <div class="custom-hero-2--list-icons-image">
+                      <img
+                        class="custom-hero-2--image_1"
+                        src="{{ section.settings.block_image | image_url: width: 50 }}"
+                        alt="{{ section.settings.block_image.alt | escape }}"
+                        width="70"
+                        height="{{ 50 | divided_by: section.settings.block_image.aspect_ratio | ceil }}"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% endif %}
+                  {% if block.settings.item_text != blank %}
+                    <p class="custom-hero-2--list-icons-text">
+                      {{ block.settings.item_text }}
+                    </p>
+                  {% endif %}
+                </li>
               {% endif %}
-            </div>
-          {% endif %}
-        {% endfor %}
-      {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %} {% endcomment %}
+
+        {% if section.blocks.size > 0 %}  
+          <ul class="custom-hero-2--list-icons">
+            {% for block in section.blocks %}
+              {% if block.type == 'page' %}
+                <li class="custom-hero-2--list-icons-item {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
+                  {% if section.settings.block_image != blank %}
+                    <div class="custom-hero-2--list-icons-image">
+                      <img
+                        class="custom-hero-2--image_1"
+                        src="{{ section.settings.block_image | image_url: width: 50 }}"
+                        alt="{{ section.settings.block_image.alt | escape }}"
+                        width="70"
+                        height="{{ 50 | divided_by: section.settings.block_image.aspect_ratio | ceil }}"
+                        loading="lazy"
+                      >
+                    </div>
+                  {% endif %}
+                  {% if block.settings.item_text != blank %}
+                    <p class="custom-hero-2--list-icons-text">
+                      {{ block.settings.item_text }}
+                    </p>
+                  {% endif %}
+                </li>
+              {% endif %}
+            {% endfor %}
+          </ul>
+        {% endif %}
+
+        
+        {% if section.blocks.size > 0 %}
+          {% for block in section.blocks %}
+            {% if block.type == 'text_block' %}
+              <div class="custom-hero-2--text-block {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
+                {% if block.settings.item_text != blank %}
+                  <p class="custom-hero-2--list-icons-text">
+                    {{ block.settings.item_text }}
+                  </p>
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        {% endif %}
 
 
 
-    </div>  
-  </section>
+      </div>  
+  </div>
 {% endif %}
 
 {% schema %}
