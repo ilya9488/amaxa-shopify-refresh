@@ -90,10 +90,8 @@
 
       {% comment %} <div class="images-banner--buttons"> {% endcomment %}
 
-      
       {% if section.blocks.size > 0 %}  
         {% for block in section.blocks %}
-
           {% if block.settings.block_image != blank %}
             <div class="custom-hero-2--image-item">
               <img
@@ -106,7 +104,7 @@
               >
             </div>
           {% endif %}
-      
+          {{ block.settings.item_text }}
             {% if block.settings.item_text != blank %}
               <h3 class="custom-image-column--block-title">
                 {{ block.settings.item_text }}
@@ -334,8 +332,7 @@
         {
           "type": "image_picker",
           "id": "block_image",
-          "label": "Select Image",
-          "default": "https://cdn.shopify.com/s/files/1/0797/0003/3870/files/04b2ffa6-ee13-4192-9894-8ed59678a9ff.png?v=1727766997"
+          "label": "Select Image"
         },
         {
           "type": "richtext",
