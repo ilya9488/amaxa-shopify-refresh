@@ -14,6 +14,9 @@
   background-position-x: center;
   background-repeat: no-repeat;
 }
+.custom-hero-2--bg-wrap{
+  position: relative;
+}
 .custom-hero-2--video-block{
   position: absolute;
   top: 0;
