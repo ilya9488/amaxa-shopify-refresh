@@ -127,30 +127,37 @@
     "custom_hero_2_Hi3GEM": {
       "type": "custom-hero-2",
       "blocks": {
-        "image_rJKH3m": {
-          "type": "image",
-          "settings": {
-            "item_text": "<p>jkljlkjlkj</p>"
-          }
-        },
         "image_MGK3Pf": {
           "type": "image",
           "settings": {
-            "item_text": "<p>lkjlj</p>"
+            "item_text": "<p>lkjlj kjhh</p>"
+          }
+        },
+        "image_AtbttJ": {
+          "type": "image",
+          "settings": {
+            "item_text": "<p>lkjlkj9798</p>"
+          }
+        },
+        "image_bbKFGx": {
+          "type": "image",
+          "settings": {
+            "item_text": "<p>nmncgg</p>"
           }
         }
       },
       "block_order": [
-        "image_rJKH3m",
-        "image_MGK3Pf"
+        "image_MGK3Pf",
+        "image_AtbttJ",
+        "image_bbKFGx"
       ],
       "settings": {
         "heading_size": "h1",
         "heading": "hgfhgfhgfh",
-        "text": "",
-        "button_label": "",
+        "text": "kjlkj",
+        "button_label": "lklk",
         "button_url": "block_id",
-        "button_type": "button--primary_sm",
+        "button_type": "button--sand",
         "margin_top": "none",
         "to_top_shift_upward": 0,
         "margin_bottom": "none",
