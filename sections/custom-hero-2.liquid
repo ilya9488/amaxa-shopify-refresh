@@ -80,7 +80,7 @@
         <ul class="custom-hero-2--list-icons">
           {% for block in section.blocks %}
             {% if block.type == 'page' %}
-              <li class="custom-hero-2--list-icons-item">
+              <li class="custom-hero-2--list-icons-item {{ block.type }}" id="block-{{ block.id }}">
                 {% if section.settings.block_image != blank %}
                   <div class="custom-hero-2--list-icons-image">
                     <img
@@ -108,7 +108,7 @@
       {% if section.blocks.size > 0 %}
         {% for block in section.blocks %}
           {% if block.type == 'text_block' %}
-            <div class="custom-hero-2--text-block">
+            <div class="custom-hero-2--text-block {{ block.type }}" id="block-{{ block.id }}">
               {% if block.settings.item_text != blank %}
                 <p class="custom-hero-2--list-icons-text">
                   {{ block.settings.item_text }}
