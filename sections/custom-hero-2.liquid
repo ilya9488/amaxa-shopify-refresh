@@ -3,79 +3,44 @@
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
   <div
-      id="Banner-{{ section.id }}"
-      class="custom-hero-2 
-        {% if section.settings.container_height != blank %} custom-hero-2-height--{{ section.settings.container_height }}{% endif %}
-        {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
-        {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}
+    id="Banner-{{ section.id }}" 
+    class="custom-hero-2
+      {% if section.settings.margin_top != 'none' %} margin-top--{{ section.settings.margin_top }} {% endif %}
+      {% if section.settings.margin_bottom != 'none' %} margin-bottom--{{ section.settings.margin_bottom }} {% endif %}
+    "
+
+    style="
+        {% if section.settings.to_top_shift_upward > 0 %}margin-top: calc(-{{section.settings.to_top_shift_upward }}px * 3);{% endif %}
+        {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 3);{% endif %}
+        {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
       "
-  
+  >
+
+    <div class="custom-hero-2--bg-wrap
+        {% if section.settings.container_height != blank %} custom-hero-2-height--{{ section.settings.container_height }}{% endif %}
+      "
       style="
-          {% if section.settings.to_top_shift_upward > 0 %}margin-top: calc(-{{section.settings.to_top_shift_upward }}px * 3);{% endif %}
-          {% if section.settings.margin_bottom_custom > 0 %}margin-bottom: calc({{ section.settings.margin_bottom_custom }}px * 3);{% endif %}
-          {% if section.settings.background_color !=blank %}background-color: {{ section.settings.background_color }};{% endif %}
-          {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
-          {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
+        {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'original' }}');{% endif %}
+        {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
       "
     >
-
-    <div class="custom-hero-2--video-block">
       {% if section.settings.background_video !=blank %}
-        {{
-          section.settings.background_video
-          | video_tag:
-            image_size: '1100x',
-            autoplay: true,
-            loop: true,
-            controls: false,
-            muted: true
-        }}
+        <div class="custom-hero-2--video-block">
+          {{
+            section.settings.background_video
+            | video_tag:
+              image_size: '1100x',
+              autoplay: true,
+              loop: true,
+              controls: false,
+              muted: true
+          }}
+        </div>
       {% endif %}
     </div>
 
-      <div class="custom-hero-2--content-wrap">
-        {% if section.settings.heading != blank %}
-          <div class="custom-hero-2--text-wrap">
-      
-            {% if section.settings.heading != blank %}
-              <h1 class="custom-hero-2--title {{ section.settings.heading_size }}">
-                {{ section.settings.heading }}
-              </h1>
-            {% endif %}
-    
-        
-          </div>
-        {% endif %}
-
-        {% comment %} <div class="images-banner--buttons"> {% endcomment %}
-        {% comment %} {% if section.blocks.size > 0 %}  
-          <ul class="custom-hero-2--list-icons">
-            {% for block in section.blocks %}
-              {% if block.type == 'page' %}
-                <li class="custom-hero-2--list-icons-item">
-                  {% if section.settings.block_image != blank %}
-                    <div class="custom-hero-2--list-icons-image">
-                      <img
-                        class="custom-hero-2--image_1"
-                        src="{{ section.settings.block_image | image_url: width: 50 }}"
-                        alt="{{ section.settings.block_image.alt | escape }}"
-                        width="70"
-                        height="{{ 50 | divided_by: section.settings.block_image.aspect_ratio | ceil }}"
-                        loading="lazy"
-                      >
-                    </div>
-                  {% endif %}
-                  {% if block.settings.item_text != blank %}
-                    <p class="custom-hero-2--list-icons-text">
-                      {{ block.settings.item_text }}
-                    </p>
-                  {% endif %}
-                </li>
-              {% endif %}
-            {% endfor %}
-          </ul>
-        {% endif %} {% endcomment %}
-
+    <div class="custom-hero-2--content-wrap">
+      <div class="custom-hero-2--col">
         {% if section.blocks.size > 0 %}  
           <ul class="custom-hero-2--list-icons">
             {% for block in section.blocks %}
@@ -103,8 +68,17 @@
             {% endfor %}
           </ul>
         {% endif %}
-
-        
+      </div>
+      <div class="custom-hero-2--col">
+        {% if section.settings.heading != blank %}
+          <div class="custom-hero-2--text-wrap">
+            {% if section.settings.heading != blank %}
+              <h1 class="custom-hero-2--title {{ section.settings.heading_size }}">
+                {{ section.settings.heading }}
+              </h1>
+            {% endif %}
+          </div>
+        {% endif %}
         {% if section.blocks.size > 0 %}
           {% for block in section.blocks %}
             {% if block.type == 'text_block' %}
@@ -118,10 +92,9 @@
             {% endif %}
           {% endfor %}
         {% endif %}
-
-
-
-      </div>  
+      </div>
+    </div>
+      
   </div>
 {% endif %}
 
