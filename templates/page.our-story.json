@@ -130,25 +130,31 @@
         "page_gUTVDn": {
           "type": "page",
           "settings": {
-            "item_text": "<p>kjkj</p>"
+            "item_text": "<p>Who We Are: A dedicated pharmaceutical company <br/>focused on enhancing overall wellness.</p>"
           }
         },
         "page_bng6Ka": {
           "type": "page",
           "settings": {
-            "item_text": "<p>utuyt</p>"
+            "item_text": "<p>Our Mission: To provide effective, safe, and high-quality <br/>food supplements that support families and individuals.</p>"
           }
         },
         "page_zRYFLi": {
           "type": "page",
           "settings": {
-            "item_text": ""
+            "item_text": "<p>Research-Backed: Our formulations are supported by <br/>extensive clinical studies confirming their effectiveness <br/>and safety.</p>"
           }
         },
         "text_block_z9R4KG": {
           "type": "text_block",
           "settings": {
-            "item_text": "<ol><li>lkjlkjlkj</li><li>jjllljk</li></ol>"
+            "item_text": "<p>At Amaxa, we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible.</p>"
+          }
+        },
+        "text_block_ntb9Y9": {
+          "type": "text_block",
+          "settings": {
+            "item_text": "<p>With over 20 years of experience in the pharmaceutical field, we know how to create supplements that truly make a difference. Our deep knowledge and scientific approach ensure that every product we offer is both effective and safe.</p>"
           }
         }
       },
@@ -156,7 +162,8 @@
         "page_gUTVDn",
         "page_bng6Ka",
         "page_zRYFLi",
-        "text_block_z9R4KG"
+        "text_block_z9R4KG",
+        "text_block_ntb9Y9"
       ],
       "settings": {
         "heading_size": "h1",
