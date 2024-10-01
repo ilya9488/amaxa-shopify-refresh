@@ -144,21 +144,24 @@
           "settings": {
             "item_text": ""
           }
+        },
+        "text_block_z9R4KG": {
+          "type": "text_block",
+          "settings": {
+            "item_text": "<ol><li>lkjlkjlkj</li><li>jjllljk</li></ol>"
+          }
         }
       },
       "block_order": [
         "page_gUTVDn",
         "page_bng6Ka",
-        "page_zRYFLi"
+        "page_zRYFLi",
+        "text_block_z9R4KG"
       ],
       "settings": {
         "heading_size": "h1",
         "heading": "hgfhgfhgfh",
         "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.png",
-        "text": "kjlkj",
-        "button_label": "lklk",
-        "button_url": "block_id",
-        "button_type": "button--sand",
         "margin_top": "none",
         "to_top_shift_upward": 0,
         "margin_bottom": "none",
