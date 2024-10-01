@@ -1,0 +1,196 @@
+:root {
+  --custom-hero-2-height-small: 300px;
+  --custom-hero-2-height-medium: 400px;
+  --custom-hero-2-height-large: 600px;
+  --custom-hero-2-title-font-size-base: 5rem;
+  --custom-hero-2-title-font-size-base-md: 4rem;
+  --custom-hero-2-title-font-size-base-sm: 3rem;
+}
+
+.custom-hero-2 {
+  min-height: var(--custom-hero-2-height-small);
+  position: relative;
+  background-position-y: 0;
+  background-position-x: center;
+  background-repeat: no-repeat;
+}
+.custom-hero-2--video-block{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.custom-hero-2--video-block video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.custom-hero-2--content-wrap {
+  position: relative;
+  display: flex;
+  width: 100%;
+  gap: 35px;
+  z-index: 1;
+}
+.custom-hero-2--text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  max-width: 60%;
+  padding: 200px 26px;
+  background-color: rgba(var(--color-rgb-clear), 0.7);
+}
+.custom-hero-2--custom-hero-2--text {
+  color: var(--color-primary);
+}
+.custom-hero-2--button{
+  padding-top: 20px;
+}
+
+.custom-hero-2-height--small {
+  min-height: var(--custom-hero-2-height-small);
+}
+.custom-hero-2-height--medium {
+  min-height: var(--custom-hero-2-height-medium);
+}
+.custom-hero-2-height--large {
+  min-height: var(--custom-hero-2-height-large);
+}
+
+/* Offsets */
+.custom-hero-2.margin-top--default {
+  margin-block-start: var(--section-margin-block-start);
+}
+.custom-hero-2.margin-top--middle {
+  margin-block-start: var(--section-margin-block-start-middle);
+}
+.custom-hero-2.margin-top--big {
+  margin-block-start: var(--section-margin-block-start-big);
+}
+.custom-hero-2.margin-bottom--default {
+  margin-block-end: var(--section-margin-block-end);
+}
+.custom-hero-2.margin-bottom--middle {
+  margin-block-end: var(--section-margin-block-end-middle);
+}
+.custom-hero-2.margin-bottom--big {
+  margin-block-end: var(--section-margin-block-end-big);
+}
+
+/* Title */
+.custom-hero-2--title {
+  width: 100%;
+  color: var(--color-grey-dark);
+  font-size: var(--custom-hero-2-title-font-size-base);
+  margin: 0;
+}
+/* Title`s */
+.custom-hero-2--title.h2 {
+  --custom-hero-2-title-font-size-base: 4.5rem;
+}
+.custom-hero-2--title.h3 {
+  --custom-hero-2-title-font-size-base: 4rem;
+}
+.custom-hero-2--title.h4 {
+  --custom-hero-2-title-font-size-base: 3.5rem;
+}
+
+/* Images */
+.custom-hero-2--images-wrap {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  min-width: 300px;
+  padding-left: 50px;
+  max-width: 40%;
+}
+.custom-hero-2--images-wrap img{
+  width: auto;
+  height: auto;
+  max-height: 250px;
+  max-width: 100%;
+}
+.custom-hero-2--image_1{
+  position: relative;
+  margin-right: 75%;
+  margin-bottom: -42%;
+}
+.custom-hero-2--image_2{
+  position: relative;
+}
+
+@media (max-width: 990px) {
+  .custom-hero-2 {
+    min-height: auto;
+  }
+
+  /* Title */
+  .custom-hero-2--title {
+    font-size: var(--custom-hero-2-title-font-size-base-md);
+  }
+
+  /* Title`s */
+  .custom-hero-2--title.h2 {
+    --custom-hero-2-title-font-size-base: 4rem;
+  }
+  .custom-hero-2--title.h3 {
+    --custom-hero-2-title-font-size-base: 3.5rem;
+  }
+  .custom-hero-2--title.h4 {
+    --custom-hero-2-title-font-size-base: 3rem;
+  }
+
+  .custom-hero-2--images-wrap{
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  /* Title */
+  .custom-hero-2--title {
+    font-size: var(--custom-hero-2-title-font-size-base-sm);
+  }
+
+  /* Title`s */
+  .custom-hero-2--title.h2 {
+    --custom-hero-2-title-font-size-base: 3.5rem;
+  }
+  .custom-hero-2--title.h3 {
+    --custom-hero-2-title-font-size-base: 3rem;
+  }
+  .custom-hero-2--title.h4 {
+    --custom-hero-2-title-font-size-base: 2.5rem;
+  }
+
+  .custom-hero-2--content-wrap {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 40px;
+  }
+
+  .custom-hero-2--text-wrap{
+    align-items: center;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+    padding: 30px;
+    margin-top: 40vh;
+
+  }
+
+  .custom-hero-2--images-wrap{
+    min-width: auto;
+    max-width: none;
+  }
+
+  .custom-hero-2--images-wrap img{
+    max-height: 220px;
+  }
+
+}
