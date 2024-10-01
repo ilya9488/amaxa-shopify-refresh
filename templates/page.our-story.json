@@ -127,29 +127,16 @@
     "custom_hero_2_Hi3GEM": {
       "type": "custom-hero-2",
       "blocks": {
-        "image_MGK3Pf": {
-          "type": "image",
+        "page_gUTVDn": {
+          "type": "page",
           "settings": {
-            "item_text": "<p>lkjlj kjhh</p>"
-          }
-        },
-        "image_AtbttJ": {
-          "type": "image",
-          "settings": {
-            "item_text": "<p>lkjlkj9798</p>"
-          }
-        },
-        "image_bbKFGx": {
-          "type": "image",
-          "settings": {
-            "item_text": "<p>nmncgg</p>"
+            "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.png",
+            "item_text": "<p>kjkj</p>"
           }
         }
       },
       "block_order": [
-        "image_MGK3Pf",
-        "image_AtbttJ",
-        "image_bbKFGx"
+        "page_gUTVDn"
       ],
       "settings": {
         "heading_size": "h1",
