@@ -86,6 +86,7 @@
         "text_font": "centaur_n4",
         "heading_format": "caps",
         "heading": "<p>Amaxa Provides <br/>PROVIDING PREMIUM <br/>FOOD SUPPLEMENTS <br/>DESIGNED TO ENHANCE <br/>YOUR LIFE</p>",
+        "column_position": "right",
         "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.webp",
         "margin_top": "none",
         "to_top_shift_upward": 0,
