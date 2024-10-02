@@ -55,6 +55,50 @@
         "show_dev_only": false
       }
     },
+    "rich_text_xJYzXe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Pw6FKV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Common Causes</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Pw6FKV"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_86ajDM": {
+      "type": "rich-text",
+      "blocks": {
+        "text_VCn8E6": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Sperm Production Issues: Low sperm count (oligospermia), poor sperm motility, or abnormal sperm shape can hinder fertility.</li><li>Hormonal Imbalances: Conditions affecting testosterone and other hormone levels can impact sperm production.</li><li>Genetic Factors: Chromosomal abnormalities can lead to infertility.</li><li>Medical Conditions: Conditions like diabetes, cystic fibrosis, and certain infections can affect fertility.</li><li>Lifestyle Factors: Smoking, excessive alcohol consumption, obesity, and exposure to environmental toxins can negatively impact sperm health.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_VCn8E6"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_product_hero_2_F3eUjR": {
       "type": "custom-product-hero-2",
       "disabled": true,
@@ -255,6 +299,8 @@
   "order": [
     "main",
     "custom_hero_2_qK9wkf",
+    "rich_text_xJYzXe",
+    "rich_text_86ajDM",
     "custom_product_hero_2_F3eUjR",
     "custom_image_column_WYETM4",
     "custom_image_column_nXzFfy",
