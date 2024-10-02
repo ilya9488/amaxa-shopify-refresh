@@ -240,12 +240,19 @@
         "text_yaR7xc": {
           "type": "text",
           "settings": {
-            "text": "<p>PCOS<br/>Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting those with ovaries, leading to various physical and emotional challenges. This page outlines the symptoms, causes, health implications, and treatment options for PCOS, empowering you with the knowledge to manage this condition effectively.</p>"
+            "text": "<p>PCOS</p><p>Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting those with ovaries, leading to various physical and emotional challenges. This page outlines the symptoms, causes, health implications, and treatment options for PCOS, empowering you with the knowledge to manage this condition effectively.</p>"
+          }
+        },
+        "text_NqDKhM": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Common Symptoms:</p><ul><li>Irregular Periods: Many individuals experience infrequent or prolonged menstrual cycles.</li><li>Excess Androgen: Higher levels of male hormones can lead to symptoms like acne, excess facial or body hair (hirsutism), and male-pattern baldness.</li><li>Polycystic Ovaries: Ovaries may become enlarged and contain many small cysts, which can be detected via ultrasound.</li></ul>"
           }
         }
       },
       "block_order": [
-        "text_yaR7xc"
+        "text_yaR7xc",
+        "text_NqDKhM"
       ],
       "settings": {
         "desktop_content_position": "center",
