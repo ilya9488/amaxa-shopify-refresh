@@ -45,23 +45,23 @@
           <ul class="custom-hero-2--list-icons">
             {% for block in section.blocks %}
               {% if block.type == 'page' %}
-                <li class="custom-hero-2--list-icons-item {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
+                <li class="custom-hero-2--list-icons-item" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
                   {% if section.settings.block_image != blank %}
                     <div class="custom-hero-2--list-icons-image">
                       <img
                         class="custom-hero-2--image_1"
                         src="{{ section.settings.block_image | image_url: width: 50 }}"
                         alt="{{ section.settings.block_image.alt | escape }}"
-                        width="70"
+                        width="50"
                         height="{{ 50 | divided_by: section.settings.block_image.aspect_ratio | ceil }}"
                         loading="lazy"
                       >
                     </div>
                   {% endif %}
                   {% if block.settings.item_text != blank %}
-                    <p class="custom-hero-2--list-icons-text">
+                    <div class="custom-hero-2--list-icons-text">
                       {{ block.settings.item_text }}
-                    </p>
+                    </div>
                   {% endif %}
                 </li>
               {% endif %}
@@ -88,9 +88,13 @@
             {% if block.type == 'text_block' %}
               <div class="custom-hero-2--text-block {{ block.type }}" id="block-{{ block.id }}" {{ block.shopify_attributes }}>
                 {% if block.settings.item_text != blank %}
-                  <p class="custom-hero-2--list-icons-text">
+                  <div class="custom-hero-2--list-icons-text"
+                     style="
+                      text-align: {{ block.settings.description_alignment }};
+                     "
+                   >
                     {{ block.settings.item_text | newline_to_br }}
-                  </p>
+                  </div>
                 {% endif %}
               </div>
             {% endif %}
@@ -325,7 +329,14 @@
           "type": "richtext",
           "id": "item_text",
           "label": "Item text"
-        }
+        },
+        // title formatting
+        {
+          "type": "text_alignment",
+          "id": "description_alignment",
+          "label": "Description alignment",
+          "default": "center"
+        },  
       ]
     }
   ],
