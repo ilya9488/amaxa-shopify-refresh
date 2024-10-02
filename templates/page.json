@@ -337,6 +337,48 @@
         "padding_top": 0,
         "padding_bottom": 52
       }
+    },
+    "image_with_text_YLhGpN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GaERaF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Causes:",
+            "heading_size": "h2"
+          }
+        },
+        "text_CeDCr6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The exact cause of PCOS is unknown, but factors may include:</p><ul><li>Hormonal Imbalances: Elevated levels of insulin and androgens.</li><li>Genetics: Family history of PCOS can increase the likelihood of developing the condition.</li><li>Lifestyle Factors: Obesity and sedentary lifestyles can contribute to the severity of symptoms.</li></ul><p>Health Implications:<br/>PCOS can increase the risk of several health issues, including:</p><ul><li>Infertility: Hormonal imbalances can affect ovulation.</li><li>Metabolic Syndrome: Increased risk of diabetes and cardiovascular diseases.</li><li>Endometrial Cancer: Prolonged irregular menstruation can increase this risk.</li></ul><p>Management:<br/>While there is no cure for PCOS, various treatments can help manage symptoms:</p><ul><li>Lifestyle Changes: A healthy diet and regular exercise can improve insulin sensitivity and hormonal balance.</li><li>Medications: Hormonal contraceptives can regulate menstrual cycles, while medications like metformin may help with insulin resistance.</li><li>Fertility Treatments: For those trying to conceive, medications to stimulate ovulation may be prescribed.</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GaERaF",
+        "text_CeDCr6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Bitmap_3.webp",
+        "container_width": true,
+        "color_background": "#fff",
+        "image_stretch": "cover",
+        "height": "adapt",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "button_type": "button--dark-label",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
     }
   },
   "order": [
@@ -349,6 +391,7 @@
     "rich_text_CpzwhG",
     "rich_text_LXNAPT",
     "rich_text_DWR8hn",
-    "rich_text_zkenCh"
+    "rich_text_zkenCh",
+    "image_with_text_YLhGpN"
   ]
 }
