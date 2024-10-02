@@ -20,7 +20,7 @@
         {% if section.settings.container_height != blank %} custom-hero-2-height--{{ section.settings.container_height }}{% endif %}
       "
       style="
-        {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | image_url: 'master' }}');{% endif %}
+        {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'master' }}');{% endif %}
         {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
       "
     >
