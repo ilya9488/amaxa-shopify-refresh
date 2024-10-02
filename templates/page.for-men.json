@@ -17,23 +17,62 @@
         "padding_bottom": 28
       }
     },
+    "custom_hero_2_qK9wkf": {
+      "type": "custom-hero-2",
+      "blocks": {
+        "page_NrDWtA": {
+          "type": "page",
+          "settings": {
+            "item_text": ""
+          }
+        },
+        "text_block_qhTJRi": {
+          "type": "text_block",
+          "settings": {
+            "item_text": "",
+            "description_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "page_NrDWtA",
+        "text_block_qhTJRi"
+      ],
+      "settings": {
+        "heading_size": "h4",
+        "text_font": "centaur_n4",
+        "heading_format": "caps",
+        "heading": "<p>Conception Challenges for Men: Recognizing and Addressing Infertility</p>",
+        "column_position": "left",
+        "margin_top": "none",
+        "to_top_shift_upward": 58,
+        "margin_bottom": "none",
+        "margin_bottom_custom": 0,
+        "container_height": "large",
+        "background_image": "shopify://shop_images/Bitmap_2.webp",
+        "background_size": "cover",
+        "background_color": "",
+        "show_dev_only": false
+      }
+    },
     "custom_product_hero_2_F3eUjR": {
       "type": "custom-product-hero-2",
+      "disabled": true,
       "settings": {
         "top_title": "Miofoliс® Men",
         "top_subtitle": "Your Natural Ally in Male Vitality",
-        "product_img": "shopify:\/\/shop_images\/miofolicmen_side_eng_180424_1__ut.png",
-        "heading": "<p>Empowering <br\/>Wellness <br\/>for Men<\/p>",
+        "product_img": "shopify://shop_images/miofolicmen_side_eng_180424_1__ut.png",
+        "heading": "<p>Empowering <br/>Wellness <br/>for Men</p>",
         "heading_size": "h1",
         "button_label": "Buy Now",
         "button_type": "button--border-blue",
-        "button_url": "shopify:\/\/products\/miofolic-men",
+        "button_url": "shopify://products/miofolic-men",
         "text": "",
         "margin_top": "none",
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
         "container_height": "small",
-        "background_image": "shopify:\/\/shop_images\/hero-bg-miofolic-men.webp",
+        "background_image": "shopify://shop_images/hero-bg-miofolic-men.webp",
         "background_size": "cover",
         "background_color": "#eee3d8",
         "show_dev_only": false
@@ -45,9 +84,9 @@
         "page_A87qzM": {
           "type": "page",
           "settings": {
-            "heading": "<strong>Increases testosterone levels  1<\/strong>",
-            "image": "shopify:\/\/shop_images\/Graf1_8bbc8aa1-b70b-4897-bd45-e3da6d3099e1.svg",
-            "caption": "Testosterone pg\/ml",
+            "heading": "<strong>Increases testosterone levels  1</strong>",
+            "image": "shopify://shop_images/Graf1_8bbc8aa1-b70b-4897-bd45-e3da6d3099e1.svg",
+            "caption": "Testosterone pg/ml",
             "graph_value_1": "Before taking the medication",
             "graph_color_1": "#c6e3f8",
             "graph_value_2": "After 3 months of taking the medication, MI",
@@ -57,8 +96,8 @@
         "page_jt6zHT": {
           "type": "page",
           "settings": {
-            "heading": "<strong>Normalises metabolic status 1<\/strong>",
-            "image": "shopify:\/\/shop_images\/Graf2_8f94cace-538c-431d-8817-57b537ffc8de.svg",
+            "heading": "<strong>Normalises metabolic status 1</strong>",
+            "image": "shopify://shop_images/Graf2_8f94cace-538c-431d-8817-57b537ffc8de.svg",
             "caption": "Insulin resistance index (HOMA-IR)",
             "graph_value_1": "Before taking the medication",
             "graph_color_1": "#c6e3f8",
@@ -73,7 +112,7 @@
       ],
       "settings": {
         "heading": "How does Miofolic Men work?",
-        "description": "<p>Miofolic Men helps maintain hormonal balance and male reproductive function. Its actions are based on the synergistic effect of its components. Miofolic Men increases testosterone levels, normalises metabolic status and improves spermatogenesis (the production of sperm cells).  <\/p><p>Miofolic Men helps relieve erectile dysfunction and related symptoms.<\/p>",
+        "description": "<p>Miofolic Men helps maintain hormonal balance and male reproductive function. Its actions are based on the synergistic effect of its components. Miofolic Men increases testosterone levels, normalises metabolic status and improves spermatogenesis (the production of sperm cells).  </p><p>Miofolic Men helps relieve erectile dysfunction and related symptoms.</p>",
         "description_text_size": "default",
         "description_alignment": "left",
         "margin_top": "default",
@@ -96,7 +135,7 @@
           "type": "page",
           "settings": {
             "heading": "",
-            "image": "shopify:\/\/shop_images\/2024-07-24-16-20-38-ezgif.com-crop.gif",
+            "image": "shopify://shop_images/2024-07-24-16-20-38-ezgif.com-crop.gif",
             "caption": "",
             "graph_value_1": "",
             "graph_color_1": "",
@@ -108,7 +147,7 @@
           "type": "page",
           "settings": {
             "heading": "",
-            "image": "shopify:\/\/shop_images\/Group_722_c4c8e3aa-7eac-4a8c-8e5b-5552e72a49f8.jpg",
+            "image": "shopify://shop_images/Group_722_c4c8e3aa-7eac-4a8c-8e5b-5552e72a49f8.jpg",
             "caption": "",
             "graph_value_1": "",
             "graph_color_1": "",
@@ -143,8 +182,8 @@
       "type": "custom-image-column",
       "settings": {
         "heading": "Take Miofolic Men 2 sachets a day for 3-6 months",
-        "icon_heading": "shopify:\/\/shop_images\/miofolic-ircle.svg",
-        "description": "<p><strong>Please note that spermatogenesis takes 74 days to occur. <br\/>Results should be evaluated no earlier than after two and half months after the start of treatment.<\/strong><\/p>",
+        "icon_heading": "shopify://shop_images/miofolic-ircle.svg",
+        "description": "<p><strong>Please note that spermatogenesis takes 74 days to occur. <br/>Results should be evaluated no earlier than after two and half months after the start of treatment.</strong></p>",
         "description_text_size": "middle",
         "description_alignment": "center",
         "margin_top": "default",
@@ -155,7 +194,7 @@
         "background_container": "#f5f5f5",
         "show_dev_only": false,
         "background_bottom_content": "rgba(0,0,0,0)",
-        "button_link": "shopify:\/\/products\/miofolic-men",
+        "button_link": "shopify://products/miofolic-men",
         "button_label": "Explore Fertility Factors",
         "button_type": "button--border-blue"
       }
@@ -163,6 +202,7 @@
   },
   "order": [
     "main",
+    "custom_hero_2_qK9wkf",
     "custom_product_hero_2_F3eUjR",
     "custom_image_column_WYETM4",
     "custom_image_column_6hDkeR",
