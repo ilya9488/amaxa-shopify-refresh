@@ -145,6 +145,24 @@
             "item_text": "<p>Research-Backed: Our formulations are supported by <br/>extensive clinical studies confirming their effectiveness <br/>and safety.</p>"
           }
         },
+        "page_aQMQap": {
+          "type": "page",
+          "settings": {
+            "item_text": "<p>Expert Team: Comprised of specialists who innovate <br/>and develop solutions tailored to various health needs.</p>"
+          }
+        },
+        "page_AxTXPa": {
+          "type": "page",
+          "settings": {
+            "item_text": "<p>Quality Assurance: Each product undergoes rigorous <br/>quality checks to ensure the highest standards are met.</p>"
+          }
+        },
+        "page_wh9NP6": {
+          "type": "page",
+          "settings": {
+            "item_text": "<p>Empowering Health Journeys: Our goal is to offer hope <br/>and support through scientifically-backed solutions <br/>designed with care.</p>"
+          }
+        },
         "text_block_z9R4KG": {
           "type": "text_block",
           "settings": {
@@ -164,6 +182,9 @@
         "page_gUTVDn",
         "page_bng6Ka",
         "page_zRYFLi",
+        "page_aQMQap",
+        "page_AxTXPa",
+        "page_wh9NP6",
         "text_block_z9R4KG",
         "text_block_ntb9Y9"
       ],
