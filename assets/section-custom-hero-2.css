@@ -10,8 +10,7 @@
 .custom-hero-2 {
   min-height: var(--custom-hero-2-height-small);
   position: relative;
-  background-position-y: 0;
-  background-position-x: center;
+  background-position: center;
   background-repeat: no-repeat;
 }
 .custom-hero-2--bg-wrap{
