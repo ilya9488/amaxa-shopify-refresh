@@ -97,6 +97,51 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_C8CH6h": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_aB9rfr": {
+          "type": "heading",
+          "settings": {
+            "heading": "Symptoms:",
+            "heading_size": "h2"
+          }
+        }
+      },
+      "block_order": [
+        "heading_aB9rfr"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 16
+      }
+    },
+    "rich_text_XKnfkk": {
+      "type": "rich-text",
+      "blocks": {
+        "text_r9KMJh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Infertility: The primary symptom is difficulty conceiving after one year of unprotected intercourse.<br/>Changes in Sexual Function: This can include erectile dysfunction or changes in libido.<br/>Physical Symptoms: Signs may include swelling in the testicles or changes in hair growth.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_r9KMJh"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
         "padding_bottom": 0
       }
     },
@@ -302,6 +347,8 @@
     "custom_hero_2_qK9wkf",
     "rich_text_xJYzXe",
     "rich_text_86ajDM",
+    "rich_text_C8CH6h",
+    "rich_text_XKnfkk",
     "custom_product_hero_2_F3eUjR",
     "custom_image_column_WYETM4",
     "custom_image_column_nXzFfy",
