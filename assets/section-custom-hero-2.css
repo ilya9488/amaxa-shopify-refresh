@@ -52,6 +52,12 @@
   gap: 35px;
   z-index: 1;
 }
+
+/* column reverse */
+.custom-hero-2--content-wrap.custom-hero-2--column-left > .custom-hero-2--col:first-of-type {
+  order: 1;
+}
+
 .custom-hero-2--col{
   flex: 50%;
 }
@@ -193,6 +199,10 @@
     align-items: center;
     justify-content: flex-end;
     gap: 0;
+  }
+  /* column reverse */
+  .custom-hero-2--content-wrap.custom-hero-2--column-left > .custom-hero-2--col:first-of-type {
+    order: 0;
   }
   .custom-hero-2--text-wrap{
     margin-bottom: 30px;

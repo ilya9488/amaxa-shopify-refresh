@@ -42,7 +42,7 @@
       {% endif %}
     </div>
 
-    <div class="custom-hero-2--content-wrap">
+    <div class="custom-hero-2--content-wrap custom-hero-2--column-{{ section.settings.column_position }}">
       <div class="custom-hero-2--col">
         {% if section.blocks.size > 0 %}  
           <ul class="custom-hero-2--list-icons">
@@ -169,11 +169,29 @@
       "id": "heading",
       "label": "Heading"
     },
+    // Column Position
+    {
+      "type": "select",
+      "id": "column_position",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "right",
+      "label": "Column Position"
+    },
     // list icon
     {
       "type": "image_picker",
       "id": "block_image",
-      "label": "Select Image"
+      "label": "Select Icon",
+      "info": "Icon for Block List Icon"
     },
     // Margin top
     {
