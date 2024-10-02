@@ -148,13 +148,15 @@
         "text_block_z9R4KG": {
           "type": "text_block",
           "settings": {
-            "item_text": "<p>At Amaxa, we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible.</p>"
+            "item_text": "<p>At Amaxa, we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible.</p>",
+            "description_alignment": "center"
           }
         },
         "text_block_ntb9Y9": {
           "type": "text_block",
           "settings": {
-            "item_text": "<p>With over 20 years of experience in the pharmaceutical field, we know how to create supplements that truly make a difference. Our deep knowledge and scientific approach ensure that every product we offer is both effective and safe.</p>"
+            "item_text": "<p>With over 20 years of experience in the pharmaceutical field, we know how to create supplements that truly make a difference. Our deep knowledge and scientific approach ensure that every product we offer is both effective and safe.</p>",
+            "description_alignment": "center"
           }
         }
       },
@@ -179,7 +181,7 @@
         "background_image": "shopify://shop_images/Bitmap.webp",
         "background_size": "cover",
         "background_color": "",
-        "show_dev_only": true
+        "show_dev_only": false
       }
     },
     "custom_why_choose_us_iCBR9K": {
