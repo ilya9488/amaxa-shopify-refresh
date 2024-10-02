@@ -1,4 +1,7 @@
 {{ 'section-custom-hero-2.css' | asset_url | stylesheet_tag }}
+<style> 
+  {{ section.settings.text_font.family | font_face }}
+</style>
 
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
