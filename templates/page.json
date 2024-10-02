@@ -237,29 +237,23 @@
     "rich_text_CpzwhG": {
       "type": "rich-text",
       "blocks": {
+        "text_X6ReMh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
         "text_yaR7xc": {
           "type": "text",
           "settings": {
-            "text": "<p>PCOS</p><p>Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting those with ovaries, leading to various physical and emotional challenges. This page outlines the symptoms, causes, health implications, and treatment options for PCOS, empowering you with the knowledge to manage this condition effectively.</p>"
-          }
-        },
-        "text_NqDKhM": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Common Symptoms:</p>"
-          }
-        },
-        "text_T8HExw": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>Irregular Periods: Many individuals experience infrequent or prolonged menstrual cycles.</li><li>Excess Androgen: Higher levels of male hormones can lead to symptoms like acne, excess facial or body hair (hirsutism), and male-pattern baldness.</li><li>Polycystic Ovaries: Ovaries may become enlarged and contain many small cysts, which can be detected via ultrasound.</li></ul>"
+            "text": "<p>PCOS</p>"
           }
         }
       },
       "block_order": [
-        "text_yaR7xc",
-        "text_NqDKhM",
-        "text_T8HExw"
+        "text_X6ReMh",
+        "text_yaR7xc"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -267,7 +261,81 @@
         "color_scheme": "",
         "full_width": false,
         "padding_top": 0,
-        "padding_bottom": 52
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_LXNAPT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Q6BAM6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_TAUygE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting those with ovaries, leading to various physical and emotional challenges. This page outlines the symptoms, causes, health implications, and treatment options for PCOS, empowering you with the knowledge to manage this condition effectively.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q6BAM6",
+        "text_TAUygE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_DWR8hn": {
+      "type": "rich-text",
+      "blocks": {
+        "text_78RUaz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Common Symptoms:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_78RUaz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_zkenCh": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9MEcwb": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Irregular Periods: Many individuals experience infrequent or prolonged menstrual cycles.</li><li>Excess Androgen: Higher levels of male hormones can lead to symptoms like acne, excess facial or body hair (hirsutism), and male-pattern baldness.</li><li>Polycystic Ovaries: Ovaries may become enlarged and contain many small cysts, which can be detected via ultrasound.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9MEcwb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     }
   },
@@ -278,6 +346,9 @@
     "custom_product_hero_HQ77hR",
     "multicolumn_R4FVma",
     "multicolumn_wRDQfP",
-    "rich_text_CpzwhG"
+    "rich_text_CpzwhG",
+    "rich_text_LXNAPT",
+    "rich_text_DWR8hn",
+    "rich_text_zkenCh"
   ]
 }
