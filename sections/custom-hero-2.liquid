@@ -73,7 +73,11 @@
         {% if section.settings.heading != blank %}
           <div class="custom-hero-2--text-wrap">
             {% if section.settings.heading != blank %}
-              <h1 class="custom-hero-2--title {{ section.settings.heading_size }}">
+              <h1 class="custom-hero-2--title {{ section.settings.heading_size }} {{ section.settings.heading_format }}"
+                style="
+                    {% if section.settings.text_font.family !=blank %}font-family: {{ section.settings.text_font.family }};{% endif %}
+                  "
+               >
                 {{ section.settings.heading | newline_to_br }}
               </h1>
             {% endif %}
@@ -127,6 +131,30 @@
       ],
       "default": "h1",
       "label": "Heading Size"
+    },
+    // heading font
+    {
+      "type": "font_picker",
+      "id": "text_font",
+      "label": "Text font",
+      "default": "inter_n4"
+    },
+    // title formatting
+    {
+      "type": "select",
+      "id": "heading_format",
+      "options": [
+        {
+          "value": "normal",
+          "label": "Normal"
+        },
+        {
+          "value": "caps",
+          "label": "CAPS"
+        }
+      ],
+      "default": "caps",
+      "label": "Heading Formatting"
     },
     // title
     {

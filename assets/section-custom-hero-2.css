@@ -1,20 +1,21 @@
 :root {
-  --custom-hero-2-height-small: 300px;
-  --custom-hero-2-height-medium: 400px;
-  --custom-hero-2-height-large: 600px;
+  --custom-hero-2-height-small: 400px;
+  --custom-hero-2-height-medium: 550px;
+  --custom-hero-2-height-large: 750px;
   --custom-hero-2-title-font-size-base: 5rem;
   --custom-hero-2-title-font-size-base-md: 4rem;
   --custom-hero-2-title-font-size-base-sm: 3rem;
 }
 
 .custom-hero-2 {
-  min-height: var(--custom-hero-2-height-small);
   position: relative;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .custom-hero-2--bg-wrap{
+  height: var(--custom-hero-2-height-small);
+  max-height: 100vh;
   position: relative;
+  background-position: center 15%;
+  background-repeat: no-repeat;
 }
 .custom-hero-2--video-block{
   position: absolute;
@@ -29,30 +30,38 @@
   object-fit: cover;
 }
 .custom-hero-2--content-wrap {
+  max-width: var(--page-width);
+  margin-left: auto;
+  margin-right: auto;
   position: relative;
   display: flex;
   width: 100%;
   gap: 35px;
   z-index: 1;
 }
+.custom-hero-2--col{
+  flex: 50%;
+}
 .custom-hero-2--text-wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  max-width: 60%;
-  padding: 200px 26px;
-  background-color: rgba(var(--color-rgb-clear), 0.7);
+  margin-top: -150px;
+  background-color: var(--color-clear);
+  border-radius: 50px;
+  box-shadow: -20px 20px 30px rgba(var(--color-rgb-dark), .5);
+  margin-bottom: 60px;
 }
 
 .custom-hero-2-height--small {
-  min-height: var(--custom-hero-2-height-small);
+  height: var(--custom-hero-2-height-small);
 }
 .custom-hero-2-height--medium {
-  min-height: var(--custom-hero-2-height-medium);
+  height: var(--custom-hero-2-height-medium);
 }
 .custom-hero-2-height--large {
-  min-height: var(--custom-hero-2-height-large);
+  height: var(--custom-hero-2-height-large);
 }
 
 /* Offsets */
@@ -91,6 +100,13 @@
 }
 .custom-hero-2--title.h4 {
   --custom-hero-2-title-font-size-base: 3.5rem;
+}
+/* Title`s formatting */
+.custom-hero-2--title.caps {
+  text-transform: uppercase;
+}
+.custom-hero-2--title.normal {
+  text-transform: none;
 }
 
 @media (max-width: 990px) {
