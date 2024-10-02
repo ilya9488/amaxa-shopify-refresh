@@ -233,6 +233,28 @@
         "margin_bottom": 32,
         "show_dev_only": false
       }
+    },
+    "rich_text_CpzwhG": {
+      "type": "rich-text",
+      "blocks": {
+        "text_yaR7xc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PCOS<br/>Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting those with ovaries, leading to various physical and emotional challenges. This page outlines the symptoms, causes, health implications, and treatment options for PCOS, empowering you with the knowledge to manage this condition effectively.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_yaR7xc"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -241,6 +263,7 @@
     "main",
     "custom_product_hero_HQ77hR",
     "multicolumn_R4FVma",
-    "multicolumn_wRDQfP"
+    "multicolumn_wRDQfP",
+    "rich_text_CpzwhG"
   ]
 }
