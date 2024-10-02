@@ -173,7 +173,7 @@
         "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.webp",
         "margin_top": "none",
         "to_top_shift_upward": 0,
-        "margin_bottom": "none",
+        "margin_bottom": "default",
         "margin_bottom_custom": 0,
         "container_height": "large",
         "background_image": "shopify://shop_images/Bitmap.webp",
