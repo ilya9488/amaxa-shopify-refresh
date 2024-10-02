@@ -125,13 +125,13 @@
 }
 /* Title`s */
 .custom-hero-2--title.h2 {
-  --custom-hero-2-title-font-size-base: 4.5rem;
+  --custom-hero-2-title-font-size-base: 3.5rem;
 }
 .custom-hero-2--title.h3 {
-  --custom-hero-2-title-font-size-base: 4rem;
+  --custom-hero-2-title-font-size-base: 3rem;
 }
 .custom-hero-2--title.h4 {
-  --custom-hero-2-title-font-size-base: 3.5rem;
+  --custom-hero-2-title-font-size-base: 2.5rem;
 }
 /* Title`s formatting */
 .custom-hero-2--title.caps {
@@ -166,13 +166,13 @@
 
   /* Title`s */
   .custom-hero-2--title.h2 {
-    --custom-hero-2-title-font-size-base: 4rem;
+    --custom-hero-2-title-font-size-base: 3.3rem;
   }
   .custom-hero-2--title.h3 {
-    --custom-hero-2-title-font-size-base: 3.5rem;
+    --custom-hero-2-title-font-size-base: 2.8rem;
   }
   .custom-hero-2--title.h4 {
-    --custom-hero-2-title-font-size-base: 3rem;
+    --custom-hero-2-title-font-size-base: 1.8rem;
   }
 
 }
@@ -185,13 +185,13 @@
 
   /* Title`s */
   .custom-hero-2--title.h2 {
-    --custom-hero-2-title-font-size-base: 3.5rem;
+    --custom-hero-2-title-font-size-base: 3.1rem;
   }
   .custom-hero-2--title.h3 {
-    --custom-hero-2-title-font-size-base: 3rem;
+    --custom-hero-2-title-font-size-base: 2.7rem;
   }
   .custom-hero-2--title.h4 {
-    --custom-hero-2-title-font-size-base: 2.5rem;
+    --custom-hero-2-title-font-size-base: 1.7rem;
   }
 
   .custom-hero-2--content-wrap {
