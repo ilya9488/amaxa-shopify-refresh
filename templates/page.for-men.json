@@ -58,15 +58,16 @@
     "rich_text_xJYzXe": {
       "type": "rich-text",
       "blocks": {
-        "text_Pw6FKV": {
-          "type": "text",
+        "heading_fDHYKi": {
+          "type": "heading",
           "settings": {
-            "text": "<p>Common Causes</p>"
+            "heading": "Common Causes",
+            "heading_size": "h2"
           }
         }
       },
       "block_order": [
-        "text_Pw6FKV"
+        "heading_fDHYKi"
       ],
       "settings": {
         "desktop_content_position": "center",
@@ -74,7 +75,7 @@
         "color_scheme": "",
         "full_width": true,
         "padding_top": 0,
-        "padding_bottom": 8
+        "padding_bottom": 16
       }
     },
     "rich_text_86ajDM": {
