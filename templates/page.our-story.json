@@ -204,28 +204,6 @@
         "background_color": "",
         "show_dev_only": false
       }
-    },
-    "custom_why_choose_us_iCBR9K": {
-      "type": "custom-why-choose-us",
-      "settings": {
-        "background_color": "#f8f6f1",
-        "top_title": "Providing premium food supplements designed to enhance your life",
-        "heading_font": "agmena_n4",
-        "top_text": "With over 20 years of experience in the pharmaceutical field, we know how to create supplements that truly make a difference. Our deep knowledge and scientific approach ensure that every product we offer is both effective and safe.",
-        "text_font": "alegreya_sans_n4",
-        "top_image": "shopify://shop_images/providing-premium-food.webp",
-        "bottom_title": "Get the edge you need.",
-        "bottom_text": "At Amaxa, we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible.",
-        "bottom_image": "shopify://shop_images/get-the-edge-you-need.webp",
-        "button_label": "Explore our range",
-        "button_type": "button--dark-gray",
-        "button_url": "/#shopify-section-template--20728768463182__rich_text_hCEbxw",
-        "bottom_logo": "shopify://shop_images/logo-amaxa.png",
-        "margin_top": "none",
-        "margin_bottom": "none",
-        "margin_bottom_custom": 0,
-        "show_dev_only": false
-      }
     }
   },
   "order": [
@@ -233,7 +211,6 @@
     "main",
     "custom_product_hero_HQ77hR",
     "multicolumn_R4FVma",
-    "custom_hero_2_Hi3GEM",
-    "custom_why_choose_us_iCBR9K"
+    "custom_hero_2_Hi3GEM"
   ]
 }
