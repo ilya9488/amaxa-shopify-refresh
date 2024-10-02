@@ -114,6 +114,7 @@
   padding: 10px 20px;
 }
 .custom-hero-2--title p{
+  font-family: inherit;
   color: inherit;
 }
 /* Title`s */
