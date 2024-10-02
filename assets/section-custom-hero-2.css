@@ -2,7 +2,7 @@
   --custom-hero-2-height-small: 400px;
   --custom-hero-2-height-medium: 550px;
   --custom-hero-2-height-large: 750px;
-  --custom-hero-2-title-font-size-base: 5rem;
+  --custom-hero-2-title-font-size-base: 3.5rem;
   --custom-hero-2-title-font-size-base-md: 4rem;
   --custom-hero-2-title-font-size-base-sm: 3rem;
 }
@@ -29,6 +29,16 @@
   height: 100%;
   object-fit: cover;
 }
+.custom-hero-2-height--small {
+  height: var(--custom-hero-2-height-small);
+}
+.custom-hero-2-height--medium {
+  height: var(--custom-hero-2-height-medium);
+}
+.custom-hero-2-height--large {
+  height: var(--custom-hero-2-height-large);
+}
+
 .custom-hero-2--content-wrap {
   max-width: var(--page-width);
   margin-left: auto;
@@ -42,26 +52,18 @@
 .custom-hero-2--col{
   flex: 50%;
 }
-.custom-hero-2--text-wrap {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin-top: -150px;
-  background-color: var(--color-clear);
-  border-radius: 50px;
-  box-shadow: -20px 20px 30px rgba(var(--color-rgb-dark), .5);
-  margin-bottom: 60px;
+
+.custom-hero-2--list-icons{
+  list-style: none;
+  padding-left: 0;
 }
 
-.custom-hero-2-height--small {
-  height: var(--custom-hero-2-height-small);
+.custom-hero-2--list-icons-item{
+  display: flex;
+  align-items: flex-start;
 }
-.custom-hero-2-height--medium {
-  height: var(--custom-hero-2-height-medium);
-}
-.custom-hero-2-height--large {
-  height: var(--custom-hero-2-height-large);
+.custom-hero-2--list-icons-item p{
+  margin-top: 0;
 }
 
 /* Offsets */
@@ -84,12 +86,28 @@
   margin-block-end: var(--section-margin-block-end-big);
 }
 
+/* Title wrap */
+.custom-hero-2--text-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: -150px;
+  background-color: var(--color-clear);
+  border-radius: 50px;
+  box-shadow: -20px 20px 30px rgba(var(--color-rgb-dark), .5);
+  margin-bottom: 60px;
+}
+
 /* Title */
 .custom-hero-2--title {
   width: 100%;
-  color: var(--color-grey-dark);
+  color: var(--color-brown);
   font-size: var(--custom-hero-2-title-font-size-base);
   margin: 0;
+}
+.custom-hero-2--title p{
+  color: inherit;
 }
 /* Title`s */
 .custom-hero-2--title.h2 {
