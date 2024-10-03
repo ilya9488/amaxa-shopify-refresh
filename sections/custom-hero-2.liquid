@@ -1,6 +1,20 @@
 {{ 'section-custom-hero-2.css' | asset_url | stylesheet_tag }}
 <style> 
   {{ section.settings.text_font | font_face }}
+
+  /* section bg */
+  #Banner-{{ section.id }} .custom-hero-2--bg-wrap{
+    {% if section.settings.background_image !=blank %}
+      background-image: url('{{ section.settings.background_image | img_url: 'master' }}');
+    {% endif %}
+  }
+  @media (max-width: 750px) {
+    #Banner-{{ section.id }} .custom-hero-2--bg-wrap{
+      {% if section.settings.background_image_mobile !=blank %}
+        background-image: url('{{ section.settings.background_image_mobile | img_url: 'master' }}');
+      {% endif %}
+    }
+  }
 </style>
 
 {% comment %} Dev Mode - condition {% endcomment %}
@@ -23,7 +37,6 @@
         {% if section.settings.container_height != blank %} custom-hero-2-height--{{ section.settings.container_height }}{% endif %}
       "
       style="
-        {% if section.settings.background_image !=blank %}background-image: url('{{ section.settings.background_image | img_url: 'master' }}');{% endif %}
         {% if section.settings.background_size !=blank %}background-size: {{ section.settings.background_size }} {% endif %}
       "
     >
@@ -288,7 +301,14 @@
     {
       "type": "image_picker",
       "id": "background_image",
-      "label": "Background Image"
+      "label": "Background Image",
+      "info": "Background on Desctop (min-w: 750px)"
+    },
+    {
+      "type": "image_picker",
+      "id": "background_image_mobile",
+      "label": "Background Image Mobile",
+      "info": "Background on Mobile (max-w: 750px)"
     },
     // Background Video
     {
