@@ -8,6 +8,7 @@ function getFocusableElements(container) {
 
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   let isClicked = false; // Click tracking flag
+  const mediaQuery = window.matchMedia('(min-width: 990px)');
 
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
@@ -24,7 +25,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
 
   // Cursor guidance
   summary.addEventListener('mouseover', (event) => {
-    if (!isClicked && summary.closest('sticky-header')) { // If the ISCLICED flag is FALSE, we perform the action
+    if (!isClicked && mediaQuery.matches && summary.closest('sticky-header')) { // If the ISCLICED flag is FALSE, we perform the action
       event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
       summary.parentNode.setAttribute('open', '');
     }
@@ -38,7 +39,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
   const megaMenuContent = summary.parentNode.querySelector('.mega-menu__content');
   if (megaMenuContent) {
     document.addEventListener('mousemove', (e) => {
-      if (!megaMenuContent.contains(e.target) && !summary.contains(e.target) && summary.closest('sticky-header')) {
+      if (!megaMenuContent.contains(e.target) && mediaQuery.matches && !summary.contains(e.target) && summary.closest('sticky-header')) {
         summary.parentNode.removeAttribute('open');
       }
     });
