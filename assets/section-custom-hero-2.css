@@ -180,6 +180,21 @@
 }
 
 @media (max-width: 750px) {
+
+  .custom-hero-2--bg-wrap{
+    max-height: calc(100vh - 120px);
+    background-position: center;
+  }
+  .custom-hero-2-height--small {
+    height: calc(var(--custom-hero-2-height-small) - (var(--custom-hero-2-height-small) / 10));
+  }
+  .custom-hero-2-height--medium {
+    height: calc(var(--custom-hero-2-height-medium) - (var(--custom-hero-2-height-medium) / 10));
+  }
+  .custom-hero-2-height--large {
+    height: calc(var(--custom-hero-2-height-large) - (var(--custom-hero-2-height-large) / 10));
+  }
+
   /* Title */
   .custom-hero-2--title {
     font-size: var(--custom-hero-2-title-font-size-base-sm);
