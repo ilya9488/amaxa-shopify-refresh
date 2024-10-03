@@ -103,10 +103,10 @@
     "custom_liquid_XVUbW9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<img style=\"display: block;max-width: 800px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\" src=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Screenshot_12.jpg?v=1727882440\" alt=\"image\">",
+        "custom_liquid": "<img style=\"display: block;max-width: 800px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\" src=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Screenshot_15.jpg?v=1727938247\" alt=\"image\">",
         "color_scheme": "",
         "padding_top": 0,
-        "padding_bottom": 52
+        "padding_bottom": 32
       }
     },
     "rich_text_C8CH6h": {
@@ -157,7 +157,7 @@
     "custom_liquid_4WKtHF": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<img style=\"display: block;max-width: 800px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\" src=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Screenshot_13.jpg?v=1727882441\" alt=\"image\">",
+        "custom_liquid": "<img style=\"display: block;max-width: 800px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\" src=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Screenshot_14.jpg?v=1727938247\" alt=\"image\">",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 0
@@ -230,56 +230,6 @@
         "padding_bottom": "none",
         "background_container": "",
         "show_dev_only": false,
-        "background_bottom_content": "",
-        "button_link": "",
-        "button_label": "",
-        "button_type": "button--border-blue"
-      }
-    },
-    "custom_image_column_nXzFfy": {
-      "type": "custom-image-column",
-      "blocks": {
-        "page_cTnCxg": {
-          "type": "page",
-          "settings": {
-            "heading": "<strong>Increases testosterone levels  1</strong>",
-            "image": "shopify://shop_images/Graf1_8bbc8aa1-b70b-4897-bd45-e3da6d3099e1.svg",
-            "caption": "Testosterone pg/ml",
-            "graph_value_1": "Before taking the medication",
-            "graph_color_1": "#c6e3f8",
-            "graph_value_2": "After 3 months of taking the medication, MI",
-            "graph_color_2": "#1f5ba5"
-          }
-        },
-        "page_ayWXtE": {
-          "type": "page",
-          "settings": {
-            "heading": "<strong>Normalises metabolic status 1</strong>",
-            "image": "shopify://shop_images/Graf2_8f94cace-538c-431d-8817-57b537ffc8de.svg",
-            "caption": "Insulin resistance index (HOMA-IR)",
-            "graph_value_1": "Before taking the medication",
-            "graph_color_1": "#c6e3f8",
-            "graph_value_2": "After 3 months of taking the medication, MI",
-            "graph_color_2": "#1f5ba5"
-          }
-        }
-      },
-      "block_order": [
-        "page_cTnCxg",
-        "page_ayWXtE"
-      ],
-      "settings": {
-        "heading": "How does Miofolic Men work?",
-        "description": "<p>Miofolic Men helps maintain hormonal balance and male reproductive function. Its actions are based on the synergistic effect of its components. Miofolic Men increases testosterone levels, normalises metabolic status and improves spermatogenesis (the production of sperm cells).  </p><p>Miofolic Men helps relieve erectile dysfunction and related symptoms.</p>",
-        "description_text_size": "default",
-        "description_alignment": "left",
-        "margin_top": "default",
-        "margin_bottom": "default",
-        "margin_bottom_custom": 0,
-        "padding_top": "none",
-        "padding_bottom": "none",
-        "background_container": "",
-        "show_dev_only": true,
         "background_bottom_content": "",
         "button_link": "",
         "button_label": "",
@@ -371,7 +321,6 @@
     "custom_liquid_4WKtHF",
     "custom_product_hero_2_F3eUjR",
     "custom_image_column_WYETM4",
-    "custom_image_column_nXzFfy",
     "custom_image_column_6hDkeR",
     "custom_image_column_d3z3De"
   ]
