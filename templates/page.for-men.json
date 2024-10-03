@@ -50,6 +50,7 @@
         "margin_bottom_custom": 0,
         "container_height": "large",
         "background_image": "shopify://shop_images/Bitmap_2.jpg",
+        "background_image_mobile": "shopify://shop_images/Bitmap_2.webp",
         "background_size": "cover",
         "background_color": "",
         "show_dev_only": false
