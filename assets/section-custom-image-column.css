@@ -2,7 +2,10 @@
   --custom-image-column-title-font-size: 30px;
 }
 
-/* .custom-image-column{} */
+.custom-image-column{
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .custom-image-column-bottom-content-wrap,
 .custom-image-column-wrap{
   max-width: 1140px;
