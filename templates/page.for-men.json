@@ -104,7 +104,7 @@
     "custom_liquid_XVUbW9": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<picture>\n  <source srcset=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Group_250.jpg?v=1727941869\" media=\"(max-width: 600px)\" />\n  <img style=\"display: block;max-width: 800px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\" src=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Screenshot_15.jpg?v=1727938247\" alt=\"image\">\n</picture>",
+        "custom_liquid": "<picture>\n  <source srcset=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Group_250_64e9ff5a-984b-4cf5-9eb5-f884340fca26.jpg?v=1727959517\" media=\"(max-width: 600px)\" />\n  <img \n    style=\"display: block;max-width: 800px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\" \n    src=\"https://cdn.shopify.com/s/files/1/0797/0003/3870/files/Group-250-desctop.jpg?v=1727959516\" \n    alt=\"image\">\n</picture>",
         "color_scheme": "",
         "padding_top": 0,
         "padding_bottom": 32
