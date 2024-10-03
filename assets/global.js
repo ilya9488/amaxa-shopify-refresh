@@ -7,6 +7,8 @@ function getFocusableElements(container) {
 }
 
 document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
+  let isClicked = false; // Click tracking flag
+
   summary.setAttribute('role', 'button');
   summary.setAttribute('aria-expanded', summary.parentNode.hasAttribute('open'));
 
@@ -14,10 +16,35 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
 
+  // Click handler
   summary.addEventListener('click', (event) => {
+    isClicked = true; // After clicking, we prohibit the operation of the mouseover
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
   });
 
+  // Cursor guidance
+  summary.addEventListener('mouseover', (event) => {
+    if (!isClicked && summary.closest('sticky-header')) { // If the ISCLICED flag is FALSE, we perform the action
+      event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
+      summary.parentNode.setAttribute('open', '');
+    }
+  });
+
+  // Cursor care processor from the element
+  summary.addEventListener('mouseleave', () => {
+    isClicked = false; // As soon as the cursor has left the element, drop the flag
+  });
+
+  const megaMenuContent = summary.parentNode.querySelector('.mega-menu__content');
+  if (megaMenuContent) {
+    document.addEventListener('mousemove', (e) => {
+      if (!megaMenuContent.contains(e.target) && !summary.contains(e.target) && summary.closest('sticky-header')) {
+        summary.parentNode.removeAttribute('open');
+      }
+    });
+  }
+
+  // Pass for elements in 'Header-Drawer' or 'Menu-Drawer'
   if (summary.closest('header-drawer, menu-drawer')) return;
   summary.parentElement.addEventListener('keyup', onKeyUpEscape);
 });

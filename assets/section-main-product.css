@@ -1922,9 +1922,9 @@ svg.icon.icon-minus,
 svg.icon.icon-plus {
   width: 15px;
 }
-details {
+/* details {
   cursor: pointer;
-}
+} */
 
 .slider-content--title {
   font-size: 15px !important;
