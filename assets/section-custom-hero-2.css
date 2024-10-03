@@ -209,6 +209,7 @@
   .custom-hero-2--text-wrap{
     margin-bottom: 30px;
     box-shadow: -10px 10px 20px rgba(var(--color-rgb-dark), .5);
+    margin-top: -120px;
   }
   .custom-hero-2--text-block{
     padding: 0 5%;
