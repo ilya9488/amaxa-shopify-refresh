@@ -10,6 +10,7 @@
           <div class="swiper-slide">
             {%- assign media_position = media_position | default: 0 | plus: 1 -%}
             {%- if media.media_type == 'image' -%}
+              <!-- /* zoom hover */ -->
               <!-- add - onmousemove="zoom(event)" - if need zoom hover + style="background-image: url({{ media | img_url: '1024x1024' }})" -->
               <div class="swiper-slide-wrap">
                 <img src="{{ media | img_url: '1024x1024' }}" alt="{{ media.alt | escape }}" />

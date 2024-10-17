@@ -417,6 +417,7 @@ slider-component.slider-component-full-width {
   height: 100%;
   /* overflow: hidden; */
 }
+/* zoom hover */
 .gallery-top .product-swiper-wrapper .swiper-slide-wrap[onmousemove="zoom(event)"]::before{
   content: '';
   width: 100%;
