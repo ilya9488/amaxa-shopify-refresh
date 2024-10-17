@@ -449,7 +449,7 @@ slider-component.slider-component-full-width {
 /* zoom hover */
 .gallery-top:hover .product-zoom-indicator,
 .gallery-top .product-swiper-wrapper:hover .swiper-slide-wrap[onmousemove="zoom(event)"]::before,
-.gallery-top .product-swiper-wrapper:hover img {
+.gallery-top .product-swiper-wrapper:hover .swiper-slide-wrap[onmousemove="zoom(event)"] img {
   opacity: 0;
   cursor: zoom-in;
 }
