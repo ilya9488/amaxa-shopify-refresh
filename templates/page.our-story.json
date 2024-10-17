@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -59,7 +59,7 @@
         "text_block_z9R4KG": {
           "type": "text_block",
           "settings": {
-            "item_text": "<p>At Amaxa, we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible.</p>",
+            "item_text": "<p><br/>At Amaxa, we use only the highest quality ingredients, chosen for their purity and strength. Our advanced formulas are designed to work smoothly with your body, helping you achieve the best health possible.</p>",
             "description_alignment": "center"
           }
         },
@@ -82,10 +82,10 @@
         "text_block_ntb9Y9"
       ],
       "settings": {
-        "heading_size": "h1",
+        "heading_size": "h4",
         "text_font": "centaur_n4",
         "heading_format": "caps",
-        "heading": "<p>Amaxa Provides <br/>PROVIDING PREMIUM <br/>FOOD SUPPLEMENTS <br/>DESIGNED TO ENHANCE <br/>YOUR LIFE</p>",
+        "heading": "<p>Amaxa Provides  PROVIDING PREMIUM <br/>FOOD SUPPLEMENTS  DESIGNED TO ENHANCE YOUR LIFE</p>",
         "column_position": "right",
         "block_image": "shopify://shop_images/04b2ffa6-ee13-4192-9894-8ed59678a9ff.webp",
         "margin_top": "none",
