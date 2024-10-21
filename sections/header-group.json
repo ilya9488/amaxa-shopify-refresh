@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "text": "10% OFF YOUR FIRST ORDER:\nUSE CODE WELCOME10 AT CHECKOUT",
-            "line_break": true,
+            "line_break": false,
             "text_2": "",
             "link": "shopify://collections/all"
           }
