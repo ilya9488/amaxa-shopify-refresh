@@ -22,10 +22,20 @@
             "text_2": "USE CODE WELCOME10 AT CHECKOUT",
             "link": "shopify://collections/all"
           }
+        },
+        "announcement_dKXmX3": {
+          "type": "announcement",
+          "settings": {
+            "text": "Free Shipping Over £60",
+            "line_break": false,
+            "text_2": "",
+            "link": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_dKXmX3"
       ],
       "settings": {
         "color_scheme": "background-1",
