@@ -28,7 +28,6 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
     if (!isClicked && mediaQuery.matches && summary.closest('.header__inline-menu')) { // If the ISCLICED flag is FALSE, we perform the action
       event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
       summary.parentNode.setAttribute('open', '');
-      console.log(876876);
     }
   });
 
