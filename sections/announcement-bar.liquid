@@ -53,7 +53,7 @@
             >
             <span style="color: inherit;">
             <i style="color: inherit;">
-              {{ section.blocks.first.settings.text | escape }}
+              {{ section.blocks.first.settings.text | escape | newline_to_br }}
             </i>
           </span>
             {%- if section.blocks.first.settings.text_2 != blank -%}
@@ -62,7 +62,7 @@
                 {%- if section.blocks.first.settings.line_break -%}<br>{%- endif -%}
                 {% comment %} Text Line 2 {% endcomment %}
                 <i style="color: inherit;">
-                  {{ section.blocks.first.settings.text_2 | escape }}
+                  {{ section.blocks.first.settings.text_2 | escape | newline_to_br }}
                 </i>
               </span>
             {%- endif -%}
@@ -121,14 +121,51 @@
                       <a
                         href="{{ block.settings.link }}"
                         class="announcement-bar__link link link--text focus-inset animate-arrow"
+                        style="
+                          {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
+                        "
                       >
                     {%- endif -%}
-                    <p class="announcement-bar__message">
-                      <span>{{ block.settings.text | escape }}</span>
-                      {%- if block.settings.link != blank -%}
+                    <p class="announcement-bar__message"
+                      style="
+                          {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
+                        "
+                    >
+                      <span style="color: inherit;">
+                        <i style="color: inherit;">
+                          {{ block.settings.text | escape | newline_to_br  }}
+                          {% comment %} {{ section.blocks.first.settings.text | escape | newline_to_br }} {% endcomment %}
+                        </i>
+                      </span>
+                      {% comment %} {%- if block.settings.link != blank -%}
                         {% render 'icon-arrow' %}
-                      {%- endif -%}
+                      {%- endif -%} {% endcomment %}
                     </p>
+
+                    {% comment %} <p class="announcement-bar__message"
+                      style="
+                          {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
+                        "
+                      >
+                      <span style="color: inherit;">
+                      <i style="color: inherit;">
+                        {{ section.blocks.first.settings.text | escape | newline_to_br }}
+                      </i>
+                    </span>
+                      {%- if section.blocks.first.settings.text_2 != blank -%}
+                        <span style="color: inherit;" >
+                          {% comment %} To Next Line {% endcomment %}
+                          {%- if section.blocks.first.settings.line_break -%}<br>{%- endif -%}
+                          {% comment %} Text Line 2 {% endcomment %}
+                          <i style="color: inherit;">
+                            {{ section.blocks.first.settings.text_2 | escape | newline_to_br }}
+                          </i>
+                        </span>
+                      {%- endif -%}
+                      {% comment %} {%- if section.blocks.first.settings.link != blank -%}
+                        {% render 'icon-arrow' %}
+                      {%- endif -%} {% endcomment %}
+                    </p> {% endcomment %}
                     {%- if block.settings.link != blank -%}
                       </a>
                     {%- endif -%}
