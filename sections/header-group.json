@@ -17,7 +17,7 @@
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
-            "text": "10% OFF YOUR FIRST ORDER:",
+            "text": "10% OFF YOUR FIRST ORDER:\nUSE CODE WELCOME10 AT CHECKOUT",
             "line_break": true,
             "text_2": "USE CODE WELCOME10 AT CHECKOUT",
             "link": "shopify://collections/all"
@@ -43,8 +43,8 @@
         "text_color": "#ffffff",
         "show_line_separator": false,
         "show_social": false,
-        "auto_rotate": true,
-        "change_slides_speed": 5,
+        "auto_rotate": false,
+        "change_slides_speed": 3,
         "enable_country_selector": false,
         "enable_language_selector": false
       }
