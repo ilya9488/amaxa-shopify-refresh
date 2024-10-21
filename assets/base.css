@@ -2872,10 +2872,11 @@ product-info .loading__spinner:not(.hidden) ~ *,
 .header__icons .header-faq-link a{
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 16px;
-  color: var(--color-grey);
-  text-shadow: 1px 1px 2px var(--color-clear), -1px -1px 2px var(--color-clear), 1px 1px 2px var(--color-clear), -1px -1px 2px var(--color-clear);
+  color: var(--color-primary);
+  text-shadow: 0.2px 0.2px 0px var(--color-dark);
+  /* text-shadow: 1px 1px 2px var(--color-clear), -1px -1px 2px var(--color-clear), 1px 1px 2px var(--color-clear), -1px -1px 2px var(--color-clear); */
   transition: .3s;
 }
 .header__icons .header-faq-link a:hover{
