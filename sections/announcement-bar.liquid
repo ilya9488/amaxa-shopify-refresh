@@ -90,7 +90,7 @@
             aria-label="{{ 'sections.announcements.previous_announcement' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
-            {% render 'icon-caret' %}
+            {% comment %} {% render 'icon-caret' %} {% endcomment %}
           </button>
           <div
             class="grid grid--1-col slider slider--everywhere"
@@ -181,7 +181,7 @@
             aria-label="{{ 'sections.announcements.next_announcement' | t }}"
             aria-controls="Slider-{{ section.id }}"
           >
-            {% render 'icon-caret' %}
+            {% comment %} {% render 'icon-caret' %} {% endcomment %}
           </button>
         </div>
       </slideshow-component>
