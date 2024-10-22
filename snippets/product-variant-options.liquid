@@ -66,12 +66,13 @@
         assign regular_price = current_variant.price
         assign original_price = current_variant.compare_at_price
       -%}
-
-      {{ value -}}- {{ regular_price | money_without_trailing_zeros }}
-
+      
       {% if original_price > regular_price %}
+        {{ value }} - {{ original_price | money_without_trailing_zeros }}
         <br>
         <small>Save {{ original_price | minus: regular_price | money_without_trailing_zeros }}</small>
+      {% else %}
+        {{ value }} - {{ regular_price | money_without_trailing_zeros }}
       {% endif %}
       
       <span class="icon--check"><svg width="12" height="12" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path fill="z" stroke="" d="M12,0 C18.627417,0 24,5.372583 24,12 C24,18.627417 18.627417,24 12,24 C5.372583,24 0,18.627417 0,12 C0,5.372583 5.372583,0 12,0 Z M18.7179004,7.30385416 C18.3334297,6.90736872 17.7003396,6.89762888 17.3038542,7.28209961 L9.75,14.607 L6.69614584,11.645736 C6.2996604,11.2612652 5.66657034,11.2710051 5.28209961,11.6674905 C4.89762888,12.063976 4.90736872,12.697066 5.30385416,13.0815368 L9.05385416,16.7179004 C9.44174112,17.0940332 10.0582589,17.0940332 10.4461458,16.7179004 L18.6961458,8.71790039 C19.0926313,8.33342966 19.1023711,7.7003396 18.7179004,7.30385416 Z"></path></svg></span>
