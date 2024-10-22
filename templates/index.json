@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "custom_hero_rVhRkH": {
@@ -15,7 +15,7 @@
         "heading_size": "h1",
         "heading": "Stay in Your Prime",
         "text": "<strong>Premium Supplements, Prime Results</strong>",
-        "button_label": "Find Your Perfect Fit",
+        "button_label": "Discover Our Supplements",
         "button_url": "shopify-section-template--20728768463182__rich_text_hCEbxw",
         "button_type": "button--sand",
         "margin_top": "none",
