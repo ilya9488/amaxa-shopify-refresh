@@ -477,8 +477,12 @@
   clip-path: polygon(var(--shape--blob-1));
 }
 
-/* Card Shape Hover Rules */
+/* SALE price on product card - (!) hide (!)*/
+.product-card-wrapper s.price-item {
+  display: none;
+}
 
+/* Card Shape Hover Rules */
 @media (prefers-reduced-motion: no-preference) {
   .product-card-wrapper .shape--round {
     transition: clip-path var(--duration-long) ease;
