@@ -2468,6 +2468,10 @@ product-info .loading__spinner:not(.hidden) ~ *,
   .utility-bar .utility-bar__grid .list-social {
     display: none;
   }
+  .button--sand {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .utility-bar .list-social__item .icon {
