@@ -67,7 +67,7 @@
         assign original_price = current_variant.compare_at_price
       -%}
 
-      {{ value -}} - {{ original_price | money_without_trailing_zeros }}
+      {{ value -}}- {{ regular_price | money_without_trailing_zeros }}
 
       {% if original_price > regular_price %}
         <br>
