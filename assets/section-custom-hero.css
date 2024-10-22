@@ -48,6 +48,9 @@
 .custom-hero--button{
   padding-top: 20px;
 }
+.custom-hero--button .button{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
 
 .custom-hero-height--small {
   min-height: var(--custom-hero-height-small);
