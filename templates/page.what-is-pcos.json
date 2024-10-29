@@ -98,12 +98,22 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "custom_liquid_VUbLxA": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<picture \n  style=\"display: block;max-width: 800px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\"\n>\n  <img \n    style=\"width: 100%; height: auto; max-width: 500px;\" \n    src=\"https://miofolic.com/wp-content/uploads/2020/08/Miofolic-polycystic-2-en.jpg\" \n    alt=\"image\">\n</picture>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_YLhGpN",
     "rich_text_LXNAPT",
-    "custom_liquid_ibLRyj"
+    "custom_liquid_ibLRyj",
+    "custom_liquid_VUbLxA"
   ]
 }
