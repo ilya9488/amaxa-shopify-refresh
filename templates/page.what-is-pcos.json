@@ -73,7 +73,7 @@
         "text_TAUygE": {
           "type": "text",
           "settings": {
-            "text": "<h1>What is Miofolic?</h1><p></p><p>It is not always possible and desirable for a woman to correct menstrual disorders using hormone-containing drugs. Therefore, in recent years, special non-hormonal drugs, such as Miofolic, are increasingly used.</p><p><strong>Miofolic </strong>is an innovative complex for improving the reproductive function of a woman and normalizing the hormone balance at all stages of preparing for pregnancy, as well as for its further safe course.</p><p>Miofolic is also used to correct polycystic ovary syndrome (PCOS), restore insulin sensitivity and relieve anxiety disorders. Miofolic includes myo-inositol, 4th generation folic acid and vitamin B12.</p><p>Miofolic has strong action potential, having a positive impact on the whole organism.</p><h2>Myo-inositol</h2><p>The key mechanism of the myo-inositol action has been confirmed in clinical studies involving a large number of women.</p><p>The use of myo-inositol normalizes metabolic processes in the body. It reduces insulin resistance and compensatory hyperinsulinemia, which leads to the recovery of normal hormonal parameters and, as a result, to:</p><ul><li>resumption of ovulation</li><li>resumption of menstruation</li></ul><p>According to available data, taking myo-inositol is well tolerated and there are no adverse effects.</p><h2>4th generation folic acid</h2><p>4th generation folic acid has a high water solubility, which enables it to be perfectly absorbed and internalized by the body.</p><p>Folic acid is involved in the creation of new cells, including oocytes, and therefore it is especially important for women with polycystic ovary syndrome.</p><p>With a sufficient folic acid level, the number of eggs significantly increases, and the homocysteine level ​​in the follicular fluid decreases (frequent miscarriages are associated with the high homocysteine level). During pregnancy preparation, and pregnancy itself, the need for folic acid increases. Taking folic acid in pregnancy planning reduces the risk of neural tube defects, cleft lip and palate, heart defects, and limbs and urinary tract defects. Folic acid prevents impaired fetal growth and reduces the baby’s risk of being underweight.</p><p>Folic acid requirement for adults is 400 µg per day.</p><p>30 - 40% of peoplehave a gene mutation(С677Т polymorphism)</p><p>In order to get the necessary amount of folic acid, it is necessary to take it in the form of a biologically active form, which is immediately absorbed by the body and does not need additional metabolism. 4th generation folic acid is the biologically active form and it is contained in the Miofolic complex. The recommended Miofolic intake to get a daily dose (400 µg) is 2 sachets per day.</p><h2>Vitamin B12</h2><p>Vitamin B12 is essential for better folic acid absorption. In addition, vitamin B12 enhances and supplements the folic acid action and, therefore, their combined intake is recommended.</p><p>Vitamin B12 is responsible for improving immunity; it helps maintain proper energy metabolism, prevents the occurrence of anemia – essential for the reproductive function regulation – plays an important role in the hemopoietic functions regulation, and supports the nervous system in a healthy condition in that it affects concentration and memory, and reduces irritability.</p>"
+            "text": "<h1>What is PCOS</h1><h3></h3><h2>Miofolic to increase fertility</h2><p>Polycystic ovary syndrome (PCOS) refers to the most common hormonal disorders in women of reproductive age. Patients with PCOS have problems with ovulation, insulin resistance and abnormally high levels of androgens.<br/>Polycystic ovary syndrome is so called because women with this condition usually have a number of cysts on the ovaries (generally twice the norm), no larger than 8 mm in diameter each). They are located far from the surface of the ovaries and contain follicles that have not developed properly due to a number of hormonal abnormalities. The egg cannot mature in such follicles. Subsequently, pregnancy occurrence is impossible. This pathology is successfully diagnosed with the use of screening during ultrasound scanning.</p>"
           }
         }
       },
@@ -89,11 +89,21 @@
         "padding_top": 32,
         "padding_bottom": 28
       }
+    },
+    "custom_liquid_ibLRyj": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<img decoding=\"async\" fetchpriority=\"high\" width=\"454\" height=\"445\" src=\"https://miofolic.com/wp-content/uploads/2020/08/Miofolic-polycystic-1-en.jpg\" alt=\"What is PCOS\" class=\"wp-image-224\" srcset=\"https://miofolic.com/wp-content/uploads/2020/08/Miofolic-polycystic-1-en.jpg 454w, https://miofolic.com/wp-content/uploads/2020/08/Miofolic-polycystic-1-en-300x294.jpg 300w\" sizes=\"(max-width: 454px) 100vw, 454px\">",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_YLhGpN",
-    "rich_text_LXNAPT"
+    "rich_text_LXNAPT",
+    "custom_liquid_ibLRyj"
   ]
 }
