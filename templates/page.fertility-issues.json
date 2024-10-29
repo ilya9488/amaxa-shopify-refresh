@@ -23,7 +23,7 @@
         "text_thRV73": {
           "type": "text",
           "settings": {
-            "text": "<h1>    Miofolic for a healthy pregnancy</h1>"
+            "text": "<h1>Miofolic boosts fertility</h1>"
           }
         }
       },
@@ -45,7 +45,7 @@
         "text_CeDCr6": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Miofolic</strong> reduces the risk of developing diabetes during pregnancy by 65%.</p>",
+            "text": "<p><strong>Miofolic</strong> increases the number of ovulatory cycles by 70% within 3 months of taking and normalizes the menstrual cycle, significantly increasing a woman’s chances of becoming pregnant.</p>",
             "text_style": "subtitle"
           }
         }
@@ -54,7 +54,7 @@
         "text_CeDCr6"
       ],
       "settings": {
-        "image": "shopify://shop_images/maintaining-a-healthy-pregnancy-miofolic.webp",
+        "image": "shopify://shop_images/fertility-issues-miofolic.webp",
         "container_width": true,
         "color_background": "#fff",
         "image_stretch": "cover",
