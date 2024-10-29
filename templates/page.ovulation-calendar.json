@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "image_with_text_YLhGpN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GaERaF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Causes:",
+            "heading_size": "h2"
+          }
+        },
+        "text_CeDCr6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The exact cause of PCOS is unknown, but factors may include:</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GaERaF",
+        "text_CeDCr6"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Bitmap_1_879a137b-fdf9-42c8-bd22-be160d099891.webp",
+        "container_width": true,
+        "color_background": "#fff",
+        "image_stretch": "contain",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "button_type": "button--dark-label",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_LXNAPT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Q6BAM6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_TAUygE": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>What is Miofolic?</h1><p></p><p>It is not always possible and desirable for a woman to correct menstrual disorders using hormone-containing drugs. Therefore, in recent years, special non-hormonal drugs, such as Miofolic, are increasingly used.</p><p><strong>Miofolic </strong>is an innovative complex for improving the reproductive function of a woman and normalizing the hormone balance at all stages of preparing for pregnancy, as well as for its further safe course.</p><p>Miofolic is also used to correct polycystic ovary syndrome (PCOS), restore insulin sensitivity and relieve anxiety disorders. Miofolic includes myo-inositol, 4th generation folic acid and vitamin B12.</p><p>Miofolic has strong action potential, having a positive impact on the whole organism.</p><h2>Myo-inositol</h2><p>The key mechanism of the myo-inositol action has been confirmed in clinical studies involving a large number of women.</p><p>The use of myo-inositol normalizes metabolic processes in the body. It reduces insulin resistance and compensatory hyperinsulinemia, which leads to the recovery of normal hormonal parameters and, as a result, to:</p><ul><li>resumption of ovulation</li><li>resumption of menstruation</li></ul><p>According to available data, taking myo-inositol is well tolerated and there are no adverse effects.</p><h2>4th generation folic acid</h2><p>4th generation folic acid has a high water solubility, which enables it to be perfectly absorbed and internalized by the body.</p><p>Folic acid is involved in the creation of new cells, including oocytes, and therefore it is especially important for women with polycystic ovary syndrome.</p><p>With a sufficient folic acid level, the number of eggs significantly increases, and the homocysteine level ​​in the follicular fluid decreases (frequent miscarriages are associated with the high homocysteine level). During pregnancy preparation, and pregnancy itself, the need for folic acid increases. Taking folic acid in pregnancy planning reduces the risk of neural tube defects, cleft lip and palate, heart defects, and limbs and urinary tract defects. Folic acid prevents impaired fetal growth and reduces the baby’s risk of being underweight.</p><p>Folic acid requirement for adults is 400 µg per day.</p><p>30 - 40% of peoplehave a gene mutation(С677Т polymorphism)</p><p>In order to get the necessary amount of folic acid, it is necessary to take it in the form of a biologically active form, which is immediately absorbed by the body and does not need additional metabolism. 4th generation folic acid is the biologically active form and it is contained in the Miofolic complex. The recommended Miofolic intake to get a daily dose (400 µg) is 2 sachets per day.</p><h2>Vitamin B12</h2><p>Vitamin B12 is essential for better folic acid absorption. In addition, vitamin B12 enhances and supplements the folic acid action and, therefore, their combined intake is recommended.</p><p>Vitamin B12 is responsible for improving immunity; it helps maintain proper energy metabolism, prevents the occurrence of anemia – essential for the reproductive function regulation – plays an important role in the hemopoietic functions regulation, and supports the nervous system in a healthy condition in that it affects concentration and memory, and reduces irritability.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q6BAM6",
+        "text_TAUygE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_YLhGpN",
+    "rich_text_LXNAPT"
+  ]
+}
