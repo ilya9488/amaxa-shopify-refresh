@@ -38,6 +38,7 @@
         "heading_GaERaF",
         "text_CeDCr6"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Bitmap_1_879a137b-fdf9-42c8-bd22-be160d099891.webp",
         "container_width": true,
@@ -58,36 +59,6 @@
         "padding_bottom": 64
       }
     },
-    "rich_text_CpzwhG": {
-      "type": "rich-text",
-      "blocks": {
-        "text_X6ReMh": {
-          "type": "text",
-          "disabled": true,
-          "settings": {
-            "text": ""
-          }
-        },
-        "text_yaR7xc": {
-          "type": "text",
-          "settings": {
-            "text": "<p>PCOS</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_X6ReMh",
-        "text_yaR7xc"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": false,
-        "padding_top": 0,
-        "padding_bottom": 8
-      }
-    },
     "rich_text_LXNAPT": {
       "type": "rich-text",
       "blocks": {
@@ -101,7 +72,7 @@
         "text_TAUygE": {
           "type": "text",
           "settings": {
-            "text": "<p>Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting those with ovaries, leading to various physical and emotional challenges. This page outlines the symptoms, causes, health implications, and treatment options for PCOS, empowering you with the knowledge to manage this condition effectively.</p>"
+            "text": "<h2>Very well tolerated</h2><p>Myo-inositol is synthesized in the human body (in the kidneys) in amounts of several grams per day. Under certain conditions, the synthesis and metabolism of myo-inositol is disrupted, and additional intake is recommended.</p><p>Studies were performed with the participation of about 600 women who daily took 2g or 4g of myo-inositol. These studies found an absence of adverse effects when taking myo-inositol.</p><p>Only a very high daily dose (more than 12 grams) caused adverse effects. These were mild gastrointestinal adverse effects, such as nausea, distention and diarrhea.</p><h2>Miofolic increases fertility</h2><ul><li>Use of Miofolic is effective for women with insulin resistance and PCOS. Active components of the drug are necessary for the harmonious functioning of the ovaries and the overall quality of oocytes and embryos.</li><li>Miofolic stimulates the development of cells and the formation of organs at the stage of intrauterine development and in the first months of the newborn’s life.</li></ul><p><br/>Myo-inositol, formulated in Miofolic, is a natural substance for the body. It supports hormone balance and it controls the function of the ovaries, the quality of the eggs and the regularity of the menstrual cycle.</p><ul><li>The drug enhances insulin sensitivity of cells. When administered orally, Miofolic stimulates glucose uptake by skeletal muscle and reduces blood sugar. This prevents the development of gestational diabetes, especially in overweight women.</li><li>Miofolic eliminates the pathological manifestations of PCOS.</li><li>Miofolic prevents metabolic syndrome in women with PCOS. Clinical studies have proven that myo-inositol increases the level of HDL cholesterol (“good” cholesterol) and lowers LDL (“bad” cholesterol) and triglyceride levels, stabilizing blood pressure.</li><li>Miofolic can prevent cardiac pathology. It has been proven that the additional myo-inositol intake reduces cardiovascular disease risk factors (blood pressure, cholesterol, triglycerides) in patients with metabolic syndrome.</li></ul>"
           }
         }
       },
@@ -111,64 +82,17 @@
       ],
       "settings": {
         "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 28
-      }
-    },
-    "rich_text_DWR8hn": {
-      "type": "rich-text",
-      "blocks": {
-        "text_78RUaz": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Common Symptoms:</p>"
-          }
-        }
-      },
-      "block_order": [
-        "text_78RUaz"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": false,
-        "padding_top": 0,
-        "padding_bottom": 8
-      }
-    },
-    "rich_text_zkenCh": {
-      "type": "rich-text",
-      "blocks": {
-        "text_9MEcwb": {
-          "type": "text",
-          "settings": {
-            "text": "<ul><li>Irregular Periods: Many individuals experience infrequent or prolonged menstrual cycles.</li><li>Excess Androgen: Higher levels of male hormones can lead to symptoms like acne, excess facial or body hair (hirsutism), and male-pattern baldness.</li><li>Polycystic Ovaries: Ovaries may become enlarged and contain many small cysts, which can be detected via ultrasound.</li></ul>"
-          }
-        }
-      },
-      "block_order": [
-        "text_9MEcwb"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
         "content_alignment": "left",
         "color_scheme": "",
         "full_width": true,
         "padding_top": 0,
-        "padding_bottom": 52
+        "padding_bottom": 28
       }
     }
   },
   "order": [
     "main",
     "image_with_text_YLhGpN",
-    "rich_text_CpzwhG",
-    "rich_text_LXNAPT",
-    "rich_text_DWR8hn",
-    "rich_text_zkenCh"
+    "rich_text_LXNAPT"
   ]
 }
