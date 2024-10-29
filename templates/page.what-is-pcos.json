@@ -107,6 +107,36 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "rich_text_eBGUpH": {
+      "type": "rich-text",
+      "blocks": {
+        "text_DqBwkr": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_AEexfb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The process of ovulation involves the complex interaction of many different hormones. If one or more of these hormones are out of balance, there may be an irregular cycle or a rare ovulation, and the time needed to achieve pregnancy increases.<br/>Menstrual disorders, hirsutism, acne and obesity may indicate the presence of polycystic ovary syndrome in women.<br/>In adolescence, this condition can be manifested by the delayed onset of menstruation or irregular periods.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_DqBwkr",
+        "text_AEexfb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
     }
   },
   "order": [
@@ -114,6 +144,7 @@
     "image_with_text_YLhGpN",
     "rich_text_LXNAPT",
     "custom_liquid_ibLRyj",
-    "custom_liquid_VUbLxA"
+    "custom_liquid_VUbLxA",
+    "rich_text_eBGUpH"
   ]
 }
