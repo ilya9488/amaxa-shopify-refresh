@@ -70,7 +70,7 @@
         "image_behavior": "none",
         "mobile_content_alignment": "center",
         "padding_top": 20,
-        "padding_bottom": 64
+        "padding_bottom": 32
       }
     },
     "rich_text_LXNAPT": {
