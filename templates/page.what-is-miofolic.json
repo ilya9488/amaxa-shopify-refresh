@@ -1,0 +1,398 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "custom_hero_2_QxgHV4": {
+      "type": "custom-hero-2",
+      "blocks": {
+        "page_rNd9fz": {
+          "type": "page",
+          "settings": {
+            "item_text": ""
+          }
+        },
+        "text_block_PWjUWm": {
+          "type": "text_block",
+          "settings": {
+            "item_text": "",
+            "description_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "page_rNd9fz",
+        "text_block_PWjUWm"
+      ],
+      "settings": {
+        "heading_size": "h4",
+        "text_font": "centaur_n4",
+        "heading_format": "caps",
+        "heading": "<p>Understanding Polycystic Ovary Syndrome (PCOS): <br/>Symptoms, Causes, and Management</p>",
+        "column_position": "left",
+        "margin_top": "none",
+        "to_top_shift_upward": 47,
+        "margin_bottom": "none",
+        "margin_bottom_custom": 0,
+        "container_height": "large",
+        "background_image": "shopify://shop_images/Bitmap_1.webp",
+        "background_image_mobile": "shopify://shop_images/Bitmap_1_879a137b-fdf9-42c8-bd22-be160d099891.webp",
+        "background_size": "cover",
+        "background_color": "",
+        "show_dev_only": false
+      }
+    },
+    "custom_product_hero_2_F3eUjR": {
+      "type": "custom-product-hero-2",
+      "disabled": true,
+      "settings": {
+        "top_title": "Miofoliс® Men",
+        "top_subtitle": "Your Natural Ally in Male Vitality",
+        "product_img": "shopify://shop_images/miofolicmen_side_eng_180424_1__ut.png",
+        "heading": "<p>Empowering <br/>Wellness <br/>for Men</p>",
+        "heading_size": "h1",
+        "button_label": "Buy Now",
+        "button_type": "button--border-blue",
+        "button_url": "shopify://products/miofolic-men",
+        "text": "",
+        "margin_top": "none",
+        "margin_bottom": "none",
+        "margin_bottom_custom": 0,
+        "container_height": "small",
+        "background_image": "shopify://shop_images/banner_na_sait-scaled-1_cea03c8f-b1bf-4d23-8b6e-c01cde2f92e7.jpg",
+        "background_size": "cover",
+        "background_color": "#eee3d8",
+        "show_dev_only": false
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 36,
+        "padding_bottom": 28
+      }
+    },
+    "custom_product_hero_HQ77hR": {
+      "type": "custom-product-hero",
+      "disabled": true,
+      "settings": {
+        "header_list": "<ul><li>Supports reproductive health</li><li>Promotes a healthy pregnancy</li><li>Recommended in PCOS cases</li></ul>",
+        "top_subtitle": "Start life right with the proper supplements",
+        "product_img": "shopify://shop_images/miofolic_side_eng_180424.png",
+        "heading": "<p>Nurturing </p><p><em>Nutrition </em>for </p><p>Women</p>",
+        "heading_size": "h1",
+        "button_label": "Buy Now",
+        "button_type": "button--border-pink",
+        "button_url": "shopify://products/miofolic",
+        "right_img": "shopify://shop_images/screen_2x_e491953d-20f4-4474-b43d-f46ee11978cb.webp",
+        "text": "",
+        "margin_top": "none",
+        "margin_bottom": "none",
+        "margin_bottom_custom": 0,
+        "container_height": "small",
+        "background_size": "cover",
+        "background_color": "#eee3d8",
+        "show_dev_only": false
+      }
+    },
+    "multicolumn_R4FVma": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_CYyBYK": {
+          "type": "column",
+          "settings": {
+            "title": "Scientifically Backed Ingredients:",
+            "text": "<ul><li>Myo-inositol (2000 mg per sachet): Clinically proven to restore insulin sensitivity, regulate hormonal parameters, and support regular menstrual cycles.</li><li>4th Generation Folic Acid (200 mcg per sachet): A highly bioavailable form of folic acid that supports cell creation, reduces homocysteine levels, and prevents common pregnancy-related defects.</li><li>Vitamin B12 (2.5 mcg per sachet): Enhances folic acid absorption, boosts immunity, and maintains healthy energy metabolism.</li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_x6p3ak": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/s.webp",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_EaAEz4": {
+          "type": "column",
+          "settings": {
+            "title": "Key Benefits:",
+            "text": "<ul><li>Miofolic helps normalize hormonal balance.</li><li>Supports Healthy Pregnancy: Miofolic promotes a safer and healthier pregnancy journey.</li><li>Recommended for PCOS: Miofolic effectively addresses symptoms of Polycystic Ovary Syndrome (PCOS), such as irregular ovulation, acne, and hirsutism, while also aiding in weight management.</li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_CYyBYK",
+        "column_x6p3ak",
+        "column_EaAEz4"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "blocks_heading_size": "h2",
+        "title_color": "#aa0f71",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "custom_bg_color": "linear-gradient(180deg, rgba(255, 211, 226, 0), rgba(168, 255, 251, 0) 100%)",
+        "blocks_border": true,
+        "blocks_border_color": "#aa0f71",
+        "border_width": 2,
+        "border_radius": 50,
+        "img_border_radius": 50,
+        "button_label": "",
+        "button_link": "",
+        "top_background": false,
+        "top_background_color": "#ffffff",
+        "top_background_height": 100,
+        "bottom_background": false,
+        "bottom_background_color": "#ffffff",
+        "bottom_background_height": 100,
+        "color_scheme": "scheme-daf2c28c-38cb-495d-a9fe-e642e0b63801",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 0,
+        "show_dev_only": false
+      }
+    },
+    "multicolumn_wRDQfP": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_DB3dBV": {
+          "type": "column",
+          "settings": {
+            "title": "Scientifically Backed Ingredients:",
+            "text": "<ul><li>Myo-inositol (2000 mg per sachet): Clinically proven to restore insulin sensitivity, regulate hormonal parameters, and support regular menstrual cycles.</li><li>4th Generation Folic Acid (200 mcg per sachet): A highly bioavailable form of folic acid that supports cell creation, reduces homocysteine levels, and prevents common pregnancy-related defects.</li><li>Vitamin B12 (2.5 mcg per sachet): Enhances folic acid absorption, boosts immunity, and maintains healthy energy metabolism.</li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_XB7QJg": {
+          "type": "column",
+          "settings": {
+            "title": "Key Benefits:",
+            "text": "<ul><li>Miofolic helps normalize hormonal balance.</li><li>Supports Healthy Pregnancy: Miofolic promotes a safer and healthier pregnancy journey.</li><li>Recommended for PCOS: Miofolic effectively addresses symptoms of Polycystic Ovary Syndrome (PCOS), such as irregular ovulation, acne, and hirsutism, while also aiding in weight management.</li></ul>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_DB3dBV",
+        "column_XB7QJg"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_size": "h1",
+        "blocks_heading_size": "h2",
+        "title_color": "#aa0f71",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "primary",
+        "custom_bg_color": "linear-gradient(54deg, rgba(255, 255, 255, 1) 3%, rgba(255, 255, 255, 1) 100%)",
+        "blocks_border": true,
+        "blocks_border_color": "#ffc6dc",
+        "border_width": 2,
+        "border_radius": 0,
+        "img_border_radius": 0,
+        "button_label": "",
+        "button_link": "",
+        "top_background": true,
+        "top_background_color": "#ffffff",
+        "top_background_height": 100,
+        "bottom_background": true,
+        "bottom_background_color": "#ffffff",
+        "bottom_background_height": 100,
+        "color_scheme": "scheme-daf2c28c-38cb-495d-a9fe-e642e0b63801",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "margin_top": 0,
+        "margin_bottom": 32,
+        "show_dev_only": false
+      }
+    },
+    "rich_text_CpzwhG": {
+      "type": "rich-text",
+      "blocks": {
+        "text_X6ReMh": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_yaR7xc": {
+          "type": "text",
+          "settings": {
+            "text": "<p>PCOS</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_X6ReMh",
+        "text_yaR7xc"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_LXNAPT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Q6BAM6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_TAUygE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Polycystic Ovary Syndrome (PCOS) is a common hormonal disorder affecting those with ovaries, leading to various physical and emotional challenges. This page outlines the symptoms, causes, health implications, and treatment options for PCOS, empowering you with the knowledge to manage this condition effectively.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q6BAM6",
+        "text_TAUygE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 28
+      }
+    },
+    "rich_text_DWR8hn": {
+      "type": "rich-text",
+      "blocks": {
+        "text_78RUaz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Common Symptoms:</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_78RUaz"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": false,
+        "padding_top": 0,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_zkenCh": {
+      "type": "rich-text",
+      "blocks": {
+        "text_9MEcwb": {
+          "type": "text",
+          "settings": {
+            "text": "<ul><li>Irregular Periods: Many individuals experience infrequent or prolonged menstrual cycles.</li><li>Excess Androgen: Higher levels of male hormones can lead to symptoms like acne, excess facial or body hair (hirsutism), and male-pattern baldness.</li><li>Polycystic Ovaries: Ovaries may become enlarged and contain many small cysts, which can be detected via ultrasound.</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_9MEcwb"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    },
+    "image_with_text_YLhGpN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GaERaF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Causes:",
+            "heading_size": "h2"
+          }
+        },
+        "text_CeDCr6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The exact cause of PCOS is unknown, but factors may include:</p><ul><li>Hormonal Imbalances: Elevated levels of insulin and androgens.</li><li>Genetics: Family history of PCOS can increase the likelihood of developing the condition.</li><li>Lifestyle Factors: Obesity and sedentary lifestyles can contribute to the severity of symptoms.</li></ul><p>Health Implications:<br/>PCOS can increase the risk of several health issues, including:</p><ul><li>Infertility: Hormonal imbalances can affect ovulation.</li><li>Metabolic Syndrome: Increased risk of diabetes and cardiovascular diseases.</li><li>Endometrial Cancer: Prolonged irregular menstruation can increase this risk.</li></ul><p>Management:<br/>While there is no cure for PCOS, various treatments can help manage symptoms:</p><ul><li>Lifestyle Changes: A healthy diet and regular exercise can improve insulin sensitivity and hormonal balance.</li><li>Medications: Hormonal contraceptives can regulate menstrual cycles, while medications like metformin may help with insulin resistance.</li><li>Fertility Treatments: For those trying to conceive, medications to stimulate ovulation may be prescribed.</li></ul>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GaERaF",
+        "text_CeDCr6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Clip_path_group.jpg",
+        "container_width": true,
+        "color_background": "#fff",
+        "image_stretch": "contain",
+        "height": "large",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "button_type": "button--dark-label",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 64
+      }
+    }
+  },
+  "order": [
+    "custom_hero_2_QxgHV4",
+    "custom_product_hero_2_F3eUjR",
+    "main",
+    "custom_product_hero_HQ77hR",
+    "multicolumn_R4FVma",
+    "multicolumn_wRDQfP",
+    "rich_text_CpzwhG",
+    "rich_text_LXNAPT",
+    "rich_text_DWR8hn",
+    "rich_text_zkenCh",
+    "image_with_text_YLhGpN"
+  ]
+}
