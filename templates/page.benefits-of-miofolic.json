@@ -1,0 +1,99 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "image_with_text_YLhGpN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GaERaF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Causes:",
+            "heading_size": "h2"
+          }
+        },
+        "text_CeDCr6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The exact cause of PCOS is unknown, but factors may include:</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GaERaF",
+        "text_CeDCr6"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Bitmap_1_879a137b-fdf9-42c8-bd22-be160d099891.webp",
+        "container_width": true,
+        "color_background": "#fff",
+        "image_stretch": "contain",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "button_type": "button--dark-label",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_LXNAPT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Q6BAM6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_TAUygE": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>What is Miofolic?</h1><h2></h2><h2>Very well tolerated</h2><p>Myo-inositol is synthesized in the human body (in the kidneys) in amounts of several grams per day. Under certain conditions, the synthesis and metabolism of myo-inositol is disrupted, and additional intake is recommended.</p><p>Studies were performed with the participation of about 600 women who daily took 2g or 4g of myo-inositol. These studies found an absence of adverse effects when taking myo-inositol.</p><p>Only a very high daily dose (more than 12 grams) caused adverse effects. These were mild gastrointestinal adverse effects, such as nausea, distention and diarrhea.</p><h2>Miofolic increases fertility</h2><ul><li>Use of Miofolic is effective for women with insulin resistance and PCOS. Active components of the drug are necessary for the harmonious functioning of the ovaries and the overall quality of oocytes and embryos.</li><li>Miofolic stimulates the development of cells and the formation of organs at the stage of intrauterine development and in the first months of the newborn’s life.</li></ul><p><br/>Myo-inositol, formulated in Miofolic, is a natural substance for the body. It supports hormone balance and it controls the function of the ovaries, the quality of the eggs and the regularity of the menstrual cycle.</p><ul><li>The drug enhances insulin sensitivity of cells. When administered orally, Miofolic stimulates glucose uptake by skeletal muscle and reduces blood sugar. This prevents the development of gestational diabetes, especially in overweight women.</li><li>Miofolic eliminates the pathological manifestations of PCOS.</li><li>Miofolic prevents metabolic syndrome in women with PCOS. Clinical studies have proven that myo-inositol increases the level of HDL cholesterol (“good” cholesterol) and lowers LDL (“bad” cholesterol) and triglyceride levels, stabilizing blood pressure.</li><li>Miofolic can prevent cardiac pathology. It has been proven that the additional myo-inositol intake reduces cardiovascular disease risk factors (blood pressure, cholesterol, triglycerides) in patients with metabolic syndrome.</li></ul><h2>The key biochemical and clinical benefits of taking Miofolic</h2><ul><li>Normalizes blood pressure</li><li>Helps reduce the level of triglycerides and overall cholesterol in the blood</li><li>Normalizes metabolic processes (increases insulin sensitivity)</li><li>Reduces the overall testosterone level</li><li>Increases progesterone level</li><li>Increases the number of ovulatory cycles</li><li>Reduces the hirsutism assessment and decreases acne severity</li></ul><h2>Benefits of taking Miofolic during assisted reproductive technologies (ART)</h2><ul><li>Enables a reduction in the overall dose of gonadotropins (hormones that stimulate the work of the ovaries)</li><li>Increases the number of oocytes with a diameter of 15 mm during stimulation and significantly decreases the number of immature oocytes</li></ul><h2>Benefits of taking Miofolic during pregnancy</h2><ul><li>Reduces the incidence of gestational diabetes mellitus</li><li>Reduces the risk of pre-eclampsia developing (complications in pregnancy that occur in the 2-3 trimester)</li><li>Normalizes the gestation period up to 39.3 weeks against 37.2 in the control group</li><li>Reduces the risk of possible fetal neural tube defects</li></ul>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q6BAM6",
+        "text_TAUygE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_YLhGpN",
+    "rich_text_LXNAPT"
+  ]
+}
