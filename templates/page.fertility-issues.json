@@ -1,0 +1,113 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "rich_text_7RtNfP": {
+      "type": "rich-text",
+      "blocks": {
+        "text_thRV73": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>    Miofolic for a healthy pregnancy</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "text_thRV73"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 32
+      }
+    },
+    "image_with_text_YLhGpN": {
+      "type": "image-with-text",
+      "blocks": {
+        "text_CeDCr6": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Miofolic</strong> reduces the risk of developing diabetes during pregnancy by 65%.</p>",
+            "text_style": "subtitle"
+          }
+        }
+      },
+      "block_order": [
+        "text_CeDCr6"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/maintaining-a-healthy-pregnancy-miofolic.webp",
+        "container_width": true,
+        "color_background": "#fff",
+        "image_stretch": "cover",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "button_type": "button--dark-label",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 20,
+        "padding_bottom": 32
+      }
+    },
+    "rich_text_LXNAPT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Q6BAM6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_TAUygE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Women with PCOS during pregnancy are at heightened risk of developing diabetes and high blood pressure, and having a large fetus.</p><p>Folic acid at a dose of 400 µg per day (2 sachets of the Miofolic complex) meets recommendations for pregnant women and helps to reduce the risk of developing neural tube defects in a baby.</p><p><strong>Miofolic </strong>reduces the incidence of high blood pressure (pre-eclampsia) during pregnancy and is also indicated to reduce the overall weight increase in the mother throughout the pregnancy.</p><p><strong>Miofolic </strong>can be safely taken during pregnancy.</p><h3>Excess weight problems</h3><p>Approximately 50% of women with PCOS have a metabolic syndrome …</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q6BAM6",
+        "text_TAUygE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "rich_text_7RtNfP",
+    "image_with_text_YLhGpN",
+    "rich_text_LXNAPT"
+  ]
+}
