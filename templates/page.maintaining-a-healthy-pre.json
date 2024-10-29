@@ -20,28 +20,19 @@
     "image_with_text_YLhGpN": {
       "type": "image-with-text",
       "blocks": {
-        "heading_GaERaF": {
-          "type": "heading",
-          "settings": {
-            "heading": "Causes:",
-            "heading_size": "h2"
-          }
-        },
         "text_CeDCr6": {
           "type": "text",
           "settings": {
-            "text": "<p>The exact cause of PCOS is unknown, but factors may include:</p>",
-            "text_style": "body"
+            "text": "<p><strong>Miofolic</strong> reduces the risk of developing diabetes during pregnancy by 65%.</p>",
+            "text_style": "subtitle"
           }
         }
       },
       "block_order": [
-        "heading_GaERaF",
         "text_CeDCr6"
       ],
-      "disabled": true,
       "settings": {
-        "image": "shopify://shop_images/Bitmap_1_879a137b-fdf9-42c8-bd22-be160d099891.webp",
+        "image": "shopify://shop_images/maintaining-a-healthy-pregnancy-miofolic.webp",
         "container_width": true,
         "color_background": "#fff",
         "image_stretch": "contain",
