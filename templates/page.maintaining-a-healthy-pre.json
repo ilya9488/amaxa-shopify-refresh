@@ -17,6 +17,28 @@
         "padding_bottom": 8
       }
     },
+    "rich_text_7RtNfP": {
+      "type": "rich-text",
+      "blocks": {
+        "text_thRV73": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Miofolic for a healthy pregnancy</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "text_thRV73"
+      ],
+      "settings": {
+        "desktop_content_position": "left",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
     "image_with_text_YLhGpN": {
       "type": "image-with-text",
       "blocks": {
@@ -84,6 +106,7 @@
   },
   "order": [
     "main",
+    "rich_text_7RtNfP",
     "image_with_text_YLhGpN",
     "rich_text_LXNAPT"
   ]
