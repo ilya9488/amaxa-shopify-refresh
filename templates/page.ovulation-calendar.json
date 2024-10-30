@@ -95,12 +95,35 @@
       "settings": {
         "show_dev_only": false
       }
+    },
+    "rich_text_8DmAdX": {
+      "type": "rich-text",
+      "blocks": {
+        "text_CHigQJ": {
+          "type": "text",
+          "settings": {
+            "text": "<h2><strong>How long does ovulation last?</strong></h2><p>The process when the follicles rupture and release the secondary oocyte ovarian cells is called ovulation. After ovulation, during the luteal phase, the egg will be available to be fertilized by sperm. In addition, the uterine lining (endometrium) is thickened to be able to receive a fertilized egg. If you have a regular 28-day cycle, you ovulate around day 14. An egg lives 12-24 hours after leaving the ovary. Please, remember that these figures are questionable and errors in the calculation are common.</p><h2><strong>Ovulation symptoms</strong></h2><ul><li>Raised basal body temperature (BBT) from 32,9 to 33,8 degrees Fahrenheit</li><li>Increased Luteinizing hormone (LH)</li><li>Cervical mucus changes: vaginal discharge becomes stretchy and clear like an albumen</li><li>Breast tenderness</li><li>Abdominal distention</li></ul><h2>Pregnancy advice</h2><p><strong>Calculate your ovulation day</strong><br/>If you use an Ovulation Calculator, you may calculate the days of your fertility. However, even women with the regular cycles may come across negligible errors. Try to look after your BBT and the thickness and color of your cervical mucus to understand when you ovulate.</p><p><strong>Have sex on the fertility days</strong><br/>If you are planning to get pregnant, you should know that the egg lives for only 24 hours after ovulation. However, sperm survives in the female body for 2-3 days so your chances of getting pregnant grow when you have sex 2-3 days before ovulation or 24 hours after.</p><p><strong>Lying down after sex for 15 minutes. Myth or reality?</strong><br/>Have you ever heard people say that if you want a sperm to get to the egg, you should lie down for 15 minutes after sex? Some people believe in it, but recent studies deny this theory.</p><p><strong>Keep a healthy weight</strong></p><p>Research shows that both overweight and underweight may be a cause of ovulatory failure and affects the secretion production.<br/>Normally, body mass index (BMI), sometimes referred to as body weight index, should be from 18,5 to 22,9. Please avoid vigorous exercises because they may affect the secretion production and produce a different set of conceiving problems.</p><p><strong>How to calculate BMI?</strong><br/>You can calculate your body mass index using the scheme:<br/><strong>BMI </strong>= weight (kg) <strong>/</strong>height2 (cm)<br/>E.g. If you are 170 cm and 63 kg, your BMI = 63/(1,7*1,7) = 21,8</p><p><strong>Get rid of stress!</strong><br/>Research shows that stress may make it difficult to get pregnant. Yoga, meditation, and outdoor exercises reduce stress and make you feel good.</p><p><strong>Take care of men’s</strong> <strong>health</strong><br/>There is a popular misconception that only female health may be a reason for infertility. However, according to some research, more than 33% conceiving problems are related only to male and the other 33% are related to both partners. Men, as well as women, are able to improve their health status if they give up smoking, reduce drinking and follow a healthy diet.</p><p><strong>Do you want to have a boy or a girl?</strong><br/>There are some theories that say you can influence the sex of your future baby if you conceive it at a specific hour or in a specific position. However, there is no proven method to influence the sex of your baby during conception.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_CHigQJ"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
     "main",
     "image_with_text_YLhGpN",
     "rich_text_LXNAPT",
-    "custom_ovulation_calendar_FNzEca"
+    "custom_ovulation_calendar_FNzEca",
+    "rich_text_8DmAdX"
   ]
 }
