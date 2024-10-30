@@ -90,13 +90,10 @@
         "padding_bottom": 28
       }
     },
-    "custom_liquid_9Nti4M": {
-      "type": "custom-liquid",
+    "custom_ovulation_calendar_FNzEca": {
+      "type": "custom-ovulation-calendar",
       "settings": {
-        "custom_liquid": "<!-- wp:group {\"className\":\"pms-calendar\"} -->\n<div class=\"wp-block-group pms-calendar\"><!-- wp:group {\"className\":\"filter-block\"} -->\n<div class=\"wp-block-group filter-block\"><!-- wp:columns {\"className\":\"settings-pad\"} -->\n<div class=\"wp-block-columns settings-pad\"><!-- wp:column {\"className\":\"col-4\"} -->\n<div class=\"wp-block-column col-4\"><!-- wp:paragraph {\"className\":\"filter-title\"} -->\n<p class=\"filter-title\">The first day of your last period (LMP)</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<input id=\"calendarDateStart\" type=\"text\">\n<!-- /wp:html --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"className\":\"col-4\"} -->\n<div class=\"wp-block-column col-4\"><!-- wp:paragraph {\"className\":\"filter-title\"} -->\n<p class=\"filter-title\">Cycle length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<select id=\"lengthOfCycle\"></select>\n<!-- /wp:html --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"className\":\"col-4\"} -->\n<div class=\"wp-block-column col-4\"><!-- wp:paragraph {\"className\":\"filter-title\"} -->\n<p class=\"filter-title\">Period length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<select id=\"lengthOfPMS\"></select>\n<!-- /wp:html --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:html -->\n<input type=\"button\" id=\"calendar-calculate\" value=\"Calculate\" class=\"btn\">\n<!-- /wp:html --></div>\n<!-- /wp:group -->\n\n<!-- wp:html -->\n<div class=\"calendar-back\">\n        <div class=\"calendar-navigation\">\n            <i class=\"fal fa-chevron-circle-left navigation-arrow\" data-value=\"-1\"></i>\n            <span id=\"selected-month\"></span>\n            <i class=\"fal fa-chevron-circle-right navigation-arrow\" data-value=\"1\"></i>\n        </div>\n        <div id=\"calendar\">\n        </div>\n    </div>\n<div class=\"calendar-desc-img\">\n    <div class=\"row\">\n        <div class=\"col-6 item calendar-desc__menstr\">Period</div>\n        <div class=\"col-6 item calendar-desc__ovul\"> Day of Ovulation</div>\n        <div class=\"col-6 item calendar-desc__high\">High chance of getting pregnant</div>\n        <div class=\"col-6 item calendar-desc__middle\">Low chance to get pregnant</div>\n    </div>\n</div>\n<!-- /wp:html --></div>\n<!-- /wp:group -->\n\n<!-- wp:html -->\n<script src=\"//npmcdn.com/flatpickr/dist/flatpickr.min.js\"></script>\n<script src=\"//npmcdn.com/flatpickr/dist/l10n/default.js\"></script>\n<link rel=\"stylesheet\" href=\"//cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css\">\n<!-- /wp:html -->",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
+        "show_dev_only": true
       }
     }
   },
@@ -104,6 +101,6 @@
     "main",
     "image_with_text_YLhGpN",
     "rich_text_LXNAPT",
-    "custom_liquid_9Nti4M"
+    "custom_ovulation_calendar_FNzEca"
   ]
 }
