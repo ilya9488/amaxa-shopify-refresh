@@ -1,0 +1,109 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "padding_top": 20,
+        "padding_bottom": 8
+      }
+    },
+    "image_with_text_YLhGpN": {
+      "type": "image-with-text",
+      "blocks": {
+        "heading_GaERaF": {
+          "type": "heading",
+          "settings": {
+            "heading": "Causes:",
+            "heading_size": "h2"
+          }
+        },
+        "text_CeDCr6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The exact cause of PCOS is unknown, but factors may include:</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_GaERaF",
+        "text_CeDCr6"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/Bitmap_1_879a137b-fdf9-42c8-bd22-be160d099891.webp",
+        "container_width": true,
+        "color_background": "#fff",
+        "image_stretch": "contain",
+        "height": "medium",
+        "desktop_image_width": "medium",
+        "layout": "image_first",
+        "desktop_content_position": "middle",
+        "desktop_content_alignment": "center",
+        "content_layout": "overlap",
+        "button_type": "button--dark-label",
+        "section_color_scheme": "",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "padding_top": 0,
+        "padding_bottom": 64
+      }
+    },
+    "rich_text_LXNAPT": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Q6BAM6": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "text": ""
+          }
+        },
+        "text_TAUygE": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Ovulation calendar</h1><p>If you and your partner are planning to conceive a child, it`s necessary to know the date of ovulation. You can easily calculate it using the Ovulation Calculator. If you enter the date of your last period, the Ovulation Calculator will compute the days of your next period, days of ovulation and fertile window. This calculator will also be your right hand if you don’t plan conception but just look after your health.</p><p>*If you have irregular periods, you shouldn’t use the online Ovulation Calculator. Please, use another method to determine when you ovulate (ultrasound examination, basal body temperature, ovulation kits).</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Q6BAM6",
+        "text_TAUygE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 32,
+        "padding_bottom": 28
+      }
+    },
+    "custom_liquid_9Nti4M": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<!-- wp:group {\"className\":\"pms-calendar\"} -->\n<div class=\"wp-block-group pms-calendar\"><!-- wp:group {\"className\":\"filter-block\"} -->\n<div class=\"wp-block-group filter-block\"><!-- wp:columns {\"className\":\"settings-pad\"} -->\n<div class=\"wp-block-columns settings-pad\"><!-- wp:column {\"className\":\"col-4\"} -->\n<div class=\"wp-block-column col-4\"><!-- wp:paragraph {\"className\":\"filter-title\"} -->\n<p class=\"filter-title\">The first day of your last period (LMP)</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<input id=\"calendarDateStart\" type=\"text\">\n<!-- /wp:html --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"className\":\"col-4\"} -->\n<div class=\"wp-block-column col-4\"><!-- wp:paragraph {\"className\":\"filter-title\"} -->\n<p class=\"filter-title\">Cycle length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<select id=\"lengthOfCycle\"></select>\n<!-- /wp:html --></div>\n<!-- /wp:column -->\n\n<!-- wp:column {\"className\":\"col-4\"} -->\n<div class=\"wp-block-column col-4\"><!-- wp:paragraph {\"className\":\"filter-title\"} -->\n<p class=\"filter-title\">Period length</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:html -->\n<select id=\"lengthOfPMS\"></select>\n<!-- /wp:html --></div>\n<!-- /wp:column --></div>\n<!-- /wp:columns -->\n\n<!-- wp:html -->\n<input type=\"button\" id=\"calendar-calculate\" value=\"Calculate\" class=\"btn\">\n<!-- /wp:html --></div>\n<!-- /wp:group -->\n\n<!-- wp:html -->\n<div class=\"calendar-back\">\n        <div class=\"calendar-navigation\">\n            <i class=\"fal fa-chevron-circle-left navigation-arrow\" data-value=\"-1\"></i>\n            <span id=\"selected-month\"></span>\n            <i class=\"fal fa-chevron-circle-right navigation-arrow\" data-value=\"1\"></i>\n        </div>\n        <div id=\"calendar\">\n        </div>\n    </div>\n<div class=\"calendar-desc-img\">\n    <div class=\"row\">\n        <div class=\"col-6 item calendar-desc__menstr\">Period</div>\n        <div class=\"col-6 item calendar-desc__ovul\"> Day of Ovulation</div>\n        <div class=\"col-6 item calendar-desc__high\">High chance of getting pregnant</div>\n        <div class=\"col-6 item calendar-desc__middle\">Low chance to get pregnant</div>\n    </div>\n</div>\n<!-- /wp:html --></div>\n<!-- /wp:group -->\n\n<!-- wp:html -->\n<script src=\"//npmcdn.com/flatpickr/dist/flatpickr.min.js\"></script>\n<script src=\"//npmcdn.com/flatpickr/dist/l10n/default.js\"></script>\n<link rel=\"stylesheet\" href=\"//cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css\">\n<!-- /wp:html -->",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "main",
+    "image_with_text_YLhGpN",
+    "rich_text_LXNAPT",
+    "custom_liquid_9Nti4M"
+  ]
+}
