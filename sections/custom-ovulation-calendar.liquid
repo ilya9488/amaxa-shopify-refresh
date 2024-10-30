@@ -1,0 +1,92 @@
+{{ 'section-ovulation-calendar.css' | asset_url | stylesheet_tag }}
+{{ 'calendar-ovulation.js' | asset_url | stylesheet_tag }}
+
+
+{% comment %} Dev Mode - condition {% endcomment %}
+{% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
+
+  <div class="wp-block-group pms-calendar"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+    <div class="wp-block-group filter-block"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+    <div class="wp-block-columns settings-pad is-layout-flex wp-container-4 wp-block-columns-is-layout-flex">
+    <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
+    <p class="filter-title">The first day of your last period (LMP)</p>
+    
+    
+    
+    <input id="calendarDateStart" type="text" class="flatpickr-input" readonly="readonly">
+    </div>
+    
+    
+    
+    <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
+    <p class="filter-title">Cycle length</p>
+    
+    
+    
+    <select id="lengthOfCycle"><option value="21">21 day</option><option value="22">22 day</option><option value="23">23 day</option><option value="24">24 day</option><option value="25">25 day</option><option value="26">26 day</option><option value="27">27 day</option><option value="28">28 day</option><option value="29">29 day</option><option value="30">30 day</option><option value="31">31 day</option><option value="32">32 day</option><option value="33">33 day</option><option value="34">34 day</option><option value="35">35 day</option><option value="36">36 day</option><option value="37">37 day</option><option value="38">38 day</option><option value="39">39 day</option><option value="40">40 day</option><option value="41">41 day</option><option value="42">42 day</option><option value="43">43 day</option><option value="44">44 day</option><option value="45">45 day</option></select>
+    </div>
+    
+    
+    
+    <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
+    <p class="filter-title">Period length</p>
+    
+    
+    
+    <select id="lengthOfPMS"><option value="1">1 day</option><option value="2">2 day</option><option value="3">3 day</option><option value="4">4 day</option><option value="5">5 day</option><option value="6">6 day</option><option value="7">7 day</option><option value="8">8 day</option><option value="9">9 day</option><option value="10">10 day</option><option value="11">11 day</option><option value="12">12 day</option><option value="13">13 day</option><option value="14">14 day</option><option value="15">15 day</option></select>
+    </div>
+    </div>
+    
+    
+    
+    <input type="button" id="calendar-calculate" value="Calculate" class="btn">
+    </div></div>
+    
+    
+    
+    <div class="calendar-back">
+      <div class="calendar-navigation">
+          <i class="fal fa-chevron-circle-left navigation-arrow" data-value="-1"></i>
+          <span id="selected-month"></span>
+          <i class="fal fa-chevron-circle-right navigation-arrow" data-value="1"></i>
+      </div>
+      <div id="calendar">
+      </div>
+  </div>
+<div class="calendar-desc-img">
+  <div class="row">
+      <div class="col-6 item calendar-desc__menstr">Period</div>
+      <div class="col-6 item calendar-desc__ovul"> Day of Ovulation</div>
+      <div class="col-6 item calendar-desc__high">High chance of getting pregnant</div>
+      <div class="col-6 item calendar-desc__middle">Low chance to get pregnant</div>
+  </div>
+</div>
+
+    <script defer src="//npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script defer src="//npmcdn.com/flatpickr/dist/l10n/default.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+{% endif %}
+
+{% schema %}
+{
+  "name": "Ovulation Calendar",
+  "class": "section",
+  "settings": [
+    // title sizes
+    // ...
+    // Dev Mode
+    {
+      "type": "checkbox",
+      "id": "show_dev_only",
+      "default": false,
+      "label": "Show Dev Only"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Ovulation Calendar",
+    }
+  ]
+}
+{% endschema %}
