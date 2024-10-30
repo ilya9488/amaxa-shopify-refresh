@@ -1,5 +1,6 @@
 {{ 'section-ovulation-calendar.css' | asset_url | stylesheet_tag }}
-{{ 'calendar-ovulation.js' | asset_url | stylesheet_tag }}
+
+
 
 
 {% comment %} Dev Mode - condition {% endcomment %}
@@ -9,11 +10,12 @@
     <div class="wp-block-group filter-block"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
     <div class="wp-block-columns settings-pad is-layout-flex wp-container-4 wp-block-columns-is-layout-flex">
     <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
-    <p class="filter-title">The first day of your last period (LMP)</p>
+    <p class="filter-title">The first day of your <br> last period (LMP)</p>
     
     
     
-    <input id="calendarDateStart" type="text" class="flatpickr-input" readonly="readonly">
+    {% comment %} <input id="calendarDateStart" type="text" class="flatpickr-input" readonly="readonly"> {% endcomment %}
+    <input id="calendarDateStart" type="text">
     </div>
     
     
@@ -46,9 +48,19 @@
     
     <div class="calendar-back">
       <div class="calendar-navigation">
-          <i class="fal fa-chevron-circle-left navigation-arrow" data-value="-1"></i>
-          <span id="selected-month"></span>
-          <i class="fal fa-chevron-circle-right navigation-arrow" data-value="1"></i>
+        <i class="fal fa-chevron-circle-left navigation-arrow" data-value="-1">
+          <svg data-value="-1" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle data-value="-1" cx="15.5" cy="15.5" r="14.5" stroke="#bfbfbf" stroke-width="2"/>
+            <path data-value="-1" d="M18.5 9L12 15.5L18.5 23" stroke="#bfbfbf" stroke-width="2"/>
+          </svg>              
+        </i>
+        <span id="selected-month"></span>
+        <i class="fal fa-chevron-circle-right navigation-arrow" data-value="1">
+          <svg data-value="1" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle data-value="1" cx="15.5" cy="15.5" r="14.5" transform="matrix(-1 0 0 1 31 0)" stroke="#bfbfbf" stroke-width="2"/>
+            <path data-value="1" d="M12.5 9L19 15.5L12.5 23" stroke="#bfbfbf" stroke-width="2"/>
+          </svg>              
+        </i>
       </div>
       <div id="calendar">
       </div>
@@ -62,9 +74,17 @@
   </div>
 </div>
 
-    <script defer src="//npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
-    <script defer src="//npmcdn.com/flatpickr/dist/l10n/default.js"></script>
+    <script async src="//code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script async src="//npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
+    <script async src="//npmcdn.com/flatpickr/dist/l10n/default.js"></script>
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    {% comment %} <script async src="https://miofolic.com/wp-content/themes/miofolic/assets/ui-kit/uikit.js?ver=1.0.0" id="ui-kit-js"></script> {% endcomment %}
+
+    {% comment %} <link rel="stylesheet" id="wp-block-library-css" href="https://miofolic.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.5" media="all"> {% endcomment %}
+    {% comment %} <link rel="stylesheet" id="wp-mediaelement-css" href="https://miofolic.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.3.5" media="all"> {% endcomment %}
+    {% comment %} <link rel="stylesheet" id="ui-kit-css" href="https://miofolic.com/wp-content/themes/miofolic/assets/ui-kit/uikit.min.css?ver=6.3.5" media="all"> {% endcomment %}
+    
+    <script src="{{ 'calendar-ovulation.js' | asset_url }}" defer="defer"></script>
 
 {% endif %}
 
@@ -90,3 +110,5 @@
   ]
 }
 {% endschema %}
+
+

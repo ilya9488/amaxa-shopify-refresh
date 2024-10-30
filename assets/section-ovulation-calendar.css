@@ -1,8 +1,66 @@
+.pms-calendar .wp-block-group__inner-container{
+  max-width: 630px;
+}
+.pms-calendar .wp-block-group__inner-container .wp-block-group__inner-container{
+  width: 100%;
+}
+.pms-calendar .wp-block-columns{
+  display: flex;
+  gap: 20px;
+}
+.pms-calendar .wp-block-column{
+  flex: 1;
+}
+
+.pms-calendar .filter-block {
+  padding-bottom: 0;
+}
+.pms-calendar .col-4 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: flex-end;
+}
+.pms-calendar .col-4 p {
+  color: var(--color-primary);
+  /* font-size: 1.1rem; */
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: auto;
+}
+@media screen and (max-width: 992px) {
+  .pms-calendar .wp-block-columns{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .pms-calendar .col-4 p {
+    margin-bottom: 0.7rem;
+    margin-top: 1rem;
+  }
+}
+.pms-calendar.wp-block-group {
+  padding-bottom: 1rem;
+}
+.pms-calendar .tooltip-inner {
+  background-color: #607e85;
+  color: red !important;
+}
+
+.pms-calendar {
+  align-items: center;
+  /* background: #fae3ed; */
+  /* border-radius: 20px; */
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  padding-left: 45px;
+  padding-right: 45px;
+}
 @media screen and (max-width: 576px) {
   .pms-calendar {
     border-radius: 10px;
-    padding-left: 0;
-    padding-right: 0;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 .pms-calendar .filter-block {
@@ -13,12 +71,7 @@
   flex-direction: column;
   text-align: center;
 }
-.pms-calendar .col-4 p {
-  color: #2b8fac;
-  font-size: 1.1rem;
-  font-weight: 600;
-  margin-top: auto;
-}
+
 @media screen and (max-width: 992px) {
   .pms-calendar .col-4 p {
     margin-bottom: 0.7rem;
@@ -30,4 +83,292 @@
 }
 .pms-calendar .tooltip-inner {
   background-color: #607e85;
+}
+.settings-pad > div input {
+  background-color: #fff !important;
+}
+.settings-pad > div > input,
+.settings-pad > div > select {
+  border: 2px solid #bfbfbf;
+  border-radius: 4px;
+  box-sizing: border-box;
+  display: block;
+  height: 40px;
+  max-height: 40px;
+  padding: 1px 10px;
+  width: 100%;
+}
+.btn,
+button,
+button:active,
+button:focus {
+  outline: none !important;
+  border: 2px solid #ED7AAE;
+  border-radius: 10px;
+}
+#calendar-calculate {
+  background: #ed7aae;
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: 1.1px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  padding-bottom: 11px;
+  padding-top: 11px;
+  width: 165px;
+}
+#calendar-calculate:hover {
+  background: #fff;
+  color: #ed7aae;
+  cursor: pointer;
+}
+#selected-month {
+  /* color: #3794b0; */
+  color: #707070;
+}
+.filter-block {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  width: 100%;
+}
+.calendar-navigation {
+  font-size: 23px;
+  font-weight: 700;
+  justify-content: space-between;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+.navigation-arrow {
+  color: #3794b0;
+  cursor: pointer;
+  font-size: 30px;
+  margin-left: 5px;
+  margin-right: 5px;
+  transition: all 0.2s linear;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.navigation-arrow:hover {
+  color: #ed7aae;
+}
+.date-day {
+  display: block;
+  font-size: 15px;
+  font-weight: 600;
+  margin-right: 2px;
+  padding-top: 4px;
+  text-align: right;
+}
+@media screen and (max-width: 576px) {
+  .date-day {
+    padding-top: 0;
+  }
+}
+.pms-day {
+  font-size: 10px;
+  font-weight: 600;
+  margin-left: 2px;
+  text-align: left;
+}
+.stub {
+  visibility: hidden;
+}
+.pms-day {
+  color: #cd007b;
+}
+.calendar-day {
+  background: #fff;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border: 2px solid #ff7ab0;
+  border-radius: 10px;
+  height: 66px;
+  justify-content: flex-start !important;
+  width: 60px;
+  position: relative;
+}
+.calendar-day::before{
+  content: attr(data-title);
+  position: absolute;
+  bottom: 108%;
+  white-space: nowrap;
+  background-color: #666666;
+  color: #fff;
+  padding: 0 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  font-size: 12px;
+  max-height: 0;
+  transition: .3s;
+  z-index: 1;
+  border-radius: 6px;
+  display: none;
+}
+.calendar-day:hover::before{
+  display: inline-block;
+  animation: calendarTooltip .3s linear forwards;
+}
+
+@keyframes calendarTooltip {
+  0%{
+    opacity: 0;
+    max-height: 0;
+  }  
+  100%{
+    opacity: 1;
+    max-height: 25px;
+  }  
+}
+
+.calendar-day.mid {
+  background-color: #ffa3cc;
+  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/high_chance_white_circle.svg);
+  background-size: 70%;
+}
+.calendar-day.first {
+  position: relative;
+}
+.calendar-day.first:after {
+  background: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/check_sign.svg) no-repeat 50%;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 90%;
+  left: 0;
+  position: absolute;
+  top: -20px;
+  width: 90%;
+}
+.calendar-day.high {
+  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/low_chance_pink_circle.svg);
+  background-size: 70%;
+}
+.calendar-day.ovul {
+  background-color: #ff7ab0;
+  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/ovulation.svg);
+  background-position: 50%;
+  background-size: 30px 30px;
+}
+.calendar-back {
+  background-image: url(https://miofolic.com/wp-content/uploads/2018/11/miofolic-woman-transparent-desktop.png);
+  background-position: 50%;
+  background-size: cover;
+}
+.settings-pad {
+  display: flex;
+  flex-direction: row;
+}
+#calendar,
+.calendar-navigation {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  max-width: 665px;
+}
+#calendar {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* maw */
+  /* text-align: center; */
+}
+#calendar .calendar-day {
+  display: inline-block;
+}
+.calendar-navigation {
+  align-items: center;
+  margin-top: 20px;
+}
+#calendar > div:not(.tooltip) {
+  box-sizing: border-box;
+  margin: 5px;
+  padding: 5px;
+  width: 60px;
+}
+
+#calendar > div > div:not(.tooltip-arrow) {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between !important;
+  width: 100%;
+}
+.calendar-desc-img {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 1rem;
+}
+.calendar-desc-img .row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5%;
+}
+.calendar-desc-img .row > div {
+  flex: 100%;
+  max-width: 45%;
+  font-size: 17px;
+  padding-bottom: 20px;
+  padding-left: 70px;
+  padding-top: 20px;
+  position: relative;
+}
+.calendar-desc-img .row > div:before {
+  background-color: #fff;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  border-radius: 6px;
+  content: "";
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+}
+.calendar-desc-img .row > div:first-child:before {
+  background-size: 90%;
+}
+.calendar-desc-img .row > div:first-child:after {
+  background: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/check_sign.svg) no-repeat 50%;
+  background-size: contain;
+  content: "";
+  display: block;
+  height: 50px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 50px;
+}
+.calendar-desc-img .row > div:nth-child(2):before {
+  background-color: #ff7ab0;
+  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/ovulation.svg);
+  background-position: 50%;
+  background-size: 30px 30px;
+}
+.calendar-desc-img .row > div:nth-child(3):before {
+  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/low_chance_pink_circle.svg);
+  background-size: 70%;
+}
+.calendar-desc-img .row > div:nth-child(4):before {
+  background-color: #ffa3cc;
+  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/high_chance_white_circle.svg);
+  background-size: 70%;
+}
+
+@media screen and (max-width: 576px) {
+  #calendar > div:not(.tooltip) {
+    padding: 1px;
+  }
+  .calendar-desc-img .row > div {
+    max-width: 100%;
+  }
 }

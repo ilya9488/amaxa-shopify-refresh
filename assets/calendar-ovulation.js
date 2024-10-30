@@ -12,7 +12,7 @@ function onloadF() {
 
       /* Localization calendar */
       var localeCalendar = 'ru';
-      var langPage = $('html').attr('lang');
+      var langPage = 'en-US';
 
       var lengths = [
         { value: 1, title: "1 день" },
@@ -450,19 +450,22 @@ function onloadF() {
           // Средний шанс забеременеть
           var titleMiddle = $('.calendar-desc-img .calendar-desc__middle').text();
 
-          /*console.log(titleMenstruation);*/
-          UIkit.tooltip('.calendar-day.first', {
-            title: titleMenstruation,
-          });
-          UIkit.tooltip('.calendar-day.ovul', {
-            title: titleOvulation,
-          });
-          UIkit.tooltip('.calendar-day.high', {
-            title: titleHigh,
-          });
-          UIkit.tooltip('.calendar-day.mid', {
-            title: titleMiddle,
-          });
+          $('.calendar-day.first').attr('data-title', titleMenstruation);
+          // UIkit.tooltip('.calendar-day.first', {
+          //   title: titleMenstruation,
+          // });
+          $('.calendar-day.ovul').attr('data-title', titleOvulation);
+          // UIkit.tooltip('.calendar-day.ovul', {
+          //   title: titleOvulation,
+          // });
+          $('.calendar-day.high').attr('data-title', titleHigh);
+          // UIkit.tooltip('.calendar-day.high', {
+          //   title: titleHigh,
+          // });
+          $('.calendar-day.mid').attr('data-title', titleMiddle);
+          // UIkit.tooltip('.calendar-day.mid', {
+          //   title: titleMiddle,
+          // });
         }
 
         /*jQuery('.calendar-day.first').tooltip({title:"Менструация"});
