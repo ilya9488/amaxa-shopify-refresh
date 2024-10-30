@@ -93,7 +93,7 @@
     "custom_ovulation_calendar_FNzEca": {
       "type": "custom-ovulation-calendar",
       "settings": {
-        "show_dev_only": true
+        "show_dev_only": false
       }
     }
   },
