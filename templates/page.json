@@ -420,6 +420,28 @@
         "padding_top": 0,
         "padding_bottom": 0
       }
+    },
+    "rich_text_XbXXAy": {
+      "type": "rich-text",
+      "blocks": {
+        "text_Uw8iGn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The process of ovulation involves the complex interaction of many different hormones. If one or more of these hormones are out of balance, there may be an irregular cycle or a rare ovulation, and the time needed to achieve pregnancy increases.<br/>Menstrual disorders, hirsutism, acne and obesity may indicate the presence of polycystic ovary syndrome in women.<br/>In adolescence, this condition can be manifested by the delayed onset of menstruation or irregular periods.</p><h2>Women with PCOS might also have one or more additional symptoms, including:</h2><ul><li>Fertility decrease – difficulty getting pregnant</li><li>Irregular menstruation or absence of menstrual cycles</li><li>An increased risk of developing diabetes or high blood pressure (pre-eclampsia) during pregnancy</li><li>Irregular ovulation or absence of ovulation</li><li>Weight problems – overweight, rapid weight gain, difficulty with weight loss</li><li>Skin problems, including oily skin, acne</li><li>Unwanted hair growth on the face or body (hirsutism)</li></ul><p>PCOS is the main cause of female infertility and is diagnosed in almost 10% of childbearing aged women. Although the cause of PCOS is not completely clear, hormone imbalances play a major role in the occurrence of the symptoms.<br/>More male hormones, such as testosterone, are produced in the body of a woman with PCOS, which can affect ovulation and menstrual cycles. Many researchers believe that high testosterone levels are associated with decreased insulin sensitivity.</p><h2>PCOS affects millions of women around the world and can manifest itself in different ways:</h2><ul><li>is often a hereditary disease</li><li>is one of the main causes of infertility in women</li><li>if ignored, may lead to additional health problems in the future</li><li>can affect the woman’s appearance and self-assessment</li></ul><p>Some women have several mild symptoms, while others have a wider range of more severe symptoms. Symptoms usually begin during adolescence. Although in some women, the symptoms are not expressed until 20-25 years of age.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_Uw8iGn"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
+      }
     }
   },
   "order": [
@@ -436,6 +458,7 @@
     "image_with_text_YLhGpN",
     "rich_text_BrAFnU",
     "custom_liquid_8BJCVh",
-    "custom_liquid_eVNhge"
+    "custom_liquid_eVNhge",
+    "rich_text_XbXXAy"
   ]
 }
