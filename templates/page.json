@@ -1,12 +1,12 @@
 /*
-* ------------------------------------------------------------
-* IMPORTANT: The contents of this file are auto-generated.
-*
-* This file may be updated by the Shopify admin theme editor
-* or related systems. Please exercise caution as any changes
-* made to this file may be overwritten.
-* ------------------------------------------------------------
-*/
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "custom_hero_2_QxgHV4": {
@@ -378,7 +378,29 @@
         "image_behavior": "none",
         "mobile_content_alignment": "left",
         "padding_top": 0,
-        "padding_bottom": 64
+        "padding_bottom": 0
+      }
+    },
+    "rich_text_BrAFnU": {
+      "type": "rich-text",
+      "blocks": {
+        "text_JfJecH": {
+          "type": "text",
+          "settings": {
+            "text": "<h2>Miofolic to increase fertility</h2><p>Polycystic ovary syndrome (PCOS) refers to the most common hormonal disorders in women of reproductive age. Patients with PCOS have problems with ovulation, insulin resistance and abnormally high levels of androgens.<br/>Polycystic ovary syndrome is so called because women with this condition usually have a number of cysts on the ovaries (generally twice the norm), no larger than 8 mm in diameter each). They are located far from the surface of the ovaries and contain follicles that have not developed properly due to a number of hormonal abnormalities. The egg cannot mature in such follicles. Subsequently, pregnancy occurrence is impossible. This pathology is successfully diagnosed with the use of screening during ultrasound scanning.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_JfJecH"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "left",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 52
       }
     }
   },
@@ -393,6 +415,7 @@
     "rich_text_LXNAPT",
     "rich_text_DWR8hn",
     "rich_text_zkenCh",
-    "image_with_text_YLhGpN"
+    "image_with_text_YLhGpN",
+    "rich_text_BrAFnU"
   ]
 }
