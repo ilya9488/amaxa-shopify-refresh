@@ -402,6 +402,24 @@
         "padding_top": 0,
         "padding_bottom": 52
       }
+    },
+    "custom_liquid_8BJCVh": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<picture \n  style=\"display: block;max-width: 860px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\"\n>\n  <img \n    style=\"width: 100%; height: auto; max-width: 500px;\" \n    src=\"\thttps://miofolic.com/wp-content/uploads/2020/08/Miofolic-polycystic-1-en.jpg\" \n    alt=\"image\">\n</picture>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
+    "custom_liquid_eVNhge": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<picture \n  style=\"display: block;max-width: 820px;width: calc(100% - 40px);margin-left: auto;margin-right: auto;\"\n>\n  <img \n    style=\"width: 100%; height: auto; max-width: 500px;\" \n    src=\"https://miofolic.com/wp-content/uploads/2020/08/Miofolic-polycystic-2-en.jpg\" \n    alt=\"image\">\n</picture>",
+        "color_scheme": "",
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
     }
   },
   "order": [
@@ -416,6 +434,8 @@
     "rich_text_DWR8hn",
     "rich_text_zkenCh",
     "image_with_text_YLhGpN",
-    "rich_text_BrAFnU"
+    "rich_text_BrAFnU",
+    "custom_liquid_8BJCVh",
+    "custom_liquid_eVNhge"
   ]
 }
