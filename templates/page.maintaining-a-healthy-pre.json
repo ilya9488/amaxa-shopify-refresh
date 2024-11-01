@@ -30,13 +30,16 @@
       "block_order": [
         "text_thRV73"
       ],
+      "custom_css": [
+        "h1 {color: #fff; overflow: hidden; height: 0;}"
+      ],
       "settings": {
         "desktop_content_position": "center",
         "content_alignment": "center",
-        "color_scheme": "",
+        "color_scheme": "scheme-55a383ff-44c5-4aa7-9dc8-302e7c7051dd",
         "full_width": true,
-        "padding_top": 40,
-        "padding_bottom": 32
+        "padding_top": 0,
+        "padding_bottom": 0
       }
     },
     "image_with_text_YLhGpN": {
