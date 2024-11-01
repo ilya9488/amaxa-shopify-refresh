@@ -9,6 +9,31 @@
  */
 {
   "sections": {
+    "rich_text_7RtNfP": {
+      "type": "rich-text",
+      "blocks": {
+        "text_thRV73": {
+          "type": "text",
+          "settings": {
+            "text": "<h1>Miofolic boosts fertility</h1>"
+          }
+        }
+      },
+      "block_order": [
+        "text_thRV73"
+      ],
+      "custom_css": [
+        "h1 {color: #fff; overflow: hidden; height: 0;}"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    },
     "custom_hero_2_wLMFbC": {
       "type": "custom-hero-2",
       "blocks": {
@@ -37,10 +62,10 @@
         "heading": "<p>Miofolic increases the number of ovulatory cycles by 70% within 3 months of taking and normalizes the menstrual cycle, significantly increasing a woman’s chances of becoming pregnant.</p>",
         "column_position": "right",
         "margin_top": "none",
-        "to_top_shift_upward": 31,
+        "to_top_shift_upward": 24,
         "margin_bottom": "none",
         "margin_bottom_custom": 0,
-        "container_height": "large",
+        "container_height": "medium",
         "background_image": "shopify://shop_images/s_00d19610-a2c6-4515-872a-5c30fc835e09.webp",
         "background_size": "cover",
         "background_color": "",
@@ -53,31 +78,6 @@
       "settings": {
         "padding_top": 20,
         "padding_bottom": 8
-      }
-    },
-    "rich_text_7RtNfP": {
-      "type": "rich-text",
-      "blocks": {
-        "text_thRV73": {
-          "type": "text",
-          "settings": {
-            "text": "<h1>Miofolic boosts fertility</h1>"
-          }
-        }
-      },
-      "block_order": [
-        "text_thRV73"
-      ],
-      "custom_css": [
-        "h1 {color: #fff; overflow: hidden; height: 0;}"
-      ],
-      "settings": {
-        "desktop_content_position": "center",
-        "content_alignment": "center",
-        "color_scheme": "",
-        "full_width": true,
-        "padding_top": 0,
-        "padding_bottom": 0
       }
     },
     "image_with_text_YLhGpN": {
