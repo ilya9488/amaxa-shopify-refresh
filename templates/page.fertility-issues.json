@@ -9,6 +9,44 @@
  */
 {
   "sections": {
+    "custom_hero_2_wLMFbC": {
+      "type": "custom-hero-2",
+      "blocks": {
+        "page_HUJwzQ": {
+          "type": "page",
+          "settings": {
+            "item_text": ""
+          }
+        },
+        "text_block_B9Q8Te": {
+          "type": "text_block",
+          "settings": {
+            "item_text": "",
+            "description_alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "page_HUJwzQ",
+        "text_block_B9Q8Te"
+      ],
+      "settings": {
+        "heading_size": "h4",
+        "text_font": "centaur_n4",
+        "heading_format": "normal",
+        "heading": "<p>Miofolic increases the number of ovulatory cycles by 70% within 3 months of taking and normalizes the menstrual cycle, significantly increasing a woman’s chances of becoming pregnant.</p>",
+        "column_position": "right",
+        "margin_top": "none",
+        "to_top_shift_upward": 31,
+        "margin_bottom": "none",
+        "margin_bottom_custom": 0,
+        "container_height": "large",
+        "background_image": "shopify://shop_images/s_00d19610-a2c6-4515-872a-5c30fc835e09.webp",
+        "background_size": "cover",
+        "background_color": "",
+        "show_dev_only": false
+      }
+    },
     "main": {
       "type": "main-page",
       "disabled": true,
@@ -56,6 +94,7 @@
       "block_order": [
         "text_CeDCr6"
       ],
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/fertility-issues-miofolic.webp",
         "container_width": true,
@@ -108,8 +147,9 @@
     }
   },
   "order": [
-    "main",
     "rich_text_7RtNfP",
+    "custom_hero_2_wLMFbC",
+    "main",
     "image_with_text_YLhGpN",
     "rich_text_LXNAPT"
   ]
