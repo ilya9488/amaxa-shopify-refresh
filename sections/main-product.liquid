@@ -265,48 +265,16 @@
                       </summary>
                       <div class="accordion__content rte" id="ProductAccordion-{{ block.id }}-{{ section.id }}">
                         {% comment %} {{ block.settings.content }} {% endcomment %}
-                        {% comment %} {% assign html_replacement_men = '<table itemprop="copy-paste-table" data-is-focusable="true"><thead><tr><th>Nutrient</th><th>Per Daily Dose (2&nbsp;Sachets)</th><th>%NRV</th></tr></thead><tbody><tr><td>Myo-Inositol</td><td>2,000 mg</td><td>N/A</td></tr><tr><td>L-Arginine</td><td>600 mg</td><td>N/A</td></tr><tr><td>Tribulus Terrestris L</td><td>400 mg</td><td>N/A</td></tr><tr><td>L-Carnitine</td><td>200 mg</td><td>N/A</td></tr><tr><td>Vitamin C</td><td>180 mg</td><td>225%</td></tr><tr><td>Vitamin E</td><td>60 mg</td><td>500%</td></tr><tr><td>Zinc</td><td>12 mg</td><td>120%</td></tr><tr><td>Vitamin B6</td><td>5.6 mg</td><td>400%</td></tr><tr><td>Folic Acid</td><td>400 µg</td><td>200%</td></tr><tr><td>Selenium</td><td>200 µg</td><td>363.63%</td></tr></tbody></table>' %}
-                        {% assign html_replacement_woman = '<table itemprop="copy-paste-table" data-is-focusable="true"><thead><tr><th>Nutrient</th><th><p>Per Daily Dose (2&nbsp;Sachets)</p></th><th>%NRV</th></tr></thead><tbody><tr><td>Myo-inositol</td><td>4000 mg</td><td>N/A</td></tr><tr><td>Folic Acid</td><td>400 µg</td><td>200%</td></tr><tr><td>Vitamin B12</td><td>5 µg</td><td>200%</td></tr></tbody></table>' %}
-
-                        {% assign nutritional_table = product.metafields.custom.nutritional_table.value %}
+                        {% comment %} 
+                          - old table data -
+                          {% assign html_replacement_men = '<table itemprop="copy-paste-table" data-is-focusable="true"><thead><tr><th>Nutrient</th><th>Per Daily Dose (2&nbsp;Sachets)</th><th>%NRV</th></tr></thead><tbody><tr><td>Myo-Inositol</td><td>2,000 mg</td><td>N/A</td></tr><tr><td>L-Arginine</td><td>600 mg</td><td>N/A</td></tr><tr><td>Tribulus Terrestris L</td><td>400 mg</td><td>N/A</td></tr><tr><td>L-Carnitine</td><td>200 mg</td><td>N/A</td></tr><tr><td>Vitamin C</td><td>180 mg</td><td>225%</td></tr><tr><td>Vitamin E</td><td>60 mg</td><td>500%</td></tr><tr><td>Zinc</td><td>12 mg</td><td>120%</td></tr><tr><td>Vitamin B6</td><td>5.6 mg</td><td>400%</td></tr><tr><td>Folic Acid</td><td>400 µg</td><td>200%</td></tr><tr><td>Selenium</td><td>200 µg</td><td>363.63%</td></tr></tbody></table>' %}
+                          {% assign html_replacement_woman = '<table itemprop="copy-paste-table" data-is-focusable="true"><thead><tr><th>Nutrient</th><th><p>Per Daily Dose (2&nbsp;Sachets)</p></th><th>%NRV</th></tr></thead><tbody><tr><td>Myo-inositol</td><td>4000 mg</td><td>N/A</td></tr><tr><td>Folic Acid</td><td>400 µg</td><td>200%</td></tr><tr><td>Vitamin B12</td><td>5 µg</td><td>200%</td></tr></tbody></table>' %}
+                        {% endcomment %}
                         
-                        <table>
-                          <thead>
-                            <tr>
-                              {% for header in nutritional_table.headers %}
-                                <th>{{ header }}</th>
-                              {% endfor %}
-                            </tr>
-                          </thead>
-                          <tbody>
-                            {% for nutrient in nutritional_table.nutrients %}
-                              <tr>
-                                <td>{{ nutrient.title }}</td>
-                                <td>{{ nutrient.per_daily_dose }}</td>
-                                <td>{{ nutrient.nrv }}</td>
-                              </tr>
-                            {% endfor %}
-                          </tbody>
-                        </table>
-
-                        {% if block.settings.content contains '-table-woman-' %}
-                          {% assign content_with_replacement = block.settings.content | replace: '-table-woman-', html_replacement_woman %}
-                        {% elsif block.settings.content contains '-table-men-' %}
-                          {% assign content_with_replacement = block.settings.content | replace: '-table-men-', html_replacement_men %}
-                        {% else %}
-                          {% assign content_with_replacement = block.settings.content %}
-                        {% endif %}
-
-                        {{ content_with_replacement }}
-                        {{ block.settings.page.content }} {% endcomment %}
-                        
-
-
-                        {% assign html_replacement_men = '<table itemprop="copy-paste-table" data-is-focusable="true"><thead><tr><th>Nutrient</th><th>Per Daily Dose (2&nbsp;Sachets)</th><th>%NRV</th></tr></thead><tbody><tr><td>Myo-Inositol</td><td>2,000 mg</td><td>N/A</td></tr><tr><td>L-Arginine</td><td>600 mg</td><td>N/A</td></tr><tr><td>Tribulus Terrestris L</td><td>400 mg</td><td>N/A</td></tr><tr><td>L-Carnitine</td><td>200 mg</td><td>N/A</td></tr><tr><td>Vitamin C</td><td>180 mg</td><td>225%</td></tr><tr><td>Vitamin E</td><td>60 mg</td><td>500%</td></tr><tr><td>Zinc</td><td>12 mg</td><td>120%</td></tr><tr><td>Vitamin B6</td><td>5.6 mg</td><td>400%</td></tr><tr><td>Folic Acid</td><td>400 µg</td><td>200%</td></tr><tr><td>Selenium</td><td>200 µg</td><td>363.63%</td></tr></tbody></table>' %}
-                        {% assign html_replacement_woman = '<table itemprop="copy-paste-table" data-is-focusable="true"><thead><tr><th>Nutrient</th><th><p>Per Daily Dose (2&nbsp;Sachets)</p></th><th>%NRV</th></tr></thead><tbody><tr><td>Myo-inositol</td><td>4000 mg</td><td>N/A</td></tr><tr><td>Folic Acid</td><td>400 µg</td><td>200%</td></tr><tr><td>Vitamin B12</td><td>5 µg</td><td>200%</td></tr></tbody></table>' %}
-                        
-                        
-                        {% comment %} {%- if product.metafields.custom.nutritional_table != blank -%} {% endcomment %}
+                        {% comment %}
+                          We form a table from the Jason object
+                        {% endcomment %}
+                        {%- if product.metafields.custom.nutritional_table != blank -%}
                           {% assign nutritional_table = product.metafields.custom.nutritional_table.value %}
                           
                           {% assign nutritional_table_html = '<table itemprop="copy-paste-table" data-is-focusable="true"><thead><tr>' %}
@@ -322,15 +290,10 @@
                           {% endfor %}
                           
                           {% assign nutritional_table_html = nutritional_table_html | append: '</tbody></table>' %}
-                        {% comment %} {%- endif -%} {% endcomment %}
+                        {%- endif -%}
                         
-                        
-                        {% if block.settings.content contains '[table]' %}
+                        {% if block.settings.content contains '[table]' and product.metafields.custom.nutritional_table != blank %}
                           {% assign content_with_replacement = block.settings.content | replace: '[table]', nutritional_table_html %}
-                        {% elsif block.settings.content contains '-table-woman-' %}
-                          {% assign content_with_replacement = block.settings.content | replace: '-table-woman-', html_replacement_woman %}
-                        {% elsif block.settings.content contains '-table-men-' %}
-                          {% assign content_with_replacement = block.settings.content | replace: '-table-men-', html_replacement_men %}
                         {% else %}
                           {% assign content_with_replacement = block.settings.content %}
                         {% endif %}
