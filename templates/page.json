@@ -32,9 +32,9 @@
       ],
       "settings": {
         "heading_size": "h4",
-        "text_font": "centaur_n4",
-        "heading_format": "caps",
-        "heading": "<p>Understanding Polycystic Ovary Syndrome (PCOS): <br/>Symptoms, Causes, and Management</p>",
+        "text_font": "harmonia_sans_n4",
+        "heading_format": "normal",
+        "heading": "<p>Understanding Polycystic Ovary Syndrome (PCOS): Symptoms, <br/>Causes, and Management</p>",
         "column_position": "left",
         "margin_top": "none",
         "to_top_shift_upward": 47,
