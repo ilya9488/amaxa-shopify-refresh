@@ -36,7 +36,7 @@
         aria-label="{{ 'sections.header.announcement' | t }}"
         {{ block.shopify_attributes }}
       >
-        {%- if section.blocks.first.settings.text != blank or section.blocks.first.settings.text_2 != blank -%}
+        {%- if section.blocks.first.settings.text -%}
           {%- if section.blocks.first.settings.link != blank -%}
             <a
               href="{{ section.blocks.first.settings.link }}"
@@ -52,20 +52,10 @@
               "
             >
             <span style="color: inherit;">
-            <i style="color: inherit;">
-              {{ section.blocks.first.settings.text | escape | newline_to_br }}
-            </i>
-          </span>
-            {%- if section.blocks.first.settings.text_2 != blank -%}
-              <span style="color: inherit;" >
-                {% comment %} To Next Line {% endcomment %}
-                {%- if section.blocks.first.settings.line_break -%}<br>{%- endif -%}
-                {% comment %} Text Line 2 {% endcomment %}
-                <i style="color: inherit;">
-                  {{ section.blocks.first.settings.text_2 | escape | newline_to_br }}
-                </i>
-              </span>
-            {%- endif -%}
+              <i style="color: inherit;">
+                {{ section.blocks.first.settings.text | escape | newline_to_br }}
+              </i>
+            </span>
             {% comment %} {%- if section.blocks.first.settings.link != blank -%}
               {% render 'icon-arrow' %}
             {%- endif -%} {% endcomment %}
@@ -134,7 +124,6 @@
                       <span style="color: inherit;">
                         <i style="color: inherit;">
                           {{ block.settings.text | escape | newline_to_br  }}
-                          {% comment %} {{ section.blocks.first.settings.text | escape | newline_to_br }} {% endcomment %}
                         </i>
                       </span>
                       {% comment %} {%- if block.settings.link != blank -%}
@@ -142,30 +131,6 @@
                       {%- endif -%} {% endcomment %}
                     </p>
 
-                    {% comment %} <p class="announcement-bar__message"
-                      style="
-                          {% if section.settings.text_color !=blank %}color: {{ section.settings.text_color }};{% endif %}
-                        "
-                      >
-                      <span style="color: inherit;">
-                      <i style="color: inherit;">
-                        {{ section.blocks.first.settings.text | escape | newline_to_br }}
-                      </i>
-                    </span>
-                      {%- if section.blocks.first.settings.text_2 != blank -%}
-                        <span style="color: inherit;" >
-                          {% comment %} To Next Line {% endcomment %}
-                          {%- if section.blocks.first.settings.line_break -%}<br>{%- endif -%}
-                          {% comment %} Text Line 2 {% endcomment %}
-                          <i style="color: inherit;">
-                            {{ section.blocks.first.settings.text_2 | escape | newline_to_br }}
-                          </i>
-                        </span>
-                      {%- endif -%}
-                      {% comment %} {%- if section.blocks.first.settings.link != blank -%}
-                        {% render 'icon-arrow' %}
-                      {%- endif -%} {% endcomment %}
-                    </p> {% endcomment %}
                     {%- if block.settings.link != blank -%}
                       </a>
                     {%- endif -%}
@@ -374,18 +339,7 @@
           "id": "text",
           "default": "Welcome to our store",
           "label": "t:sections.announcement-bar.blocks.announcement.settings.text.label"
-        },
-        {
-          "type": "checkbox",
-          "id": "line_break",
-          "default": true,
-          "label": "Line Break"
-        },
-        {
-          "type": "textarea",
-          "id": "text_2",
-          "label": "Text Line 2"
-        },
+        },        
         {
           "type": "url",
           "id": "link",
