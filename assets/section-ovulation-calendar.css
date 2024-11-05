@@ -229,14 +229,14 @@ button:focus {
 
 .calendar-day.mid {
   background-color: #ffa3cc;
-  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/high_chance_white_circle.svg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/high_chance_white_circle.svg?v=1730797185);
   background-size: 70%;
 }
 .calendar-day.first {
   position: relative;
 }
 .calendar-day.first:after {
-  background: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/check_sign.svg) no-repeat 50%;
+  background: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/check_sign.svg?v=1730797387) no-repeat 50%;
   background-size: contain;
   content: "";
   display: block;
@@ -247,20 +247,20 @@ button:focus {
   width: 90%;
 }
 .calendar-day.high {
-  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/low_chance_pink_circle.svg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/low_chance_pink_circle.svg?v=1730797570);
   background-size: 70%;
 }
 .calendar-day.ovul {
   background-color: #ff7ab0;
-  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/ovulation.svg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/ovulation.svg?v=1730797480);
   background-position: 50%;
   background-size: 30px 30px;
 }
-.calendar-back {
+/* .calendar-back {
   background-image: url(https://miofolic.com/wp-content/uploads/2018/11/miofolic-woman-transparent-desktop.png);
   background-position: 50%;
   background-size: cover;
-}
+} */
 .settings-pad {
   display: flex;
   flex-direction: row;
@@ -338,7 +338,7 @@ button:focus {
   background-size: 90%;
 }
 .calendar-desc-img .row > div:first-child:after {
-  background: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/check_sign.svg) no-repeat 50%;
+  background: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/check_sign.svg?v=1730797387) no-repeat 50%;
   background-size: contain;
   content: "";
   display: block;
@@ -350,17 +350,17 @@ button:focus {
 }
 .calendar-desc-img .row > div:nth-child(2):before {
   background-color: #ff7ab0;
-  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/ovulation.svg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/ovulation.svg?v=1730797480);
   background-position: 50%;
   background-size: 30px 30px;
 }
 .calendar-desc-img .row > div:nth-child(3):before {
-  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/low_chance_pink_circle.svg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/low_chance_pink_circle.svg?v=1730797570);
   background-size: 70%;
 }
 .calendar-desc-img .row > div:nth-child(4):before {
   background-color: #ffa3cc;
-  background-image: url(https://miofolic.com/wp-content/themes/miofolic/assets/images/calendar_pms/high_chance_white_circle.svg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/high_chance_white_circle.svg?v=1730797185);
   background-size: 70%;
 }
 

@@ -1,90 +1,65 @@
 {{ 'section-ovulation-calendar.css' | asset_url | stylesheet_tag }}
 
-
-
-
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
 
-  <div class="wp-block-group pms-calendar"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
-    <div class="wp-block-group filter-block"><div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
-    <div class="wp-block-columns settings-pad is-layout-flex wp-container-4 wp-block-columns-is-layout-flex">
-    <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
-    <p class="filter-title">The first day of your <br> last period (LMP)</p>
-    
-    
-    
-    {% comment %} <input id="calendarDateStart" type="text" class="flatpickr-input" readonly="readonly"> {% endcomment %}
-    <input id="calendarDateStart" type="text">
-    </div>
-    
-    
-    
-    <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
-    <p class="filter-title">Cycle length</p>
-    
-    
-    
-    <select id="lengthOfCycle"><option value="21">21 day</option><option value="22">22 day</option><option value="23">23 day</option><option value="24">24 day</option><option value="25">25 day</option><option value="26">26 day</option><option value="27">27 day</option><option value="28">28 day</option><option value="29">29 day</option><option value="30">30 day</option><option value="31">31 day</option><option value="32">32 day</option><option value="33">33 day</option><option value="34">34 day</option><option value="35">35 day</option><option value="36">36 day</option><option value="37">37 day</option><option value="38">38 day</option><option value="39">39 day</option><option value="40">40 day</option><option value="41">41 day</option><option value="42">42 day</option><option value="43">43 day</option><option value="44">44 day</option><option value="45">45 day</option></select>
-    </div>
-    
-    
-    
-    <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
-    <p class="filter-title">Period length</p>
-    
-    
-    
-    <select id="lengthOfPMS"><option value="1">1 day</option><option value="2">2 day</option><option value="3">3 day</option><option value="4">4 day</option><option value="5">5 day</option><option value="6">6 day</option><option value="7">7 day</option><option value="8">8 day</option><option value="9">9 day</option><option value="10">10 day</option><option value="11">11 day</option><option value="12">12 day</option><option value="13">13 day</option><option value="14">14 day</option><option value="15">15 day</option></select>
-    </div>
-    </div>
-    
-    
-    
-    <input type="button" id="calendar-calculate" value="Calculate" class="btn">
-    </div></div>
-    
-    
-    
-    <div class="calendar-back">
-      <div class="calendar-navigation">
-        <i class="fal fa-chevron-circle-left navigation-arrow" data-value="-1">
-          <svg data-value="-1" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle data-value="-1" cx="15.5" cy="15.5" r="14.5" stroke="#bfbfbf" stroke-width="2"/>
-            <path data-value="-1" d="M18.5 9L12 15.5L18.5 23" stroke="#bfbfbf" stroke-width="2"/>
-          </svg>              
-        </i>
-        <span id="selected-month"></span>
-        <i class="fal fa-chevron-circle-right navigation-arrow" data-value="1">
-          <svg data-value="1" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle data-value="1" cx="15.5" cy="15.5" r="14.5" transform="matrix(-1 0 0 1 31 0)" stroke="#bfbfbf" stroke-width="2"/>
-            <path data-value="1" d="M12.5 9L19 15.5L12.5 23" stroke="#bfbfbf" stroke-width="2"/>
-          </svg>              
-        </i>
+  <div class="wp-block-group pms-calendar">
+    <div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+      <div class="wp-block-group filter-block">
+        <div class="wp-block-group__inner-container is-layout-flow wp-block-group-is-layout-flow">
+          <div class="wp-block-columns settings-pad is-layout-flex wp-container-4 wp-block-columns-is-layout-flex">
+            <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
+              <p class="filter-title">The first day of your <br> last period (LMP)</p>
+              <input id="calendarDateStart" type="text">
+            </div>
+            <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
+              <p class="filter-title">Cycle length</p>
+              <select id="lengthOfCycle"><option value="21">21 day</option><option value="22">22 day</option><option value="23">23 day</option><option value="24">24 day</option><option value="25">25 day</option><option value="26">26 day</option><option value="27">27 day</option><option value="28">28 day</option><option value="29">29 day</option><option value="30">30 day</option><option value="31">31 day</option><option value="32">32 day</option><option value="33">33 day</option><option value="34">34 day</option><option value="35">35 day</option><option value="36">36 day</option><option value="37">37 day</option><option value="38">38 day</option><option value="39">39 day</option><option value="40">40 day</option><option value="41">41 day</option><option value="42">42 day</option><option value="43">43 day</option><option value="44">44 day</option><option value="45">45 day</option></select>
+            </div>
+            <div class="wp-block-column col-4 is-layout-flow wp-block-column-is-layout-flow">
+              <p class="filter-title">Period length</p>    
+              <select id="lengthOfPMS"><option value="1">1 day</option><option value="2">2 day</option><option value="3">3 day</option><option value="4">4 day</option><option value="5">5 day</option><option value="6">6 day</option><option value="7">7 day</option><option value="8">8 day</option><option value="9">9 day</option><option value="10">10 day</option><option value="11">11 day</option><option value="12">12 day</option><option value="13">13 day</option><option value="14">14 day</option><option value="15">15 day</option></select>
+            </div>
+          </div>
+          <input type="button" id="calendar-calculate" value="Calculate" class="btn">
+        </div>
       </div>
-      <div id="calendar">
+      <div class="calendar-back">
+        <div class="calendar-navigation">
+          <i class="fal fa-chevron-circle-left navigation-arrow" data-value="-1">
+            <svg data-value="-1" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle data-value="-1" cx="15.5" cy="15.5" r="14.5" stroke="#bfbfbf" stroke-width="2"/>
+              <path data-value="-1" d="M18.5 9L12 15.5L18.5 23" stroke="#bfbfbf" stroke-width="2"/>
+            </svg>              
+          </i>
+          <span id="selected-month"></span>
+          <i class="fal fa-chevron-circle-right navigation-arrow" data-value="1">
+            <svg data-value="1" width="31" height="31" viewBox="0 0 31 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle data-value="1" cx="15.5" cy="15.5" r="14.5" transform="matrix(-1 0 0 1 31 0)" stroke="#bfbfbf" stroke-width="2"/>
+              <path data-value="1" d="M12.5 9L19 15.5L12.5 23" stroke="#bfbfbf" stroke-width="2"/>
+            </svg>              
+          </i>
+        </div>
+        <div id="calendar">
+        </div>
       </div>
+      <div class="calendar-desc-img">
+        <div class="row">
+          <div class="col-6 item calendar-desc__menstr">Period</div>
+          <div class="col-6 item calendar-desc__ovul"> Day of Ovulation</div>
+          <div class="col-6 item calendar-desc__high">High chance of getting pregnant</div>
+          <div class="col-6 item calendar-desc__middle">Low chance to get pregnant</div>
+        </div>
+      </div>
+    </div>
   </div>
-<div class="calendar-desc-img">
-  <div class="row">
-      <div class="col-6 item calendar-desc__menstr">Period</div>
-      <div class="col-6 item calendar-desc__ovul"> Day of Ovulation</div>
-      <div class="col-6 item calendar-desc__high">High chance of getting pregnant</div>
-      <div class="col-6 item calendar-desc__middle">Low chance to get pregnant</div>
-  </div>
-</div>
 
-    <script async src="//code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script async src="//npmcdn.com/flatpickr/dist/flatpickr.min.js"></script>
-    <script async src="//npmcdn.com/flatpickr/dist/l10n/default.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    {% comment %} <script async src="https://miofolic.com/wp-content/themes/miofolic/assets/ui-kit/uikit.js?ver=1.0.0" id="ui-kit-js"></script> {% endcomment %}
+  <script async src="{{ 'jquery-3.6.0.min.js' | asset_url }}"></script>
+  <script async src="{{ 'flatpickr.min.js' | asset_url }}"></script>
+  <script async src="{{ 'flatpickr-default.js' | asset_url }}"></script>
+  {{ 'flatpickr.min.css' | asset_url | stylesheet_tag }}
 
-    {% comment %} <link rel="stylesheet" id="wp-block-library-css" href="https://miofolic.com/wp-includes/css/dist/block-library/style.min.css?ver=6.3.5" media="all"> {% endcomment %}
-    {% comment %} <link rel="stylesheet" id="wp-mediaelement-css" href="https://miofolic.com/wp-includes/js/mediaelement/wp-mediaelement.min.css?ver=6.3.5" media="all"> {% endcomment %}
-    {% comment %} <link rel="stylesheet" id="ui-kit-css" href="https://miofolic.com/wp-content/themes/miofolic/assets/ui-kit/uikit.min.css?ver=6.3.5" media="all"> {% endcomment %}
-    
-    <script src="{{ 'calendar-ovulation.js' | asset_url }}" defer="defer"></script>
+  <script src="{{ 'calendar-ovulation.js' | asset_url }}" defer="defer"></script>
 
 {% endif %}
 
