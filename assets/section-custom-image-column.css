@@ -1,5 +1,8 @@
 :root {
   --custom-image-column-title-font-size: 30px;
+  --custom-image-column-title-color: #066cb4;
+  --custom-image-column-description: #444;
+  --custom-image-column-graph-caption: #9f9f9e;
 }
 
 .custom-image-column{
@@ -14,7 +17,7 @@
   margin-right: auto;
 }
 .custom-image-column--title{
-  color: #066cb4;
+  color: var(--custom-image-column-title-color);
   text-align: center;
   font-size: var(--custom-image-column-title-font-size);
   line-height: 40px;
@@ -29,7 +32,7 @@
   width: 60px;
 }
 .custom-image-column--description{
-  color: #444;
+  color: var(--custom-image-column-description);
 }
 .custom-image-column--description.default{
   font-size: 16px;
@@ -116,7 +119,7 @@
   width: 100%;
 }
 .custom-image-column--block-graph-caption{
-  color: #9f9f9e;
+  color: var(--custom-image-column-graph-caption);
   font-size: 14px;
   font-weight: 600;
   padding-left: 40px;
@@ -138,7 +141,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
-  color: #9f9f9e;
+  color: var(--custom-image-column-graph-caption);
 }
 .custom-image-column--block-graph-mark{
   position: absolute;

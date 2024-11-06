@@ -114,7 +114,7 @@ noscript .localization-selector.link {
 }
 
 .localization-selector option {
-  color: #000000;
+  color: var(--color-dark-900);
 }
 
 .localization-selector + .disclosure__list-wrapper {

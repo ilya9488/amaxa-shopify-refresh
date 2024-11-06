@@ -192,7 +192,7 @@ cart-drawer-items {
   padding-inline: var(--offset-normal);
 }
 .drawer__inner {
-  background-color: #ffffff;
+  background-color: var(--color-clear);
 }
 @media screen and (max-height: 650px) {
   cart-drawer-items {

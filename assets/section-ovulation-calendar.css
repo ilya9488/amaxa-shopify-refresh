@@ -1,3 +1,12 @@
+:root{
+  --pms-calendar-pink-600: #cd007b;
+  --pms-calendar-pink-500: #ed7aae;
+  --pms-calendar-pink-450: #ff7ab0;
+  --pms-calendar-pink-400: #ffa3cc;
+  --pms-calendar-gray-600: #666666;
+  --pms-calendar-gray-500: #707070;
+}
+
 .pms-calendar .wp-block-group__inner-container{
   max-width: 630px;
 }
@@ -42,7 +51,7 @@
   padding-bottom: 1rem;
 }
 .pms-calendar .tooltip-inner {
-  background-color: #607e85;
+  background-color: var(--color-secendary-450);
   color: red !important;
 }
 
@@ -82,10 +91,10 @@
   padding-bottom: 1rem;
 }
 .pms-calendar .tooltip-inner {
-  background-color: #607e85;
+  background-color: var(--color-purple);
 }
 .settings-pad > div input {
-  background-color: #fff !important;
+  background-color: var(--color-clear) !important;
 }
 .settings-pad > div > input,
 .settings-pad > div > select {
@@ -103,12 +112,12 @@ button,
 button:active,
 button:focus {
   outline: none !important;
-  border: 2px solid #ED7AAE;
+  border: 2px solid var(--pms-calendar-pink-500);
   border-radius: 10px;
 }
 #calendar-calculate {
-  background: #ed7aae;
-  color: #fff;
+  background: var(--pms-calendar-pink-500);
+  color: var(--color-clear);
   display: block;
   font-size: 1rem;
   font-weight: 400;
@@ -121,13 +130,12 @@ button:focus {
   width: 165px;
 }
 #calendar-calculate:hover {
-  background: #fff;
-  color: #ed7aae;
+  background: var(--color-clear);
+  color: var(--pms-calendar-pink-500);
   cursor: pointer;
 }
 #selected-month {
-  /* color: #3794b0; */
-  color: #707070;
+  color: var(--pms-calendar-gray-500);
 }
 .filter-block {
   align-items: center;
@@ -144,9 +152,7 @@ button:focus {
   padding-top: 10px;
 }
 .navigation-arrow {
-  color: #3794b0;
   cursor: pointer;
-  font-size: 30px;
   margin-left: 5px;
   margin-right: 5px;
   transition: all 0.2s linear;
@@ -155,7 +161,7 @@ button:focus {
   user-select: none;
 }
 .navigation-arrow:hover {
-  color: #ed7aae;
+  color: var(--pms-calendar-pink-500);
 }
 .date-day {
   display: block;
@@ -180,13 +186,13 @@ button:focus {
   visibility: hidden;
 }
 .pms-day {
-  color: #cd007b;
+  color: var(--pms-calendar-pink-600);
 }
 .calendar-day {
-  background: #fff;
+  background: var(--color-clear);
   background-position: 50%;
   background-repeat: no-repeat;
-  border: 2px solid #ff7ab0;
+  border: 2px solid var(--pms-calendar-pink-450);
   border-radius: 10px;
   height: 66px;
   justify-content: flex-start !important;
@@ -198,8 +204,8 @@ button:focus {
   position: absolute;
   bottom: 108%;
   white-space: nowrap;
-  background-color: #666666;
-  color: #fff;
+  background-color: var(--pms-calendar-gray-600);
+  color: var(--color-clear);
   padding: 0 10px;
   left: 50%;
   transform: translateX(-50%);
@@ -228,7 +234,7 @@ button:focus {
 }
 
 .calendar-day.mid {
-  background-color: #ffa3cc;
+  background-color: var(--pms-calendar-pink-400);
   background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/high_chance_white_circle.svg?v=1730797185);
   background-size: 70%;
 }
@@ -251,7 +257,7 @@ button:focus {
   background-size: 70%;
 }
 .calendar-day.ovul {
-  background-color: #ff7ab0;
+  background-color: var(--pms-calendar-pink-450);
   background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/ovulation.svg?v=1730797480);
   background-position: 50%;
   background-size: 30px 30px;
@@ -322,7 +328,7 @@ button:focus {
   position: relative;
 }
 .calendar-desc-img .row > div:before {
-  background-color: #fff;
+  background-color: var(--color-clear);
   background-position: 50%;
   background-repeat: no-repeat;
   border-radius: 6px;
@@ -349,7 +355,7 @@ button:focus {
   width: 50px;
 }
 .calendar-desc-img .row > div:nth-child(2):before {
-  background-color: #ff7ab0;
+  background-color: var(--pms-calendar-pink-450);
   background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/ovulation.svg?v=1730797480);
   background-position: 50%;
   background-size: 30px 30px;
@@ -359,7 +365,7 @@ button:focus {
   background-size: 70%;
 }
 .calendar-desc-img .row > div:nth-child(4):before {
-  background-color: #ffa3cc;
+  background-color: var(--pms-calendar-pink-400);
   background-image: url(https://cdn.shopify.com/s/files/1/0797/0003/3870/files/high_chance_white_circle.svg?v=1730797185);
   background-size: 70%;
 }

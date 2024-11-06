@@ -276,8 +276,8 @@ fieldset.product-form__input .form__label {
   display: block;
 }
 .product-form__input input[type='radio'] + label .icon--check svg{
-  fill: #D7C5AB;
-  background-color: #fff;
+  fill: var(--color-sand-700);
+  background-color: var(--color-clear);
   border-radius: 50%;
   opacity: 0;
   transition: .3s;
@@ -301,10 +301,8 @@ fieldset.product-form__input .form__label {
 }
 
 .product-form__input input[type='radio']:checked + label {
-  /* background-color: rgb(var(--color-foreground)); */
-  /* color: rgb(var(--color-background)); */
-  border-color: #D7C5AB;
-  background-color: rgba(215, 197, 171, 0.15);
+  border-color: var(--color-sand-700);
+  background-color: var(--color-sand-100);
 }
 .product-form__input input[type='radio']:checked + label .icon--check svg{
   opacity: 1;
@@ -367,7 +365,7 @@ fieldset.product-form__input .form__label {
   }
 }
 .product-form__submit span {
-  color: white;
+  color: var(--color-clear);
 }
 .product-form__submit:hover span {
   color: var(--color-primary) !important;
@@ -514,13 +512,13 @@ a.product__text {
 .product__accordion .accordion__content table td {
   padding: 10px;
   border: none;
-  border-bottom: 1px solid #DDDDDD; 
+  border-bottom: 1px solid var(--color-secendary-250);
   text-align: left;
   line-height: 100%;
 }
 
 table tr:nth-child(even) {
-  background-color: #F9F9F9;
+  background-color: var(--color-secendary-100);
 }
 
 .product__info-container .product__accordion {
@@ -591,7 +589,7 @@ table tr:nth-child(even) {
 .product__description ul li:before {
   content: "•  ";
   margin-right: 5px;
-  color: #D7C5AB;
+  color: var(--color-sand-700);
   font-size: 24px;
 }
 .product__description {
@@ -1915,9 +1913,9 @@ table tr:nth-child(even) {
   margin-right: auto;
 }
 .product__info-wrapper {
-  background-color: white;
+  background-color: var(--color-clear);
   /* width: fit-content; */
-  /* border: 1px solid #f6f6f6; */
+  /* border: 1px solid var(--color-secendary); */
   border-radius: 10px;
 }
 
@@ -1935,7 +1933,7 @@ svg.icon.icon-plus {
 }
 .slider-content--title-desc {
   font-size: 14px;
-  margin-top
+  /* margin-top */
 }
 .review-content p {
   line-height: 22px;

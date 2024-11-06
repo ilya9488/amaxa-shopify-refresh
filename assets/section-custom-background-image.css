@@ -52,7 +52,7 @@
   text-align: center;
   width: 100%;
   font-weight: 700;
-  color: #fff;
+  color: var(--color-clear);
   text-shadow: rgb(0 0 0 / 83%) 0px 3px 8px;
   font-size: calc(var(--banner-image-title-font-size-base) + 1vmin);
   margin: 0;
