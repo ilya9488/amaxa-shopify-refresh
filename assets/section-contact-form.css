@@ -3,7 +3,10 @@
 }
 
 .contact .form__message {
+  position: absolute;
   align-items: flex-start;
+  margin: 3px 0 0 0;
+  font-size: 12px;
 }
 
 .contact .icon-success {
@@ -11,7 +14,8 @@
 }
 
 .contact .field {
-  margin-bottom: 1.5rem;
+  position: relative;
+  margin-bottom: 1.5rem; 
 }
 
 @media screen and (min-width: 750px) {
