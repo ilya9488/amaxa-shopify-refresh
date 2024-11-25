@@ -5,7 +5,7 @@
     {% if request.host contains '127.0.0.1' or request.host contains 'myshopify.com' %}
       <!-- Local development environment --> 
     {% else %}
-      {% unless template contains 'checkout' or template contains 'order' %}
+      {% unless template contains 'checkout' %}
         <!-- Google Tag Manager -->
         <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
         new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
