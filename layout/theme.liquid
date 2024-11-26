@@ -31,18 +31,17 @@
         }
 
           // Example for sending event data to third party servers
-          fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
-             mode: 'no-cors',
-            method: 'POST',
-            headers:{
-                "Content-Type": "application/json",
-            },
-            body:JSON.stringify(eventData)
-          }).then(res => {
-            console.log(res)
-          }).catch((error) => {
-            console.error('Fetch error:', error);
-          });
+          // fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
+          //   method: 'POST',
+          //   headers:{
+          //       "Content-Type": "application/json",
+          //   },
+          //   body:JSON.stringify(eventData)
+          // }).then(res => {
+          //   console.log(res)
+          // }).catch((error) => {
+          //   console.error('Fetch error:', error);
+          // });
 
 
           
@@ -71,24 +70,24 @@
 
 
 
-          // fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
-          //   method: 'POST',
-          //   mode: 'no-cors',
-          //   headers: {
-          //     'Content-Type': 'application/json',
-          //   },
-          //   body: JSON.stringify({
-          //     client_id: '1351527204.1730967730',
-          //     events: [
-          //       {
-          //         name: 'test_my_page_started',
-          //         params: {
-          //           value: 'page atsrtrd !'
-          //         },
-          //       },
-          //     ],
-          //   }),
-          // });
+          fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              client_id: '1351527204.1730967730',
+              events: [
+                {
+                  name: 'test_my_page_started',
+                  params: {
+                    value: 'page atsrtrd !'
+                  },
+                },
+              ],
+            }),
+          });
 
 
           
