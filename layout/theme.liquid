@@ -18,25 +18,36 @@
           // });
 
           let eventData = {
-              "client_id": "1351527204.1730967730",
-              "events": [
-                {
-                  "name": "offline_purchase",
-                  "params": {
-                    "engagement_time_msec": "100",
-                    "session_id": "123"
-                  }
+            "client_id": "1351527204.1730967730",
+            "events": [
+              {
+                "name": "offline_purchase",
+                "params": {
+                  "engagement_time_msec": "100",
+                  "session_id": "123"
                 }
-              ]
-          }
-          const endpoint_url = 'https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ'
-          fetch(endpoint_url,{
-              header:{
-                  "Content-Type": "application/json",
-              },
-              method: "POST",
-              body:JSON.stringify(eventData)
-          });
+              }
+            ]
+          };
+          
+          const endpoint_url = 'https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ';
+          
+          fetch(endpoint_url, {
+            headers: {
+              "Content-Type": "application/json",
+            },
+            method: "POST",
+            body: JSON.stringify(eventData),
+          })
+            .then(response => {
+              if (!response.ok) {
+                console.error('Ошибка:', response.statusText);
+              } else {
+                console.log('Запрос успешно отправлен!', response);
+              }
+            })
+            .catch(error => console.error('Ошибка запроса:', error));
+
 
           // fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
           //   method: 'POST',
