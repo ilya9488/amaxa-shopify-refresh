@@ -17,25 +17,27 @@
           //     dataEvent: 'test'
           // });
 
-fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
-  method: 'POST',
-  mode: 'no-cors',
-  headers: {
-    'Content-Type': 'application/json',
-  },
-  body: JSON.stringify({
-    client_id: '1351527204.1730967730',
-    events: [
-      {
-        name: 'test_my_page_started',
-        params: {
-          value: 123.45,
-          currency: 'USD',
-        },
-      },
-    ],
-  }),
-});
+          let eventData = {
+            "client_id": "1351527204.1730967730",
+            "events": [
+              {
+                "name": "offline_purchase",
+                "params": {
+                  "engagement_time_msec": "100",
+                  "session_id": "123"
+                }
+              }
+            ]
+        }
+        const endpoint_url = 'https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ'
+        fetch(endpoint_url,{
+            mode: 'no-cors',
+            header:{
+                "Content-Type": "application/json",
+            },
+            method: "POST",
+            body:JSON.stringify(eventData)
+        });
 
 
 
