@@ -17,6 +17,13 @@
           //     dataEvent: 'test'
           // });
 
+          // Example for sending event data to third party servers
+          fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
+            method: 'POST',
+          }).then(res => {
+            console.log(res)
+          });
+
           let eventData = {
             "client_id": "1351527204.1730967730",
             "events": [
