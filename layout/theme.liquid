@@ -17,40 +17,26 @@
           //     dataEvent: 'test'
           // });
 
-const express = require('express');
-const fetch = require('node-fetch');
-
-const app = express();
-app.use(express.json());
-
-app.post('/send-to-ga', async (req, res) => {
-  const { client_id, events } = req.body;
-
-  try {
-    const response = await fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
+fetch('https://www.google-analytics.com/mp/collect?measurement_id=G-W2G5F6KTH9&api_secret=nhsN1mW3TmeRxuDZPB-imQ', {
+  method: 'POST',
+  mode: 'no-cors',
+  headers: {
+    'Content-Type': 'application/json',
+  },
+  body: JSON.stringify({
+    client_id: '1351527204.1730967730',
+    events: [
+      {
+        name: 'test_my_page_started',
+        params: {
+          value: 123.45,
+          currency: 'USD',
+        },
       },
-      body: JSON.stringify({
-        client_id,
-        events,
-      }),
-    });
-
-    if (!response.ok) {
-      return res.status(response.status).send(await response.text());
-    }
-
-    res.status(200).send({ success: true });
-  } catch (error) {
-    res.status(500).send({ error: error.message });
-  }
+    ],
+  }),
 });
 
-app.listen(3000, () => {
-  console.log('Server running on http://localhost:3000');
-});
 
 
 
