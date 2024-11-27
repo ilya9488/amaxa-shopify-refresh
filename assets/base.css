@@ -2522,7 +2522,7 @@ product-info .loading__spinner:not(.hidden) ~ *,
   align-content: center;
   grid-area: announcements;
   opacity: 0;
-  animation: show_delay_announcement_bar 1s forwards;
+  animation: show_delay_announcement_bar .5s forwards;
   animation-delay: 1s;
 }
 
