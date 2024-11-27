@@ -14,24 +14,24 @@
     "announcement-bar": {
       "type": "announcement-bar",
       "blocks": {
-        "announcement_dKXmX3": {
-          "type": "announcement",
-          "settings": {
-            "text": "FREE SHIPPING OVER £60",
-            "link": "shopify://collections/all"
-          }
-        },
         "announcement-bar-0": {
           "type": "announcement",
           "settings": {
             "text": "10% OFF YOUR FIRST ORDER: USE CODE WELCOME10 AT CHECKOUT",
             "link": "shopify://collections/all"
           }
+        },
+        "announcement_dKXmX3": {
+          "type": "announcement",
+          "settings": {
+            "text": "FREE SHIPPING OVER £60",
+            "link": "shopify://collections/all"
+          }
         }
       },
       "block_order": [
-        "announcement_dKXmX3",
-        "announcement-bar-0"
+        "announcement-bar-0",
+        "announcement_dKXmX3"
       ],
       "settings": {
         "color_scheme": "background-1",
