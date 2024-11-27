@@ -213,6 +213,7 @@ variant-radios .product-form__input input[type=radio]+label {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 3px;
 }
 @media screen and (max-width: 1100px) {
   variant-radios .product-form__input {
