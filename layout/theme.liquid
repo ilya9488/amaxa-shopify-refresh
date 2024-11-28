@@ -1,6 +1,14 @@
 <!doctype html>
 <html class="no-js" lang="{{ request.locale.iso_code }}">
   <head>
+    {% comment %}  disabled list-collections page {% endcomment %}
+    {% if template == 'list-collections' %}
+      <meta name="robots" content="noindex">
+      <script>
+        window.location.href = '/collections/all';
+      </script>
+    {% endif %}
+
     {% comment %} Is not local server {% endcomment %}
     {% if request.host contains '127.0.0.1' or request.host contains 'myshopify.com' %}
       <!-- Local development environment --> 
@@ -308,7 +316,7 @@
   </head>
 
   <body class="{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
-
+    
     {% comment %} Is not local server {% endcomment %}
     {% if request.host contains '127.0.0.1' or request.host contains 'myshopify.com' %}
       <!-- Local development environment --> 
