@@ -1046,6 +1046,7 @@
       "name": "t:sections.main-product.blocks.variant_picker.name",
       "limit": 1,
       "settings": [
+        // picker type
         {
           "type": "select",
           "id": "picker_type",
@@ -1061,6 +1062,23 @@
           ],
           "default": "button",
           "label": "t:sections.main-product.blocks.variant_picker.settings.picker_type.label"
+        },
+        // price type: % Off or save £123
+        {
+          "type": "select",
+          "id": "price_type",
+          "options": [
+            {
+              "value": "percent",
+              "label": "(%) Off"
+            },
+            {
+              "value": "save_price",
+              "label": "Save (£)"
+            }
+          ],
+          "default": "percent",
+          "label": "(%) Off"
         }
       ]
     },
