@@ -339,22 +339,25 @@
       "id": "background_color",
       "label": "Background Color"
     },
+    {
+      "type": "header",
+      "content": "Dates hiding section"
+    },
     // dates showing
     {
-      "name": "Date and time of event",
-      "settings": [
-        {
-          "type": "date",
-          "id": "event_date",
-          "label": "Date"
-        },
-        {
-          "type": "time",
-          "id": "event_time",
-          "label": "Time"
-        }
-      ]
-    },    
+      "type": "text",
+      "id": "start_time",
+      "label": "Start date and time",
+      // "default": "2023-05-30 23:00:00",
+      "info": "Format: yyyy-mm-dd hh:mm:ss"
+    },   
+    {
+      "type": "text",
+      "id": "end_time",
+      "label": "End date and time",
+      // "default": "2023-05-30 23:00:00",
+      "info": "Format: yyyy-mm-dd hh:mm:ss"
+    },   
     // Dev Mode
     {
       "type": "checkbox",
