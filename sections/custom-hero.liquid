@@ -5,10 +5,9 @@
 {% assign end_time = section.settings.end_time %}
 
 {% comment %} Dev Mode - condition {% endcomment %}
-{% if current_time < start_time or current_time > end_time %}
+{% if current_time >= start_time and current_time <= end_time %}
   {% comment %} Hide section {% endcomment %}
-{% else %}
-  {% comment %} Show section {% endcomment %}
+{% else %} {% comment %} Show section {% endcomment %}
   {% if section.settings.show_dev_only != true or request.host contains 'myshopify.com' %}
     <div
         id="Banner-{{ section.id }}"
