@@ -35,6 +35,8 @@
         "background_video": "shopify://files/videos/477935c4ad (1).mp4",
         "background_size": "cover",
         "background_color": "linear-gradient(14deg, rgba(215, 197, 171, 1) 14%, rgba(255, 255, 255, 1) 89%)",
+        "start_time": "2024-11-27 00:00",
+        "end_time": "2024-11-30 00:00",
         "show_dev_only": true
       }
     },
@@ -56,6 +58,8 @@
         "background_video": "shopify://files/videos/477935c4ad (1).mp4",
         "background_size": "cover",
         "background_color": "",
+        "start_time": "",
+        "end_time": "",
         "show_dev_only": false
       }
     },
@@ -79,6 +83,8 @@
         "background_image": "shopify://shop_images/hero-baner-x2.jpg",
         "background_size": "cover",
         "background_color": "",
+        "start_time": "",
+        "end_time": "",
         "show_dev_only": false
       }
     },
