@@ -4,13 +4,6 @@
 {% assign start_time = section.settings.start_time %}
 {% assign end_time = section.settings.end_time %}
 
-{% if current_time < start_time or current_time > end_time %}
-  <!-- Секция скрыта в заданные даты -->
-{% else %}
-  <!-- Секция отображается -->
-  {% comment %} <h1>Эта секция видна только в указанный период времени</h1> {% endcomment %}
-{% endif %}
-
 {% comment %} Dev Mode - condition {% endcomment %}
 {% if current_time < start_time or current_time > end_time %}
   {% comment %} Hide section {% endcomment %}
