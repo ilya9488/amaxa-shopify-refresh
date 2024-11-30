@@ -17,11 +17,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-const isSameDate = new Date() < new Date("2024-11-30T23:59:59");
+const isSameDate = new Date() < new Date("2024-12-01T23:59:59");
 
 if (isSameDate){
   const announcementBar = document.querySelector(".announcement-bar__announcement i");
-    const deadline = new Date("2024-11-30T23:59:59").getTime();
+    const deadline = new Date("2024-12-01T23:59:59").getTime();
   
     // Проверяем наличие элемента и текста WELCOME10
     if (announcementBar && announcementBar.textContent.includes("WELCOME10")) {
