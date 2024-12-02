@@ -98,21 +98,38 @@
       {%- endunless -%}
       <span class="visually-hidden visually-hidden--inline">{{ 'products.product.price.sale_price' | t }}</span>
       
-      {% comment %} price -> to -> price {% endcomment %}
-      {% assign current_date = 'now' | date: '%Y-%m-%d %H:%M' %}
-      {% assign end_date = '2024-12-01 23:59:59' %}
-      {% if product.compare_at_price > product.price and template != 'product' and current_date < end_date %}
+      {% comment %} list product types {% endcomment %}
+      {% comment %} {% for variant in product.variants %}
+        <p>
+          Variant: {{ variant.title }}<br>
+          Price: {{ variant.price | money }}<br>
+          Old price (if any): 
+          {% if variant.compare_at_price > variant.price %}
+            {{ variant.compare_at_price | money }}
+          {% else %}
+            There is no discount
+          {% endif %}
+        </p>
+      {% endfor %} {% endcomment %}
+      
+      {% assign first_variant = product.variants.first %}
+
+      {% if first_variant.compare_at_price > first_variant.price %}
+        <!-- If there is a discount -->
         <span class="price-item price-item--original">
-          From <s>{{ product.compare_at_price | money }}</s>
+          <s>{{ first_variant.compare_at_price | money }}</s>
         </span>
         <span class="price-item price-item--sale price-item--last">
-          {{ product.price | money }}
+          {{ first_variant.price | money }}
         </span>
       {% else %}
+        <!-- If there are no discounts -->
         <span class="price-item price-item--sale price-item--last">
           {{ money_price }}
         </span>
       {% endif %}
+
+      
       {% comment %} <span class="price-item price-item--sale price-item--last">
         {{ money_price }}
       </span> {% endcomment %}
