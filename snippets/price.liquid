@@ -120,7 +120,7 @@
           <s>{{ first_variant.compare_at_price | money }}</s>
         </span> {% endcomment %}
         <span class="price-item price-item--sale price-item--last">
-          <s>{{ first_variant.compare_at_price | money }}</s>
+          {% comment %} <s>{{ first_variant.compare_at_price | money }}</s> {% endcomment %}
            {{ first_variant.price | money }}
         </span>
       {% else %}
