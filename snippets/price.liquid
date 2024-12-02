@@ -113,15 +113,10 @@
       {% endfor %} {% endcomment %}
       
       {% assign first_variant = product.variants.first %}
-{% comment %} and template != 'product' {% endcomment %}
-      {% if first_variant.compare_at_price > first_variant.price %}
-        <!-- If there is a discount -->
-        {% comment %} <span class="price-item price-item--original">
-          <s>{{ first_variant.compare_at_price | money }}</s>
-        </span> {% endcomment %}
+
+      {% if first_variant.compare_at_price > first_variant.price and template != 'product'%}
         <span class="price-item price-item--sale price-item--last">
-          {% comment %} <s>{{ first_variant.compare_at_price | money }}</s> {% endcomment %}
-           {{ first_variant.price | money }}
+          {{ first_variant.price | money }}
         </span>
       {% else %}
         <!-- If there are no discounts -->
