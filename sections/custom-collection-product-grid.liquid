@@ -26,11 +26,31 @@
       padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
+
+  .product-grid-3col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  @media screen and (max-width: 749px) {
+    .product-grid-3col {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    .product-grid-3col {
+      grid-template-columns: 1fr;
+    }
+  }
 {%- endstyle -%}
 
 <div class="section-{{ section.id }}-padding gradient color-{{ section.settings.color_scheme }}">
   {%- paginate collection.products by section.settings.products_per_page -%}
-    {% comment %} Sort is the first tabbable element when filter type is vertical {% endcomment %}
     {%- if section.settings.enable_sorting and section.settings.filter_type == 'vertical' -%}
       <facet-filters-form class="facets facets-vertical-sort page-width small-hide no-js-hidden">
         <form class="facets-vertical-form" id="FacetSortForm">
@@ -72,17 +92,11 @@
             <h2 class="product-count__text text-body">
               <span id="ProductCountDesktop">
                 {%- if collection.results_count -%}
-                  {{
-                    'templates.search.results_with_count'
-                    | t: terms: collection.terms, count: collection.results_count
-                  }}
+                  {{ 'templates.search.results_with_count' | t: terms: collection.terms, count: collection.results_count }}
                 {%- elsif collection.products_count == collection.all_products_count -%}
                   {{ 'products.facets.product_count_simple' | t: count: collection.products_count }}
                 {%- else -%}
-                  {{
-                    'products.facets.product_count'
-                    | t: product_count: collection.products_count, count: collection.all_products_count
-                  }}
+                  {{ 'products.facets.product_count' | t: product_count: collection.products_count, count: collection.all_products_count }}
                 {%- endif -%}
               </span>
             </h2>
@@ -111,6 +125,7 @@
           %}
         </aside>
       {%- endif -%}
+
       <div
         class="product-grid-container{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
         id="ProductGridContainer"
@@ -125,33 +140,19 @@
               <h2 class="title title--primary">
                 {{ 'sections.collection_template.empty' | t -}}
                 <br>
-                {{
-                  'sections.collection_template.use_fewer_filters_html'
-                  | t: link: collection.url, class: 'underlined-link link'
-                }}
+                {{ 'sections.collection_template.use_fewer_filters_html' | t: link: collection.url, class: 'underlined-link link' }}
               </h2>
             </div>
           </div>
         {%- else -%}
-          <div class="swiper swiper-container slider-columns-1 
-                      collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}
-                      {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}
-                     "
-              {% if settings.animations_reveal_on_scroll %}
-                data-cascade
-                style="--animation-order: {{ forloop.index }};"
-              {% endif %}
-              data-columns="{{ section.settings.columns_desktop }}"
-              data-centered="{{ section.settings.slider_align }}"
-            >
+          <div class="collection{% if section.settings.filter_type != 'vertical' %} page-width{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+            {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}
+          >
             <div class="loading-overlay gradient"></div>
             <ul
               id="product-grid"
               data-id="{{ section.id }}"
-              class="swiper-wrapper 
-                      {% if section.settings.disabled_slider_mobile == true %}swiper-disavbled-mobile-if-2-slides{% endif %} 
-                      collection-wrap
-                    "
+              class="product-grid-3col"
             >
               {%- for product in collection.products -%}
                 {% assign lazy_load = false %}
@@ -159,7 +160,7 @@
                   {%- assign lazy_load = true -%}
                 {%- endif -%}
 
-                <li class="swiper-slide">
+                <li>
                   {% render 'card-product',
                     card_product: product,
                     media_aspect_ratio: section.settings.image_ratio,
@@ -180,10 +181,6 @@
             {%- if paginate.pages > 1 -%}
               {% render 'pagination', paginate: paginate, anchor: '' %}
             {%- endif -%}
-            {% comment %} {% if section.settings.navigation_enabled %} {% endcomment %}
-              <button class="swiper-arrow swiper-button-next"></button>
-              <button class="swiper-arrow swiper-button-prev"></button>
-            {% comment %} {% endif %} {% endcomment %}
           </div>
         {%- endif -%}
       </div>
@@ -378,17 +375,6 @@
       "id": "enable_sorting",
       "default": true,
       "label": "t:sections.main-collection-product-grid.settings.enable_sorting.label"
-    },
-    {
-      "type": "header",
-      "content": "Slider Settigs"
-    },
-    {
-      "type": "checkbox",
-      "id": "disabled_slider_mobile",
-      "default": true,
-      "label": "Disabled Slider Mobile",
-      "info": "Disable the slider on mobile devices. (max-w: 600px)"
     },
     {
       "type": "header",
