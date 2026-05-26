@@ -357,7 +357,7 @@
         "text_hDicPR": {
           "type": "text",
           "settings": {
-            "text": "<p>We know how important it is to get it right, and we’re here for you.</p><p>The Miofolic range contains only the essential ingredients, in doses that are just right for you. No fuss.</p>",
+            "text": "<p>We know how important it is to get it right, and we’re<br/>here for you.<br/>The Miofolic range contains only the essential<br/> ingredients, in doses that are just right for you. No fuss.</p>",
             "text_style": "body"
           }
         },
