@@ -357,7 +357,7 @@
         "text_hDicPR": {
           "type": "text",
           "settings": {
-            "text": "<p>Discover the Path to Parenthood with Natural Support</p>",
+            "text": "<p><strong>We know how important it is to get it right, and we’re here for you.</strong></p><p><strong>The Miofolic range contains only the essential ingredients, in doses that are just right for you. No fuss.</strong></p>",
             "text_style": "body"
           }
         },
@@ -378,7 +378,7 @@
       "settings": {
         "image": "shopify://shop_images/10_Off_Your_First_Order_Use_code_WELCOME10_at_checkout_2.png",
         "container_width": false,
-        "color_background": "linear-gradient(90deg, rgba(230, 220, 204, 1) 48%, rgba(245, 241, 235, 1) 100%)",
+        "color_background": "linear-gradient(123deg, rgba(234, 225, 211, 1) 48%, rgba(245, 241, 235, 1) 100%)",
         "image_stretch": "cover",
         "height": "adapt",
         "desktop_image_width": "small",
