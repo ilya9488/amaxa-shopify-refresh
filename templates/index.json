@@ -384,7 +384,7 @@
         "desktop_image_width": "small",
         "layout": "text_first",
         "desktop_content_position": "middle",
-        "desktop_content_alignment": "right",
+        "desktop_content_alignment": "center",
         "content_layout": "no-overlap",
         "button_type": "button--dark-label",
         "section_color_scheme": "background-1",
