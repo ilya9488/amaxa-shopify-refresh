@@ -31,7 +31,8 @@
   .footer .footer-block__heading,
   .footer .copyright__content,
   .footer .copyright__content a {
-    color: #707070;
+    color: #fcfcfe;
+    font-family: Poppins, sans-serif;
   }
 {%- endstyle -%}
 
@@ -98,7 +99,7 @@
                       <ul class="footer-block__details-content list-unstyled">
                         {%- for link in block.settings.menu.links -%}
                           <li>
-                            <a
+                            
                               href="{{ link.url }}"
                               class="link link--text list-menu__item list-menu__item--link{% if link.active %} list-menu__item--active{% endif %}"
                             >
