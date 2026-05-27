@@ -35,8 +35,8 @@
       ],
       "settings": {
         "color_scheme": "background-1",
-        "background_color": "#d7c5ab",
-        "text_color": "#ffffff",
+        "background_color": "#f8f2e9",
+        "text_color": "#707070",
         "show_line_separator": false,
         "show_social": false,
         "auto_rotate": true,
