@@ -376,7 +376,7 @@
         "button_NP4WhU"
       ],
       "custom_css": [
-        ".button {background-color: transparent !important; border: 1px solid #d2cac3;}",
+        ".button {background-color: transparent; border: 1px solid #d2cac3;}",
         ".button:hover {background-color: white; color: rgb(112, 112, 112); border: 1px solid #d2cac3;}"
       ],
       "settings": {
