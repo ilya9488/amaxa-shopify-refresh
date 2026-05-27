@@ -375,7 +375,9 @@
         "text_hDicPR",
         "button_NP4WhU"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".button {background-color: transparent !important; border: 1px solid #d2cac3;}"
+      ],
       "settings": {
         "image": "shopify://shop_images/10_Off_Your_First_Order_Use_code_WELCOME10_at_checkout_2.png",
         "container_width": false,
