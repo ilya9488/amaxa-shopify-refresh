@@ -29,8 +29,7 @@
         },
         "email-form": {
           "type": "email_form",
-          "settings": {
-          }
+          "settings": {}
         }
       },
       "block_order": [
@@ -77,7 +76,7 @@
         "425f6e1f-e302-4db4-8c78-cc915651ba3b"
       ],
       "settings": {
-        "color_scheme": "scheme-4be43481-f82e-40cd-95c1-f388f0f26462",
+        "color_scheme": "scheme-daf2c28c-38cb-495d-a9fe-e642e0b63801",
         "newsletter_enable": false,
         "newsletter_heading": "<strong>Get up to 50% discounts and exclusive offers via email</strong>",
         "enable_follow_on_shop": false,
