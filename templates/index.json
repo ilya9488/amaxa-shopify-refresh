@@ -377,7 +377,8 @@
       ],
       "custom_css": [
         ".button {background-color: transparent; border: 1px solid #d2cac3;}",
-        ".button:hover {background-color: white; color: rgb(112, 112, 112); border: 1px solid #d2cac3;}"
+        ".button:hover {background-color: white; color: rgb(112, 112, 112); border: 1px solid #d2cac3;}",
+        ".image-with-text__media-item {width: 35%;}"
       ],
       "settings": {
         "image": "shopify://shop_images/10_Off_Your_First_Order_Use_code_WELCOME10_at_checkout_2.png",
