@@ -279,10 +279,21 @@
         "slider_columns_desktop": 4,
         "background_content": ""
       }
+    },
+    "image_with_list_6KGHGf": {
+      "type": "image-with-list",
+      "name": "Image with List",
+      "settings": {
+        "title": "Why our product is different",
+        "image_position": "right",
+        "bg_color": "#595955",
+        "text_color": "#ffffff"
+      }
     }
   },
   "order": [
     "main",
+    "image_with_list_6KGHGf",
     "related-products",
     "tabs-for-dpp",
     "1707311986fd283435",
