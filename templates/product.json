@@ -290,6 +290,13 @@
         "slider_columns_desktop": 4,
         "background_content": ""
       }
+    },
+    "product_faq_KbntKY": {
+      "type": "product-faq",
+      "name": "Product FAQ",
+      "settings": {
+        "title": "FAQs"
+      }
     }
   },
   "order": [
@@ -298,6 +305,7 @@
     "related-products",
     "tabs-for-dpp",
     "1707311986fd283435",
-    "swiper_review_slider"
+    "swiper_review_slider",
+    "product_faq_KbntKY"
   ]
 }
