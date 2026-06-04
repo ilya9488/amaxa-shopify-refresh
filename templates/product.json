@@ -89,7 +89,6 @@
         },
         "collapsible_tab_KWwiXX": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Description",
             "icon": "none",
@@ -99,7 +98,6 @@
         },
         "collapsible_tab_c7nRJE": {
           "type": "collapsible_tab",
-          "disabled": true,
           "settings": {
             "heading": "Nutritional Information",
             "icon": "none",
