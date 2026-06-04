@@ -1,0 +1,149 @@
+<style>
+  .product-faq-section {
+    background: #f4eae1;
+  }
+
+  .product-faq {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+
+  .product-faq__item {
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .product-faq__question {
+    width: 100%;
+    background: none;
+    border: none;
+    text-align: left;
+    padding: 18px 0;
+    font-family: Poppins, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: inherit;
+  }
+
+  .product-faq__title {
+    font-size: 40px;
+    font-width: 700;
+    margin-bottom: 20px;
+  }
+  .product-faq__question:hover {
+    opacity: 0.7;
+  }
+
+  .product-faq__icon {
+    flex-shrink: 0;
+    margin-left: 16px;
+    transition: transform 0.3s ease;
+  }
+
+  .product-faq__item.is-open .product-faq__icon {
+    transform: rotate(45deg);
+  }
+
+  .product-faq__answer {
+    display: none;
+    padding: 0 0 18px;
+    line-height: 1.6;
+    color: #595955;
+  }
+
+  .product-faq__item.is-open .product-faq__answer {
+    display: block;
+  }
+</style>
+
+<div class="product-faq-section">
+  <div class="product-faq">
+    {%- if section.settings.title != blank -%}
+      <h3 class="product-faq__title">{{ section.settings.title }}</h3>
+    {%- endif -%}
+
+    {%- assign faq_items = product.metafields.custom.faq_items.value -%}
+
+    {%- if faq_items != blank -%}
+      {%- for item in faq_items -%}
+        <div class="product-faq__item">
+          <button class="product-faq__question" type="button">
+            {{ item.question }}
+            <svg class="product-faq__icon" width="16" height="16" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor"/>
+            </svg>
+          </button>
+          <div class="product-faq__answer rte">
+            {{ item.answer }}
+          </div>
+        </div>
+      {%- endfor -%}
+    {%- else -%}
+      {%- for block in section.blocks -%}
+        <div class="product-faq__item" {{ block.shopify_attributes }}>
+          <button class="product-faq__question" type="button">
+            {{ block.settings.question }}
+            <svg class="product-faq__icon" width="16" height="16" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 4.51a.5.5 0 000 1h3.5l.01 3.5a.5.5 0 001-.01V5.5l3.5-.01a.5.5 0 00-.01-1H5.5L5.49.99a.5.5 0 00-1 .01v3.5l-3.5.01H1z" fill="currentColor"/>
+            </svg>
+          </button>
+          <div class="product-faq__answer rte">
+            {{ block.settings.answer }}
+          </div>
+        </div>
+      {%- endfor -%}
+    {%- endif -%}
+  </div>
+</div>
+
+<script>
+  document.querySelectorAll('.product-faq__question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.product-faq__item');
+      item.classList.toggle('is-open');
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Product FAQ",
+  "blocks": [
+    {
+      "type": "faq_item",
+      "name": "FAQ Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "question",
+          "label": "Question",
+          "default": "Your question here?"
+        },
+        {
+          "type": "richtext",
+          "id": "answer",
+          "label": "Answer",
+          "default": "<p>Your answer here.</p>"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "FAQs"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product FAQ"
+    }
+  ]
+}
+{% endschema %}
