@@ -1,0 +1,231 @@
+<style>
+  .image-with-list {
+    display: flex;
+    min-height: 50vh;
+  }
+
+  .image-with-list__content {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    background-color: {{ section.settings.bg_color }};
+  }
+  .image-with-list__title {
+    font-size: 40px;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+  }
+  .image-with-list__list-item p {
+    font-size: 16px;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+    color: white;
+    margin-top: -10px;
+  }
+  .image-with-list__list-item h3 {
+      font-size: 22px;
+      font-family: Poppins, sans-serif;
+      font-width: 500;
+      color: white;
+  }
+  .image-with-list__inner {
+    max-width: 560px;
+  }
+
+  .image-with-list__title {
+    color: {{ section.settings.text_color }};
+    margin-bottom: 24px;
+  }
+
+  .image-with-list__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: list-counter;
+  }
+
+  .image-with-list__list-item {
+    counter-increment: list-counter;
+    position: relative;
+    padding-left: 48px;
+    margin-bottom: 28px;
+    color: {{ section.settings.text_color }};
+  }
+
+  .image-with-list__list-item::before {
+    content: counter(list-counter);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid {{ section.settings.text_color }};
+    color: {{ section.settings.text_color }};
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.9rem;
+  }
+
+  .image-with-list__media {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .image-with-list__media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  @media (max-width: 749px) {
+    .image-with-list {
+      flex-direction: column;
+    }
+
+    .image-with-list__content {
+      padding: 32px 20px;
+    }
+
+    .image-with-list__media {
+      min-height: 300px;
+    }
+  }
+</style>
+
+{%- assign show_image_first = false -%}
+{%- if section.settings.image_position == 'left' -%}
+  {%- assign show_image_first = true -%}
+{%- endif -%}
+
+{%- assign why_items = product.metafields.custom.why_product.value -%}
+{%- assign product_image = product.metafields.custom.why_product_image.value -%}
+
+<div class="image-with-list">
+  {%- if show_image_first -%}
+    <div class="image-with-list__media">
+      {%- if product_image != blank -%}
+        {{ product_image | image_url: width: 1200 | image_tag: loading: 'lazy' }}
+      {%- elsif section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
+      {%- else -%}
+        {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  {%- endif -%}
+
+  <div class="image-with-list__content">
+    <div class="image-with-list__inner">
+      {%- if section.settings.title != blank -%}
+        <h2 class="image-with-list__title h3">{{ section.settings.title }}</h2>
+      {%- endif -%}
+      <ul class="image-with-list__list">
+        {%- if why_items != blank -%}
+          {%- for item in why_items -%}
+            <li class="image-with-list__list-item">
+              {%- if item.heading != blank -%}
+                <h3>{{ item.heading }}</h3>
+              {%- endif -%}
+              {%- if item.text != blank -%}
+                <p>{{ item.text }}</p>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        {%- else -%}
+          {%- for block in section.blocks -%}
+            <li class="image-with-list__list-item" {{ block.shopify_attributes }}>
+              {%- if block.settings.heading != blank -%}
+                <h3>{{ block.settings.heading }}</h3>
+              {%- endif -%}
+              {%- if block.settings.text != blank -%}
+                <p>{{ block.settings.text }}</p>
+              {%- endif -%}
+            </li>
+          {%- endfor -%}
+        {%- endif -%}
+      </ul>
+    </div>
+  </div>
+
+  {%- unless show_image_first -%}
+    <div class="image-with-list__media">
+      {%- if product_image != blank -%}
+        {{ product_image | image_url: width: 1200 | image_tag: loading: 'lazy' }}
+      {%- elsif section.settings.image != blank -%}
+        {{ section.settings.image | image_url: width: 1200 | image_tag: loading: 'lazy', alt: section.settings.image.alt }}
+      {%- else -%}
+        {{ 'collection-1' | placeholder_svg_tag: 'placeholder-svg' }}
+      {%- endif -%}
+    </div>
+  {%- endunless -%}
+</div>
+
+{% schema %}
+{
+  "name": "Image with List",
+  "blocks": [
+    {
+      "type": "list_item",
+      "name": "List Item",
+      "settings": [
+        {
+          "type": "text",
+          "id": "heading",
+          "label": "Heading",
+          "default": "Item heading"
+        },
+        {
+          "type": "textarea",
+          "id": "text",
+          "label": "Text",
+          "default": "Item description text"
+        }
+      ]
+    }
+  ],
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Why our product is different"
+    },
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Default image (fallback)"
+    },
+    {
+      "type": "select",
+      "id": "image_position",
+      "label": "Image position",
+      "options": [
+        { "value": "right", "label": "Right" },
+        { "value": "left", "label": "Left" }
+      ],
+      "default": "right"
+    },
+    {
+      "type": "color",
+      "id": "bg_color",
+      "label": "Background color",
+      "default": "#595955"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Image with List"
+    }
+  ]
+}
+{% endschema %}
